@@ -13,100 +13,100 @@
   </head>
   <body>
     <header>
-      <div>
-        <div>
+      <div class="container header-container">
+        <div class="icon-button hamburger-menu-button" id="hamburger-menu-button">
           <img src="icons/hamburger-menu.svg" alt="menu"/>
         </div>
         <img src="images/company-logo.png" alt="Fiona Style"/>
         <nav>
-          <ul>
-            <li>
-              <button>
+          <ul class="nav-list" id="nav-list">
+            <li class="nav-item close-mobile-menu-button-container">
+              <button class="icon-button" id="close-mobile-menu-button">
                 &times;
               </button>
             </li>
-            <li>
-              <a href="#">Collections</a>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Collections</a>
             </li>
-            <li>
-              <a href="#">Men</a>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Men</a>
             </li>
-            <li>
-              <a href="#">Women</a>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Women</a>
             </li>
-            <li>
-              <a href="#">About</a>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
             </li>
-            <li>
-              <a href="#">Contact</a>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
             </li>
           </ul>
         </nav>
-        <button>
+        <button class="icon-button shoping-cart-button button-with-badge">
           <img src="icons/shoping-cart.svg" alt="shoping cart" />
-          <span data-value="2">2</span>
+          <span class="button-badge" id="output-badge" data-value="2">2</span>
         </button>
-        <img src="images/avatar-image.png" alt="John Doe" />
+        <img src="images/avatar-image.png" class="avatar" alt="John Doe" />
       </div>
     </header>
     <main>
-      <div>
-        <section>
-          <button>
+      <div class="container product-container">
+        <section class="product-preview product-container-column">
+          <button class="image-button image-button-prev" id="image-button-prev">
             <img src="icons/chevron-left.png" alt="left" />
           </button>
-          <button>
+          <button class="image-button image-button-next" id="image-button-next">
             <img src="icons/chevron-right.png" alt="right" />
           </button>
-          <img src="images/caro-tights.jpg" alt="caro-tights"/>
-          <div>
-            <img src="images/caro-tights-thumbnail.jpg" alt="caro-tights"/>
-            <img src="images/fishnet-tights-thumbnail.jpg" alt="fishnet-tights"/>
-            <img src="images/polka-dot-tights-thumbnail.jpg" alt="polka-dot-tights"/>
-            <img src="images/purple-tights-thumbnail.jpg" alt="purple-tights"/>
+          <img src="images/caro-tights.jpg" class="product-image" id="product-image" alt="caro-tights"/>
+          <div class="thumbnails-container" id="thumbnails-container">
+            <img src="images/caro-tights-thumbnail.jpg" class="thumbnail thumbnail-active" id="1" alt="caro-tights"/>
+            <img src="images/fishnet-tights-thumbnail.jpg" class="thumbnail" id="2" alt="fishnet-tights"/>
+            <img src="images/polka-dot-tights-thumbnail.jpg" class="thumbnail" id="3" alt="polka-dot-tights"/>
+            <img src="images/purple-tights-thumbnail.jpg" class="thumbnail" id="4" alt="purple-tights"/>
           </div>
         </section>
 
-        <section>
-          <h1>FIONA STYLE</h1>
-          <p>
+        <section class="product-details product-container-column">
+          <h1 class="company-name">FIONA STYLE</h1>
+          <p class="product-name">
             Fall Limited Edition <br/>
             Tights
           </p>
-          <p>
+          <p class="product-description">
             These glamorous tights are your perfect casual wear companion 
             as well as excellent addition to outfits for parties and special events.
             Durable yet sheer these products are the best the market has currently to offer.
           </p>
-          <div>
-            <span>$6.00</span>
-            <span>-50%</span>
-            <span>$12.00</span>
+          <div class="price-container">
+            <span class="price">$6.00</span>
+            <span class="badge">-50%</span>
+            <span class="initial-price">$12.00</span>
           </div>
-          <div>
-            <div>
-              <button>-</button>
-              <span>0</span>
-              <button>+</button>
+          <div class="add-to-cart-form">
+            <div class="counter" id="counter">
+              <button id="decrement">-</button>
+              <span class="output" id="counter-output">0</span>
+              <button id="increment">+</button>
             </div>
-            <button>
+            <button class="button add-to-cart-button" id="add-to-cart">
               Add to cart
             </button>
           </div>
         </section>
       </div>
-      <div>
-        <button>&times;</button>
-        <img src="images/caro-tights.jpg" alt="caro-tights"/>
+      <div class="lightbox-container" id="lightbox-container">
+        <button class="icon-button" id="close-lightbox-button">&times;</button>
+        <img src="images/caro-tights.jpg" class="lightbox" alt="caro-tights"/>
         <div class="thumbnails-container">
-          <img src="images/caro-tights-thumbnail.jpg" alt="caro-tights"/>
-          <img src="images/fishnet-tights-thumbnail.jpg" alt="fishnet-tights"/>
-          <img src="images/polka-dot-tights-thumbnail.jpg" alt="polka-dot-tights"/>
-          <img src="images/purple-tights-thumbnail.jpg" alt="purple-tights"/>
+          <img src="images/caro-tights-thumbnail.jpg" class="thumbnail thumbnail-active" alt="caro-tights"/>
+          <img src="images/fishnet-tights-thumbnail.jpg" class="thumbnail" alt="fishnet-tights"/>
+          <img src="images/polka-dot-tights-thumbnail.jpg" class="thumbnail" alt="polka-dot-tights"/>
+          <img src="images/purple-tights-thumbnail.jpg" class="thumbnail" alt="purple-tights"/>
         </div>
       </div>
     </main>
 
-    <div></div>
+    <div class="backdrop" id="backdrop"></div>
   </body>
 </html>
