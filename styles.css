@@ -16,6 +16,7 @@
   body {
     margin: 0;
     padding: 0;
+    background-color:#6c6a6a22;
   }
   
   img {
@@ -51,7 +52,9 @@
   /* General styles END */
   
   .company-logo {
-    height: 150px;
+    height: 80px;
+    width: 100px;
+    border-radius: 4px;
   }
 
   .button-with-badge {
@@ -105,15 +108,15 @@
   }
   
   .nav-item {
-    text-decoration-color: transparent;
-    transition: all 0.3s;
+    border: 3px solid transparent;
+    border-radius: 4px;
+    padding: 4px;
+    transition: border 0.5s;
   }
   
   .nav-item:hover {
-    text-decoration: underline;
-    text-decoration-color: greenyellow;
-    text-underline-offset: 10px;
-    text-decoration-thickness: 5px;
+   border: 3px solid green;
+   
   }
   
   .close-mobile-menu-button-container {
@@ -148,6 +151,7 @@
   
   .avatar {
     width: 50px;
+    border-radius: 15px;
   }
   
   .product-preview {
@@ -182,6 +186,7 @@
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 2.5rem;
+    text-align: justify;
   }
   
   .price-container {
@@ -372,7 +377,7 @@
   
     .thumbnail {
       width: 22%;
-      border-radius: 10px;
+      border-radius: 2px;
       border: 2px solid transparent;
     }
   
@@ -439,6 +444,7 @@
   }
   
   @media screen and (min-width: 992px) {
+    
     .container {
       width: 80%;
     }
@@ -448,7 +454,7 @@
     }
   
     .product-container-column {
-      flex-basis: 40%;
+      flex-basis: 45%;
     }
   
     .lightbox-container {
@@ -458,7 +464,7 @@
   
   @media screen and (min-width: 1200px) {
     .container {
-      width: 60%;
+      width: 80%;
     }
   
     .lightbox-container {
