@@ -49,7 +49,7 @@
     font-weight: 700;
     cursor: pointer;
   }
-  /* General styles END */
+  
   
   .company-logo {
     height: 80px;
@@ -123,7 +123,7 @@
     display: none;
   }
   
-  .close-mobile-menu-button-container  button {
+  .close-mobile-menu-button-container button {
     font-size: 30px;
   }
   
@@ -260,11 +260,14 @@
   .add-to-cart-button {
     flex-basis: 100%;
   }
-  
+
+  /* General styles END */
+
   /* 
      styles only for mobiles START
   */
   @media screen and (max-width: 767px) {
+    
     .nav-list {
       flex-direction: column;
       position: fixed;
@@ -420,7 +423,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 50vw;
+      width: 65vw;
     }
   
     .lightbox-container.open {
@@ -459,7 +462,8 @@
     }
   
     .lightbox-container {
-      width: 40vw;
+      position: relative;
+      width: 65vw;
     }
   }
   
@@ -469,6 +473,7 @@
     }
   
     .lightbox-container {
-      width: 35vw;
+      position: relative;
+      width: 50vw;
     }
   }

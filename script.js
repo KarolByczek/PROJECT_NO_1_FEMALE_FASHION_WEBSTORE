@@ -1,10 +1,9 @@
 const $hamburgerMenuButton = document.querySelector("#hamburger-menu-button");
-const $closeMobileMenuButton = document.querySelector(
-  "#close-mobile-menu-button"
-);
+const $closeMobileMenuButton = document.querySelector("#close-mobile-menu-button");
 const $navList = document.querySelector("#nav-list");
 const $backdrop = document.querySelector("#backdrop");
 const $productImage = document.querySelector("#product-image");
+const $lightbox = document.querySelector("#lightbox");
 const $lightboxContainer = document.querySelector("#lightbox-container");
 const $closeLightboxButton = document.querySelector("#close-lightbox-button");
 const $thumbnailsContainer = document.querySelector("#thumbnails-container");
@@ -33,6 +32,7 @@ $productImage.addEventListener("click", () => {
   }
   $lightboxContainer.classList.add("open");
   $backdrop.classList.add("open");
+  $lightbox.src = $productImage.src;
 });
 
 $closeLightboxButton.addEventListener("click", () => {
@@ -43,12 +43,21 @@ $closeLightboxButton.addEventListener("click", () => {
 $thumbnailsContainer.addEventListener("click", ({ target }) => {
   if (target.classList.contains("thumbnail")) {
     $productImage.src = `images/${target.id}.jpg`;
-    document
-      .querySelector("img.thumbnail-active")
+      document.querySelector("img.thumbnail-active")
       .classList.remove("thumbnail-active");
     target.classList.add("thumbnail-active");
   }
 });
+
+$lightboxContainer.addEventListener("click", ({ target }) => {
+  if (target.classList.contains("thumbnail")) {
+    $lightbox.src = `images/${target.id}.jpg`;
+      document.querySelector("img.thumbnail-active")
+      .classList.remove("thumbnail-active");
+    target.classList.add("thumbnail-active");
+  }
+});
+
 
 $counter.addEventListener("click", ({ target }) => {
   if (target.id === "decrement") {
@@ -65,7 +74,7 @@ $addToCart.addEventListener("click", () => {
 
 $imageButtonPrev.addEventListener("click", () => {
   const prevActiveThumbnail = document.querySelector("img.thumbnail-active");
-  if (prevActiveThumbnail.id !== 'caro-tights') {
+  if (prevActiveThumbnail.id !== 'null') {
     $productImage.src = prevActiveThumbnail.previousElementSibling.src.replace('-thumbnail','');
     prevActiveThumbnail.classList.remove("thumbnail-active");
     prevActiveThumbnail.previousElementSibling.classList.add(
@@ -76,7 +85,7 @@ $imageButtonPrev.addEventListener("click", () => {
 
 $imageButtonNext.addEventListener("click", () => {
   const prevActiveThumbnail = document.querySelector("img.thumbnail-active");
-  if (prevActiveThumbnail.id !== 'purple-tights') {
+  if (prevActiveThumbnail.id !== 'null') {
     $productImage.src = prevActiveThumbnail.nextElementSibling.src.replace('-thumbnail','');
     prevActiveThumbnail.classList.remove("thumbnail-active");
     prevActiveThumbnail.nextElementSibling.classList.add("thumbnail-active");
