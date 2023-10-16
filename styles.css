@@ -313,6 +313,7 @@
       border: none;
       padding: 15px 16px;
       background-color: white;
+      cursor: pointer;
     }
   
     .image-button-prev {
@@ -387,7 +388,7 @@
     }
   
     .thumbnail.thumbnail-active {
-      border-color: orange;
+      border-color: rgb(109, 185, 233);
       opacity: 0.5;
     }
   
@@ -464,7 +465,7 @@
   
   @media screen and (min-width: 1200px) {
     .container {
-      width: 80%;
+      width: 70%;
     }
   
     .lightbox-container {
