@@ -24,38 +24,49 @@ section {
 #navigation_strip {
   display: flex;
   flex-direction: row;
-
-}
-
-#navigation_strip img {
-  border: 0.2rem solid aquamarine;
-  border-bottom: 0.2rem solid black;
-  border-radius: 1.5rem;
-}
-
-ul.home_navigation {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
   color: rgb(24, 24, 200);
-  list-style: none;
   background-color: aquamarine;
   border-bottom: 0.2rem solid black;
   border-radius: 1.5rem;
   padding-left: auto;
   padding-right: 1rem;
   align-items: center;
-  margin-left: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#navigation_strip img {
+  border: 0.2rem solid aquamarine;
+  border-radius: 1.5rem;
+}
+
+#navigation_lists {
+  display: flex;
+  flex-direction: column;
+}
+
+ul.home_navigation {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.home_navigation li {
+ 
 }
 
 .home_navigation li a {
   text-decoration: none;
   text-align: center;
+  padding: 0.2rem;
+  border: 0.2rem solid transparent;
+  border-radius: 1rem;
 }
 
 .home_navigation li a:hover {
-  text-decoration: underline;
-  text-underline-offset: 50px;
+  border: 0.2rem solid greenyellow;
 }
 
 #left_sidebar {
