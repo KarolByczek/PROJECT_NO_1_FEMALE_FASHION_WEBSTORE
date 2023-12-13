@@ -7,70 +7,113 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <section>
-      <header>
-        <nav id="navigation_strip">
-          <img src="./images/company-logo.png" alt="" />
-          <div id="navigation_lists">
-            <ul class="home_navigation">
-              <li><a href="#">Womens leagwear</a></li>
-              <li><a href="#">Mens leagwear</a></li>
-              <li><a href="#">Womens suits</a></li>
-              <li><a href="#">Mens suits</a></li>
+    <header>
+      <nav id="navigation_strip">
+        <img src="../Common imagery/company-logo.png" alt="company logo" />
+        <ul class="home_navigation">
+          <li class="menu_items">Gowns and dresses
+            <ul class="submenu">
+              <li><a href="">Dolce Gabana</a></li>
+              <li><a href="">Primero</a></li>
+              <li><a href="">Macinta</a></li>
+              <li><a href="">Matsuda</a></li>
+              <li><a href="">Jean Paul Gotier</a></li>
             </ul>
-            <br />
-            <ul class="home_navigation">
-              <li><a href="#">Gowns and dresses</a></li>
-              <li>
-                <a href="../DEPARTMENTS/HOSIERY_DEPARTMENT/index.html"
-                  >Hosiery</a
-                >
-              </li>
-              <li><a href="#">Accesories</a></li>
+          </li>
+          <li class="menu_items">Business suits
+            <ul class="submenu">
+              <li><a href="">Dolce Gabana</a></li>
+              <li><a href="">Primero</a></li>
+              <li><a href="">Macinta</a></li>
+              <li><a href="">Matsuda</a></li>
+              <li><a href="">Jean Paul Gotier</a></li>
             </ul>
-          </div>
-        </nav>
-      </header>
-
-      <div>
-        <h2>Bestsellers this season</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo
-          eaque porro aliquid voluptate, nostrum rem praesentium consequatur
-          mollitia voluptatum eos officia nemo ex sed vel aspernatur quod ipsam
-          recusandae excepturi.
-        </p>
+          </li>
+          <li class="menu_items">Leagwear
+            <ul class="submenu">
+              <li><a href="">Dolce Gabana</a></li>
+              <li><a href="">Primero</a></li>
+              <li><a href="">Macinta</a></li>
+              <li><a href="">Matsuda</a></li>
+              <li><a href="">Jean Paul Gotier</a></li>
+            </ul>
+          </li>
+          <li class="menu_items">Torsowear
+            <ul class="submenu">
+              <li><a href="">Dolce Gabana</a></li>
+              <li><a href="">Primero</a></li>
+              <li><a href="">Macinta</a></li>
+              <li><a href="">Matsuda</a></li>
+              <li><a href="">Jean Paul Gotier</a></li>
+            </ul>
+          </li>
+          <li class="menu_items">Headwear
+            <ul class="submenu">
+              <li><a href="">Dolce Gabana</a></li>
+              <li><a href="">Primero</a></li>
+              <li><a href="">Macinta</a></li>
+              <li><a href="">Matsuda</a></li>
+              <li><a href="">Jean Paul Gotier</a></li>
+            </ul>
+          </li>
+          <li class="menu_items">Hosiery
+            <ul class="submenu">
+              <li><a href="">Dolce Gabana</a></li>
+              <li><a href="">Primero</a></li>
+              <li><a href="">Macinta</a></li>
+              <li><a href="">Matsuda</a></li>
+              <li><a href="">Jean Paul Gotier</a></li>
+            </ul>
+          </li>
+          <li class="menu_items">Accessories
+            <ul class="submenu">
+              <li><a href="">Dolce Gabana</a></li>
+              <li><a href="">Primero</a></li>
+              <li><a href="">Macinta</a></li>
+              <li><a href="">Matsuda</a></li>
+              <li><a href="">Jean Paul Gotier</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <button id="login_button">
+        Log in 
+      </button>
+      <div id="login_strip">
+        <form action="" method="post">
+          <label for="e-mail"><input type="text" name="e-mail" placeholder="Type in your e-mail"></label>
+          <label for="password"><input type="password" name="password" placeholder="Type in your password"></label>
+          <input type="submit" name="submit" id="login" value="Log in">
+          <a id="register" href="">Register</a>
+        </form>
       </div>
-
-      <footer></footer>
-    </section>
-    <sidebar id="left_sidebar">
-      <div>
-        Space for adverts! Space for adverts! Space for adverts! Space for
-        adverts! Space for adverts! Space for adverts! Space for adverts! Space
-        for adverts! Space for adverts! Space for adverts! Space for adverts!
-        Space for adverts! Space for adverts! Space for adverts! Space for
-        adverts! Space for adverts! Space for adverts! Space for adverts! Space
-        for adverts! Space for adverts! Space for adverts! Space for adverts!
-        Space for adverts! Space for adverts! Space for adverts! Space for
-        adverts! Space for adverts! Space for adverts! Space for adverts! Space
-        for adverts! Space for adverts! Space for adverts!
-      </div>
+    </header>
+    <div id="hero_section">
+      <h1>Bestsellers this season</h1>
+      <div id="bestseller_container"></div>
+    </div>
+    <footer></footer>
+    <sidebar class="sidebar" id="left_sidebar">
+      <p>SPACE FOR ADWERTS!</p>
+      <p>SPACE FOR ADWERTS!</p>
+      <p>SPACE FOR ADWERTS!</p>
     </sidebar>
-    <sidebar id="right_sidebar">
-      <div>
-        Space for adverts! Space for adverts! Space for adverts! Space for
-        adverts! Space for adverts! Space for adverts! Space for adverts! Space
-        for adverts! Space for adverts! Space for adverts! Space for adverts!
-        Space for adverts! Space for adverts! Space for adverts! Space for
-        adverts! Space for adverts! Space for adverts! Space for adverts! Space
-        for adverts! Space for adverts! Space for adverts! Space for adverts!
-        Space for adverts! Space for adverts! Space for adverts! Space for
-        adverts! Space for adverts! Space for adverts! Space for adverts! Space
-        for adverts! Space for adverts! Space for adverts!
-      </div>
+    <sidebar class="sidebar" id="right_sidebar">
+      <p>SPACE FOR ADWERTS!</p>
+      <p>SPACE FOR ADWERTS!</p>
+      <p>SPACE FOR ADWERTS!</p>
     </sidebar>
-
+    <div class="backdrop">
+      <form action="">
+        <label for="whatever1">something:<input type="text" name="whatever1"></label>
+        <label for="whatever2">other thing:<input type="text" name="whatever2"></label>
+        <label for="whatever3">dog:<input type="text" name="whatever3"></label>
+        <label for="whatever4">cat:<input type="text" name="whatever4"></label>
+        <label for="whatever5">fisherman:<input type="text" name="whatever5"></label>
+        <label for="whatever6">idiocracy:<input type="text" name="whatever6"></label>
+        <input type="submit" name="submit" id="submit" value="REGISTER">
+      </form>
+    </div>
     <script src="scripts.js"></script>
   </body>
 </html>

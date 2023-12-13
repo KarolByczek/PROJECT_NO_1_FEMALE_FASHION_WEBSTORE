@@ -8,82 +8,280 @@ body {
   position: relative;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-style: normal;
+  background-color:#6c6a6a22;
+  background-image: url("../Common imagery/background.jpg");
+  background-attachment: fixed;
+  margin: 0;
 }
 
 /* GENERAL STYLES - end */
 
 /* STYLES FOR DESKTOP - start */
 
-section {
-  width: 65%;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: "./";
-}
-
 #navigation_strip {
   display: flex;
   flex-direction: row;
-  color: rgb(24, 24, 200);
-  background-color: aquamarine;
-  border-bottom: 0.2rem solid black;
-  border-radius: 1.5rem;
-  padding-left: auto;
-  padding-right: 1rem;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(83, 187, 153);
+  z-index: 4;
+  margin: 0;
 }
 
 #navigation_strip img {
-  border: 0.2rem solid aquamarine;
-  border-radius: 1.5rem;
-}
-
-#navigation_lists {
-  display: flex;
-  flex-direction: column;
+  border: 0.2rem solid rgb(7, 71, 50);
+  border-radius: 1rem;
+  width: 5rem;
+  height: 5rem;
+  justify-self: start;
+  margin-left: 0.2rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
 }
 
 ul.home_navigation {
   display: flex;
   flex-direction: row;
   list-style: none;
-  gap: 1rem;
-  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+  gap: 2rem;
 }
 
 .home_navigation li {
- 
-}
-
-.home_navigation li a {
-  text-decoration: none;
   text-align: center;
-  padding: 0.2rem;
-  border: 0.2rem solid transparent;
+  font-size: 1.4rem;
+  color: rgb(31, 41, 31);
+  padding: 0.4rem;
+  border: 0.2rem solid rgb(7, 71, 50);
   border-radius: 1rem;
+  position: relative;
+  background-color: rgb(47, 201, 106);
+  transition: all 0.5s;
 }
 
-.home_navigation li a:hover {
+.home_navigation li:hover {
   border: 0.2rem solid greenyellow;
+  background-color: aquamarine;
+}
+
+.home_navigation li ul {
+  visibility: hidden;
+  opacity: 0;
+  list-style-type: none; 
+  position: absolute;
+  top: 2.6rem;
+  left: -0.5rem;
+  width: 9rem;
+  border: 0.2rem solid rgb(7, 71, 50);
+  border-radius: 1rem;
+  background-color: rgb(47, 201, 106);
+  margin: 0;
+  padding: 0;
+  transition: all 0.5s;
+}
+
+.home_navigation li:hover ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+.home_navigation li ul li {
+  background-color: transparent;
+  color: transparent;
+  border-radius: 1rem;
+  border: 0.2rem solid transparent;
+  font-size: 75%;
+  padding: 0.2rem;
+  transition: all 1s;
+}
+
+.home_navigation li ul li a {
+  color: rgb(31, 41, 31);
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#login_button {
+  z-index: 3;
+  position: fixed;
+  right: 0;
+  top: 5.4rem;
+  background-color: rgb(71, 145, 122);
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+  padding: 0.2rem;
+  color: aliceblue;
+  text-transform: uppercase;
+}
+
+#login_strip {
+  position: fixed;
+  top: 5.4rem;
+  left: -100%;
+  z-index: 2;
+  background-color: rgb(29, 183, 132);
+  width: 100%;
+  border: 0.05rem solid rgb(19, 43, 32);
+  transition: transform 0.3s;
+}
+
+#login_strip.active {
+  transform: translateX(100%);
+}
+
+#login_strip form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#login_strip form input {
+  border: 0.1rem solid rgb(100, 219, 100);
+  border-radius: 1rem;
+  padding: 0.2rem;
+}
+
+#login_strip form input:hover {
+  border: 0.1rem solid aquamarine;
+}
+
+#login_strip form input#login {
+  background-color: rgb(12, 129, 43);
+  color: white;
+}
+
+#login_strip form a#register {
+  text-decoration: none;
+  color: rgb(24, 34, 34);
+}
+
+#login_strip form a#register:hover {
+  color: rgb(70, 228, 228);
+}
+
+#login_strip form a#register:active {
+  color: rgb(220, 228, 70);
+}
+
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  z-index: 5;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.backdrop.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.backdrop form {
+  position: relative;
+  display: flex;
+  width: 40%;
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: antiquewhite;
+  z-index: 6;
+  opacity: 1;
+}
+
+.backdrop form label input {
+  border: 0.2rem solid rgb(51, 43, 27);
+}
+
+.backdrop form label {
+  display: flex;
+  flex-direction: column;
+}
+
+#hero_section {
+  position: absolute;
+  margin-top: 13rem;
+  width: 70%;
+  left: 15%;
+  right: 15%;
+  padding: 0.5rem;
+}
+
+#hero_section h1 {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: rgb(207, 76, 76);
+  border-radius: 1.5rem;
+}
+
+#bestseller_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid rgb(207, 76, 76);
+  padding: 1rem;
+  margin: 1rem;
+  background-color: rgb(219, 216, 213);
+  gap: 1rem;
+}
+
+#mainblock {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  border: 0.2rem dotted rgb(19, 43, 32, 0.2);
+  padding: 0.8rem;
+}
+
+#mainblock #pictures {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#mainblock #image1, #image2 {
+  width: 45%;
+  height: 30rem;
+}
+
+
+.sidebar {
+  position: absolute;
+  top: 13rem; 
+  width: 15%;
+  height: 500vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
 }
 
 #left_sidebar {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 15%;
-  border-right: 1px solid black;
+  left: 0;
 }
 
 #right_sidebar {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  width: 15%;
-  border-left: 1px solid black;
-  padding-left: 0.5rem;
+  right: 0;   
 }
 
 /* STYLES FOR DESKTOP - end */
