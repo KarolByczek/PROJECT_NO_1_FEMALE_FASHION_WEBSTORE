@@ -20,8 +20,10 @@ body {
 
 #navigation_strip {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
+  height: 3.5rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -30,31 +32,30 @@ body {
   margin: 0;
 }
 
-#navigation_strip img {
+#company_logo {
+  position: fixed;
+  left: 0.2rem;
+  top: 0.2rem;
   border: 0.2rem solid rgb(7, 71, 50);
   border-radius: 1rem;
-  width: 5rem;
-  height: 5rem;
-  justify-self: start;
-  margin-left: 0.2rem;
-  margin-top: 0.2rem;
-  margin-bottom: 0.2rem;
+  width: 6rem;
+  height: 6rem;
+  z-index: 6;
 }
 
-ul.home_navigation {
+.home_navigation {
   display: flex;
   flex-direction: row;
   list-style: none;
-  align-items: center;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0;
-  gap: 2rem;
+  align-items: start;
+  padding-left: 7rem;
+  margin: 0;
+  gap: 2.5rem;
 }
 
 .home_navigation li {
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: rgb(31, 41, 31);
   padding: 0.4rem;
   border: 0.2rem solid rgb(7, 71, 50);
@@ -74,15 +75,16 @@ ul.home_navigation {
   opacity: 0;
   list-style-type: none; 
   position: absolute;
-  top: 2.6rem;
-  left: -0.5rem;
-  width: 9rem;
+  top: 2.4rem;
+  left: -0.3rem;
+  width: 7rem;
   border: 0.2rem solid rgb(7, 71, 50);
   border-radius: 1rem;
   background-color: rgb(47, 201, 106);
   margin: 0;
   padding: 0;
-  transition: all 0.5s;
+  font-size: 1.3rem;
+  transition: all 0.3s;
 }
 
 .home_navigation li:hover ul {
@@ -97,7 +99,7 @@ ul.home_navigation {
   border: 0.2rem solid transparent;
   font-size: 75%;
   padding: 0.2rem;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 .home_navigation li ul li a {
@@ -110,21 +112,31 @@ ul.home_navigation {
 
 #login_button {
   z-index: 3;
-  position: fixed;
+  position: absolute;
   right: 0;
-  top: 5.4rem;
+  top: 0.2rem;
   background-color: rgb(71, 145, 122);
-  border-bottom-left-radius: 1rem;
-  border-top-left-radius: 1rem;
-  padding: 0.2rem;
+  border-radius: 6rem;
+  border: 0.2rem solid rgb(29, 183, 132);
+  padding: 0.6rem;
   color: aliceblue;
+  font-weight: bolder;
   text-transform: uppercase;
+  transition: border 0.3s;
+}
+
+#login_button:hover {
+  border: 0.2rem solid rgb(20, 228, 159);
+}
+
+#login_button:active {
+  border: 0.2rem solid aquamarine;
 }
 
 #login_strip {
   position: fixed;
-  top: 5.4rem;
-  left: -100%;
+  top: 1.8rem;
+  left: 0;
   z-index: 2;
   background-color: rgb(29, 183, 132);
   width: 100%;
@@ -133,7 +145,7 @@ ul.home_navigation {
 }
 
 #login_strip.active {
-  transform: translateX(100%);
+  transform: translateY(100%);
 }
 
 #login_strip form {
@@ -179,7 +191,7 @@ ul.home_navigation {
   right: 0;
   bottom: 0;
   background-color: black;
-  z-index: 5;
+  z-index: 7;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s;
@@ -216,20 +228,21 @@ ul.home_navigation {
   flex-direction: column;
 }
 
-#hero_section {
+section {
   position: absolute;
-  margin-top: 13rem;
+  margin-top: 3rem;
   width: 70%;
   left: 15%;
   right: 15%;
   padding: 0.5rem;
 }
 
-#hero_section h1 {
+section h1 {
   text-transform: uppercase;
   text-align: center;
   background-color: rgb(207, 76, 76);
   border-radius: 1.5rem;
+  line-height: 3rem;
 }
 
 #bestseller_container {
@@ -247,8 +260,9 @@ ul.home_navigation {
   display: flex;
   flex-direction: column;
   width: 90%;
-  border: 0.2rem dotted rgb(19, 43, 32, 0.2);
+  border: 0.2rem solid rgb(19, 43, 32, 0.2);
   padding: 0.8rem;
+  background-color: rgb(180, 190, 183);
 }
 
 #mainblock #pictures {
@@ -260,15 +274,21 @@ ul.home_navigation {
 
 #mainblock #image1, #image2 {
   width: 45%;
-  height: 30rem;
+  height: 25rem;
 }
 
+footer {
+  width: 144%;
+  margin-left: -12rem;
+  background-color: rgb(43, 89, 74);
+  display: flex;
+  flex-direction: row;
+}
 
 .sidebar {
   position: absolute;
   top: 13rem; 
   width: 15%;
-  height: 500vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

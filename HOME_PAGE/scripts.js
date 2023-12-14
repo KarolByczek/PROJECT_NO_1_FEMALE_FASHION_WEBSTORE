@@ -41,22 +41,42 @@ $logButton.addEventListener("click", () => {
 const $register = document.querySelector("#register");
 const $backDrop = document.querySelector(".backdrop");
 
-
 $register.addEventListener("click", () => {
   event.preventDefault();
   $backDrop.classList.add("active");
 });
 
-
 const bestsellerCollection = [
-  {img1: "dolcegabana_stock_001a.jpg", img2: "dolcegabana_stock_001b.jpg", dcr: "Description of a product..."},
-  {img1: "jeanpaulgotier_stock_001a.jpg", img2: "jeanpaulgotier_stock_001b.jpg", dcr: "Another description of a product..."},
-  {img1: "matsuda_stock_001a.webp", img2: "matsuda_stock_001b.webp", dcr: "Yet another description of a product..."}
+  {
+    img1: "dolcegabana_stock_001a.jpg",
+    img2: "dolcegabana_stock_001b.jpg",
+    dcr: "Description of a product...",
+  },
+  {
+    img1: "jeanpaulgotier_stock_001a.jpg",
+    img2: "jeanpaulgotier_stock_001b.jpg",
+    dcr: "Another description of a product...",
+  },
+  {
+    img1: "matsuda_stock_001a.webp",
+    img2: "matsuda_stock_001b.webp",
+    dcr: "Yet another description of a product...",
+  },
+  {
+    img1: "primero_stock_001a.jpg",
+    img2: "primero_stock_001b.jpg",
+    dcr: "This time it is an actual description. May we present to you the latest pride of the Primero brand. In its simplicity you will also find abundance of style, grace and sexiness. It will definitely satisfy tastes of modest ladies as well as those with flirtatious tricks in mind.",
+  },
+  {
+    img1: "matsuda_stock_002a.jpg",
+    img2: "matsuda_stock_002b.jpg",
+    dcr: "May we present to you the latest pride of the Matsuda brand. In its simplicity you will also find abundance of style, grace and sexiness. It will definitely satisfy tastes of modest ladies as well as those with flirtatious tricks in mind.",
+  },
 ];
 
 const $bestsellers = document.getElementById("bestseller_container");
 
-bestsellerCollection.forEach(bestseller => {
+bestsellerCollection.forEach((bestseller) => {
   const mainblock = document.createElement("div");
   mainblock.setAttribute("id", "mainblock");
   const image1 = document.createElement("img");
@@ -69,8 +89,8 @@ bestsellerCollection.forEach(bestseller => {
   description.innerHTML = bestseller.dcr;
   description.setAttribute("id", "description");
 
-  const pictures = document.createElement('div');
-  pictures.setAttribute('id', 'pictures');
+  const pictures = document.createElement("div");
+  pictures.setAttribute("id", "pictures");
 
   mainblock.appendChild(pictures);
   mainblock.appendChild(description);
