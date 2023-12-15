@@ -18,6 +18,7 @@ body {
 
 /* STYLES FOR DESKTOP - start */
 
+
 #navigation_strip {
   display: flex;
   flex-direction: column;
@@ -192,41 +193,84 @@ body {
   bottom: 0;
   background-color: black;
   z-index: 7;
-  opacity: 0;
   visibility: hidden;
+  opacity: 0;
   transition: all 0.3s;
 }
 
 .backdrop.active {
-  opacity: 1;
   visibility: visible;
+  opacity: 0.8;
 }
 
-.backdrop form {
-  position: relative;
+#register_form {
+  position: fixed;
+  top: 1rem;
+  left: 23rem;
   display: flex;
-  width: 40%;
-  height: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 40%;
+  height: 95%;
   gap: 1rem;
-  background-color: antiquewhite;
-  z-index: 6;
+  background-color: rgb(225, 210, 189);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 8;
+  transition: all 0.3s;
+}
+
+#register_form.active {
+  visibility: visible;
   opacity: 1;
 }
 
-.backdrop form label input {
+#register_form label input {
   border: 0.2rem solid rgb(51, 43, 27);
+  border-radius: 5rem;
+  padding: 0.5rem;
+  width: fit-content;
 }
 
-.backdrop form label {
+#register_form label {
   display: flex;
   flex-direction: column;
 }
+
+#submit_register_form {
+  border: 0.3rem solid rgb(105, 176, 153);
+  border-radius: 1rem;
+  background-color: rgb(33, 116, 28);
+  font-weight: bold;
+  color: whitesmoke;
+  padding: 0.5rem;
+  transition: all 0.3s;
+}
+
+#submit_register_form:hover {
+  border: 0.3rem solid aquamarine;
+}
+
+#register_form_login_button {
+  background-color: rgb(71, 145, 122);
+  border-radius: 6rem;
+  border: 0.2rem solid rgb(29, 183, 132);
+  padding: 0.6rem;
+  color: aliceblue;
+  font-weight: bolder;
+}
+
+#register_form p {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+}
+
+#register_form p:hover {
+  cursor: pointer;
+}
+
 
 section {
   position: absolute;
@@ -239,10 +283,13 @@ section {
 
 section h1 {
   text-transform: uppercase;
+  font-size: 2.5rem;
   text-align: center;
   background-color: rgb(207, 76, 76);
   border-radius: 1.5rem;
-  line-height: 3rem;
+  line-height: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 0.2rem;
 }
 
 #bestseller_container {
@@ -251,7 +298,7 @@ section h1 {
   align-items: center;
   border: 3px solid rgb(207, 76, 76);
   padding: 1rem;
-  margin: 1rem;
+  margin: 0;
   background-color: rgb(219, 216, 213);
   gap: 1rem;
 }
@@ -280,9 +327,32 @@ section h1 {
 footer {
   width: 144%;
   margin-left: -12rem;
-  background-color: rgb(43, 89, 74);
+  margin-top: 1rem;
+  background-color:  rgb(83, 187, 153);
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0 0 0 1rem;
+  border-left: 1px solid rgb(15, 26, 83);
+}
+
+
+footer ul li a {
+  font-size: 0.8rem;
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+  color: rgb(15, 26, 83);
+  transition: all 0.3s;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+  color: rgb(8, 46, 237);
 }
 
 .sidebar {

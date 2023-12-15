@@ -40,11 +40,34 @@ $logButton.addEventListener("click", () => {
 
 const $register = document.querySelector("#register");
 const $backDrop = document.querySelector(".backdrop");
+const $registerForm = document.getElementById("register_form");
+const $submitRegisterform = document.getElementById("submit_register_form");
+const $registerFormLoginButton = document.getElementById("register_form_login_button");
+const $closeRegisterForm = document.getElementById("close_register_form");
 
-$register.addEventListener("click", () => {
+$register.addEventListener("click", (event) => {
   event.preventDefault();
   $backDrop.classList.add("active");
+  $registerForm.classList.add("active");
 });
+
+$registerFormLoginButton.addEventListener("click", (event) => {
+  event.preventDefault();
+  $backDrop.classList.remove("active");
+  $registerForm.classList.remove("active");
+  $logStrip.classList.add("active");
+})
+
+ $closeRegisterForm.addEventListener("click", () => {
+  $backDrop.classList.remove("active");
+  $registerForm.classList.remove("active");
+});
+
+const openRegisterFunction = () => {
+  $backDrop.classList.add("active");
+  $registerForm.classList.add("active")
+};
+setTimeout(() => openRegisterFunction(), 5000);
 
 const bestsellerCollection = [
   {
@@ -81,9 +104,11 @@ bestsellerCollection.forEach((bestseller) => {
   mainblock.setAttribute("id", "mainblock");
   const image1 = document.createElement("img");
   image1.src = `images/${bestseller.img1}`;
+  image1.alt = `${bestseller.img1}`;
   image1.setAttribute("id", "image1");
   const image2 = document.createElement("img");
   image2.src = `images/${bestseller.img2}`;
+  image2.alt = `${bestseller.img2}`
   image2.setAttribute("id", "image2");
   const description = document.createElement("p");
   description.innerHTML = bestseller.dcr;
