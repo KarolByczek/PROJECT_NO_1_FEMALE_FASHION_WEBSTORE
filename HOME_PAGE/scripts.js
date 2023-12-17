@@ -42,7 +42,9 @@ const $register = document.querySelector("#register");
 const $backDrop = document.querySelector(".backdrop");
 const $registerForm = document.getElementById("register_form");
 const $submitRegisterform = document.getElementById("submit_register_form");
-const $registerFormLoginButton = document.getElementById("register_form_login_button");
+const $registerFormLoginButton = document.getElementById(
+  "register_form_login_button"
+);
 const $closeRegisterForm = document.getElementById("close_register_form");
 
 $register.addEventListener("click", (event) => {
@@ -56,16 +58,16 @@ $registerFormLoginButton.addEventListener("click", (event) => {
   $backDrop.classList.remove("active");
   $registerForm.classList.remove("active");
   $logStrip.classList.add("active");
-})
+});
 
- $closeRegisterForm.addEventListener("click", () => {
+$closeRegisterForm.addEventListener("click", () => {
   $backDrop.classList.remove("active");
   $registerForm.classList.remove("active");
 });
 
 const openRegisterFunction = () => {
   $backDrop.classList.add("active");
-  $registerForm.classList.add("active")
+  $registerForm.classList.add("active");
 };
 setTimeout(() => openRegisterFunction(), 5000);
 
@@ -73,27 +75,27 @@ const bestsellerCollection = [
   {
     img1: "dolcegabana_stock_001a.jpg",
     img2: "dolcegabana_stock_001b.jpg",
-    dcr: "Description of a product...",
+    dcr: "Tired of plain darkness ruling your business costume department? This modern otulook on the subject will keep your appearance at work uot of the boundaries of triviality while remaining within the zone of respectfulness and appropriate status.",
   },
   {
     img1: "jeanpaulgotier_stock_001a.jpg",
     img2: "jeanpaulgotier_stock_001b.jpg",
-    dcr: "Another description of a product...",
+    dcr: "Out of the ashes of routine and blandness comes the greatly refreshing but still simple design. A perfect addition to your wardrobe dedicated for smart business outfits.",
   },
   {
     img1: "matsuda_stock_001a.webp",
     img2: "matsuda_stock_001b.webp",
-    dcr: "Yet another description of a product...",
+    dcr: "This classic and outragously feminine hat, carries plenty of eye-catching features with its frivolity and outline finesse. Coming in three distinct variants in regards to color.",
   },
   {
     img1: "primero_stock_001a.jpg",
     img2: "primero_stock_001b.jpg",
-    dcr: "This time it is an actual description. May we present to you the latest pride of the Primero brand. In its simplicity you will also find abundance of style, grace and sexiness. It will definitely satisfy tastes of modest ladies as well as those with flirtatious tricks in mind.",
+    dcr: "May we present to you the latest pride of the Primero brand. In its simplicity you will also find abundance of style, grace and sexiness. It will definitely satisfy tastes of modest ladies as well as those with flirtatious tricks in mind.",
   },
   {
     img1: "matsuda_stock_002a.jpg",
     img2: "matsuda_stock_002b.jpg",
-    dcr: "May we present to you the latest pride of the Matsuda brand. In its simplicity you will also find abundance of style, grace and sexiness. It will definitely satisfy tastes of modest ladies as well as those with flirtatious tricks in mind.",
+    dcr: "Orientally stylish, this kimono dress is the most beloved design in the Matsuda's newest array of evening attire. Brightly colored, yet moderately unassuming, it makes an excellent choice for a fancy party.",
   },
 ];
 
@@ -108,7 +110,7 @@ bestsellerCollection.forEach((bestseller) => {
   image1.setAttribute("id", "image1");
   const image2 = document.createElement("img");
   image2.src = `images/${bestseller.img2}`;
-  image2.alt = `${bestseller.img2}`
+  image2.alt = `${bestseller.img2}`;
   image2.setAttribute("id", "image2");
   const description = document.createElement("p");
   description.innerHTML = bestseller.dcr;

@@ -8,7 +8,7 @@ body {
   position: relative;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-style: normal;
-  background-color:#6c6a6a22;
+  background-color: #6c6a6a22;
   background-image: url("../Common imagery/background.jpg");
   background-attachment: fixed;
   margin: 0;
@@ -17,7 +17,6 @@ body {
 /* GENERAL STYLES - end */
 
 /* STYLES FOR DESKTOP - start */
-
 
 #navigation_strip {
   display: flex;
@@ -74,7 +73,7 @@ body {
 .home_navigation li ul {
   visibility: hidden;
   opacity: 0;
-  list-style-type: none; 
+  list-style-type: none;
   position: absolute;
   top: 2.4rem;
   left: -0.3rem;
@@ -271,7 +270,6 @@ body {
   cursor: pointer;
 }
 
-
 section {
   position: absolute;
   margin-top: 3rem;
@@ -306,6 +304,7 @@ section h1 {
 #mainblock {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 90%;
   border: 0.2rem solid rgb(19, 43, 32, 0.2);
   padding: 0.8rem;
@@ -316,19 +315,37 @@ section h1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: 95%;
+  height: 90%;
   gap: 1rem;
+  overflow: hidden;
 }
 
-#mainblock #image1, #image2 {
+#mainblock #image1,
+#image2 {
   width: 45%;
   height: 25rem;
+  transition-duration: 1s;
+  margin: 0 auto;
+  display: block;
+}
+
+#mainblock #image1:hover,
+#image2:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+}
+
+#mainblock p {
+  text-align: justify;
 }
 
 footer {
   width: 144%;
   margin-left: -12rem;
   margin-top: 1rem;
-  background-color:  rgb(83, 187, 153);
+  background-color: rgb(83, 187, 153);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -339,7 +356,6 @@ footer ul {
   padding: 0 0 0 1rem;
   border-left: 1px solid rgb(15, 26, 83);
 }
-
 
 footer ul li a {
   font-size: 0.8rem;
@@ -357,7 +373,7 @@ footer ul li a:hover {
 
 .sidebar {
   position: absolute;
-  top: 13rem; 
+  top: 13rem;
   width: 15%;
   display: flex;
   flex-direction: column;
@@ -371,7 +387,7 @@ footer ul li a:hover {
 }
 
 #right_sidebar {
-  right: 0;   
+  right: 0;
 }
 
 /* STYLES FOR DESKTOP - end */
