@@ -38,6 +38,7 @@ $logButton.addEventListener("click", () => {
   $logStrip.classList.toggle("active");
 });
 
+const $menuItems = document.querySelectorAll(".menu_item");
 const $register = document.querySelector("#register");
 const $backDrop = document.querySelector(".backdrop");
 const $registerForm = document.getElementById("register_form");
@@ -70,6 +71,19 @@ const openRegisterFunction = () => {
   $registerForm.classList.add("active");
 };
 setTimeout(() => openRegisterFunction(), 5000);
+
+//for mobiles
+
+$menuItems.forEach((menuitem) => {
+  menuitem.addEventListener("click", () => {
+    menuitem.classList.toggle("active");
+    $menuItems.forEach((other_menuitem) => {
+      if (other_menuitem !== menuitem) {
+      other_menuitem.classList.remove("active")
+      };
+    });
+  });
+});
 
 const bestsellerCollection = [
   {

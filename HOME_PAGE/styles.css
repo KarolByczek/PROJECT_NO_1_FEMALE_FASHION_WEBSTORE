@@ -14,72 +14,6 @@ body {
   margin: 0;
 }
 
-/* GENERAL STYLES - end */
-
-/* STYLES FOR DESKTOP - start */
-
-
-@media screen and (max-width: 767px) {
-
-  #navigation_strip {
-    height: auto;
-  }
-
-  #company_logo {
-    width: 100%;
-    height: width;
-    border: 0.4rem solid green;
-    border-radius: 1.5rem;
-  }
-
-  .home_navigation {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-    align-items: stretch;
-  }
-
-  .home_navigation li {
-    list-style-type: none;
-    text-align: center;
-    font-size: 1.2rem;
-    color: rgb(31, 41, 31);
-    padding: 0.4rem;
-    border: 0.2rem solid rgb(7, 71, 50);
-    border-radius: 1rem;
-    position: relative;
-    background-color: rgb(47, 201, 106);
-    transition: all 0.5s;
-  }
-
-  .home_navigation li ul {
-    visibility: hidden;
-    opacity: 0;
-    list-style-type: none;
-    position: absolute;
-    top: 2.4rem;
-    left: -0.3rem;
-    width: 7rem;
-    border: 0.2rem solid rgb(7, 71, 50);
-    border-radius: 1rem;
-    background-color: rgb(47, 201, 106);
-    margin: 0;
-    padding: 0;
-    font-size: 1.3rem;
-    transition: all 0.3s;
-  }
-
-  .home_navigation li:hover ul {
-    visibility: visible;
-    opacity: 1;
-    z-index: 2;
-  }
-
-}
-
-@media screen and (min-width: 1200px) {
-
 #navigation_strip {
   display: flex;
   flex-direction: column;
@@ -451,6 +385,117 @@ footer ul li a:hover {
 #right_sidebar {
   right: 0;
 }
+
+/* GENERAL STYLES - end */
+
+/* STYLES FOR MOBILES - start */
+
+@media screen and (max-width: 767px) {
+
+  #navigation_strip {
+    height: auto;
+    position: relative;
+  }
+
+  #company_logo {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border: 0.4rem solid green;
+    border-radius: 1.5rem;
+  }
+
+  .home_navigation {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    align-items: stretch;
+    gap: 0.2rem;
+  }
+
+  .home_navigation li {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home_navigation li:hover {
+    border: 0.2rem solid rgb(7, 71, 50);
+    background-color: rgb(47, 201, 106);
+  }
+
+  .home_navigation li:hover ul {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .home_navigation li:active {
+    border: 0.2rem solid rgb(53, 105, 88);
+    background-color: rgb(189, 244, 106);
+  }
+
+  .home_navigation li ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+  .home_navigation li.active ul {
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+    top: 0.2rem;
+    background-color: rgb(187, 221, 85);
+    padding-left: 0;
+  }
+
+  .home_navigation li ul li {
+    font-size: 1.2rem;
+  }
+
+  .home_navigation li ul li:hover {
+    border: 0.2rem solid transparent;
+    background-color: transparent;
+  }
+
+  .home_navigation li ul li:active {
+    border: 0.2rem solid greenyellow;
+    background-color: antiquewhite;
+  }
+
+  #login_button {
+    position: relative;
+  }
+
+  #login_button:hover {
+    border: 0.2rem solid rgb(29, 183, 132);
+  }
+
+  #login_button:active {
+    border: 0.2rem solid rgb(55, 183, 29);
+    background-color: rgb(11, 134, 93);
+  }
+
+  #login_strip {
+    position: relative;
+    top: -10rem;
+  }
+
+  #login_button:active #login_strip {
+    position: relative;
+    top: -2rem;
+  }
+
+  #login_strip form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #login_strip form label {
+    width: 100%;
+  }
+
 }
 
-/* STYLES FOR DESKTOP - end */
+/* STYLES FOR MOBILES - end */
