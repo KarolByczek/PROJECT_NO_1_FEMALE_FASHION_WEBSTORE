@@ -117,21 +117,21 @@ const $bestsellers = document.getElementById("bestseller_container");
 
 bestsellerCollection.forEach((bestseller) => {
   const mainblock = document.createElement("div");
-  mainblock.setAttribute("id", "mainblock");
+  mainblock.setAttribute("class", "mainblock");
   const image1 = document.createElement("img");
   image1.src = `images/${bestseller.img1}`;
   image1.alt = `${bestseller.img1}`;
-  image1.setAttribute("id", "image1");
+  image1.setAttribute("class", "image1");
   const image2 = document.createElement("img");
   image2.src = `images/${bestseller.img2}`;
   image2.alt = `${bestseller.img2}`;
-  image2.setAttribute("id", "image2");
+  image2.setAttribute("class", "image2");
   const description = document.createElement("p");
   description.innerHTML = bestseller.dcr;
-  description.setAttribute("id", "description");
+  description.setAttribute("class", "description");
 
   const pictures = document.createElement("div");
-  pictures.setAttribute("id", "pictures");
+  pictures.setAttribute("class", "pictures");
 
   mainblock.appendChild(pictures);
   mainblock.appendChild(description);

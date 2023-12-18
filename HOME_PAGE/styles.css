@@ -296,7 +296,7 @@ section h1 {
   gap: 1rem;
 }
 
-#mainblock {
+.mainblock {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -306,7 +306,7 @@ section h1 {
   background-color: rgb(180, 190, 183);
 }
 
-#mainblock #pictures {
+.mainblock .pictures {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -316,8 +316,8 @@ section h1 {
   overflow: hidden;
 }
 
-#mainblock #image1,
-#image2 {
+.mainblock .image1,
+.image2 {
   width: 45%;
   height: 25rem;
   transition-duration: 1s;
@@ -325,14 +325,14 @@ section h1 {
   display: block;
 }
 
-#mainblock #image1:hover,
-#image2:hover {
+.mainblock .image1:hover,
+.image2:hover {
   transform: scale(1.2);
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
 }
 
-#mainblock p {
+.mainblock p {
   text-align: justify;
 }
 
@@ -535,26 +535,43 @@ footer ul li a:hover {
     padding: 0;
   }
 
-  section #bestseller_container #mainblock {
+  section #bestseller_container .mainblock {
     width: 100%;
   }
 
-  section #bestseller_container #pictures {
+  section #bestseller_container .pictures {
     flex-direction: column;
     width: 100%;
     
   }
 
-  #pictures #image1, #image2 {
+  .pictures .image1, .image2 {
     width: 90%;
     height: 160%;
-    margin: 1rem auto;
+    width: 90%;
+    height: 40rem;
+  }
+
+  .mainblock p {
+    font-size: 1.2rem;
   }
 
   footer {
-    position: absolute;
+    position: relative;
+    left: 12rem;
     width: 100%;
+    flex-direction: column;
   }
+
+  footer ul {
+    padding-left: 5rem;
+    
+  }
+
+  footer ul li a {
+    font-size: 2rem;
+  }
+
 }
 
 /* STYLES FOR MOBILES - end */
