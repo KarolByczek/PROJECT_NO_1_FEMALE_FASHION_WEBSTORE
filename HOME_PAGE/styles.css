@@ -8,7 +8,6 @@ body {
   position: relative;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-style: normal;
-  background-color: #6c6a6a22;
   background-image: url("../Common imagery/background.jpg");
   background-attachment: fixed;
   margin: 0;
@@ -392,6 +391,10 @@ footer ul li a:hover {
 
 @media screen and (max-width: 767px) {
 
+  body {
+    background-image: none;
+  }
+
   #navigation_strip {
     height: auto;
     position: relative;
@@ -525,7 +528,27 @@ footer ul li a:hover {
     padding: 0;
     left: 0;
     right: 0;
-    top: -15rem;
+    top: -15.4rem;
+  }
+
+  section #bestseller_container {
+    padding: 0;
+  }
+
+  section #bestseller_container #mainblock {
+    width: 100%;
+  }
+
+  section #bestseller_container #pictures {
+    flex-direction: column;
+    width: 100%;
+    
+  }
+
+  #pictures #image1, #image2 {
+    width: 90%;
+    height: 160%;
+    margin: 1rem auto;
   }
 
   footer {
