@@ -479,12 +479,13 @@ footer ul li a:hover {
 
   #login_strip {
     position: relative;
-    top: -10rem;
+    top: -13rem;
+    width: 100%;
+    padding: 0.5rem 0;
   }
 
-  #login_button:active #login_strip {
-    position: relative;
-    top: -2rem;
+  #login_strip.active {
+    transform: translateY(100%);
   }
 
   #login_strip form {
@@ -496,6 +497,41 @@ footer ul li a:hover {
     width: 100%;
   }
 
+  #login_strip form label input {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+  }
+
+  #login_strip form input {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+  }
+
+  #login_strip form a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  section {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    left: 0;
+    right: 0;
+    top: -15rem;
+  }
+
+  footer {
+    position: absolute;
+    width: 100%;
+  }
 }
 
 /* STYLES FOR MOBILES - end */
