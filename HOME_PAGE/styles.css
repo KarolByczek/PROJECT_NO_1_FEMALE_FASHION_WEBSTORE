@@ -81,6 +81,7 @@ body {
   padding: 0;
   font-size: 1.3rem;
   transition: all 0.3s;
+  z-index: 2;;
 }
 
 .home_navigation li:hover ul {
@@ -115,6 +116,7 @@ body {
   font-weight: bolder;
   text-transform: uppercase;
   transition: border 0.3s;
+  margin-left: 1rem;
 }
 
 #login_button:hover {
@@ -263,12 +265,13 @@ body {
 }
 
 section {
-  position: absolute;
+  position: relative;
   margin-top: 3rem;
   width: 70%;
   left: 15%;
   right: 15%;
   padding: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 section h1 {
@@ -280,9 +283,10 @@ section h1 {
   line-height: 5rem;
   margin-top: 2rem;
   margin-bottom: 0.2rem;
+  padding: 1rem;
 }
 
-#bestseller_container {
+section #bestseller_container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -293,7 +297,7 @@ section h1 {
   gap: 1rem;
 }
 
-.mainblock {
+section #bestseller_container .mainblock {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -303,7 +307,7 @@ section h1 {
   background-color: rgb(180, 190, 183);
 }
 
-.mainblock .pictures {
+section #bestseller_container .mainblock .pictures {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -313,7 +317,7 @@ section h1 {
   overflow: hidden;
 }
 
-.mainblock .image1,
+section #bestseller_container .mainblock .pictures .image1,
 .image2 {
   width: 45%;
   height: 25rem;
@@ -322,20 +326,21 @@ section h1 {
   display: block;
 }
 
-.mainblock .image1:hover,
+section #bestseller_container .mainblock .image1:hover,
 .image2:hover {
   transform: scale(1.2);
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
 }
 
-.mainblock p {
+section #bestseller_container .mainblock p {
   text-align: justify;
 }
 
 footer {
-  width: 144%;
-  margin-left: -12rem;
+  position: absolute;
+  z-index: 2;
+  width: 100vw;
   margin-top: 1rem;
   background-color: rgb(83, 187, 153);
   display: flex;
@@ -365,11 +370,11 @@ footer ul li a:hover {
 
 .sidebar {
   position: absolute;
-  top: 13rem;
+  top: 5rem;
   width: 15%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
   font-weight: 600;
 }
@@ -465,7 +470,7 @@ footer ul li a:hover {
   }
 
   #login_button {
-    position: relative;
+    margin-left: 0;
   }
 
   #login_button:hover {
@@ -520,7 +525,6 @@ footer ul li a:hover {
   }
 
   section {
-    position: relative;
     width: 100%;
     padding: 0;
     left: 0;
@@ -536,27 +540,24 @@ footer ul li a:hover {
     width: 100%;
   }
 
-  section #bestseller_container .pictures {
+  section #bestseller_container .mainblock .pictures {
     flex-direction: column;
     width: 100%;
-    
   }
 
-  .pictures .image1, .image2 {
+  section #bestseller_container .mainblock .pictures .image1, .image2 {
     width: 90%;
     height: 160%;
     width: 90%;
     height: 40rem;
   }
 
-  .mainblock p {
+  section #bestseller_container .mainblock p {
     font-size: 1.2rem;
   }
 
   footer {
-    position: relative;
-    left: 12rem;
-    width: 100%;
+    margin-top: 4rem;
     flex-direction: column;
     align-items: center;
   }
@@ -583,11 +584,12 @@ footer ul li a:hover {
 
 }
 
+/* STYLES FOR MOBILES - end */
+
 @media screen and (min-width: 625px) {
   
   #navigation_strip {
     height: fit-content;
-    
   }
 
   .home_navigation {
@@ -597,12 +599,22 @@ footer ul li a:hover {
     justify-content: center;
   }
 
-  #login_button {
-    position: relative;
+  section {
+    margin-top: 6rem;
   }
+
+  section #bestseller_container .mainblock .pictures {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  section #bestseller_container .mainblock .pictures .image1, .image2 {
+    width: 80%;
+  }
+
 }
 
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 1048px) {
     
     #navigation_strip {
       height: fit-content;
@@ -616,14 +628,15 @@ footer ul li a:hover {
       font-size: 1.2rem;
     }
 
-    #login_button {
-      z-index: 3;
-      position: absolute;
-      right: 0;
-      top: 0.2rem;
+    section {
+      margin-top: 3rem;
     }
 
+    section #bestseller_container .mainblock .pictures {
+      flex-direction: row;
+      width: 100%;
+    }
   }
 
 
-/* STYLES FOR MOBILES - end */
+
