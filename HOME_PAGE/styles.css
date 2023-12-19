@@ -45,6 +45,7 @@ body {
   padding-left: 7rem;
   margin: 0;
   gap: 2.5rem;
+  flex-wrap: wrap;
 }
 
 .home_navigation li {
@@ -106,10 +107,6 @@ body {
 }
 
 #login_button {
-  z-index: 3;
-  position: absolute;
-  right: 0;
-  top: 0.2rem;
   background-color: rgb(71, 145, 122);
   border-radius: 6rem;
   border: 0.2rem solid rgb(29, 183, 132);
@@ -389,7 +386,7 @@ footer ul li a:hover {
 
 /* STYLES FOR MOBILES - start */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 625px) {
 
   body {
     background-image: none;
@@ -585,5 +582,48 @@ footer ul li a:hover {
   }
 
 }
+
+@media screen and (min-width: 625px) {
+  
+  #navigation_strip {
+    height: fit-content;
+    
+  }
+
+  .home_navigation {
+    flex-wrap: wrap;
+    gap: 0.2rem;
+    bottom: 2rem;
+    justify-content: center;
+  }
+
+  #login_button {
+    position: relative;
+  }
+}
+
+  @media screen and (min-width: 992px) {
+    
+    #navigation_strip {
+      height: fit-content;
+    }
+
+    .home_navigation {
+      justify-content: center;
+    }
+
+    .home_navigation li {
+      font-size: 1.2rem;
+    }
+
+    #login_button {
+      z-index: 3;
+      position: absolute;
+      right: 0;
+      top: 0.2rem;
+    }
+
+  }
+
 
 /* STYLES FOR MOBILES - end */
