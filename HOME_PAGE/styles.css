@@ -530,6 +530,7 @@ footer ul li a:hover {
     left: 0;
     right: 0;
     top: -15.4rem;
+    margin-bottom: -8rem;
   }
 
   section #bestseller_container {
@@ -546,10 +547,8 @@ footer ul li a:hover {
   }
 
   section #bestseller_container .mainblock .pictures .image1, .image2 {
-    width: 90%;
-    height: 160%;
-    width: 90%;
-    height: 40rem;
+    width: 70vw;
+    height: 140vw;
   }
 
   section #bestseller_container .mainblock p {
@@ -557,7 +556,7 @@ footer ul li a:hover {
   }
 
   footer {
-    margin-top: 4rem;
+    margin-top: 1rem;
     flex-direction: column;
     align-items: center;
   }
@@ -603,16 +602,21 @@ footer ul li a:hover {
     margin-top: 6rem;
   }
 
+  section #bestseller_container .mainblock {
+    width: 95%;
+  }
+
   section #bestseller_container .mainblock .pictures {
-    flex-direction: column;
     width: 100%;
   }
 
   section #bestseller_container .mainblock .pictures .image1, .image2 {
-    width: 80%;
+    width: 25vw;
+    height: 40vw;
   }
 
 }
+
 
   @media screen and (min-width: 1048px) {
     
@@ -632,10 +636,6 @@ footer ul li a:hover {
       margin-top: 3rem;
     }
 
-    section #bestseller_container .mainblock .pictures {
-      flex-direction: row;
-      width: 100%;
-    }
   }
 
 
