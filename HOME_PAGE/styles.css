@@ -608,6 +608,20 @@ footer ul li a:hover {
 
   section #bestseller_container .mainblock .pictures {
     width: 100%;
+    flex-direction: column;
+  }
+
+  section #bestseller_container .mainblock .pictures .image1, .image2 {
+    width: 40vw;
+    height: 70vw;
+  }
+
+}
+
+@media screen and (min-width: 800px) {
+  
+  section #bestseller_container .mainblock .pictures {
+    flex-direction: row;
   }
 
   section #bestseller_container .mainblock .pictures .image1, .image2 {
@@ -616,7 +630,6 @@ footer ul li a:hover {
   }
 
 }
-
 
   @media screen and (min-width: 1048px) {
     
@@ -632,8 +645,18 @@ footer ul li a:hover {
       font-size: 1.2rem;
     }
 
+    #login_strip {
+      top: 1.3rem;
+    }
+
     section {
       margin-top: 3rem;
+    }
+
+
+    section #bestseller_container .mainblock .pictures .image1, .image2 {
+      width: 25vw;
+      height: 40vw;
     }
 
   }
