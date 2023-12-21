@@ -85,6 +85,8 @@ $menuItems.forEach((menuitem) => {
   });
 });
 
+// Temporary - static - solution for uploading contents of bestseller container. 
+
 const bestsellerCollection = [
   {
     img1: "buenavista_stock_001a.jpg",
@@ -111,6 +113,11 @@ const bestsellerCollection = [
     img2: "macinta_stock_001b.jpg",
     dcr: "Orientally stylish, this kimono dress is the most beloved design in the Matsuda's newest array of evening attire. Brightly colored, yet moderately unassuming, it makes an excellent choice for a fancy party.",
   },
+  {
+    img1: "macinta_stock_002a.jpg",
+    img2: "macinta_stock_002b.jpg",
+    dcr: "Lorem ipsum. Lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+  }
 ];
 
 const $bestsellers = document.getElementById("bestseller_container");
