@@ -598,6 +598,10 @@ footer ul li a:hover {
     justify-content: center;
   }
 
+  #login_strip {
+    top: 4.1rem;
+  }
+
   section {
     margin-top: 6rem;
   }
