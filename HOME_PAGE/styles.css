@@ -25,6 +25,7 @@ body {
   background-color: rgb(83, 187, 153);
   z-index: 4;
   margin: 0;
+  padding-top: 0.2rem;
 }
 
 #company_logo {
@@ -129,7 +130,6 @@ body {
 
 #login_strip {
   position: fixed;
-  top: 1.8rem;
   left: 0;
   z-index: 2;
   background-color: rgb(29, 183, 132);
@@ -608,7 +608,7 @@ footer ul li a:hover {
   }
 
   #login_strip {
-    top: 4.1rem;
+    top: 4.3rem;
   }
 
   section {
@@ -659,7 +659,7 @@ footer ul li a:hover {
     }
 
     #login_strip {
-      top: 1.3rem;
+      top: 1.5rem;
     }
 
     section {
