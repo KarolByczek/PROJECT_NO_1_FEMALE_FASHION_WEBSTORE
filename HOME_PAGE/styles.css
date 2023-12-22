@@ -178,6 +178,15 @@ body {
   color: rgb(220, 228, 70);
 }
 
+#login_strip #hide_login_strip {
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  top: -0.8rem;
+  right: 0.2rem;
+  cursor: pointer;
+}
+
 .backdrop {
   position: fixed;
   left: 0;
@@ -624,10 +633,6 @@ footer ul li a:hover {
 
 @media screen and (min-width: 800px) {
   
-  #login_button {
-    margin-left: 6rem;
-  }
-
   section #bestseller_container .mainblock .pictures {
     flex-direction: row;
   }

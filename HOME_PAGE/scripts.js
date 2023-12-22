@@ -33,8 +33,13 @@ $menunav.addEventListener("mouseover", ({ target }) => {
 
 const $logButton = document.querySelector("#login_button");
 const $logStrip = document.querySelector("#login_strip");
+const $hideLoginStrip = document.querySelector("#hide_login_strip");
 
 $logButton.addEventListener("click", () => {
+  $logStrip.classList.toggle("active");
+});
+
+$hideLoginStrip.addEventListener("click", () =>{
   $logStrip.classList.toggle("active");
 });
 
