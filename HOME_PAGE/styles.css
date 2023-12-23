@@ -590,7 +590,7 @@ footer ul li a:hover {
     background-color: rgb(225, 210, 189, 0.6);
   }
 
-  #register_form #close_register_form {
+ #login_strip #hide_login_strip {
     display: none;
   }
 
