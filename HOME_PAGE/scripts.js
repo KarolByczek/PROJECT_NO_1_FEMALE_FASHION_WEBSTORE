@@ -64,6 +64,7 @@ $registerFormLoginButton.addEventListener("click", (event) => {
   $backDrop.classList.remove("active");
   $registerForm.classList.remove("active");
   $logStrip.classList.add("active");
+  window.scrollTo(0, 800);
 });
 
 $closeRegisterForm.addEventListener("click", () => {
@@ -90,7 +91,7 @@ $menuItems.forEach((menuitem) => {
   });
 });
 
-// Temporary - static - solution for uploading contents of bestseller container. 
+// Temporary - static - solution for fetching contents of bestseller container. 
 
 const bestsellerCollection = [
   {

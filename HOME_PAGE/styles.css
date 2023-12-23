@@ -263,13 +263,13 @@ body {
   font-weight: bolder;
 }
 
-#register_form p {
+#register_form #close_register_form {
   position: absolute;
   top: 0.5rem;
   right: 1rem;
 }
 
-#register_form p:hover {
+#register_form #close_register_form:hover {
   cursor: pointer;
 }
 
@@ -588,6 +588,10 @@ footer ul li a:hover {
     left: 0;
     width: 100%;
     background-color: rgb(225, 210, 189, 0.6);
+  }
+
+  #register_form #close_register_form {
+    display: none;
   }
 
 }
