@@ -653,15 +653,20 @@ footer ul li a:hover {
 
   section #bestseller_container .mainblock .pictures {
     flex-direction: row;
-    gap: 0;
-    height: 100%;
+    height: 90%;
+    padding: 1rem 0;
   }
 
   section #bestseller_container .mainblock .pictures .image1,
   .image2 {
-    width: 40vw;
-    height: 60vw;
+    width: 32vw;
+    height: 48vw;
     margin: 0.1rem;
+  }
+
+  section #bestseller_container .mainblock .description {
+    height: 10%;
+    padding: 0.5rem;
   }
 }
 
@@ -684,11 +689,18 @@ footer ul li a:hover {
 
   section {
     margin-top: 3rem;
+    width: 70%;
+    left: 15%;
+    right: 15%;
+  }
+
+  section #bestseller_container .mainblock {
+    height: 110%;
   }
 
   section #bestseller_container .mainblock .pictures .image1,
   .image2 {
-    width: 25vw;
-    height: 40vw;
+    width: 30vw;
+    height: 45vw;
   }
 }
