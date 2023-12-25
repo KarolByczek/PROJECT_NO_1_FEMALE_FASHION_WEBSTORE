@@ -64,7 +64,7 @@ $registerFormLoginButton.addEventListener("click", (event) => {
   $backDrop.classList.remove("active");
   $registerForm.classList.remove("active");
   $logStrip.classList.add("active");
-  window.scrollTo(0, 800);
+  window.scrollTo(top);
 });
 
 $closeRegisterForm.addEventListener("click", () => {
@@ -107,7 +107,7 @@ const bestsellerCollection = [
   {
     img1: "lavuasier_stock_002a.jpg",
     img2: "lavuasier_stock_002b.jpg",
-    dcr: "Orientally stylish, this kimono dress is the most beloved design in the Matsuda's newest array of evening attire. Brightly colored, yet moderately unassuming, it makes an excellent choice for a fancy party."
+    dcr: "Orientally stylish, this kimono dress is the most beloved design in the Lavuasier's newest array of evening attire. Brightly colored, yet moderately unassuming, it makes an excellent choice for a fancy party."
   },
   {
     img1: "primero_stock_001a.jpg",

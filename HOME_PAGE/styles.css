@@ -208,15 +208,12 @@ body {
 #register_form {
   position: fixed;
   top: 1rem;
-  left: 23rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40%;
-  height: 95%;
   gap: 1rem;
-  background-color: rgb(225, 210, 189);
+  background-color: rgb(225, 210, 189, 0.7);
   visibility: hidden;
   opacity: 0;
   z-index: 8;
@@ -228,16 +225,16 @@ body {
   opacity: 1;
 }
 
+#register_form label {
+  display: flex;
+  flex-direction: column;
+}
+
 #register_form label input {
   border: 0.2rem solid rgb(51, 43, 27);
   border-radius: 5rem;
   padding: 0.5rem;
   width: fit-content;
-}
-
-#register_form label {
-  display: flex;
-  flex-direction: column;
 }
 
 #submit_register_form {
@@ -323,23 +320,13 @@ section #bestseller_container .mainblock .pictures {
   width: 95%;
   height: 90%;
   gap: 1rem;
-  overflow: hidden;
+  overflow: visible;
 }
 
 section #bestseller_container .mainblock .pictures .image1,
 .image2 {
-  width: 45%;
-  height: 25rem;
-  transition-duration: 1s;
   margin: 0 auto;
   display: block;
-}
-
-section #bestseller_container .mainblock .image1:hover,
-.image2:hover {
-  transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
 }
 
 section #bestseller_container .mainblock p {
@@ -540,10 +527,6 @@ footer ul li a:hover {
     margin-bottom: 55rem;
   }
 
-  section #bestseller_container {
-    padding: 0;
-  }
-
   section #bestseller_container .mainblock {
     width: 100%;
   }
@@ -556,7 +539,7 @@ footer ul li a:hover {
   section #bestseller_container .mainblock .pictures .image1,
   .image2 {
     width: 70vw;
-    height: 140vw;
+    height: 120vw;
   }
 
   section #bestseller_container .mainblock p {
@@ -631,23 +614,32 @@ footer ul li a:hover {
   section #bestseller_container .mainblock .pictures .image1,
   .image2 {
     width: 60vw;
-    height: 90vw;
+    height: 110vw;
+    transition-duration: 0.5s;
+  }
+
+  section #bestseller_container .mainblock .image1:hover,
+  .image2:hover {
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
   }
 
   .sidebar {
     width: 10%;
   }
+
+  #register_form {
+    width: 60vw;
+    height: 100%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 }
 
 @media screen and (min-width: 800px) {
-
-  section #bestseller_container {
-    padding: 0;
-  }
-
   section #bestseller_container .mainblock {
-    height: 110vh;
-    width: 100%;
+    width: 98%;
     padding: 0;
   }
 
@@ -659,9 +651,17 @@ footer ul li a:hover {
 
   section #bestseller_container .mainblock .pictures .image1,
   .image2 {
-    width: 32vw;
-    height: 48vw;
+    width: 30vw;
+    height: 55vw;
     margin: 0.1rem;
+    transition-duration: 0.8s;
+  }
+
+  section #bestseller_container .mainblock .image1:hover,
+  .image2:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
   }
 
   section #bestseller_container .mainblock .description {
@@ -694,13 +694,9 @@ footer ul li a:hover {
     right: 15%;
   }
 
-  section #bestseller_container .mainblock {
-    height: 110%;
-  }
-
   section #bestseller_container .mainblock .pictures .image1,
   .image2 {
-    width: 30vw;
+    width: 25vw;
     height: 45vw;
   }
 }
