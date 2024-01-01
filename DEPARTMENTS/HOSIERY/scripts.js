@@ -58,17 +58,17 @@ $menuItems.forEach((menuitem) => {
   });
 });
 
-// Temporary - static - solution for fetching contents of the bestseller container. 
+// Temporary - static - solution for fetching contents of the products container. 
 
-const bestsellerCollection = [
+const BuenaVistaHosieryCollection = [
   {
-    img1: "buenavista_stock_001a.jpg",
-    img2: "buenavista_stock_001b.jpg",
+    img1: "caro-tights.jpg",
+    img2: "...",
     dcr: "Out of the ashes of routine and blandness comes the greatly refreshing but still simple design. A perfect addition to your wardrobe dedicated for smart business outfits."
   },
   {
-    img1: "darkhills_stock_001a.webp",
-    img2: "darkhills_stock_001b.webp",
+    img1: "fishnet-tights.jpg",
+    img2: "...",
     dcr: "This classic and outragously feminine hat, carries plenty of eye-catching features with its frivolity and outline finesse. Coming in three distinct variants in regards to color."
   },
   {
@@ -93,21 +93,21 @@ const bestsellerCollection = [
   }
 ];
 
-const $bestsellers = document.getElementById("bestseller_container");
+const $products = document.getElementById("product_container");
 
-bestsellerCollection.forEach((bestseller) => {
+BuenaVistaHosieryCollection.forEach((product) => {
   const mainblock = document.createElement("div");
   mainblock.setAttribute("class", "mainblock");
   const image1 = document.createElement("img");
-  image1.src = `images/${bestseller.img1}`;
-  image1.alt = `${bestseller.img1}`;
+  image1.src = `images/${product.img1}`;
+  image1.alt = `${product.img1}`;
   image1.setAttribute("class", "image1");
   const image2 = document.createElement("img");
-  image2.src = `images/${bestseller.img2}`;
-  image2.alt = `${bestseller.img2}`;
+  image2.src = `images/${product.img2}`;
+  image2.alt = `${product.img2}`;
   image2.setAttribute("class", "image2");
   const description = document.createElement("p");
-  description.innerHTML = bestseller.dcr;
+  description.innerHTML = product.dcr;
   description.setAttribute("class", "description");
 
   const pictures = document.createElement("div");
@@ -118,5 +118,5 @@ bestsellerCollection.forEach((bestseller) => {
   pictures.appendChild(image1);
   pictures.appendChild(image2);
 
-  $bestsellers.appendChild(mainblock);
+  $products.appendChild(mainblock);
 });
