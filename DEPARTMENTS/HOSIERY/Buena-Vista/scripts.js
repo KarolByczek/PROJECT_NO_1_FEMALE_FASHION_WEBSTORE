@@ -57,14 +57,14 @@ $menuItems.forEach((menuitem) => {
 const BuenaVistaHosieryCollection = [
   {
     pname: "Caro Tights 003",
-    img1: "caro-tights.jpg",
-    img2: "polka-dot-tights.jpg",
+    img1: "buena-vista-stock-001a.jpg",
+    img2: "buena-vista-stock-001b.jpg",
     dcr: "Out of the ashes of routine and blandness comes the greatly refreshing but still simple design. A perfect addition to your wardrobe dedicated for smart business outfits."
   },
   {
     pname: "Fishnet Tights 002",
-    img1: "fishnet-tights.jpg",
-    img2: "purple-tights.jpg",
+    img1: "buena-vista-stock-002a.jpg",
+    img2: "buena-vista-stock-002b.jpg",
     dcr: "This classic and outragously feminine hat, carries plenty of eye-catching features with its frivolity and outline finesse. Coming in three distinct variants in regards to color."
   }
 ];
