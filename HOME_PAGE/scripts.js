@@ -34,18 +34,18 @@ $registerFormLoginButton.addEventListener("click", (event) => {
   window.scrollTo(top);
 });
 
-$closeRegisterForm.addEventListener("click", () => {
-  $backDrop.classList.remove("active");
-  $registerForm.classList.remove("active");
-});
-
 const openRegisterFunction = () => {
   $backDrop.classList.add("active");
   $registerForm.classList.add("active");
 };
 setTimeout(() => openRegisterFunction(), 5000);
 
-//for mobiles
+$closeRegisterForm.addEventListener("click", () => {
+  $backDrop.classList.remove("active");
+  $registerForm.classList.remove("active");
+  });
+
+//for definition < 625px (navigation menu) 
 
 $menuItems.forEach((menuitem) => {
   menuitem.addEventListener("click", () => {

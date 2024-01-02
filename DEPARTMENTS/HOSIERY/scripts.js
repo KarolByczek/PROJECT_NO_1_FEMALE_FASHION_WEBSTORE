@@ -39,13 +39,7 @@ $closeRegisterForm.addEventListener("click", () => {
   $registerForm.classList.remove("active");
 });
 
-const openRegisterFunction = () => {
-  $backDrop.classList.add("active");
-  $registerForm.classList.add("active");
-};
-setTimeout(() => openRegisterFunction(), 5000);
-
-//for mobiles
+//for definition < 625px (navigation menu) 
 
 $menuItems.forEach((menuitem) => {
   menuitem.addEventListener("click", () => {
