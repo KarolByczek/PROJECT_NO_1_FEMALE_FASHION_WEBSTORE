@@ -298,7 +298,7 @@ section h1 {
   padding: 1rem;
 }
 
-section #bestseller_container {
+section #product_container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -309,7 +309,7 @@ section #bestseller_container {
   gap: 1rem;
 }
 
-section #bestseller_container .mainblock {
+section #product_container .mainblock {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -319,7 +319,7 @@ section #bestseller_container .mainblock {
   background-color: rgb(180, 190, 183);
 }
 
-section #bestseller_container .mainblock .pictures {
+section #product_container .mainblock .pictures {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -329,13 +329,13 @@ section #bestseller_container .mainblock .pictures {
   overflow: visible;
 }
 
-section #bestseller_container .mainblock .pictures .image1,
+section #product_container .mainblock .pictures .image1,
 .image2 {
   margin: 0 auto;
   display: block;
 }
 
-section #bestseller_container .mainblock p {
+section #product_container .mainblock p {
   text-align: justify;
 }
 
@@ -533,21 +533,21 @@ footer ul li a:hover {
     margin-bottom: 55rem;
   }
 
-  section #bestseller_container .mainblock {
+  section #product_container .mainblock {
     width: 100%;
   }
 
-  section #bestseller_container .mainblock .pictures {
+  section #product_container .mainblock .pictures {
     flex-direction: column;
   }
 
-  section #bestseller_container .mainblock .pictures .image1,
+  section #product_container .mainblock .pictures .image1,
   .image2 {
     width: 70vw;
     height: 120vw;
   }
 
-  section #bestseller_container .mainblock p {
+  section #product_container .mainblock p {
     font-size: 1.2rem;
   }
 
@@ -607,22 +607,22 @@ footer ul li a:hover {
     margin-top: 5rem;
   }
 
-  section #bestseller_container .mainblock {
+  section #product_container .mainblock {
     width: 100%;
   }
 
-  section #bestseller_container .mainblock .pictures {
+  section #product_container .mainblock .pictures {
     flex-direction: column;
   }
 
-  section #bestseller_container .mainblock .pictures .image1,
+  section #product_container .mainblock .pictures .image1,
   .image2 {
     width: 50vw;
     height: 90vw;
     transition-duration: 0.5s;
   }
 
-  section #bestseller_container .mainblock .image1:hover,
+  section #product_container .mainblock .image1:hover,
   .image2:hover {
     transform: scale(1.03);
     -webkit-transform: scale(1.03);
@@ -649,21 +649,21 @@ footer ul li a:hover {
     right: 15%;
   }
 
-  section #bestseller_container {
+  section #product_container {
     padding: 0.2rem;
   }
 
-  section #bestseller_container .mainblock {
+  section #product_container .mainblock {
     width: 100%;
     padding: 0;
   }
 
-  section #bestseller_container .mainblock .pictures {
+  section #product_container .mainblock .pictures {
     flex-direction: row;
     padding: 1rem 0;
   }
 
-  section #bestseller_container .mainblock .pictures .image1,
+  section #product_container .mainblock .pictures .image1,
   .image2 {
     width: 30vw;
     height: 55vw;
@@ -671,14 +671,14 @@ footer ul li a:hover {
     transition-duration: 0.8s;
   }
 
-  section #bestseller_container .mainblock .image1:hover,
+  section #product_container .mainblock .image1:hover,
   .image2:hover {
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
   }
 
-  section #bestseller_container .mainblock .description {
+  section #product_container .mainblock .description {
     height: 10%;
     padding: 0.5rem;
   }
@@ -713,7 +713,7 @@ footer ul li a:hover {
     right: 15%;
   }
 
-  section #bestseller_container .mainblock .pictures .image1,
+  section #product_container .mainblock .pictures .image1,
   .image2 {
     width: 28vw;
     height: 50vw;
