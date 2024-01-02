@@ -319,6 +319,11 @@ section #product_container .mainblock {
   background-color: rgb(180, 190, 183);
 }
 
+section #product_container .mainblock .product_name {
+  font-size: 1.5rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 section #product_container .mainblock .pictures {
   display: flex;
   flex-direction: row;
@@ -335,7 +340,7 @@ section #product_container .mainblock .pictures .image1,
   display: block;
 }
 
-section #product_container .mainblock p {
+section #product_container .mainblock .description {
   text-align: justify;
 }
 

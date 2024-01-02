@@ -56,11 +56,13 @@ $menuItems.forEach((menuitem) => {
 
 const BuenaVistaHosieryCollection = [
   {
+    pname: "Caro Tights 003",
     img1: "caro-tights.jpg",
     img2: "polka-dot-tights.jpg",
     dcr: "Out of the ashes of routine and blandness comes the greatly refreshing but still simple design. A perfect addition to your wardrobe dedicated for smart business outfits."
   },
   {
+    pname: "Fishnet Tights 002",
     img1: "fishnet-tights.jpg",
     img2: "purple-tights.jpg",
     dcr: "This classic and outragously feminine hat, carries plenty of eye-catching features with its frivolity and outline finesse. Coming in three distinct variants in regards to color."
@@ -72,6 +74,9 @@ const $products = document.getElementById("product_container");
 BuenaVistaHosieryCollection.forEach((product) => {
   const mainblock = document.createElement("div");
   mainblock.setAttribute("class", "mainblock");
+  const productName = document.createElement("p");
+  productName.setAttribute("class", "product_name");
+  productName.innerHTML = product.pname;
   const image1 = document.createElement("img");
   image1.src = `images/${product.img1}`;
   image1.alt = `${product.img1}`;
@@ -87,6 +92,7 @@ BuenaVistaHosieryCollection.forEach((product) => {
   const pictures = document.createElement("div");
   pictures.setAttribute("class", "pictures");
 
+  mainblock.appendChild(productName);
   mainblock.appendChild(pictures);
   mainblock.appendChild(description);
   pictures.appendChild(image1);

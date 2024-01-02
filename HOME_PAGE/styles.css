@@ -319,6 +319,11 @@ section #bestseller_container .mainblock {
   background-color: rgb(180, 190, 183);
 }
 
+section #bestseller_container .mainblock .product_name {
+  font-size: 1.5rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 section #bestseller_container .mainblock .pictures {
   display: flex;
   flex-direction: row;
@@ -547,7 +552,7 @@ footer ul li a:hover {
     height: 120vw;
   }
 
-  section #bestseller_container .mainblock p {
+  section #bestseller_container .mainblock .description {
     font-size: 1.2rem;
   }
 
