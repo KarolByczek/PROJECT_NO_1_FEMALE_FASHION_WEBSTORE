@@ -6,7 +6,7 @@ $logButton.addEventListener("click", () => {
   $logStrip.classList.toggle("active");
 });
 
-$hideLoginStrip.addEventListener("click", () =>{
+$hideLoginStrip.addEventListener("click", () => {
   $logStrip.classList.toggle("active");
 });
 
@@ -39,37 +39,42 @@ $closeRegisterForm.addEventListener("click", () => {
   $registerForm.classList.remove("active");
 });
 
-//for definition < 625px (navigation menu) 
+//for definition < 625px (navigation menu)
 
 $menuItems.forEach((menuitem) => {
   menuitem.addEventListener("click", () => {
     menuitem.classList.toggle("active");
     $menuItems.forEach((other_menuitem) => {
       if (other_menuitem !== menuitem) {
-      other_menuitem.classList.remove("active")
-      };
+        other_menuitem.classList.remove("active");
+      }
     });
   });
 });
 
-// Temporary - static - solution for fetching contents of the products container. 
+// Temporary - static - solution for fetching contents of the products container.
 
 const BuenaVistaHosieryCollection = [
   {
     pname: "Caro Tights 003",
     img1: "buena-vista-stock-001a.jpg",
     img2: "buena-vista-stock-001b.jpg",
-    dcr: "Out of the ashes of routine and blandness comes the greatly refreshing but still simple design. A perfect addition to your wardrobe dedicated for smart business outfits."
+    img3: "buena-vista-stock-001c.jpg",
+    img4: "buena-vista-stock-001d.jpg",
+    dcr: "Out of the ashes of routine and blandness comes the greatly refreshing but still simple design. A perfect addition to your wardrobe dedicated for smart business outfits.",
   },
   {
     pname: "Fishnet Tights 002",
     img1: "buena-vista-stock-002a.jpg",
     img2: "buena-vista-stock-002b.jpg",
-    dcr: "This classic and outragously feminine hat, carries plenty of eye-catching features with its frivolity and outline finesse. Coming in three distinct variants in regards to color."
-  }
+    img3: "buena-vista-stock-002c.jpg",
+    img4: "buena-vista-stock-002d.jpg",
+    dcr: "This classic and outragously feminine hat, carries plenty of eye-catching features with its frivolity and outline finesse. Coming in three distinct variants in regards to color.",
+  },
 ];
 
 const $products = document.getElementById("product_container");
+const $pictures = document.querySelectorAll(".image");
 
 BuenaVistaHosieryCollection.forEach((product) => {
   const mainblock = document.createElement("div");
@@ -80,11 +85,11 @@ BuenaVistaHosieryCollection.forEach((product) => {
   const image1 = document.createElement("img");
   image1.src = `images/${product.img1}`;
   image1.alt = `${product.img1}`;
-  image1.setAttribute("class", "image1");
+  image1.setAttribute("class", "image");
   const image2 = document.createElement("img");
   image2.src = `images/${product.img2}`;
   image2.alt = `${product.img2}`;
-  image2.setAttribute("class", "image2");
+  image2.setAttribute("class", "image");
   const description = document.createElement("p");
   description.innerHTML = product.dcr;
   description.setAttribute("class", "description");
@@ -92,11 +97,26 @@ BuenaVistaHosieryCollection.forEach((product) => {
   const pictures = document.createElement("div");
   pictures.setAttribute("class", "pictures");
 
+  const arrowleft = document.createElement("img");
+  arrowleft.src = "../../../Common imagery/icons/arrow_left.png";
+  arrowleft.setAttribute("class", "arrow_left");
+  const arrowright = document.createElement("img");
+  arrowright.src = "../../../Common imagery/icons/arrow_right.png";
+  arrowright.setAttribute("class", "arrow_right");
+
   mainblock.appendChild(productName);
   mainblock.appendChild(pictures);
+  mainblock.appendChild(arrowleft);
+  mainblock.appendChild(arrowright);
   mainblock.appendChild(description);
   pictures.appendChild(image1);
   pictures.appendChild(image2);
 
   $products.appendChild(mainblock);
+
+  
+  arrowright.addEventListener("click", () => {image1.src = `images/${product.img4}`});
 });
+
+  
+
