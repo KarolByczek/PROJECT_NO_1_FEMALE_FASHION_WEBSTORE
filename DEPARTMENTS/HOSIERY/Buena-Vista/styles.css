@@ -733,6 +733,10 @@ footer ul li a:hover {
     height: 4rem;
   }
 
+  section #product_container .mainblock .pictures {
+    width: 45vw;
+  }
+
   section #product_container .mainblock .pictures .image {
     width: 20vw;
     height: 30vw;

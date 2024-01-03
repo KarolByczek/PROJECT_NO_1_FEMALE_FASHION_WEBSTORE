@@ -114,9 +114,9 @@ BuenaVistaHosieryCollection.forEach((product) => {
 
   $products.appendChild(mainblock);
 
-  
-  arrowright.addEventListener("click", () => {image1.src = `images/${product.img4}`});
+  arrowright.addEventListener("click", () => {
+    const productImages = [product.img1, product.img2, product.img3, product.img4];
+    if (image1.src === `images/${product.img1}`) {
+      image1.src = "images/buena-vista-stock-002b.jpg"}
+  });
 });
-
-  
-
