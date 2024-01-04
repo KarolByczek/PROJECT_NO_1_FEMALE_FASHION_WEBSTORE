@@ -119,11 +119,30 @@ BuenaVistaHosieryCollection.forEach((product) => {
 
   arrowright.addEventListener("click", () => {
     const currentIMG1index = product.images.indexOf(imagebox1.src.substring(54));
-      if (currentIMG1index < product.images.length - 1) {
+      if (currentIMG1index < product.images.length - 2) {
         imagebox1.src = product.images[currentIMG1index + 1]
       }
+  });
 
-     
+  arrowright.addEventListener("click", () => {
+    const currentIMG1index = product.images.indexOf(imagebox2.src.substring(54));
+      if (currentIMG1index < product.images.length - 1) {
+        imagebox2.src = product.images[currentIMG1index + 1]
+      }
+    });
+
+  arrowleft.addEventListener("click", () => {
+    const currentIMG1index = product.images.indexOf(imagebox1.src.substring(54));
+      if (currentIMG1index > 0) {
+        imagebox1.src = product.images[currentIMG1index -1]
+      }
+  });
+  
+  arrowleft.addEventListener("click", () => {
+    const currentIMG1index = product.images.indexOf(imagebox2.src.substring(54));
+      if (currentIMG1index > 1) {
+        imagebox2.src = product.images[currentIMG1index -1]
+      }
+  });
     
   });
-});
