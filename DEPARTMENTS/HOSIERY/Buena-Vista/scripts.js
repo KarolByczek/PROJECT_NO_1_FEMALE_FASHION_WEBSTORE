@@ -58,19 +58,19 @@ const BuenaVistaHosieryCollection = [
   {
     pname: "Caro Tights 003",
     images: [
-    "./images/buena-vista-stock-001a.jpg",
-     "./images/buena-vista-stock-001b.jpg",
-     "./images/buena-vista-stock-001c.jpg",
-     "./images/buena-vista-stock-001d.jpg"],
+    "images/buena-vista-stock-001a.jpg",
+     "images/buena-vista-stock-001b.jpg",
+     "images/buena-vista-stock-001c.jpg",
+     "images/buena-vista-stock-001d.jpg"],
     dcr: "Out of the ashes of routine and blandness comes the greatly refreshing but still simple design. A perfect addition to your wardrobe dedicated for smart business outfits.",
   },
   {
     pname: "Fishnet Tights 002",
     images: [
-    "./images/buena-vista-stock-002a.jpg",
-     "./images/buena-vista-stock-002b.jpg",
-     "./images/buena-vista-stock-002c.jpg",
-     "./images/buena-vista-stock-002d.jpg"],
+    "images/buena-vista-stock-002a.jpg",
+     "images/buena-vista-stock-002b.jpg",
+     "images/buena-vista-stock-002c.jpg",
+     "images/buena-vista-stock-002d.jpg"],
     dcr: "This classic and outragously feminine hat, carries plenty of eye-catching features with its frivolity and outline finesse. Coming in three distinct variants in regards to color.",
   },
 ];
@@ -87,14 +87,14 @@ BuenaVistaHosieryCollection.forEach((product) => {
   pictures.setAttribute("class", "pictures");
 
     const imagebox1 = document.createElement("img");
-    imagebox1.src = product.images[0];
-    imagebox1.alt = product.images[0];
+    imagebox1.src = `./${product.images[0]}`;
+    imagebox1.alt = `./${product.images[0]}`;
     imagebox1.className = "image";
     pictures.appendChild(imagebox1);
 
     const imagebox2 = document.createElement("img");
-    imagebox2.src = product.images[1];
-    imagebox2.alt = product.images[1];
+    imagebox2.src = `./${product.images[1]}`;
+    imagebox2.alt = `./${product.images[1]}`;
     imagebox2.className = "image";
     pictures.appendChild(imagebox2);
    
@@ -117,4 +117,13 @@ BuenaVistaHosieryCollection.forEach((product) => {
 
   $products.appendChild(mainblock);
 
+  arrowright.addEventListener("click", () => {
+    const currentIMG1index = product.images.indexOf(imagebox1.src.substring(54));
+      if (currentIMG1index < product.images.length - 1) {
+        imagebox1.src = product.images[currentIMG1index + 1]
+      }
+
+     
+    
+  });
 });
