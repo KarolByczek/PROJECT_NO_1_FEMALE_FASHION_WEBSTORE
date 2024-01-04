@@ -720,21 +720,21 @@ footer ul li a:hover {
   }
 
   section #product_container .mainblock .arrow_left {
-    position: absolute;
-    top: 25rem;
-    left: 5rem;
+    position: relative;
+    top: -15rem;
+    left: -20rem;
     height: 4rem;
   }
 
   section #product_container .mainblock .arrow_right {
-    position: absolute;
-    top: 25rem;
-    right: 5rem;
+    position: relative;
+    top: -19rem;
+    right: -20rem;
     height: 4rem;
   }
 
   section #product_container .mainblock .pictures {
-    width: 45vw;
+    width: 44vw;
   }
 
   section #product_container .mainblock .pictures .image {

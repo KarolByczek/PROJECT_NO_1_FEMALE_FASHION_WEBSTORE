@@ -57,24 +57,25 @@ $menuItems.forEach((menuitem) => {
 const BuenaVistaHosieryCollection = [
   {
     pname: "Caro Tights 003",
-    img1: "buena-vista-stock-001a.jpg",
-    img2: "buena-vista-stock-001b.jpg",
-    img3: "buena-vista-stock-001c.jpg",
-    img4: "buena-vista-stock-001d.jpg",
+    images: [
+    "./images/buena-vista-stock-001a.jpg",
+     "./images/buena-vista-stock-001b.jpg",
+     "./images/buena-vista-stock-001c.jpg",
+     "./images/buena-vista-stock-001d.jpg"],
     dcr: "Out of the ashes of routine and blandness comes the greatly refreshing but still simple design. A perfect addition to your wardrobe dedicated for smart business outfits.",
   },
   {
     pname: "Fishnet Tights 002",
-    img1: "buena-vista-stock-002a.jpg",
-    img2: "buena-vista-stock-002b.jpg",
-    img3: "buena-vista-stock-002c.jpg",
-    img4: "buena-vista-stock-002d.jpg",
+    images: [
+    "./images/buena-vista-stock-002a.jpg",
+     "./images/buena-vista-stock-002b.jpg",
+     "./images/buena-vista-stock-002c.jpg",
+     "./images/buena-vista-stock-002d.jpg"],
     dcr: "This classic and outragously feminine hat, carries plenty of eye-catching features with its frivolity and outline finesse. Coming in three distinct variants in regards to color.",
   },
 ];
 
 const $products = document.getElementById("product_container");
-const $pictures = document.querySelectorAll(".image");
 
 BuenaVistaHosieryCollection.forEach((product) => {
   const mainblock = document.createElement("div");
@@ -82,20 +83,24 @@ BuenaVistaHosieryCollection.forEach((product) => {
   const productName = document.createElement("p");
   productName.setAttribute("class", "product_name");
   productName.innerHTML = product.pname;
-  const image1 = document.createElement("img");
-  image1.src = `images/${product.img1}`;
-  image1.alt = `${product.img1}`;
-  image1.setAttribute("class", "image");
-  const image2 = document.createElement("img");
-  image2.src = `images/${product.img2}`;
-  image2.alt = `${product.img2}`;
-  image2.setAttribute("class", "image");
+  const pictures = document.createElement("div");
+  pictures.setAttribute("class", "pictures");
+
+    const imagebox1 = document.createElement("img");
+    imagebox1.src = product.images[0];
+    imagebox1.alt = product.images[0];
+    imagebox1.className = "image";
+    pictures.appendChild(imagebox1);
+
+    const imagebox2 = document.createElement("img");
+    imagebox2.src = product.images[1];
+    imagebox2.alt = product.images[1];
+    imagebox2.className = "image";
+    pictures.appendChild(imagebox2);
+   
   const description = document.createElement("p");
   description.innerHTML = product.dcr;
   description.setAttribute("class", "description");
-
-  const pictures = document.createElement("div");
-  pictures.setAttribute("class", "pictures");
 
   const arrowleft = document.createElement("img");
   arrowleft.src = "../../../Common imagery/icons/arrow_left.png";
@@ -109,14 +114,7 @@ BuenaVistaHosieryCollection.forEach((product) => {
   mainblock.appendChild(arrowleft);
   mainblock.appendChild(arrowright);
   mainblock.appendChild(description);
-  pictures.appendChild(image1);
-  pictures.appendChild(image2);
 
   $products.appendChild(mainblock);
 
-  arrowright.addEventListener("click", () => {
-    const productImages = [product.img1, product.img2, product.img3, product.img4];
-    if (image1.src === `images/${product.img1}`) {
-      image1.src = "images/buena-vista-stock-002b.jpg"}
-  });
 });
