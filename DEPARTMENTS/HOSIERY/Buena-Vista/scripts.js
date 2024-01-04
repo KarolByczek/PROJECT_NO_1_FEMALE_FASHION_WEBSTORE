@@ -56,22 +56,31 @@ $menuItems.forEach((menuitem) => {
 
 const BuenaVistaHosieryCollection = [
   {
-    pname: "Caro Tights 003",
+    pname: "Bella Gina 001",
     images: [
-    "images/buena-vista-stock-001a.jpg",
-     "images/buena-vista-stock-001b.jpg",
-     "images/buena-vista-stock-001c.jpg",
-     "images/buena-vista-stock-001d.jpg"],
-    dcr: "Out of the ashes of routine and blandness comes the greatly refreshing but still simple design. A perfect addition to your wardrobe dedicated for smart business outfits.",
+      "images/bella-gina-001a.jpg",
+      "images/bella-gina-001b.jpg",
+      "images/bella-gina-001c.jpg",
+      "images/bella-gina-001d.jpg",
+    ],
+    dcr: "A bitter-sweet combination of darkness and a wind of youthfullness, these will most definitely cath an eye of a common style appreciator.",
   },
   {
-    pname: "Fishnet Tights 002",
+    pname: "Mistress Siluette 002",
     images: [
-    "images/buena-vista-stock-002a.jpg",
-     "images/buena-vista-stock-002b.jpg",
-     "images/buena-vista-stock-002c.jpg",
-     "images/buena-vista-stock-002d.jpg"],
-    dcr: "This classic and outragously feminine hat, carries plenty of eye-catching features with its frivolity and outline finesse. Coming in three distinct variants in regards to color.",
+      "images/mistress-siluette-002a.jpg",
+      "images/mistress-siluette-002b.jpg",
+      "images/mistress-siluette-002c.jpg",
+      "images/mistress-siluette-002d.jpg",
+    ],
+    dcr: "Extravagantly intricate and romantic in nature, yet incredibly well accompanied by a simple casual outfit, this pattern fits almost every situation.",
+  },
+  {
+    pname: "",
+    images: [
+
+    ],
+    dcr: "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum."
   },
 ];
 
@@ -86,25 +95,25 @@ BuenaVistaHosieryCollection.forEach((product) => {
   const pictures = document.createElement("div");
   pictures.setAttribute("class", "pictures");
 
-    const imagebox1 = document.createElement("img");
-    imagebox1.src = `./${product.images[0]}`;
-    imagebox1.alt = `./${product.images[0]}`;
-    imagebox1.className = "image";
-    pictures.appendChild(imagebox1);
+  const imagebox1 = document.createElement("img");
+  imagebox1.src = `./${product.images[0]}`;
+  imagebox1.alt = `./${product.images[0]}`;
+  imagebox1.className = "image";
+  pictures.appendChild(imagebox1);
 
-    const imagebox2 = document.createElement("img");
-    imagebox2.src = `./${product.images[1]}`;
-    imagebox2.alt = `./${product.images[1]}`;
-    imagebox2.className = "image";
-    pictures.appendChild(imagebox2);
-   
+  const imagebox2 = document.createElement("img");
+  imagebox2.src = `./${product.images[1]}`;
+  imagebox2.alt = `./${product.images[1]}`;
+  imagebox2.className = "image";
+  pictures.appendChild(imagebox2);
+
   const description = document.createElement("p");
   description.innerHTML = product.dcr;
   description.setAttribute("class", "description");
 
   const arrowleft = document.createElement("img");
   arrowleft.src = "../../../Common imagery/icons/arrow_left.png";
-  arrowleft.setAttribute("class", "arrow_left");
+  arrowleft.setAttribute("class", "arrow_left", "arrow");
   const arrowright = document.createElement("img");
   arrowright.src = "../../../Common imagery/icons/arrow_right.png";
   arrowright.setAttribute("class", "arrow_right");
@@ -118,31 +127,38 @@ BuenaVistaHosieryCollection.forEach((product) => {
   $products.appendChild(mainblock);
 
   arrowright.addEventListener("click", () => {
-    const currentIMG1index = product.images.indexOf(imagebox1.src.substring(54));
-      if (currentIMG1index < product.images.length - 2) {
-        imagebox1.src = product.images[currentIMG1index + 1]
-      }
+    const currentIMG1index = product.images.indexOf(
+      imagebox1.src.substring(54)
+    );
+    if (currentIMG1index < product.images.length - 2) {
+      imagebox1.src = product.images[currentIMG1index + 1];
+    }
   });
 
   arrowright.addEventListener("click", () => {
-    const currentIMG1index = product.images.indexOf(imagebox2.src.substring(54));
-      if (currentIMG1index < product.images.length - 1) {
-        imagebox2.src = product.images[currentIMG1index + 1]
-      }
-    });
+    const currentIMG1index = product.images.indexOf(
+      imagebox2.src.substring(54)
+    );
+    if (currentIMG1index < product.images.length - 1) {
+      imagebox2.src = product.images[currentIMG1index + 1];
+    }
+  });
 
   arrowleft.addEventListener("click", () => {
-    const currentIMG1index = product.images.indexOf(imagebox1.src.substring(54));
-      if (currentIMG1index > 0) {
-        imagebox1.src = product.images[currentIMG1index -1]
-      }
+    const currentIMG1index = product.images.indexOf(
+      imagebox1.src.substring(54)
+    );
+    if (currentIMG1index > 0) {
+      imagebox1.src = product.images[currentIMG1index - 1];
+    }
   });
-  
+
   arrowleft.addEventListener("click", () => {
-    const currentIMG1index = product.images.indexOf(imagebox2.src.substring(54));
-      if (currentIMG1index > 1) {
-        imagebox2.src = product.images[currentIMG1index -1]
-      }
+    const currentIMG1index = product.images.indexOf(
+      imagebox2.src.substring(54)
+    );
+    if (currentIMG1index > 1) {
+      imagebox2.src = product.images[currentIMG1index - 1];
+    }
   });
-    
-  });
+});
