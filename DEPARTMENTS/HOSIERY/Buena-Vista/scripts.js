@@ -77,10 +77,8 @@ const BuenaVistaHosieryCollection = [
   },
   {
     pname: "",
-    images: [
-
-    ],
-    dcr: "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum."
+    images: [],
+    dcr: "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.",
   },
 ];
 
@@ -135,15 +133,6 @@ BuenaVistaHosieryCollection.forEach((product) => {
     }
   });
 
-  arrowright.addEventListener("click", () => {
-    const currentIMG1index = product.images.indexOf(
-      imagebox2.src.substring(54)
-    );
-    if (currentIMG1index < product.images.length - 1) {
-      imagebox2.src = product.images[currentIMG1index + 1];
-    }
-  });
-
   arrowleft.addEventListener("click", () => {
     const currentIMG1index = product.images.indexOf(
       imagebox1.src.substring(54)
@@ -153,12 +142,22 @@ BuenaVistaHosieryCollection.forEach((product) => {
     }
   });
 
-  arrowleft.addEventListener("click", () => {
-    const currentIMG1index = product.images.indexOf(
+  arrowright.addEventListener("click", () => {
+    const currentIMG2index = product.images.indexOf(
       imagebox2.src.substring(54)
     );
-    if (currentIMG1index > 1) {
-      imagebox2.src = product.images[currentIMG1index - 1];
+    console.log(imagebox2.src);
+    if (currentIMG2index < product.images.length - 1) {
+      imagebox2.src = product.images[currentIMG2index + 1];
+    }
+  });
+
+  arrowleft.addEventListener("click", () => {
+    const currentIMG2index = product.images.indexOf(
+      imagebox2.src.substring(54)
+    );
+    if (currentIMG2index > 1) {
+      imagebox2.src = product.images[currentIMG2index - 1];
     }
   });
 });
