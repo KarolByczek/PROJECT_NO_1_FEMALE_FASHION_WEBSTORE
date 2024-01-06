@@ -58,26 +58,31 @@ const BuenaVistaHosieryCollection = [
   {
     pname: "Bella Gina 001",
     images: [
-      "images/bella-gina-001a.jpg",
-      "images/bella-gina-001b.jpg",
-      "images/bella-gina-001c.jpg",
-      "images/bella-gina-001d.jpg",
+      "file:///C:/Users/Karol/Documents/WEB_FEMALE_FASHION_STORE/DEPARTMENTS/HOSIERY/Buena-Vista/images/bella-gina-001a.jpg",
+      "file:///C:/Users/Karol/Documents/WEB_FEMALE_FASHION_STORE/DEPARTMENTS/HOSIERY/Buena-Vista/images/bella-gina-001b.jpg",
+      "file:///C:/Users/Karol/Documents/WEB_FEMALE_FASHION_STORE/DEPARTMENTS/HOSIERY/Buena-Vista/images/bella-gina-001c.jpg",
+      "file:///C:/Users/Karol/Documents/WEB_FEMALE_FASHION_STORE/DEPARTMENTS/HOSIERY/Buena-Vista/images/bella-gina-001d.jpg",
     ],
     dcr: "A bitter-sweet combination of darkness and a wind of youthfullness, these will most definitely cath an eye of a common style appreciator.",
   },
   {
     pname: "Mistress Siluette 002",
     images: [
-      "images/mistress-siluette-002a.jpg",
-      "images/mistress-siluette-002b.jpg",
-      "images/mistress-siluette-002c.jpg",
-      "images/mistress-siluette-002d.jpg",
+      "file:///C:/Users/Karol/Documents/WEB_FEMALE_FASHION_STORE/DEPARTMENTS/HOSIERY/Buena-Vista/images/mistress-siluette-002a.jpg",
+      "file:///C:/Users/Karol/Documents/WEB_FEMALE_FASHION_STORE/DEPARTMENTS/HOSIERY/Buena-Vista/images/mistress-siluette-002b.jpg",
+      "file:///C:/Users/Karol/Documents/WEB_FEMALE_FASHION_STORE/DEPARTMENTS/HOSIERY/Buena-Vista/images/mistress-siluette-002c.jpg",
+      "file:///C:/Users/Karol/Documents/WEB_FEMALE_FASHION_STORE/DEPARTMENTS/HOSIERY/Buena-Vista/images/mistress-siluette-002d.jpg",
     ],
     dcr: "Extravagantly intricate and romantic in nature, yet incredibly well accompanied by a simple casual outfit, this pattern fits almost every situation.",
   },
   {
-    pname: "",
-    images: [],
+    pname: "Bella Gina 002",
+    images: [
+      "file:///C:/Users/Karol/Documents/WEB_FEMALE_FASHION_STORE/DEPARTMENTS/HOSIERY/Buena-Vista/images/bella-gina-002a.webp",
+      "file:///C:/Users/Karol/Documents/WEB_FEMALE_FASHION_STORE/DEPARTMENTS/HOSIERY/Buena-Vista/images/bella-gina-002b.webp",
+      "file:///C:/Users/Karol/Documents/WEB_FEMALE_FASHION_STORE/DEPARTMENTS/HOSIERY/Buena-Vista/images/bella-gina-002c.webp",
+      "file:///C:/Users/Karol/Documents/WEB_FEMALE_FASHION_STORE/DEPARTMENTS/HOSIERY/Buena-Vista/images/bella-gina-002d.webp",
+    ],
     dcr: "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.",
   },
 ];
@@ -94,14 +99,14 @@ BuenaVistaHosieryCollection.forEach((product) => {
   pictures.setAttribute("class", "pictures");
 
   const imagebox1 = document.createElement("img");
-  imagebox1.src = `./${product.images[0]}`;
-  imagebox1.alt = `./${product.images[0]}`;
+  imagebox1.src = `${product.images[0]}`;
+  imagebox1.alt = "some inage of a product";
   imagebox1.className = "image";
   pictures.appendChild(imagebox1);
 
   const imagebox2 = document.createElement("img");
-  imagebox2.src = `./${product.images[1]}`;
-  imagebox2.alt = `./${product.images[1]}`;
+  imagebox2.src = `${product.images[1]}`;
+  imagebox2.alt = "some image of a product";
   imagebox2.className = "image";
   pictures.appendChild(imagebox2);
 
@@ -126,7 +131,7 @@ BuenaVistaHosieryCollection.forEach((product) => {
 
   arrowright.addEventListener("click", () => {
     const currentIMG1index = product.images.indexOf(
-      imagebox1.src.substring(54)
+      imagebox1.src
     );
     if (currentIMG1index < product.images.length - 2) {
       imagebox1.src = product.images[currentIMG1index + 1];
@@ -135,7 +140,7 @@ BuenaVistaHosieryCollection.forEach((product) => {
 
   arrowleft.addEventListener("click", () => {
     const currentIMG1index = product.images.indexOf(
-      imagebox1.src.substring(54)
+      imagebox1.src
     );
     if (currentIMG1index > 0) {
       imagebox1.src = product.images[currentIMG1index - 1];
@@ -144,7 +149,7 @@ BuenaVistaHosieryCollection.forEach((product) => {
 
   arrowright.addEventListener("click", () => {
     const currentIMG2index = product.images.indexOf(
-      imagebox2.src.substring(54)
+      imagebox2.src
     );
     console.log(imagebox2.src);
     if (currentIMG2index < product.images.length - 1) {
@@ -154,7 +159,7 @@ BuenaVistaHosieryCollection.forEach((product) => {
 
   arrowleft.addEventListener("click", () => {
     const currentIMG2index = product.images.indexOf(
-      imagebox2.src.substring(54)
+      imagebox2.src
     );
     if (currentIMG2index > 1) {
       imagebox2.src = product.images[currentIMG2index - 1];
