@@ -83,7 +83,7 @@ const BuenaVistaHosieryCollection = [
       "file:///C:/Users/Karol/Documents/WEB_FEMALE_FASHION_STORE/DEPARTMENTS/HOSIERY/Buena-Vista/images/bella-gina-002c.webp",
       "file:///C:/Users/Karol/Documents/WEB_FEMALE_FASHION_STORE/DEPARTMENTS/HOSIERY/Buena-Vista/images/bella-gina-002d.webp",
     ],
-    dcr: "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.",
+    dcr: "No such word as 'plain!' Even the simplest of designs, as the one displayed above, bare a potential exclamation mark within. We are only limited by our own imagination... and the range of our wardrobe.",
   },
 ];
 
