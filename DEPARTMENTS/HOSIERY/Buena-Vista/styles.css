@@ -345,7 +345,7 @@ section #product_container .mainblock .arrow {
   border-radius: 100%;
   padding: 0.4rem;
   background-color: antiquewhite;
-  height: 4rem;
+  height: 2.5rem;
   transition: all 0.3s
 }
 
@@ -580,7 +580,11 @@ footer ul li a:hover {
     height: 120vw;
   }
 
-  section #product_container .mainblock p {
+  section #product_container .mainblock .arrow {
+    display: none;
+  }
+
+  section #product_container .mainblock .description {
     font-size: 1.2rem;
   }
 
@@ -697,8 +701,8 @@ footer ul li a:hover {
   }
 
   section #product_container .mainblock .pictures .image {
-    width: 30vw;
-    height: 55vw;
+    width: 22vw;
+    height: 34vw;
     margin: 0.1rem;
     transition-duration: 0.8s;
   }
@@ -752,6 +756,10 @@ footer ul li a:hover {
   section #product_container .mainblock .pictures .image {
     width: 20vw;
     height: 30vw;
+  }
+
+  section #product_container .mainblock .arrow {
+    height: 4rem;
   }
 
   .sidebar {
