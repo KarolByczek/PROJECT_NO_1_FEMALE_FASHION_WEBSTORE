@@ -116,10 +116,10 @@ BuenaVistaHosieryCollection.forEach((product) => {
 
   const arrowleft = document.createElement("img");
   arrowleft.src = "../../../Common imagery/icons/arrow_left.png";
-  arrowleft.setAttribute("class", "arrow_left", "arrow");
+  arrowleft.setAttribute("class", "arrow arrow_left");
   const arrowright = document.createElement("img");
   arrowright.src = "../../../Common imagery/icons/arrow_right.png";
-  arrowright.setAttribute("class", "arrow_right");
+  arrowright.setAttribute("class", "arrow arrow_right");
 
   mainblock.appendChild(productName);
   mainblock.appendChild(pictures);

@@ -123,7 +123,7 @@ body {
   font-weight: bolder;
   text-transform: uppercase;
   transition: border 0.3s;
-  margin-left: 1rem;
+  margin-left: 1.5rem;
 }
 
 #login_button:hover {
@@ -337,6 +337,36 @@ section #product_container .mainblock .pictures .image{
   margin: 0 auto;
   display: block;
   border: 0.2rem solid var(--dark-green);
+}
+
+section #product_container .mainblock .arrow {
+  position: relative;
+  border: 0.2rem solid black;
+  border-radius: 100%;
+  padding: 0.4rem;
+  background-color: antiquewhite;
+  height: 4rem;
+  transition: all 0.3s
+}
+
+section #product_container .mainblock .arrow_left {
+  top: -15rem;
+  left: -40%;
+}
+
+section #product_container .mainblock .arrow_right {
+  top: -19rem;
+  right: -40%;
+}
+
+section #product_container .mainblock .arrow_left:hover, section #product_container .mainblock .arrow_right:hover {
+  border: 0.2rem solid rgb(116, 112, 112);
+  background-color: aliceblue;
+}
+
+section #product_container .mainblock .arrow_left:active, section #product_container .mainblock .arrow_right:active {
+  border: 0.2rem solid whitesmoke;
+  background-color: whitesmoke;
 }
 
 section #product_container .mainblock .description {
@@ -713,50 +743,6 @@ footer ul li a:hover {
     width: 70%;
     left: 15%;
     right: 15%;
-  }
-
-  section #product_container .mainblock .arrow_left {
-    position: relative;
-    top: -15rem;
-    left: -20rem;
-    height: 4rem;
-    border: 0.2rem solid black;
-    border-radius: 100%;
-    padding: 0.4rem;
-    background-color: antiquewhite;
-    transition: all 0.3s;
-  }
-
-  section #product_container .mainblock .arrow_left:hover {
-    border: 0.2rem solid rgb(116, 112, 112);
-    background-color: aliceblue;
-  }
-
-  section #product_container .mainblock .arrow_left:active {
-    border: 0.2rem solid whitesmoke;
-    background-color: whitesmoke;
-  }
-
-  section #product_container .mainblock .arrow_right {
-    position: relative;
-    top: -19rem;
-    right: -20rem;
-    height: 4rem;
-    border: 0.2rem solid black;
-    border-radius: 100%;
-    padding: 0.4rem;
-    background-color: antiquewhite;
-    transition: all 0.3s;
-  }
-
-  section #product_container .mainblock .arrow_right:hover {
-    border: 0.2rem solid rgb(116, 112, 112);
-    background-color: aliceblue;
-  }
-
-  section #product_container .mainblock .arrow_right:active {
-    border: 0.2rem solid whitesmoke;
-    background-color: whitesmoke;
   }
 
   section #product_container .mainblock .pictures {
