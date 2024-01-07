@@ -424,6 +424,21 @@ footer ul li a:hover {
   right: 0;
 }
 
+#showcase {
+  width: 25vw;
+  height: 40vw;
+  display: none;
+  position: fixed;
+  top: 1rem;
+  left: 40vw;
+}
+
+#showcase.active {
+  display: block;
+
+  z-index: 10;
+}
+
 /* GENERAL STYLES - end */
 
 /* STYLES FOR MOBILES - start */
