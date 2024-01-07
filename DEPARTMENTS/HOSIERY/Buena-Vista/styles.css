@@ -8,6 +8,7 @@
   --background-green: rgb(83, 187, 153);
   --light-green: rgb(47, 201, 106);
   --dark-green: rgb(7, 71, 50);
+  --mouldy-background: rgb(219, 189, 210);
 }
 
 body {
@@ -305,7 +306,7 @@ section #product_container {
   border: 3px solid rgb(207, 76, 76);
   padding: 1rem;
   margin: 0;
-  background-color: rgb(219, 216, 213);
+  background-color: var(--dark-green);
   gap: 1rem;
 }
 
@@ -314,9 +315,9 @@ section #product_container .mainblock {
   flex-direction: column;
   align-items: center;
   width: 90%;
-  border: 0.2rem solid rgb(19, 43, 32, 0.2);
+  border: 0.2rem solid plum;
   padding: 0.8rem;
-  background-color: rgb(180, 190, 183);
+  background-color: var(--mouldy-background);
 }
 
 section #product_container .mainblock .product_name {
