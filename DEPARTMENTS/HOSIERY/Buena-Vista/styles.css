@@ -425,17 +425,32 @@ footer ul li a:hover {
 }
 
 #showcase {
-  width: 25vw;
-  height: 40vw;
   display: none;
   position: fixed;
-  top: 1rem;
+  top: 0.5rem;
   left: 40vw;
+}
+
+#showcase #shownimg {
+  width: 25vw;
+  height: 40vw;
+  border: 0.3rem solid wheat;
+}
+
+#showcase p {
+  position: absolute;
+  top: -1rem;
+  right: -2rem;
+  color: rgb(230, 11, 11);
+  font-weight: bolder;
+}
+
+#showcase p:hover {
+  cursor: pointer;
 }
 
 #showcase.active {
   display: block;
-
   z-index: 10;
 }
 

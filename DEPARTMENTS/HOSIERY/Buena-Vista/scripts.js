@@ -178,13 +178,20 @@ BuenaVistaHosieryCollection.forEach((product) => {
 
   const $htmlImages = document.querySelectorAll(".image");
   const $showCase = document.getElementById("showcase");
+  const $shownImg = document.getElementById("shownimg");
+  const $closeShowcase = document.getElementById("close_showcase");
 
   $htmlImages.forEach((image) => {
     image.addEventListener("click", () => {
       $backDrop.classList.add("active");
       $showCase.classList.add("active");
-      $showCase.src = image.src;
-      $showCase.alt = "some image";
+      $shownImg.src = image.src;
+      $shownImg.alt = "some image";
+    });
+
+    $closeShowcase.addEventListener("click", () => {
+      $backDrop.classList.remove("active");
+      $showCase.classList.remove("active");
     });
 
   });
