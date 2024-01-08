@@ -12,7 +12,7 @@ $hideLoginStrip.addEventListener("click", () => {
 
 const $menuItems = document.querySelectorAll(".menu_item");
 const $register = document.querySelector("#register");
-const $backDrop = document.querySelector(".backdrop");
+const $backDrop = document.querySelector("#backdrop");
 const $registerForm = document.getElementById("register_form");
 const $submitRegisterform = document.getElementById("submit_register_form");
 const $registerFormLoginButton = document.getElementById(
@@ -178,33 +178,28 @@ BuenaVistaHosieryCollection.forEach((product) => {
 
   const $htmlImages = document.querySelectorAll(".image");
   const $showCase = document.getElementById("showcase");
-  const $shownImg = document.getElementById("shownimg");
   
   $htmlImages.forEach((image) => {
     image.addEventListener("click", () => {
       $backDrop.classList.add("active");
       $showCase.classList.add("active");
-      $shownImg.src = image.src;
-      $shownImg.alt = "some image";
-      window.scrollTo(top);
+      $showCase.src = image.src;
+      $showCase.alt = "some image";
     });
 
     $backDrop.addEventListener("click", () => {
       $backDrop.classList.remove("active");
       $showCase.classList.remove("active");
-      $shownImg.classList.remove("enhanced");
+      $showCase.classList.remove("enhanced");
     });
 
   });
 
-  $shownImg.addEventListener("click", () => {
-    if ($shownImg.classList.contains("enhanced")) {
-      $shownImg.classList.remove("enhanced");
-    }
-      $shownImg.classList.add("enhanced");
-    
-  });
-
- 
+  $showCase.addEventListener("click", () => {
+    if ($showCase.classList.contains("enhanced")) {
+      $showCase.classList.remove("enhanced");
+    } 
+      $showCase.classList.add("enhanced");
+    });
 
 });

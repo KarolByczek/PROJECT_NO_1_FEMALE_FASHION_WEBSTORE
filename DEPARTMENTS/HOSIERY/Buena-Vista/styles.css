@@ -18,6 +18,7 @@ body {
   background-image: url("../../../Common imagery/background.jpg");
   background-attachment: fixed;
   margin: 0;
+  width: 100vw;
 }
 
 #navigation_strip {
@@ -192,24 +193,6 @@ body {
   top: -0.8rem;
   right: 0.2rem;
   cursor: pointer;
-}
-
-.backdrop {
-  position: absolute;
-  top: -10vh;
-  bottom: -30vh;
-  left: 0;
-  right: 0;
-  background-color: black;
-  z-index: 7;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.3s;
-}
-
-.backdrop.active {
-  visibility: visible;
-  opacity: 0.8;
 }
 
 #register_form {
@@ -424,11 +407,27 @@ footer ul li a:hover {
   right: 0;
 }
 
-#showcase {
-  display: none;
+#backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 140vh;
+  width: 100vw;
+  background-color: black;
+  z-index: 7;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+  overflow: scroll;
 }
 
-#showcase #shownimg {
+#backdrop.active {
+  visibility: visible;
+  opacity: 0.8;
+}
+
+#showcase {
+  display: none;
   height: 52vw;
   width: auto;
   border: 0.3rem solid wheat;
@@ -436,15 +435,15 @@ footer ul li a:hover {
 
 #showcase.active {
   display: block;
-  position: absolute;
+  position: fixed;
   cursor: zoom-in;
   top: 0;
   left: 5%;
   z-index: 10;
-  
+  opacity: 1;
 }
 
-#showcase #shownimg.enhanced {
+#showcase.enhanced {
   height: 185vh;
   width: auto;
   cursor: zoom-out;
