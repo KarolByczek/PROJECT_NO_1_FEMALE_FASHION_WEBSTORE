@@ -427,17 +427,17 @@ footer ul li a:hover {
 #showcase {
   display: none;
   position: fixed;
-  top: 0.5rem;
+  top: 0;
   left: 40vw;
 }
 
 #showcase #shownimg {
-  width: 25vw;
-  height: 40vw;
+  width: 28vw;
+  height: 42vw;
   border: 0.3rem solid wheat;
 }
 
-#showcase p {
+#showcase #close_showcase {
   position: absolute;
   top: -1rem;
   right: -2rem;

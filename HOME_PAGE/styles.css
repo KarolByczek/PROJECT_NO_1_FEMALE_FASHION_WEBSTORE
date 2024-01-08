@@ -307,6 +307,7 @@ section #bestseller_container {
   margin: 0;
   background-color: rgb(219, 216, 213);
   gap: 1rem;
+  border-radius: 2rem;
 }
 
 section #bestseller_container .mainblock {
@@ -317,6 +318,7 @@ section #bestseller_container .mainblock {
   border: 0.2rem solid rgb(19, 43, 32, 0.2);
   padding: 0.8rem;
   background-color: rgb(180, 190, 183);
+  border-radius: 2rem;
 }
 
 section #bestseller_container .mainblock .product_name {
@@ -334,13 +336,13 @@ section #bestseller_container .mainblock .pictures {
   overflow: visible;
 }
 
-section #bestseller_container .mainblock .pictures .image1,
-.image2 {
+section #bestseller_container .mainblock .pictures .image {
   margin: 0 auto;
-  display: block;
+  display: flex;
+  border-radius: 2rem;
 }
 
-section #bestseller_container .mainblock p {
+section #bestseller_container .mainblock .description {
   text-align: justify;
 }
 
@@ -546,8 +548,7 @@ footer ul li a:hover {
     flex-direction: column;
   }
 
-  section #bestseller_container .mainblock .pictures .image1,
-  .image2 {
+  section #bestseller_container .mainblock .pictures .image {
     width: 70vw;
     height: 120vw;
   }
@@ -620,15 +621,13 @@ footer ul li a:hover {
     flex-direction: column;
   }
 
-  section #bestseller_container .mainblock .pictures .image1,
-  .image2 {
+  section #bestseller_container .mainblock .pictures .image {
     width: 50vw;
     height: 90vw;
     transition-duration: 0.5s;
   }
 
-  section #bestseller_container .mainblock .image1:hover,
-  .image2:hover {
+  section #bestseller_container .mainblock .image:hover {
     transform: scale(1.03);
     -webkit-transform: scale(1.03);
     -moz-transform: scale(1.03);
@@ -668,8 +667,7 @@ footer ul li a:hover {
     padding: 1rem 0;
   }
 
-  section #bestseller_container .mainblock .pictures .image1,
-  .image2 {
+  section #bestseller_container .mainblock .pictures .image {
     width: 30vw;
     height: 55vw;
     margin: 0.1rem;
@@ -718,8 +716,7 @@ footer ul li a:hover {
     right: 15%;
   }
 
-  section #bestseller_container .mainblock .pictures .image1,
-  .image2 {
+  section #bestseller_container .mainblock .pictures .image {
     width: 28vw;
     height: 50vw;
   }
