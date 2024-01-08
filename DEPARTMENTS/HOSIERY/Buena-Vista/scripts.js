@@ -192,11 +192,14 @@ BuenaVistaHosieryCollection.forEach((product) => {
     $closeShowcase.addEventListener("click", () => {
       $backDrop.classList.remove("active");
       $showCase.classList.remove("active");
+      $shownImg.classList.remove("enhanced");
     });
 
   });
 
-  
+  $shownImg.addEventListener("click", () => {
+    $shownImg.classList.add("enhanced");
+  })
 
 
 

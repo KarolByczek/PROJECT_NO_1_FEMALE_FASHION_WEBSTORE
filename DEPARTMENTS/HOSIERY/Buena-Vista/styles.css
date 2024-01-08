@@ -426,14 +426,11 @@ footer ul li a:hover {
 
 #showcase {
   display: none;
-  position: fixed;
-  top: 0;
-  left: 40vw;
 }
 
 #showcase #shownimg {
-  width: 28vw;
   height: 42vw;
+  width: auto;
   border: 0.3rem solid wheat;
 }
 
@@ -445,13 +442,23 @@ footer ul li a:hover {
   font-weight: bolder;
 }
 
-#showcase p:hover {
+#showcase #close_showcase:hover {
   cursor: pointer;
 }
 
 #showcase.active {
   display: block;
+  position: fixed;
+  cursor: zoom-in;
+  top: 0;
+  left: 5%;
   z-index: 10;
+}
+
+#showcase #shownimg.enhanced {
+  height: 200%;
+  width: auto;
+  cursor: zoom-out;
 }
 
 /* GENERAL STYLES - end */
