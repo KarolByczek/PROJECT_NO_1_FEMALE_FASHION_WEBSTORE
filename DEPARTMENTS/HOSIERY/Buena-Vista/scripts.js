@@ -179,17 +179,17 @@ BuenaVistaHosieryCollection.forEach((product) => {
   const $htmlImages = document.querySelectorAll(".image");
   const $showCase = document.getElementById("showcase");
   const $shownImg = document.getElementById("shownimg");
-  const $closeShowcase = document.getElementById("close_showcase");
-
+  
   $htmlImages.forEach((image) => {
     image.addEventListener("click", () => {
       $backDrop.classList.add("active");
       $showCase.classList.add("active");
       $shownImg.src = image.src;
       $shownImg.alt = "some image";
+      window.scrollTo(top);
     });
 
-    $closeShowcase.addEventListener("click", () => {
+    $backDrop.addEventListener("click", () => {
       $backDrop.classList.remove("active");
       $showCase.classList.remove("active");
       $shownImg.classList.remove("enhanced");
@@ -198,9 +198,13 @@ BuenaVistaHosieryCollection.forEach((product) => {
   });
 
   $shownImg.addEventListener("click", () => {
-    $shownImg.classList.add("enhanced");
-  })
+    if ($shownImg.classList.contains("enhanced")) {
+      $shownImg.classList.remove("enhanced");
+    }
+      $shownImg.classList.add("enhanced");
+    
+  });
 
-
+ 
 
 });

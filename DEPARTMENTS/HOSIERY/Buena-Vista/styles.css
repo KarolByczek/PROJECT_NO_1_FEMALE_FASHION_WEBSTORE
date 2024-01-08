@@ -195,11 +195,11 @@ body {
 }
 
 .backdrop {
-  position: fixed;
+  position: absolute;
+  top: -10vh;
+  bottom: -30vh;
   left: 0;
-  top: 0;
   right: 0;
-  bottom: 0;
   background-color: black;
   z-index: 7;
   visibility: hidden;
@@ -429,34 +429,23 @@ footer ul li a:hover {
 }
 
 #showcase #shownimg {
-  height: 42vw;
+  height: 52vw;
   width: auto;
   border: 0.3rem solid wheat;
 }
 
-#showcase #close_showcase {
-  position: absolute;
-  top: -1rem;
-  right: -2rem;
-  color: rgb(230, 11, 11);
-  font-weight: bolder;
-}
-
-#showcase #close_showcase:hover {
-  cursor: pointer;
-}
-
 #showcase.active {
   display: block;
-  position: fixed;
+  position: absolute;
   cursor: zoom-in;
   top: 0;
   left: 5%;
   z-index: 10;
+  
 }
 
 #showcase #shownimg.enhanced {
-  height: 200%;
+  height: 185vh;
   width: auto;
   cursor: zoom-out;
 }
