@@ -287,6 +287,7 @@ section #product_container {
   flex-direction: column;
   align-items: center;
   border: 3px solid rgb(207, 76, 76);
+  border-radius: 1rem;
   padding: 1rem;
   margin: 0;
   background-color: var(--dark-green);
@@ -298,15 +299,16 @@ section #product_container .mainblock {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
+  width: 100%;
   border: 0.2rem solid plum;
+  border-radius: 1rem;
   padding: 0.8rem;
   background-color: var(--mouldy-background);
 }
 
 section #product_container .mainblock .product_name {
   font-size: 1.5rem;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 section #product_container .mainblock .pictures {
@@ -314,42 +316,42 @@ section #product_container .mainblock .pictures {
   flex-direction: row;
   align-items: center;
   width: 100%;
-  height: 90%;
+  height: 70%;
   gap: 2rem;
 }
 
-section #product_container .mainblock .pictures .imagebox{
+section #product_container .mainblock .pictures .imagebox {
   margin: 0 auto;
   display: block;
   border: 0.2rem solid var(--dark-green);
+  border-radius: 0.5rem;
 }
 
 section #product_container .mainblock .arrow {
-  position: relative;
+  position: absolute;
   border: 0.2rem solid black;
   border-radius: 100%;
   padding: 0.4rem;
   background-color: antiquewhite;
   height: 2.5rem;
-  transition: all 0.3s
+  transition: all 0.3s;
+  top: -15rem;
 }
 
 section #product_container .mainblock .arrow_left {
-  top: -15rem;
   left: -40%;
 }
 
 section #product_container .mainblock .arrow_right {
-  top: -19rem;
-  right: -40%;
+  right: 40%;
 }
 
-section #product_container .mainblock .arrow_left:hover, section #product_container .mainblock .arrow_right:hover {
+section #product_container .mainblock .arrow:hover {
   border: 0.2rem solid rgb(116, 112, 112);
   background-color: aliceblue;
 }
 
-section #product_container .mainblock .arrow_left:active, section #product_container .mainblock .arrow_right:active {
+section #product_container .mainblock .arrow:active {
   border: 0.2rem solid whitesmoke;
   background-color: whitesmoke;
 }
@@ -679,7 +681,7 @@ footer ul li a:hover {
     flex-direction: column;
   }
 
-  section #product_container .mainblock .pictures .imagebox{
+  section #product_container .mainblock .pictures .imagebox {
     width: 50vw;
     height: 90vw;
     transition-duration: 0.5s;
@@ -704,7 +706,6 @@ footer ul li a:hover {
 }
 
 @media screen and (min-width: 800px) {
-
   section {
     width: 70%;
     left: 15%;
@@ -713,11 +714,6 @@ footer ul li a:hover {
 
   section #product_container {
     padding: 0.2rem;
-  }
-
-  section #product_container .mainblock {
-    width: 100%;
-    padding: 0;
   }
 
   section #product_container .mainblock .pictures {
@@ -740,16 +736,26 @@ footer ul li a:hover {
     -moz-transform: scale(1.05);
   }
 
+  section #product_container .mainblock .arrow_left {
+    position: relative;
+    right: 2rem;
+  }
+
+  section #product_container .mainblock .arrow_right {
+    position: relative;
+    top: -17.5rem;
+    left: 18rem;
+  }
+
   section #product_container .mainblock .description {
     height: 10%;
     padding: 0.5rem;
-    margin-top: -7rem;
+    margin-top: -4rem;
   }
 
   .sidebar {
     width: 15%;
   }
-
 }
 
 @media screen and (min-width: 1048px) {
@@ -776,8 +782,12 @@ footer ul li a:hover {
     right: 15%;
   }
 
+  section #product_container .mainblock {
+    height: 110vh;
+  }
+
   section #product_container .mainblock .pictures {
-    width: 44vw;
+    width: 40vw;
   }
 
   section #product_container .mainblock .pictures .imagebox {
@@ -787,6 +797,10 @@ footer ul li a:hover {
 
   section #product_container .mainblock .arrow {
     height: 4rem;
+  }
+
+  section #product_container .mainblock .description {
+    margin-top: -6rem;
   }
 
   .sidebar {

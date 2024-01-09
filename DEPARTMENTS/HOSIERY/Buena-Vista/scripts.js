@@ -86,7 +86,7 @@ const BuenaVistaHosieryCollection = [
     dcr: "No such word as 'plain!' Even the simplest of designs, as the one displayed above, bare a potential exclamation mark within. We are only limited by our own imagination... and the range of our wardrobe.",
   },
   {
-    pname: "Attica's Charm",
+    pname: "Attica's Charm 001",
     images: [
       "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Buena-Vista/images/attica's-charm-001a.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Buena-Vista/images/attica's-charm-001b.jpg",
