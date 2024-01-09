@@ -357,7 +357,7 @@ section #product_container .mainblock .arrow:active {
 }
 
 section #product_container .mainblock .description {
-  text-align: justify;
+  text-align: center;
 }
 
 footer {
@@ -716,6 +716,10 @@ footer ul li a:hover {
     padding: 0.2rem;
   }
 
+  section #product_container .mainblock {
+    height: 110vh;
+  }
+
   section #product_container .mainblock .pictures {
     width: 42vw;
     flex-direction: row;
@@ -737,20 +741,18 @@ footer ul li a:hover {
   }
 
   section #product_container .mainblock .arrow_left {
-    position: relative;
-    right: 2rem;
+   top: -55%;
+   left: 3rem;
   }
 
   section #product_container .mainblock .arrow_right {
-    position: relative;
-    top: -17.5rem;
-    left: 18rem;
+    top: -55%;
+    right: 3rem;
   }
 
   section #product_container .mainblock .description {
-    height: 10%;
-    padding: 0.5rem;
-    margin-top: -4rem;
+    padding: 1rem;
+    margin: 0;
   }
 
   .sidebar {
@@ -797,10 +799,6 @@ footer ul li a:hover {
 
   section #product_container .mainblock .arrow {
     height: 4rem;
-  }
-
-  section #product_container .mainblock .description {
-    margin-top: -6rem;
   }
 
   .sidebar {
