@@ -317,7 +317,7 @@ section #product_container .mainblock .pictures {
   gap: 2rem;
 }
 
-section #product_container .mainblock .pictures .image{
+section #product_container .mainblock .pictures .imagebox{
   margin: 0 auto;
   display: block;
   border: 0.2rem solid var(--dark-green);
@@ -428,22 +428,21 @@ footer ul li a:hover {
 
 #showcase {
   display: none;
+  position: absolute;
+  left: 15rem;
   height: 52vw;
   width: auto;
   border: 0.3rem solid wheat;
 }
 
 #showcase.active {
-  display: block;
-  position: fixed;
+  display: flex;
   cursor: zoom-in;
-  top: 0;
-  left: 5%;
   z-index: 10;
-  opacity: 1;
 }
 
 #showcase.enhanced {
+  left: 5rem;
   height: 185vh;
   width: auto;
   cursor: zoom-out;
@@ -601,7 +600,7 @@ footer ul li a:hover {
     flex-direction: column;
   }
 
-  section #product_container .mainblock .pictures .image {
+  section #product_container .mainblock .pictures .imagebox {
     width: 70vw;
     height: 120vw;
   }
@@ -678,13 +677,13 @@ footer ul li a:hover {
     flex-direction: column;
   }
 
-  section #product_container .mainblock .pictures .image{
+  section #product_container .mainblock .pictures .imagebox{
     width: 50vw;
     height: 90vw;
     transition-duration: 0.5s;
   }
 
-  section #product_container .mainblock .image:hover {
+  section #product_container .mainblock .imagebox:hover {
     transform: scale(1.03);
     -webkit-transform: scale(1.03);
     -moz-transform: scale(1.03);
@@ -726,14 +725,14 @@ footer ul li a:hover {
     padding: 1rem 0;
   }
 
-  section #product_container .mainblock .pictures .image {
+  section #product_container .mainblock .pictures .imagebox {
     width: 22vw;
     height: 34vw;
     margin: 0.1rem;
     transition-duration: 0.8s;
   }
 
-  section #product_container .mainblock .image:hover {
+  section #product_container .mainblock .imagebox:hover {
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
@@ -779,7 +778,7 @@ footer ul li a:hover {
     width: 44vw;
   }
 
-  section #product_container .mainblock .pictures .image {
+  section #product_container .mainblock .pictures .imagebox {
     width: 20vw;
     height: 30vw;
   }

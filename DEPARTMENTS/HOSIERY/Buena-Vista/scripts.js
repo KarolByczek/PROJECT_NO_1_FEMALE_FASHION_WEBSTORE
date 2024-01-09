@@ -93,8 +93,8 @@ const BuenaVistaHosieryCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Buena-Vista/images/attica's-charm-001c.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Buena-Vista/images/attica's-charm-001d.jpg",
     ],
-    dcr: ""
-  }
+    dcr: "",
+  },
 ];
 
 const $products = document.getElementById("product_container");
@@ -111,13 +111,13 @@ BuenaVistaHosieryCollection.forEach((product) => {
   const imagebox1 = document.createElement("img");
   imagebox1.src = `${product.images[0]}`;
   imagebox1.alt = "some inage of a product";
-  imagebox1.className = "image";
+  imagebox1.className = "imagebox";
   pictures.appendChild(imagebox1);
 
   const imagebox2 = document.createElement("img");
   imagebox2.src = `${product.images[1]}`;
   imagebox2.alt = "some image of a product";
-  imagebox2.className = "image";
+  imagebox2.className = "imagebox";
   pictures.appendChild(imagebox2);
 
   const description = document.createElement("p");
@@ -140,27 +140,21 @@ BuenaVistaHosieryCollection.forEach((product) => {
   $products.appendChild(mainblock);
 
   arrowright.addEventListener("click", () => {
-    const currentIMG1index = product.images.indexOf(
-      imagebox1.src
-    );
+    const currentIMG1index = product.images.indexOf(imagebox1.src);
     if (currentIMG1index < product.images.length - 2) {
       imagebox1.src = product.images[currentIMG1index + 1];
     }
   });
 
   arrowleft.addEventListener("click", () => {
-    const currentIMG1index = product.images.indexOf(
-      imagebox1.src
-    );
+    const currentIMG1index = product.images.indexOf(imagebox1.src);
     if (currentIMG1index > 0) {
       imagebox1.src = product.images[currentIMG1index - 1];
     }
   });
 
   arrowright.addEventListener("click", () => {
-    const currentIMG2index = product.images.indexOf(
-      imagebox2.src
-    );
+    const currentIMG2index = product.images.indexOf(imagebox2.src);
     console.log(imagebox2.src);
     if (currentIMG2index < product.images.length - 1) {
       imagebox2.src = product.images[currentIMG2index + 1];
@@ -168,38 +162,33 @@ BuenaVistaHosieryCollection.forEach((product) => {
   });
 
   arrowleft.addEventListener("click", () => {
-    const currentIMG2index = product.images.indexOf(
-      imagebox2.src
-    );
+    const currentIMG2index = product.images.indexOf(imagebox2.src);
     if (currentIMG2index > 1) {
       imagebox2.src = product.images[currentIMG2index - 1];
     }
   });
 
-  const $htmlImages = document.querySelectorAll(".image");
-  const $showCase = document.getElementById("showcase");
-  
-  $htmlImages.forEach((image) => {
-    image.addEventListener("click", () => {
-      $backDrop.classList.add("active");
-      $showCase.classList.add("active");
-      $showCase.src = image.src;
-      $showCase.alt = "some image";
-    });
+  const imageBoxes = [imagebox1, imagebox2];
 
-    $backDrop.addEventListener("click", () => {
-      $backDrop.classList.remove("active");
-      $showCase.classList.remove("active");
-      $showCase.classList.remove("enhanced");
+  imageBoxes.forEach((imagebox) => {
+    imagebox.addEventListener("click", () => {
+      $backDrop.classList.add("active");
+      const $showCase = document.createElement("img");
+      $showCase.setAttribute("id", "showcase");
+      $showCase.classList.add("active");
+      $showCase.src = imagebox.src;
+      $showCase.alt = "some image";
+      mainblock.appendChild($showCase);
+      $backDrop.addEventListener("click", () => {
+        $backDrop.classList.remove("active");
+        $showCase.classList.remove("active");
+        $showCase.classList.remove("enhanced");
+      });
+      $showCase.addEventListener("click", () => {
+        $showCase.classList.toggle("enhanced"); 
+      });
     });
+  })
+    
 
   });
-
-  $showCase.addEventListener("click", () => {
-    if ($showCase.classList.contains("enhanced")) {
-      $showCase.classList.remove("enhanced");
-    } 
-      $showCase.classList.add("enhanced");
-    });
-
-});
