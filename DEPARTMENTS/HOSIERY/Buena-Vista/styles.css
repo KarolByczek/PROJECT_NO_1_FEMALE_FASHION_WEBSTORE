@@ -314,8 +314,9 @@ section #product_container .mainblock .product_name {
 section #product_container .mainblock .pictures {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 65%;
   height: 70%;
   gap: 2rem;
 }
@@ -333,9 +334,8 @@ section #product_container .mainblock .arrow {
   border-radius: 100%;
   padding: 0.4rem;
   background-color: antiquewhite;
-  height: 2.5rem;
+  height: 3rem;
   transition: all 0.3s;
-  top: 35rem;
 }
 
 section #product_container .mainblock .arrow_left {
@@ -741,13 +741,13 @@ footer ul li a:hover {
   }
 
   section #product_container .mainblock .arrow_left {
-   top: 45%;
-   left: 3rem;
+    top: 45%;
+    left: 1.5rem;
   }
 
   section #product_container .mainblock .arrow_right {
     top: 45%;
-    right: 3rem;
+    right: 1.2rem;
   }
 
   section #product_container .mainblock .description {
