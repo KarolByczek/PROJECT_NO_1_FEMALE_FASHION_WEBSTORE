@@ -335,7 +335,7 @@ section #product_container .mainblock .arrow {
   background-color: antiquewhite;
   height: 2.5rem;
   transition: all 0.3s;
-  top: -15rem;
+  top: 35rem;
 }
 
 section #product_container .mainblock .arrow_left {
@@ -429,7 +429,7 @@ footer ul li a:hover {
   opacity: 0.8;
 }
 
-#showcase {
+.showcase {
   display: none;
   position: absolute;
   left: 15rem;
@@ -438,13 +438,13 @@ footer ul li a:hover {
   border: 0.3rem solid wheat;
 }
 
-#showcase.active {
+.showcase.active {
   display: flex;
   cursor: zoom-in;
   z-index: 10;
 }
 
-#showcase.enhanced {
+.showcase.enhanced {
   top: -10rem;
   left: 5rem;
   height: 185vh;
@@ -741,12 +741,12 @@ footer ul li a:hover {
   }
 
   section #product_container .mainblock .arrow_left {
-   top: -55%;
+   top: 45%;
    left: 3rem;
   }
 
   section #product_container .mainblock .arrow_right {
-    top: -55%;
+    top: 45%;
     right: 3rem;
   }
 

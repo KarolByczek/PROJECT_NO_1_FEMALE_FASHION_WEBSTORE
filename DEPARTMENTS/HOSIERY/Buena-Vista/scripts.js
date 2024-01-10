@@ -110,7 +110,7 @@ BuenaVistaHosieryCollection.forEach((product) => {
 
   const imagebox1 = document.createElement("img");
   imagebox1.src = `${product.images[0]}`;
-  imagebox1.alt = "some inage of a product";
+  imagebox1.alt = "some image of a product";
   imagebox1.className = "imagebox";
   pictures.appendChild(imagebox1);
 
@@ -169,26 +169,26 @@ BuenaVistaHosieryCollection.forEach((product) => {
   });
 
   const imageBoxes = [imagebox1, imagebox2];
+  const $showCase = document.createElement("img");
+  $showCase.setAttribute("class", "showcase");
+  mainblock.appendChild($showCase);
 
   imageBoxes.forEach((imagebox) => {
     imagebox.addEventListener("click", () => {
       $backDrop.classList.add("active");
-      const $showCase = document.createElement("img");
-      $showCase.setAttribute("id", "showcase");
       $showCase.classList.add("active");
       $showCase.src = imagebox.src;
-      $showCase.alt = "some image";
-      mainblock.appendChild($showCase);
+      $showCase.alt = imagebox.src.substring(53);
       $backDrop.addEventListener("click", () => {
         $backDrop.classList.remove("active");
         $showCase.classList.remove("active");
         $showCase.classList.remove("enhanced");
       });
       $showCase.addEventListener("click", () => {
-        $showCase.classList.toggle("enhanced"); 
+        if ($showCase.classList.contains("enhanced")) {
+          $showCase.classList.remove("enhanced")
+        } $showCase.classList.add("enhanced")
       });
     });
-  })
-    
-
   });
+});
