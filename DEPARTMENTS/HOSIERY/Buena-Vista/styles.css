@@ -144,7 +144,7 @@ header {
 #login_strip {
   position: fixed;
   left: 0;
-  top: 12rem;
+  top: 2rem;
   z-index: 2;
   background-color: rgb(29, 183, 132);
   width: 100%;
