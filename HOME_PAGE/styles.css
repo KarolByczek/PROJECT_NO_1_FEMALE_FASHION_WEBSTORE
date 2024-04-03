@@ -1,0 +1,733 @@
+/* GENERAL STYLES - start */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --background-green: rgb(83, 187, 153);
+  --light-green: rgb(47, 201, 106);
+  --dark-green: rgb(7, 71, 50);
+}
+
+body {
+  position: relative;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: normal;
+  background-image: url("../Common imagery/background.jpg");
+  background-attachment: fixed;
+  margin: 0;
+}
+
+header {
+  position: relative;
+  width: 100%;
+}
+
+#navigation_strip {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 3.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--background-green);
+  z-index: 4;
+  margin: 0;
+  padding: 0.2rem 0;
+}
+
+#company_logo {
+  position: fixed;
+  left: 0.2rem;
+  top: 0.2rem;
+  border: 0.2rem solid var(--dark-green);
+  border-radius: 1rem;
+  width: 6rem;
+  height: 6rem;
+  z-index: 6;
+}
+
+.home_navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  padding-left: 7rem;
+  margin: 0;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.home_navigation li {
+  list-style-type: none;
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgb(31, 41, 31);
+  padding: 0.4rem;
+  border: 0.2rem solid var(--dark-green);
+  border-radius: 1rem;
+  position: relative;
+  background-color: var(--light-green);
+  transition: all 0.5s;
+}
+
+.home_navigation li:hover {
+  border: 0.2rem solid greenyellow;
+  background-color: aquamarine;
+}
+
+.home_navigation li ul {
+  visibility: hidden;
+  opacity: 0;
+  list-style-type: none;
+  position: absolute;
+  top: 2.4rem;
+  left: -0.3rem;
+  width: 7rem;
+  border: 0.2rem solid rgb(7, 71, 50);
+  border-radius: 1rem;
+  background-color: rgb(47, 201, 106);
+  margin: 0;
+  padding: 0;
+  font-size: 1.3rem;
+  transition: all 0.3s;
+  z-index: 2;
+}
+
+.home_navigation li:hover ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+.home_navigation li ul li {
+  background-color: transparent;
+  color: transparent;
+  border-radius: 1rem;
+  border: 0.2rem solid transparent;
+  font-size: 75%;
+  padding: 0.2rem;
+  transition: all 0.5s;
+}
+
+.home_navigation li ul li a {
+  color: rgb(31, 41, 31);
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#login_button {
+  background-color: rgb(71, 145, 122);
+  border-radius: 6rem;
+  border: 0.2rem solid rgb(29, 183, 132);
+  padding: 0.4rem;
+  color: aliceblue;
+  font-weight: bolder;
+  text-transform: uppercase;
+  transition: border 0.3s;
+  margin-left: 1rem;
+}
+
+#login_button:hover {
+  border: 0.2rem solid rgb(20, 228, 159);
+}
+
+#login_button:active {
+  border: 0.2rem solid aquamarine;
+}
+
+#login_strip {
+  position: fixed;
+  top: 3.5rem;
+  left: 0;
+  z-index: 2;
+  background-color: rgb(29, 183, 132);
+  width: 100%;
+  border: 0.05rem solid rgb(19, 43, 32);
+  transition: transform 0.3s;
+}
+
+#login_strip.active {
+  transform: translateY(100%);
+}
+
+#login_strip form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#login_strip form input {
+  border: 0.1rem solid rgb(100, 219, 100);
+  border-radius: 1rem;
+  padding: 0.2rem;
+}
+
+#login_strip form input:hover {
+  border: 0.1rem solid aquamarine;
+}
+
+#login_strip form input#login {
+  background-color: rgb(12, 129, 43);
+  color: white;
+}
+
+#login_strip form a#register {
+  text-decoration: none;
+  color: rgb(24, 34, 34);
+}
+
+#login_strip form a#register:hover {
+  color: rgb(70, 228, 228);
+}
+
+#login_strip form a#register:active {
+  color: rgb(220, 228, 70);
+}
+
+#login_strip #hide_login_strip {
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  top: -0.8rem;
+  right: 0.2rem;
+  cursor: pointer;
+}
+
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  z-index: 7;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.backdrop.active {
+  visibility: visible;
+  opacity: 0.8;
+}
+
+#register_form {
+  position: fixed;
+  top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgb(225, 210, 189, 0.7);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 8;
+  transition: all 0.3s;
+}
+
+#register_form.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+#register_form label {
+  display: flex;
+  flex-direction: column;
+}
+
+#register_form label input {
+  border: 0.2rem solid rgb(51, 43, 27);
+  border-radius: 5rem;
+  padding: 0.5rem;
+  width: fit-content;
+}
+
+#submit_register_form {
+  border: 0.3rem solid rgb(105, 176, 153);
+  border-radius: 1rem;
+  background-color: rgb(33, 116, 28);
+  font-weight: bold;
+  color: whitesmoke;
+  padding: 0.5rem;
+  transition: all 0.3s;
+}
+
+#submit_register_form:hover {
+  border: 0.3rem solid aquamarine;
+}
+
+#register_form_login_button {
+  background-color: rgb(71, 145, 122);
+  border-radius: 6rem;
+  border: 0.2rem solid rgb(29, 183, 132);
+  padding: 0.6rem;
+  color: aliceblue;
+  font-weight: bolder;
+}
+
+#register_form #close_register_form {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+}
+
+#register_form #close_register_form:hover {
+  cursor: pointer;
+}
+
+section {
+  position: relative;
+  margin-top: 3rem;
+  width: 70%;
+  left: 15%;
+  right: 15%;
+  padding: 0.5rem;
+  margin-bottom: 0;
+}
+
+section h1 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  text-align: center;
+  background-color: rgb(207, 76, 76);
+  border-radius: 1.5rem;
+  line-height: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 0.2rem;
+  padding: 1rem;
+}
+
+section #bestseller_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid rgb(207, 76, 76);
+  padding: 1rem;
+  margin: 0;
+  background-color: rgb(219, 216, 213);
+  gap: 1rem;
+  border-radius: 2rem;
+}
+
+section #bestseller_container .mainblock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  border: 0.2rem solid rgb(19, 43, 32, 0.2);
+  padding: 0.8rem;
+  background-color: rgb(180, 190, 183);
+  border-radius: 2rem;
+}
+
+section #bestseller_container .mainblock .product_name {
+  font-size: 1.5rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section #bestseller_container .mainblock .pictures {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 90%;
+  gap: 1rem;
+  overflow: visible;
+}
+
+section #bestseller_container .mainblock .pictures .image {
+  margin: 0 auto;
+  display: flex;
+  border-radius: 2rem;
+}
+
+section #bestseller_container .mainblock .description {
+  text-align: justify;
+}
+
+footer {
+  bottom: -10rem;
+  position: absolute;
+  z-index: 2;
+  width: 100vw;
+  background-color: var(--background-green);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0 0 0 1rem;
+  border-left: 1px solid rgb(15, 26, 83);
+}
+
+footer ul li a {
+  font-size: 0.8rem;
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+  color: rgb(15, 26, 83);
+  transition: all 0.3s;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+  color: rgb(8, 46, 237);
+}
+
+.sidebar {
+  position: absolute;
+  top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 400;
+}
+
+#left_sidebar {
+  left: 0;
+}
+
+#right_sidebar {
+  right: 0;
+}
+
+/* GENERAL STYLES - end */
+
+/* STYLES FOR MOBILES - start */
+
+@media screen and (max-width: 625px) {
+  body {
+    background-image: none;
+  }
+
+  #navigation_strip {
+    height: auto;
+    position: relative;
+  }
+
+  #company_logo {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border: 0.4rem solid green;
+    border-radius: 1.5rem;
+  }
+
+  .home_navigation {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    align-items: stretch;
+    gap: 0.2rem;
+  }
+
+  .home_navigation li {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home_navigation li:hover {
+    border: 0.2rem solid rgb(7, 71, 50);
+    background-color: rgb(47, 201, 106);
+  }
+
+  .home_navigation li:hover ul {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .home_navigation li:active {
+    border: 0.2rem solid rgb(53, 105, 88);
+    background-color: rgb(189, 244, 106);
+  }
+
+  .home_navigation li ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .home_navigation li.active ul {
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+    top: 0.2rem;
+    background-color: rgb(187, 221, 85);
+    padding-left: 0;
+  }
+
+  .home_navigation li ul li {
+    font-size: 1.2rem;
+  }
+
+  .home_navigation li ul li:hover {
+    border: 0.2rem solid transparent;
+    background-color: transparent;
+  }
+
+  .home_navigation li ul li:active {
+    border: 0.2rem solid greenyellow;
+    background-color: antiquewhite;
+  }
+
+  #login_button {
+    margin-left: 0;
+  }
+
+  #login_button:hover {
+    border: 0.2rem solid rgb(29, 183, 132);
+  }
+
+  #login_button:active {
+    border: 0.2rem solid rgb(55, 183, 29);
+    background-color: rgb(11, 134, 93);
+  }
+
+  #login_strip {
+    position: relative;
+    top: -13rem;
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+
+  #login_strip.active {
+    transform: translateY(100%);
+  }
+
+  #login_strip form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #login_strip form label {
+    width: 100%;
+  }
+
+  #login_strip form label input {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+  }
+
+  #login_strip form input {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+  }
+
+  #login_strip form a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  section {
+    width: 100%;
+    padding: 0;
+    left: 0;
+    right: 0;
+    top: -15.4rem;
+    margin-bottom: 55rem;
+  }
+
+  section #bestseller_container .mainblock {
+    width: 100%;
+  }
+
+  section #bestseller_container .mainblock .pictures {
+    flex-direction: column;
+  }
+
+  section #bestseller_container .mainblock .pictures .image {
+    width: 70vw;
+    height: 120vw;
+  }
+
+  section #bestseller_container .mainblock .description {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    bottom: -55rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer ul {
+    padding-left: 0;
+    border: none;
+    text-align: center;
+  }
+
+  footer ul li {
+    padding: 0.8rem;
+  }
+
+  footer ul li a {
+    font-size: 1.2rem;
+  }
+
+  #register_form {
+    left: 0;
+    width: 100%;
+    background-color: rgb(225, 210, 189, 0.6);
+  }
+
+  #login_strip #hide_login_strip {
+    display: none;
+  }
+}
+
+/* STYLES FOR MOBILES - end */
+
+@media screen and (min-width: 625px) {
+  #navigation_strip {
+    height: fit-content;
+  }
+
+  .home_navigation {
+    flex-wrap: wrap;
+    gap: 0.2rem;
+    bottom: 2rem;
+    justify-content: center;
+  }
+
+  #login_strip {
+    top: 4.1rem;
+  }
+
+  section {
+    width: 65%;
+    left: 17.5%;
+    right: 17.5%;
+    margin-top: 5rem;
+  }
+
+  section #bestseller_container .mainblock {
+    width: 100%;
+  }
+
+  section #bestseller_container .mainblock .pictures {
+    flex-direction: column;
+  }
+
+  section #bestseller_container .mainblock .pictures .image {
+    width: 50vw;
+    height: 90vw;
+    transition-duration: 0.5s;
+  }
+
+  section #bestseller_container .mainblock .image:hover {
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+  }
+
+  .sidebar {
+    width: 17.5%;
+  }
+
+  #register_form {
+    width: 60vw;
+    height: 100%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+
+  section {
+    width: 70%;
+    left: 15%;
+    right: 15%;
+  }
+
+  section #bestseller_container {
+    padding: 0.2rem;
+  }
+
+  section #bestseller_container .mainblock {
+    width: 100%;
+    padding: 0;
+  }
+
+  section #bestseller_container .mainblock .pictures {
+    flex-direction: row;
+    padding: 1rem 0;
+  }
+
+  section #bestseller_container .mainblock .pictures .image {
+    width: 30vw;
+    height: 55vw;
+    margin: 0.1rem;
+    transition-duration: 0.8s;
+  }
+
+  section #bestseller_container .mainblock .image1:hover,
+  .image2:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+  }
+
+  section #bestseller_container .mainblock .description {
+    height: 10%;
+    padding: 0.5rem;
+  }
+
+  .sidebar {
+    width: 15%;
+  }
+
+}
+
+@media screen and (min-width: 1048px) {
+  #navigation_strip {
+    height: fit-content;
+  }
+
+  .home_navigation {
+    justify-content: center;
+  }
+
+  .home_navigation li {
+    font-size: 1.2rem;
+  }
+
+  #login_strip {
+    top: 1.3rem;
+  }
+
+  section {
+    margin-top: 3rem;
+    width: 70%;
+    left: 15%;
+    right: 15%;
+  }
+
+  section #bestseller_container .mainblock .pictures .image {
+    width: 28vw;
+    height: 50vw;
+  }
+
+  .sidebar {
+    width: 15%;
+  }
+}
