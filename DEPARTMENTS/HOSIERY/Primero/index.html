@@ -3,16 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>STORE'S HOMEPAGE</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Buena Vista Hosiery</title>
+    <link rel="stylesheet" href="../../../Common styles/styles.css" />
   </head>
   <body>
     <header>
-      <img
-        id="company_logo"
-        src="../Common imagery/company-logo.png"
-        alt="company logo"
-      />
+      <a href="../../../HOME_PAGE/index.html">
+        <img
+          id="company_logo"
+          src="../../../Common imagery/company-logo.png"
+          alt="company logo"
+        />
+      </a>
       <nav id="navigation_strip">
         <ul class="home_navigation">
           <li class="menu_item">
@@ -79,8 +81,11 @@
             Hosiery
             <ul class="submenu">
               <li>
-                <a href="../DEPARTMENTS/HOSIERY/Buena-Vista/index.html">Buena Vista</a></li>
-              <li><a href="../DEPARTMENTS/HOSIERY/Primero/index.html">Primero</a></li>
+                <a href="../../../DEPARTMENTS/HOSIERY/Buena-Vista/index.html"
+                  >Buena Vista</a
+                >
+              </li>
+              <li><a href="">Primero</a></li>
               <li><a href="">Macinta</a></li>
               <li><a href="">Dark Hills</a></li>
               <li><a href="">Lavuasier</a></li>
@@ -107,8 +112,8 @@
       </div>
     </header>
     <section>
-      <h1>Bestsellers of this season</h1>
-      <div id="bestseller_container"></div>
+      <h1>Buena Vista</h1>
+      <div id="product_container"></div>
     </section>
     <footer>
       <ul>
@@ -150,8 +155,7 @@
       <p>SPACE FOR ADWERTS!</p>
       <p>SPACE FOR ADWERTS!</p>
     </sidebar>
-    <div class="backdrop"></div>
-    <form id="register_form" action="">
+    <form id="register_form" action="" method="post">
       <label for="whatever1"
         >First name:<input type="text" name="firstname"
       /></label>
@@ -175,10 +179,11 @@
       />
       <label>...or if you already have an account...</label>
       <button id="register_form_login_button">
-          CLICK HERE, GO UP TO THE MENU AND LOG IN
+        CLICK HERE, GO UP TO THE MENU AND LOG IN
       </button>
       <p id="close_register_form"><b>X</b></p>
     </form>
-    <script src="scripts.js"></script>
+    <div id="backdrop"></div>
+    <script src="scripts.js" ></script>
   </body>
 </html>
