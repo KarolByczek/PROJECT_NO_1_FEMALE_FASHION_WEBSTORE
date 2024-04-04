@@ -59,9 +59,9 @@ const BuenaVistaHosieryCollection = [
     pname: "Bella Gina 001",
     images: [
       "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Primero/images/Burlesque_01.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Buena-Vista/images/bella-gina-001b.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Buena-Vista/images/bella-gina-001c.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Buena-Vista/images/bella-gina-001d.jpg",
+      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Primero/images/Burlesque_02.jpg",
+      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Primero/images/Burlesque_03.jpg",
+      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Primero/images/Burlesque_04.jpg",
     ],
     dcr: "A bitter-sweet combination of darkness and a wind of youthfullness, these will most definitely cath an eye of a common style appreciator.",
   },
