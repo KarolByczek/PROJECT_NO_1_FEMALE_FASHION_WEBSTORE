@@ -78,10 +78,10 @@ const BuenaVistaHosieryCollection = [
   {
     pname: "Bella Gina 002",
     images: [
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Buena-Vista/images/bella-gina-002a.webp",
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Buena-Vista/images/bella-gina-002b.webp",
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Buena-Vista/images/bella-gina-002c.webp",
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Buena-Vista/images/bella-gina-002d.webp",
+      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Primero",
+      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Primero",
+      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Primero",
+      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Primero",
     ],
     dcr: "No such word as 'plain!' Even the simplest of designs, as the one displayed above, bare a potential exclamation mark within. We are only limited by our own imagination... and the range of our wardrobe.",
   },
