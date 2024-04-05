@@ -78,20 +78,20 @@ const BuenaVistaHosieryCollection = [
   {
     pname: "Bella Gina 002",
     images: [
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Primero",
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Primero",
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Primero",
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Primero",
+      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Primero/",
+      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Primero/",
+      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Primero/",
+      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Primero/",
     ],
     dcr: "No such word as 'plain!' Even the simplest of designs, as the one displayed above, bare a potential exclamation mark within. We are only limited by our own imagination... and the range of our wardrobe.",
   },
   {
     pname: "Attica's Charm 001",
     images: [
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Buena-Vista/images/attica's-charm-001a.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Buena-Vista/images/attica's-charm-001b.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Buena-Vista/images/attica's-charm-001c.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Buena-Vista/images/attica's-charm-001d.jpg",
+      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/BPrimero/",
+      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Primero/",
+      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Primero/",
+      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Primero/",
     ],
     dcr: "",
   },
