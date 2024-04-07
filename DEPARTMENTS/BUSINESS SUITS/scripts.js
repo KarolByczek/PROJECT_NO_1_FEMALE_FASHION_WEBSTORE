@@ -58,20 +58,20 @@ const BuenaVistaHosieryCollection = [
   {
     pname: "Bella Gina 001",
     images: [
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Buena-Vista/images/bella-gina-001a.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Buena-Vista/images/bella-gina-001b.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Buena-Vista/images/bella-gina-001c.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Buena-Vista/images/bella-gina-001d.jpg",
+      "./images/macinta_stock_001a.jpg",
+      "./images/macinta_stock_001b.jpg",
+      "./images/macinta_stock_001a.jpg",
+      "./images/macinta_stock_001b.jpg",
     ],
     dcr: "A bitter-sweet combination of darkness and a wind of youthfullness, these will most definitely cath an eye of a common style appreciator.",
   },
   {
     pname: "Mistress Siluette 002",
     images: [
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Buena-Vista/images/mistress-siluette-002a.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Buena-Vista/images/mistress-siluette-002b.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Buena-Vista/images/mistress-siluette-002c.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Buena-Vista/images/mistress-siluette-002d.jpg",
+      "./images/buenavista_stock_001a.jpg",
+      "./images/buenavista_stock_001b.jpg",
+      "./images/buenavista_stock_001a.jpg",
+      "./images/buenavista_stock_001b.jpg",
     ],
     dcr: "Extravagantly intricate and romantic in nature, yet incredibly well accompanied by a simple casual outfit, this pattern fits almost every situation.",
   },
