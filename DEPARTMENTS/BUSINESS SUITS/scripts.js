@@ -58,18 +58,18 @@ const BuenaVistaHosieryCollection = [
   {
     pname: "Bella Gina 001",
     images: [
-      "./images/macinta_stock_001a.jpg",
-      "./images/macinta_stock_001b.jpg",
-      "./images/macinta_stock_001a.jpg",
-      "./images/macinta_stock_001b.jpg",
+      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/images/bella-gina-002a.webp",
+      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/images/bella-gina-002b.webp",
+      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/images/bella-gina-002c.webp",
+      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/images/bella-gina-002d.webp",
     ],
     dcr: "A bitter-sweet combination of darkness and a wind of youthfullness, these will most definitely cath an eye of a common style appreciator.",
   },
   {
     pname: "Mistress Siluette 002",
     images: [
-      "./images/buenavista_stock_001a.jpg",
-      "./images/buenavista_stock_001b.jpg",
+      "",
+      ".",
       "./images/buenavista_stock_001a.jpg",
       "./images/buenavista_stock_001b.jpg",
     ],
