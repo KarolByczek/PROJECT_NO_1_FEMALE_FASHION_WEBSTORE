@@ -78,20 +78,20 @@ const BuenaVistaHosieryCollection = [
   {
     pname: "Bella Gina 002",
     images: [
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Buena-Vista/images/bella-gina-002a.webp",
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Buena-Vista/images/bella-gina-002b.webp",
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Buena-Vista/images/bella-gina-002c.webp",
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Buena-Vista/images/bella-gina-002d.webp",
+      "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-836261960-1024x1024.jpg",
+      "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-836262054-1024x1024.jpg",
+      "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-836262254-1024x1024.jpg",
+      "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-836287926-1024x1024.jpg",
     ],
     dcr: "No such word as 'plain!' Even the simplest of designs, as the one displayed above, bare a potential exclamation mark within. We are only limited by our own imagination... and the range of our wardrobe.",
   },
   {
     pname: "Attica's Charm 001",
     images: [
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Buena-Vista/images/attica's-charm-001a.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Buena-Vista/images/attica's-charm-001b.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Buena-Vista/images/attica's-charm-001c.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/Buena-Vista/images/attica's-charm-001d.jpg",
+      "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-867395940-1024x1024.jpg",
+      "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-867399122-1024x1024.jpg",
+      "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-867399162-1024x1024.jpg",
+      "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-867399174-1024x1024.jpg",
     ],
     dcr: "",
   },
