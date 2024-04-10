@@ -58,10 +58,10 @@ const BuenaVistaHosieryCollection = [
   {
     pname: "Bella Gina 001",
     images: [
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/images/bella-gina-002a.webp",
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/images/bella-gina-002b.webp",
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/images/bella-gina-002c.webp",
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/images/bella-gina-002d.webp",
+      "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-834948978-1024x1024.jpg",
+      "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-835333170-1024x1024.jpg",
+      "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-835333264-1024x1024.jpg",
+      "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-835333320-1024x1024.jpg",
     ],
     dcr: "A bitter-sweet combination of darkness and a wind of youthfullness, these will most definitely cath an eye of a common style appreciator.",
   },
