@@ -68,10 +68,10 @@ const BuenaVistaHosieryCollection = [
   {
     pname: "Mistress Siluette 002",
     images: [
-      "",
-      ".",
-      "./images/buenavista_stock_001a.jpg",
-      "./images/buenavista_stock_001b.jpg",
+      "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-656599132-1024x1024.jpg",
+      "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-656599152-1024x1024.jpg",
+      "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-656599214-1024x1024.jpg",
+      "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-656599232-1024x1024.jpg",
     ],
     dcr: "Extravagantly intricate and romantic in nature, yet incredibly well accompanied by a simple casual outfit, this pattern fits almost every situation.",
   },
