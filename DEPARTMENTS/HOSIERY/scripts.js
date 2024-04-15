@@ -91,7 +91,7 @@ const BuenaVistaHosieryCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/images/mistress-siluette-002a.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/images/mistress-siluette-002b.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/images/mistress-siluette-002c.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/images/mistress-siluette-002d.jpg",
+      "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/images/fashion-model-red-17189453.jpg",
     ],
     dcr: "",
   },
