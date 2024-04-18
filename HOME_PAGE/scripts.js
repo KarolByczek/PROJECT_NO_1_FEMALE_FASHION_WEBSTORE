@@ -3,11 +3,11 @@ const $logStrip = document.querySelector("#login_strip");
 const $hideLoginStrip = document.querySelector("#hide_login_strip");
 
 $logButton.addEventListener("click", () => {
-  $logStrip.classList.toggle("disactivated");
+  $logStrip.classList.toggle("active");
 });
 
 $hideLoginStrip.addEventListener("click", () =>{
-  $logStrip.classList.toggle("disactivated");
+  $logStrip.classList.toggle("active");
 });
 
 const $menuItems = document.querySelectorAll(".menu_item");
@@ -30,7 +30,7 @@ $registerFormLoginButton.addEventListener("click", (event) => {
   event.preventDefault();
   $backDrop.classList.remove("active");
   $registerForm.classList.remove("active");
-  $logStrip.classList.add("disactivated");
+  $logStrip.classList.add("active");
   window.scrollTo(top);
 });
 

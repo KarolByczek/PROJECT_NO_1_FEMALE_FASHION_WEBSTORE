@@ -143,15 +143,18 @@ header {
 #login_strip {
   position: relative;
   left: 0;
+  opacity: 0;
+  visibility: hidden;
   z-index: 2;
   background-color: rgb(29, 183, 132);
   width: 100%;
   border: 0.05rem solid rgb(19, 43, 32);
-  transition: transform 0.3s;
+  transition: all 0.3s;
 }
 
-#login_strip.disactivated {
-  transform: translateY(-100%);
+#login_strip.active {
+  opacity: 1;
+  visibility: visible;
 }
 
 #login_strip form {
@@ -539,7 +542,6 @@ footer ul li a:hover {
     padding: 0;
     left: 0;
     right: 0;
-    top: -15.4rem;
     margin-bottom: 55rem;
   }
 
