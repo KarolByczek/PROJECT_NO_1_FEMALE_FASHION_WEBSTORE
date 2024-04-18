@@ -436,6 +436,7 @@ footer ul li a:hover {
   .home_navigation li {
     justify-content: center;
     align-items: center;
+    width: 95vw;
   }
 
   .home_navigation li:hover {
@@ -454,8 +455,8 @@ footer ul li a:hover {
   }
 
   .home_navigation li ul {
-    width: 100%;
-    margin: 0;
+    width: 102%;
+    border: none;
     padding: 0;
   }
 
@@ -674,8 +675,8 @@ footer ul li a:hover {
   }
 
   section #bestseller_container .mainblock .pictures .image {
-    width: 30vw;
-    height: 55vw;
+    width: 26vw;
+    height: 45vw;
     margin: 0.1rem;
     transition-duration: 0.8s;
   }
@@ -723,8 +724,8 @@ footer ul li a:hover {
   }
 
   section #bestseller_container .mainblock .pictures .image {
-    width: 28vw;
-    height: 50vw;
+    width: 20vw;
+    height: 35vw;
   }
 
   .sidebar {
