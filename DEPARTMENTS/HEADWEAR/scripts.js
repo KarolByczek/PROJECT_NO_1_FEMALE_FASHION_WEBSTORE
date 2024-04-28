@@ -52,9 +52,9 @@ $menuItems.forEach((menuitem) => {
   });
 });
 
-// Temporary - static - solution for fetching contents of the products container.
+// Temporary - static - solution for obtaining the contents of the productsCollection container.
 
-const BuenaVistaHosieryCollection = [
+const productsCollection = [
   {
     pname: "Bella Gina 001",
     images: [
@@ -63,7 +63,7 @@ const BuenaVistaHosieryCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/HEADWEAR/images/8c57bc03754f6f46357cb0aa3f45fd0c.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/HEADWEAR/images/96505c8acdb4d17b33428e90098729df.jpg",
     ],
-    dcr: "A bitter-sweet combination of darkness and a wind of youthfullness, these will most definitely cath an eye of a common style appreciator.",
+    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
   },
   {
     pname: "Mistress Siluette 002",
@@ -73,7 +73,7 @@ const BuenaVistaHosieryCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/HEADWEAR/images/4873a97b6b26c687e376b5ec9cff90d2.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/HEADWEAR/images/b947d525c023b764693909e19b64db87.jpg",
     ],
-    dcr: "Extravagantly intricate and romantic in nature, yet incredibly well accompanied by a simple casual outfit, this pattern fits almost every situation.",
+    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
   },
   {
     pname: "Bella Gina 002",
@@ -83,7 +83,7 @@ const BuenaVistaHosieryCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/HEADWEAR/images/ef975bcdd83755aa8c4dd5d4672acb29.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/HEADWEAR/images/d3a98b49679c032472d13f7a5bc39442.jpg",
     ],
-    dcr: "No such word as 'plain!' Even the simplest of designs, as the one displayed above, bare a potential exclamation mark within. We are only limited by our own imagination... and the range of our wardrobe.",
+    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
   },
   {
     pname: "Attica's Charm 001",
@@ -93,13 +93,13 @@ const BuenaVistaHosieryCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/HEADWEAR/images/dcdecd0e83e7a1e67b5e30058454c7c1.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/HEADWEAR/images/f37952c3d421735fdab08a11857cfd7e.jpg",
     ],
-    dcr: "",
+    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
   },
 ];
 
 const $products = document.getElementById("product_container");
 
-BuenaVistaHosieryCollection.forEach((product) => {
+productsCollection.forEach((product) => {
   const mainblock = document.createElement("div");
   mainblock.setAttribute("class", "mainblock");
   const productName = document.createElement("p");

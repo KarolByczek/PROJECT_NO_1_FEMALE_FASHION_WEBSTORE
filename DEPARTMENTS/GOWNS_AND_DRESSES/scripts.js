@@ -52,9 +52,9 @@ $menuItems.forEach((menuitem) => {
   });
 });
 
-// Temporary - static - solution for fetching contents of the products container.
+// Temporary - static - solution for obtaining the contents of the productsCollection container.
 
-const BuenaVistaHosieryCollection = [
+const productsCollection = [
   {
     pname: "Bella Gina 001",
     images: [
@@ -63,7 +63,7 @@ const BuenaVistaHosieryCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/GOWNS_AND_DRESSES/images/girl-yellow-dress-19187305.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/GOWNS_AND_DRESSES/images/girl-yellow-dress-19425139.jpg",
     ],
-    dcr: "A bitter-sweet combination of darkness and a wind of youthfullness, these will most definitely cath an eye of a common style appreciator.",
+    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
   },
   {
     pname: "Mistress Siluette 002",
@@ -73,7 +73,7 @@ const BuenaVistaHosieryCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/GOWNS_AND_DRESSES/images/young-woman-red-gown-20420645.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/GOWNS_AND_DRESSES/images/young-woman-red-gown-25847665.jpg",
     ],
-    dcr: "Extravagantly intricate and romantic in nature, yet incredibly well accompanied by a simple casual outfit, this pattern fits almost every situation.",
+    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
   },
   {
     pname: "Bella Gina 002",
@@ -83,7 +83,7 @@ const BuenaVistaHosieryCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/GOWNS_AND_DRESSES/images/young-emotional-woman-pink-dress-11264435.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/GOWNS_AND_DRESSES/images/young-emotional-woman-pink-dress-11264441.jpg",
     ],
-    dcr: "No such word as 'plain!' Even the simplest of designs, as the one displayed above, bare a potential exclamation mark within. We are only limited by our own imagination... and the range of our wardrobe.",
+    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
   },
   {
     pname: "Attica's Charm 001",
@@ -93,13 +93,13 @@ const BuenaVistaHosieryCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/GOWNS_AND_DRESSES/images/young-woman-costume-50916327.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/GOWNS_AND_DRESSES/images/young-woman-costume-50916328.jpg",
     ],
-    dcr: "",
+    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
   },
 ];
 
 const $products = document.getElementById("product_container");
 
-BuenaVistaHosieryCollection.forEach((product) => {
+productsCollection.forEach((product) => {
   const mainblock = document.createElement("div");
   mainblock.setAttribute("class", "mainblock");
   const productName = document.createElement("p");

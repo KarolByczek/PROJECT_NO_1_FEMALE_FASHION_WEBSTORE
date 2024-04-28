@@ -52,9 +52,9 @@ $menuItems.forEach((menuitem) => {
   });
 });
 
-// Temporary - static - solution for fetching contents of the products container.
+// Temporary - static - solution for obtaining the contents of the productsCollection container.
 
-const BuenaVistaHosieryCollection = [
+const productsCollection = [
   {
     pname: "Bella Gina 001",
     images: [
@@ -63,7 +63,7 @@ const BuenaVistaHosieryCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/girl-pants-blous-isolated-white-background-body-language-63107751.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/girl-pants-blous-partial-barrier-formed-isolated-white-background-body-language-63049021.jpg",
     ],
-    dcr: "A bitter-sweet combination of darkness and a wind of youthfullness, these will most definitely cath an eye of a common style appreciator.",
+    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
   },
   {
     pname: "Mistress Siluette 002",
@@ -73,7 +73,7 @@ const BuenaVistaHosieryCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/fetish-woman-gun-young-leather-suit-holding-33386502.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/sexy-spy-leather-dress-standing-wall-holding-futuristic-gun-33386368.jpg",
     ],
-    dcr: "Extravagantly intricate and romantic in nature, yet incredibly well accompanied by a simple casual outfit, this pattern fits almost every situation.",
+    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
   },
   {
     pname: "Bella Gina 002",
@@ -83,7 +83,7 @@ const BuenaVistaHosieryCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/sexy-woman-vintage-wall-handcuffs-desire-44985993.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/womam-catsuit-posing-vintage-wall-beautiful-woman-latex-high-heel-platform-boots-walls-42953586.jpg",
     ],
-    dcr: "No such word as 'plain!' Even the simplest of designs, as the one displayed above, bare a potential exclamation mark within. We are only limited by our own imagination... and the range of our wardrobe.",
+    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
   },
   {
     pname: "Attica's Charm 001",
@@ -93,13 +93,13 @@ const BuenaVistaHosieryCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/yoga-pose-89986.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/yoga-stretch-89989.jpg",
     ],
-    dcr: "",
+    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
   },
 ];
 
 const $products = document.getElementById("product_container");
 
-BuenaVistaHosieryCollection.forEach((product) => {
+productsCollection.forEach((product) => {
   const mainblock = document.createElement("div");
   mainblock.setAttribute("class", "mainblock");
   const productName = document.createElement("p");
