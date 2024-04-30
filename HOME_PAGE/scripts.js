@@ -59,7 +59,7 @@ $menuItems.forEach((menuitem) => {
   });
 });
 
-// Temporary - static - solution for fetching contents of the bestseller container. 
+// Temporary - static - solution for obtaining the contents of the bestsellerContainer. 
 
 const bestsellerCollection = [
   {
