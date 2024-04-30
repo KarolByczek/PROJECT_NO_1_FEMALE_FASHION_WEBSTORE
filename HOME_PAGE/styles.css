@@ -426,6 +426,7 @@ footer ul li a:hover {
   #navigation_strip {
     height: auto;
     position: relative;
+    width: 100vw;
   }
 
   #company_logo {
