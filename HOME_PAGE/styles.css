@@ -544,7 +544,7 @@ footer ul li a:hover {
     padding: 0;
     left: 0;
     right: 0;
-    margin-bottom: 55rem;
+    margin-bottom: 1rem;
   }
 
   section #bestseller_container .mainblock {
@@ -565,7 +565,7 @@ footer ul li a:hover {
   }
 
   footer {
-    bottom: -55rem;
+    position: relative;
     flex-direction: column;
     align-items: center;
   }
