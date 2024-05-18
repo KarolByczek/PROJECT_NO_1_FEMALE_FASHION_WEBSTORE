@@ -412,6 +412,7 @@ footer ul li a:hover {
 @media screen and (max-width: 625px) {
   body {
     background-image: none;
+    padding: 0.4rem;
   }
 
   #company_logo {
