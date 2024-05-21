@@ -449,7 +449,7 @@ footer ul li a:hover {
   .home_navigation li {
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
   }
 
   .home_navigation li:hover {
