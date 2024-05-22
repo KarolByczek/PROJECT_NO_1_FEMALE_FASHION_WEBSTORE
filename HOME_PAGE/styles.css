@@ -292,7 +292,6 @@ section {
   left: 15%;
   right: 15%;
   padding: 0.5rem;
-  margin-bottom: 0;
 }
 
 section h1 {
@@ -394,7 +393,7 @@ footer ul li a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 #left_sidebar {
