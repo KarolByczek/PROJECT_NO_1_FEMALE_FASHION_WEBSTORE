@@ -354,7 +354,7 @@ footer {
   bottom: -10rem;
   position: absolute;
   z-index: 2;
-  width: 100vw;
+  width: 98vw;
   background-color: var(--background-green);
   display: flex;
   flex-direction: row;
@@ -717,4 +717,5 @@ footer ul li a:hover {
   .sidebar {
     width: 15%;
   }
+
 }
