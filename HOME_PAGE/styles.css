@@ -1,9 +1,5 @@
 /* GENERAL STYLES - start */
 
-* {
-  box-sizing: border-box;
-}
-
 :root {
   --background-green: rgb(83, 187, 153);
   --light-green: rgb(47, 201, 106);
@@ -611,13 +607,11 @@ footer ul li a:hover {
 
   section {
     width: 65%;
-    left: 17.5%;
-    right: 17.5%;
     margin-top: 5rem;
   }
 
   section #bestseller_container .mainblock {
-    width: 100%;
+    width: 90%;
   }
 
   section #bestseller_container .mainblock .pictures {
