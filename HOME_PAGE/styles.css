@@ -37,7 +37,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
   position: relative;
   top: 0;
   left: 0;
@@ -143,8 +143,8 @@ header {
   visibility: hidden;
   z-index: 2;
   background-color: rgb(29, 183, 132);
-  width: 100%;
-  border: 0.05rem solid rgb(19, 43, 32);
+  width: 100vw;
+  border: 0.1rem solid rgb(19, 43, 32);
   transition: all 0.3s;
 }
 
@@ -284,9 +284,9 @@ header {
 section {
   position: relative;
   margin-top: 3rem;
-  width: 70%;
-  left: 15%;
-  right: 15%;
+  width: 70vw;
+  left: 15vw;
+  right: 15vw;
   padding: 0.5rem;
 }
 
@@ -351,14 +351,13 @@ section #bestseller_container .mainblock .description {
 }
 
 footer {
-  bottom: -10rem;
   position: absolute;
   z-index: 2;
-  width: 98vw;
+  width: 100vw;
   background-color: var(--background-green);
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 footer ul {
@@ -390,6 +389,7 @@ footer ul li a:hover {
   align-items: center;
   text-align: center;
   font-weight: 300;
+  width: 14vw;
 }
 
 #left_sidebar {
