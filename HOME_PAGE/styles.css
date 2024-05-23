@@ -309,7 +309,6 @@ section #bestseller_container {
   flex-direction: column;
   align-items: center;
   border: 3px solid rgb(207, 76, 76);
-  padding: 1rem;
   margin: 0;
   background-color: rgb(219, 216, 213);
   gap: 1rem;
@@ -318,10 +317,8 @@ section #bestseller_container {
 
 section #bestseller_container .mainblock {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90%;
-  border: 0.2rem solid rgb(19, 43, 32, 0.2);
+  width: fit-content;
+  border: 3px solid rgb(19, 43, 32, 0.2);
   padding: 0.8rem;
   background-color: rgb(180, 190, 183);
   border-radius: 2rem;
@@ -334,8 +331,6 @@ section #bestseller_container .mainblock .product_name {
 
 section #bestseller_container .mainblock .pictures {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   width: 100%;
   height: 90%;
   gap: 1rem;
@@ -387,11 +382,12 @@ footer ul li a:hover {
   top: 5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
   font-weight: 300;
   width: 14%;
+  height: 95%;
 }
 
 #left_sidebar {
@@ -546,6 +542,7 @@ footer ul li a:hover {
   }
 
   section #bestseller_container .mainblock {
+    flex-direction: column;
     width: 100%;
   }
 
@@ -625,7 +622,7 @@ footer ul li a:hover {
   }
 
   section #bestseller_container .mainblock {
-    width: 90%;
+    flex-direction: column;
   }
 
   section #bestseller_container .mainblock .pictures {
@@ -669,12 +666,11 @@ footer ul li a:hover {
   }
 
   section #bestseller_container {
-    padding: 0.2rem;
+    
   }
 
   section #bestseller_container .mainblock {
-    width: 100%;
-    padding: 0;
+    
   }
 
   section #bestseller_container .mainblock .pictures {
@@ -683,8 +679,8 @@ footer ul li a:hover {
   }
 
   section #bestseller_container .mainblock .pictures .image {
-    width: 26vw;
-    height: 45vw;
+    width: 48%;
+    height: 55vw;
     margin: 0.1rem;
     transition-duration: 0.8s;
   }
@@ -728,9 +724,9 @@ footer ul li a:hover {
   }
 
   section #bestseller_container .mainblock .pictures .image {
-    width: 20vw;
-    height: 35vw;
+    height: 62vw;
   }
+
 
   .sidebar {
     width: 15%;
