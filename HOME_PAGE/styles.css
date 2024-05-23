@@ -142,9 +142,11 @@ header {
   opacity: 0;
   visibility: hidden;
   z-index: 2;
+  padding: 0.2rem;
   background-color: rgb(29, 183, 132);
   width: 100%;
   border: 0.1rem solid rgb(19, 43, 32);
+  display: flex;
   transition: all 0.3s;
 }
 
@@ -193,8 +195,8 @@ header {
   display: flex;
   justify-content: end;
   position: absolute;
-  top: -0.8rem;
-  right: 0.2rem;
+  top: -0.6rem;
+  right: 0.8rem;
   cursor: pointer;
 }
 
@@ -605,6 +607,18 @@ footer ul li a:hover {
     justify-content: center;
   }
 
+  #login_strip {
+    justify-content: end;
+  }
+
+  #login_strip form {
+    gap: 0.4rem;
+  }
+
+  #login_strip form a#register {
+    margin-right: 2rem;
+  }
+
   section {
     width: 65%;
     margin-top: 5rem;
@@ -643,6 +657,10 @@ footer ul li a:hover {
 }
 
 @media screen and (min-width: 800px) {
+
+  #login_strip {
+    justify-content: center;
+  }
 
   section {
     width: 70%;
