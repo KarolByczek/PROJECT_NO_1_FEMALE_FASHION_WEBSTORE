@@ -285,11 +285,9 @@ header {
 
 section {
   position: relative;
-  margin-top: 3rem;
   width: 70%;
   left: 15%;
   right: 15%;
-  padding: 0.5rem;
 }
 
 section h1 {
@@ -386,7 +384,7 @@ footer ul li a:hover {
   align-items: center;
   text-align: center;
   font-weight: 300;
-  width: 15%;
+  width: 14%;
   height: 95%;
 }
 
@@ -617,8 +615,7 @@ footer ul li a:hover {
   }
 
   section {
-    width: 65%;
-    margin-top: 5rem;
+    margin-top: 8rem;
   }
 
   section #bestseller_container .mainblock {
@@ -653,12 +650,6 @@ footer ul li a:hover {
 
   #login_strip {
     justify-content: center;
-  }
-
-  section {
-    width: 70%;
-    left: 15%;
-    right: 15%;
   }
 
   section #bestseller_container {
@@ -709,10 +700,7 @@ footer ul li a:hover {
   }
 
   section {
-    margin-top: 3rem;
-    width: 70%;
-    left: 15%;
-    right: 15%;
+    margin-top: 5rem;
   }
 
   section #bestseller_container .mainblock .pictures .image {
