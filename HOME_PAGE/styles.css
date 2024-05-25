@@ -12,7 +12,6 @@ body {
   font-style: normal;
   background-image: url("../Common imagery/background.jpg");
   background-attachment: fixed;
-  margin: 0;
 }
 
 header {
@@ -38,13 +37,10 @@ header {
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  position: relative;
   top: 0;
   left: 0;
   background-color: var(--background-green);
   z-index: 4;
-  margin: 0;
-  padding: 0.2rem 0;
 }
 
 .home_navigation {
@@ -403,7 +399,6 @@ footer ul li a:hover {
 @media screen and (max-width: 625px) {
   body {
     background-image: none;
-    padding: 0.4rem;
   }
 
   #company_logo {
@@ -419,29 +414,21 @@ footer ul li a:hover {
   }
 
   #navigation_strip {
-    height: auto;
-    position: relative;
     width: 100%;
-  }
-
-  
-
-  #navigation_strip {
-    padding: 0;
-
   }
 
   .home_navigation {
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     padding: 0;
-    margin: 0;
-    gap: 0.2rem;
+    gap: 0.4rem;
   }
 
   .home_navigation li {
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 94%;
   }
 
   .home_navigation li:hover {
@@ -502,7 +489,7 @@ footer ul li a:hover {
   }
 
   #login_strip {
-    width: 100%;
+    width: 98%;
   }
 
   #login_strip form {
@@ -540,7 +527,7 @@ footer ul li a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 98%;
+    width: 100%;
     padding: 0;
     left: 0;
     right: 0;
