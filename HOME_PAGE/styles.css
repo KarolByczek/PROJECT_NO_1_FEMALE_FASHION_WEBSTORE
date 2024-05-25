@@ -382,11 +382,11 @@ footer ul li a:hover {
   top: 5rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   font-weight: 300;
-  width: 14%;
+  width: 15%;
   height: 95%;
 }
 
@@ -630,8 +630,8 @@ footer ul li a:hover {
   }
 
   section #bestseller_container .mainblock .pictures .image {
-    width: 50vw;
-    height: 90vw;
+    width: 45vw;
+    height: 80vw;
     transition-duration: 0.5s;
   }
 
@@ -639,10 +639,6 @@ footer ul li a:hover {
     transform: scale(1.03);
     -webkit-transform: scale(1.03);
     -moz-transform: scale(1.03);
-  }
-
-  .sidebar {
-    width: 17%;
   }
 
   #register_form {
@@ -697,10 +693,6 @@ footer ul li a:hover {
     padding: 0.5rem;
   }
 
-  .sidebar {
-    width: 15%;
-  }
-
 }
 
 @media screen and (min-width: 1048px) {
@@ -727,9 +719,5 @@ footer ul li a:hover {
     height: 62vw;
   }
 
-
-  .sidebar {
-    width: 15%;
-  }
 
 }
