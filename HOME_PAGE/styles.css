@@ -408,30 +408,31 @@ footer ul li a:hover {
 
   #company_logo {
     position: relative;
+    left: 0;
     width: 100%;
+    height: auto;
   }
 
   header {
     position: relative;
+    width: 100%;
   }
 
   #navigation_strip {
     height: auto;
     position: relative;
-    width: 100vw;
+    width: 100%;
   }
 
-  #company_logo {
-    position: relative;
-    width: 100%;
-    height: auto;
-    border: 0.4rem solid green;
-    border-radius: 1.5rem;
+  
+
+  #navigation_strip {
+    padding: 0;
+
   }
 
   .home_navigation {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
     padding: 0;
     margin: 0;
     gap: 0.2rem;
@@ -500,13 +501,17 @@ footer ul li a:hover {
     background-color: rgb(11, 134, 93);
   }
 
-  #login_strip form {
-    flex-direction: column;
+  #login_strip {
     width: 100%;
   }
 
+  #login_strip form {
+    flex-direction: column;
+    width: 98%;
+  }
+
   #login_strip form label {
-    width: 100%;
+    width: 98%;
   }
 
   #login_strip form label input {
@@ -532,16 +537,23 @@ footer ul li a:hover {
   }
 
   section {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 98%;
     padding: 0;
     left: 0;
     right: 0;
     margin-bottom: 1rem;
   }
 
+  section #bestseller_container {
+    width: 90%;
+  }
+
   section #bestseller_container .mainblock {
     flex-direction: column;
-    width: 100%;
+    width: 98%;
   }
 
   section #bestseller_container .mainblock .pictures {
@@ -549,8 +561,8 @@ footer ul li a:hover {
   }
 
   section #bestseller_container .mainblock .pictures .image {
-    width: 70vw;
-    height: 120vw;
+    width: 70%;
+    height: 120%;
   }
 
   section #bestseller_container .mainblock .description {
@@ -579,7 +591,7 @@ footer ul li a:hover {
 
   #register_form {
     left: 0;
-    width: 100%;
+    width: 98%;
     background-color: rgb(225, 210, 189, 0.6);
   }
 
