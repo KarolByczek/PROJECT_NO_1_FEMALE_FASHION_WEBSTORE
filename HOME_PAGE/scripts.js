@@ -119,6 +119,9 @@ bestsellerCollection.forEach((bestseller) => {
   const description = document.createElement("p");
   description.setAttribute("class", "description");
   description.innerHTML = bestseller.dcr;
+  const alink = document.createElement("a");
+  alink.setAttribute("href", "https://www.youtube.com/watch?v=d5ZfLIkBOkk&list=PLpdRrmiqbfWPV6OwkPtaX4cMWgszSIlnX&index=18");
+  alink.innerHTML = "BUY!!";
 
   const pictures = document.createElement("div");
   pictures.setAttribute("class", "pictures");
@@ -126,6 +129,7 @@ bestsellerCollection.forEach((bestseller) => {
   mainblock.appendChild(productName);
   mainblock.appendChild(pictures);
   mainblock.appendChild(description);
+  mainblock.appendChild(alink);
   pictures.appendChild(image1);
   pictures.appendChild(image2);
 
