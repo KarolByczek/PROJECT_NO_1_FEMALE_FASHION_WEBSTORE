@@ -56,7 +56,7 @@ $menuItems.forEach((menuitem) => {
 
 const productsCollection = [
   {
-    pname: "Bella Gina 001",
+    pname: "Lavuasier 005",
     images: [
       "http://127.0.0.1:5500/DEPARTMENTS/GOWNS_AND_DRESSES/images/girl-yellow-dress-19027485.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/GOWNS_AND_DRESSES/images/girl-yellow-dress-19100234.jpg",
@@ -64,9 +64,10 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/GOWNS_AND_DRESSES/images/girl-yellow-dress-19425139.jpg",
     ],
     dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    id: "lavuasier005"
   },
   {
-    pname: "Mistress Siluette 002",
+    pname: "Dark Hills 004",
     images: [
       "http://127.0.0.1:5500/DEPARTMENTS/GOWNS_AND_DRESSES/images/portrait-young-woman-red-gown-20046227.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/GOWNS_AND_DRESSES/images/portrait-young-woman-red-gown-26903091.jpg",
@@ -74,9 +75,10 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/GOWNS_AND_DRESSES/images/young-woman-red-gown-25847665.jpg",
     ],
     dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    id: "darkhills 004"
   },
   {
-    pname: "Bella Gina 002",
+    pname: "Buena Vista 002",
     images: [
       "http://127.0.0.1:5500/DEPARTMENTS/GOWNS_AND_DRESSES/images/young-beautiful-woman-umbrella-11255808.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/GOWNS_AND_DRESSES/images/young-emotional-woman-pink-dress-11264424.jpg",
@@ -84,9 +86,10 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/GOWNS_AND_DRESSES/images/young-emotional-woman-pink-dress-11264441.jpg",
     ],
     dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    id: "buenavista002"
   },
   {
-    pname: "Attica's Charm 001",
+    pname: "Macinta 006",
     images: [
       "http://127.0.0.1:5500/DEPARTMENTS/GOWNS_AND_DRESSES/images/young-woman-costume-50916325.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/GOWNS_AND_DRESSES/images/young-woman-costume-50916326.jpg",
@@ -94,6 +97,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/GOWNS_AND_DRESSES/images/young-woman-costume-50916328.jpg",
     ],
     dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    id: "macinta006"
   },
 ];
 
@@ -102,6 +106,7 @@ const $products = document.getElementById("product_container");
 productsCollection.forEach((product) => {
   const mainblock = document.createElement("div");
   mainblock.setAttribute("class", "mainblock");
+  mainblock.setAttribute("id", product.id);
   const productName = document.createElement("p");
   productName.setAttribute("class", "product_name");
   productName.innerHTML = product.pname;

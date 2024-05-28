@@ -64,6 +64,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/images/attica's-charm-001d.jpg",
     ],
     dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    id: "bellagina001"
   },
   {
     pname: "Mistress Siluette 002",
@@ -74,6 +75,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/images/bella-gina-001d.jpg",
     ],
     dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    id: "mistresssiluette002"
   },
   {
     pname: "Bella Gina 002",
@@ -84,6 +86,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/images/bella-gina-002b.webp",
     ],
     dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    id: "bellagina002"
   },
   {
     pname: "Attica's Charm 001",
@@ -94,6 +97,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/images/fashion-model-red-17189453.jpg",
     ],
     dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    id: "atticascharm001"
   },
 ];
 
@@ -102,6 +106,7 @@ const $products = document.getElementById("product_container");
 productsCollection.forEach((product) => {
   const mainblock = document.createElement("div");
   mainblock.setAttribute("class", "mainblock");
+  mainblock.setAttribute("id", product.id)
   const productName = document.createElement("p");
   productName.setAttribute("class", "product_name");
   productName.innerHTML = product.pname;

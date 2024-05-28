@@ -56,7 +56,7 @@ $menuItems.forEach((menuitem) => {
 
 const productsCollection = [
   {
-    pname: "Bella Gina 001",
+    pname: "Dark Hills 003",
     images: [
       "http://127.0.0.1:5500/DEPARTMENTS/HEADWEAR/images/1cbaa5d4127baddada1f3d6a1385c84e.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/HEADWEAR/images/6e08cce9802d998a6e7ee7096ef40072.jpg",
@@ -64,9 +64,10 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/HEADWEAR/images/96505c8acdb4d17b33428e90098729df.jpg",
     ],
     dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    id: "darkhills003"
   },
   {
-    pname: "Mistress Siluette 002",
+    pname: "Buena Vista 009",
     images: [
       "http://127.0.0.1:5500/DEPARTMENTS/HEADWEAR/images/2ed2a81d53f41d04f2eea116a47d680b.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/HEADWEAR/images/4c4f788cce3db309bd6e6445047c9c45.jpg",
@@ -74,9 +75,10 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/HEADWEAR/images/b947d525c023b764693909e19b64db87.jpg",
     ],
     dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    id: "buenavista009"
   },
   {
-    pname: "Bella Gina 002",
+    pname: "Macinta 004",
     images: [
       "http://127.0.0.1:5500/DEPARTMENTS/HEADWEAR/images/12ffdabefdbc892d3739ea60ff64d202.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/HEADWEAR/images/a3b9e4c1960d39fbbc8be5d8d4c40313.jpg",
@@ -84,9 +86,10 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/HEADWEAR/images/d3a98b49679c032472d13f7a5bc39442.jpg",
     ],
     dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    id: "macinta004"
   },
   {
-    pname: "Attica's Charm 001",
+    pname: "Primero 001",
     images: [
       "http://127.0.0.1:5500/DEPARTMENTS/HEADWEAR/images/668d93aa7f131b65ce08a4ea10f32a62.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/HEADWEAR/images/d5df0c44232798c60231e6f2f6f18922.jpg",
@@ -94,6 +97,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/HEADWEAR/images/f37952c3d421735fdab08a11857cfd7e.jpg",
     ],
     dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    id: "primero001"
   },
 ];
 
@@ -102,6 +106,7 @@ const $products = document.getElementById("product_container");
 productsCollection.forEach((product) => {
   const mainblock = document.createElement("div");
   mainblock.setAttribute("class", "mainblock");
+  mainblock.setAttribute("id", product.id);
   const productName = document.createElement("p");
   productName.setAttribute("class", "product_name");
   productName.innerHTML = product.pname;

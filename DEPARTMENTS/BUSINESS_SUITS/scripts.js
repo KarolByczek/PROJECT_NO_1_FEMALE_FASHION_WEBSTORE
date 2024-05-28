@@ -56,7 +56,7 @@ $menuItems.forEach((menuitem) => {
 
 const productsCollection = [
   {
-    pname: "Bella Gina 001",
+    pname: "Buena Vista 006",
     images: [
       "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-834948978-1024x1024.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-835333170-1024x1024.jpg",
@@ -64,9 +64,10 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-835333320-1024x1024.jpg",
     ],
     dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    id: "buenavista006"
   },
   {
-    pname: "Mistress Siluette 002",
+    pname: "Primero 004",
     images: [
       "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-656599132-1024x1024.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-656599152-1024x1024.jpg",
@@ -74,9 +75,10 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-656599232-1024x1024.jpg",
     ],
     dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    id: "primero004"
   },
   {
-    pname: "Bella Gina 002",
+    pname: "Macinta 003",
     images: [
       "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-836261960-1024x1024.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-836262054-1024x1024.jpg",
@@ -84,9 +86,10 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-836287926-1024x1024.jpg",
     ],
     dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    id: "macinta003"
   },
   {
-    pname: "Attica's Charm 001",
+    pname: "Lavuuasier 008",
     images: [
       "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-867395940-1024x1024.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-867399122-1024x1024.jpg",
@@ -94,6 +97,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-867399174-1024x1024.jpg",
     ],
     dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    id: "lavuasier008"
   },
 ];
 
@@ -102,6 +106,7 @@ const $products = document.getElementById("product_container");
 productsCollection.forEach((product) => {
   const mainblock = document.createElement("div");
   mainblock.setAttribute("class", "mainblock");
+  mainblock.setAttribute("id", product.id);
   const productName = document.createElement("p");
   productName.setAttribute("class", "product_name");
   productName.innerHTML = product.pname;

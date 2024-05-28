@@ -56,7 +56,7 @@ $menuItems.forEach((menuitem) => {
 
 const productsCollection = [
   {
-    pname: "Bella Gina 001",
+    pname: "Macinta 002",
     images: [
       "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/girl-pants-blous-isolated-white-background-body-language-63053941.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/girl-pants-blous-isolated-white-background-body-language-63053989.jpg",
@@ -64,9 +64,10 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/girl-pants-blous-partial-barrier-formed-isolated-white-background-body-language-63049021.jpg",
     ],
     dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    id: "macinta002"
   },
   {
-    pname: "Mistress Siluette 002",
+    pname: "Lavuasier 002",
     images: [
       "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/woman-leather-dress-knife-sexy-catsuit-holding-combat-old-fabric-ruins-33386156.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/prld3.jpg",
@@ -74,9 +75,10 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/sexy-spy-leather-dress-standing-wall-holding-futuristic-gun-33386368.jpg",
     ],
     dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    id: "lavuasier002"
   },
   {
-    pname: "Bella Gina 002",
+    pname: "Dark Hills 001",
     images: [
       "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/sexy-woman-catsuit-holding-handcuffs-37733588.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/sexy-woman-latex-catsuit-bite-whip-vintage-wall-44351942.jpg",
@@ -84,9 +86,10 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/womam-catsuit-posing-vintage-wall-beautiful-woman-latex-high-heel-platform-boots-walls-42953586.jpg",
     ],
     dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    id: "darkhills001"
   },
   {
-    pname: "Attica's Charm 001",
+    pname: "Primero 005",
     images: [
       "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/yoga-pose-89768.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/yoga-pose-89773.jpg",
@@ -94,6 +97,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/yoga-stretch-89989.jpg",
     ],
     dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    id: "primero005"
   },
 ];
 
@@ -102,6 +106,7 @@ const $products = document.getElementById("product_container");
 productsCollection.forEach((product) => {
   const mainblock = document.createElement("div");
   mainblock.setAttribute("class", "mainblock");
+  mainblock.setAttribute("id", product.id)
   const productName = document.createElement("p");
   productName.setAttribute("class", "product_name");
   productName.innerHTML = product.pname;

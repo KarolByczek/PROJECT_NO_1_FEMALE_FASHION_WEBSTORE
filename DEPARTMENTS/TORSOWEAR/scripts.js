@@ -56,7 +56,7 @@ $menuItems.forEach((menuitem) => {
 
 const productsCollection = [
   {
-    pname: "Bella Gina 001",
+    pname: "Primero 001",
     images: [
       "http://127.0.0.1:5500/DEPARTMENTS/TORSOWEAR/images/beautiful-woman-bouquet-smiling-flowers-isolated-white-background-40359713.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/TORSOWEAR/images/happy-beautiful-woman-smiling-isolated-white-background-40195085.jpg",
@@ -64,9 +64,10 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/TORSOWEAR/images/beauty-woman-holding-camera-pointing-isolated-over-white-background-40359715.jpg",
     ],
     dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    id: "primero001"
   },
   {
-    pname: "Mistress Siluette 002",
+    pname: "Buena Vista 003",
     images: [
       "http://127.0.0.1:5500/DEPARTMENTS/TORSOWEAR/images/beautiful-young-woman-blouse-skirt-white-20982987.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/TORSOWEAR/images/self-confident-young-woman-blouse-skirt-21910930.jpg",
@@ -74,9 +75,10 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/TORSOWEAR/images/strict-young-woman-blouse-skirt-21391050.jpg",
     ],
     dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    id: "buenavista003"
   },
   {
-    pname: "Bella Gina 002",
+    pname: "Macinta 006",
     images: [
       "http://127.0.0.1:5500/DEPARTMENTS/TORSOWEAR/images/frightened-woman-shows-sign-asphyxiation-emotional-white-background-76111641.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/TORSOWEAR/images/smiling-portrait-young-woman-white-background-37074802.jpg",
@@ -84,9 +86,10 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/TORSOWEAR/images/woman-pointing-finger-to-side-young-isolated-white-background-point-towards-85319073.jpg",
     ],
     dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    id: "macinta006"
   },
   {
-    pname: "Attica's Charm 001",
+    pname: "Lavuasier 004",
     images: [
       "http://127.0.0.1:5500/DEPARTMENTS/TORSOWEAR/images/unhappy-young-woman-isolated-white-background-30192545.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/TORSOWEAR/images/young-attractive-woman-pointing-isolated-white-background-29713326.jpg",
@@ -94,6 +97,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/TORSOWEAR/images/young-woman-holding-finger-lips-isolated-white-background-29713313.jpg",
     ],
     dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    id: "lavuasier004"
   },
 ];
 
@@ -102,6 +106,7 @@ const $products = document.getElementById("product_container");
 productsCollection.forEach((product) => {
   const mainblock = document.createElement("div");
   mainblock.setAttribute("class", "mainblock");
+  mainblock.setAttribute("id", product.id);
   const productName = document.createElement("p");
   productName.setAttribute("class", "product_name");
   productName.innerHTML = product.pname;
