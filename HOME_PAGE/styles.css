@@ -631,8 +631,8 @@ footer ul li a:hover {
   }
 
   section #bestseller_container .mainblock .pictures .image {
-    width: 45vw;
-    height: 80vw;
+    width: 90%;
+    height: auto;
     transition-duration: 0.5s;
   }
 
@@ -677,7 +677,6 @@ footer ul li a:hover {
 
   section #bestseller_container .mainblock .pictures .image {
     width: 48%;
-    height: 55vw;
     margin: 0.1rem;
     transition-duration: 0.8s;
   }
@@ -711,10 +710,6 @@ footer ul li a:hover {
 
   section {
     margin-top: 5rem;
-  }
-
-  section #bestseller_container .mainblock .pictures .image {
-    height: 62vw;
   }
 
 
