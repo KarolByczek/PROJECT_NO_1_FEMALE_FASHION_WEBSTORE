@@ -127,7 +127,8 @@ bestsellerCollection.forEach((bestseller) => {
   description.innerHTML = bestseller.dcr;
   const alink = document.createElement("a");
   alink.setAttribute("href", bestseller.urladdress);
-  alink.innerHTML = "BUY!!";
+  alink.setAttribute("class", "alink");
+  alink.innerHTML = "SEE UP CLOSE";
 
   const pictures = document.createElement("div");
   pictures.setAttribute("class", "pictures");
