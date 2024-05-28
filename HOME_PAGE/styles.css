@@ -662,6 +662,12 @@ footer ul li a:hover {
     justify-content: center;
   }
 
+  section {
+    width: 75%;
+    left: 12.5%;
+    right: 12.5%;
+  }
+
   section #bestseller_container {
     
   }
@@ -691,6 +697,10 @@ footer ul li a:hover {
   section #bestseller_container .mainblock .description {
     height: 10%;
     padding: 0.5rem;
+  }
+
+  .sidebar {
+    width: 9%;
   }
 
 }
