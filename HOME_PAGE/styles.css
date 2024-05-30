@@ -355,7 +355,13 @@ section #bestseller_container .mainblock .alink {
   color: blanchedalmond;
   background-color: rgb(69, 69, 128);
   padding: 1rem;
-  border-radius: 0.5rem;
+  border: 0.4rem solid rgb(121, 150, 77);
+  border-radius: 5rem;
+  transition: all 0.3s;
+}
+
+section #bestseller_container .mainblock .alink:hover {
+  border: 0.4rem solid rgb(133, 192, 45);
 }
 
 footer {
