@@ -355,6 +355,7 @@ section #bestseller_container .mainblock .alinkcontainer {
 }
 
 section #bestseller_container .mainblock .alinkcontainer .alink1 {
+  text-align: center;
   text-decoration: none;
   font-size: larger;
   font-weight: bolder;
@@ -368,6 +369,7 @@ section #bestseller_container .mainblock .alinkcontainer .alink1 {
 }
 
 section #bestseller_container .mainblock .alinkcontainer .alink2 {
+  text-align: center;
   text-decoration: none;
   font-size: larger;
   font-weight: bolder;
@@ -580,7 +582,7 @@ footer ul li a:hover {
   }
 
   section #bestseller_container {
-    width: 100%;
+    width: 98%;
     padding: 1rem 0;
   }
 
