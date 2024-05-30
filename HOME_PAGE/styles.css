@@ -347,7 +347,13 @@ section #bestseller_container .mainblock .description {
   text-align: justify;
 }
 
-section #bestseller_container .mainblock .alink {
+section #bestseller_container .mainblock .alinkcontainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+section #bestseller_container .mainblock .alinkcontainer .alink1 {
   text-decoration: none;
   font-size: larger;
   font-weight: bolder;
@@ -360,7 +366,20 @@ section #bestseller_container .mainblock .alink {
   transition: all 0.3s;
 }
 
-section #bestseller_container .mainblock .alink:hover {
+section #bestseller_container .mainblock .alinkcontainer .alink2 {
+  text-decoration: none;
+  font-size: larger;
+  font-weight: bolder;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: blanchedalmond;
+  background-color: rgb(69, 69, 128);
+  padding: 1rem;
+  border: 0.4rem solid rgb(121, 150, 77);
+  border-radius: 5rem;
+  transition: all 0.3s;
+}
+
+section #bestseller_container .mainblock .alink1:hover {
   border: 0.4rem solid rgb(133, 192, 45);
 }
 

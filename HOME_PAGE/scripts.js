@@ -124,21 +124,30 @@ bestsellerCollection.forEach((bestseller) => {
   image2.setAttribute("class", "image");
   const description = document.createElement("p");
   description.setAttribute("class", "description");
+  const alinkcontainer = document.createElement("div");
+  alinkcontainer.setAttribute("class", "alinkcontainer");
   description.innerHTML = bestseller.dcr;
-  const alink = document.createElement("a");
-  alink.setAttribute("href", bestseller.urladdress);
-  alink.setAttribute("class", "alink");
-  alink.innerHTML = "SEE UP CLOSE";
+  const alink1 = document.createElement("a");
+  alink1.setAttribute("href", bestseller.urladdress);
+  alink1.setAttribute("class", "alink1");
+  alink1.innerHTML = "SEE UP CLOSE";
+  const alink2 = document.createElement("a");
+  alink2.setAttribute("href", bestseller.urladdress);
+  alink2.setAttribute("class", "alink2");
+  alink2.innerHTML = "GO TO SHOPPING CART";
 
   const pictures = document.createElement("div");
   pictures.setAttribute("class", "pictures");
 
   mainblock.appendChild(productName);
   mainblock.appendChild(pictures);
-  mainblock.appendChild(description);
-  mainblock.appendChild(alink);
   pictures.appendChild(image1);
   pictures.appendChild(image2);
+  mainblock.appendChild(description);
+  mainblock.appendChild(alinkcontainer);
+  alinkcontainer.appendChild(alink1);
+  alinkcontainer.appendChild(alink2);
+  
 
   $bestsellers.appendChild(mainblock);
 });
