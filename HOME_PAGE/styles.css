@@ -350,7 +350,8 @@ section #bestseller_container .mainblock .description {
 section #bestseller_container .mainblock .alinkcontainer {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 1rem;
 }
 
 section #bestseller_container .mainblock .alinkcontainer .alink1 {
@@ -359,7 +360,7 @@ section #bestseller_container .mainblock .alinkcontainer .alink1 {
   font-weight: bolder;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: blanchedalmond;
-  background-color: rgb(69, 69, 128);
+  background-color: rgb(108, 108, 153);
   padding: 1rem;
   border: 0.4rem solid rgb(121, 150, 77);
   border-radius: 5rem;
@@ -372,7 +373,7 @@ section #bestseller_container .mainblock .alinkcontainer .alink2 {
   font-weight: bolder;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: blanchedalmond;
-  background-color: rgb(69, 69, 128);
+  background-color: rgb(62, 134, 110);
   padding: 1rem;
   border: 0.4rem solid rgb(121, 150, 77);
   border-radius: 5rem;
@@ -380,6 +381,10 @@ section #bestseller_container .mainblock .alinkcontainer .alink2 {
 }
 
 section #bestseller_container .mainblock .alink1:hover {
+  border: 0.4rem solid rgb(133, 192, 45);
+}
+
+section #bestseller_container .mainblock .alink2:hover {
   border: 0.4rem solid rgb(133, 192, 45);
 }
 
@@ -591,7 +596,7 @@ footer ul li a:hover {
 
   section #bestseller_container .mainblock .pictures .image {
     width: 100%;
-    height: 120vh;
+    height: auto;
   }
 
   section #bestseller_container .mainblock .description {
@@ -669,8 +674,7 @@ footer ul li a:hover {
   }
 
   section #bestseller_container .mainblock .pictures .image {
-    width: 90%;
-    height: auto;
+    width:100%;
     transition-duration: 0.5s;
   }
 
@@ -706,21 +710,13 @@ footer ul li a:hover {
     right: 12.5%;
   }
 
-  section #bestseller_container {
-    
-  }
-
-  section #bestseller_container .mainblock {
-    
-  }
-
   section #bestseller_container .mainblock .pictures {
     flex-direction: row;
     padding: 1rem 0;
   }
 
   section #bestseller_container .mainblock .pictures .image {
-    width: 48%;
+    width: 49%;
     margin: 0.1rem;
     transition-duration: 0.8s;
   }
