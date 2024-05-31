@@ -450,13 +450,14 @@ footer ul li a:hover {
 
   #company_logo {
     position: relative;
+    left: 0;
+    top: 0;
     width: 98%;
     height: auto;
   }
 
   header {
     position: relative;
-    right: 0;
   }
 
   #navigation_strip {
@@ -536,19 +537,28 @@ footer ul li a:hover {
 
   #login_strip {
     width: 98%;
+    padding: 4px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #login_strip form {
     flex-direction: column;
-    width: 98%;
+    align-items: center;
+    width: 100%;
   }
 
   #login_strip form label {
-    width: 98%;
+    width: 95%;
+    display: flex;
+    justify-content: center;
   }
 
   #login_strip form label input {
-    width: 100%;
+    width: 90%;
     font-size: 1.2rem;
     padding: 0.4rem;
   }
