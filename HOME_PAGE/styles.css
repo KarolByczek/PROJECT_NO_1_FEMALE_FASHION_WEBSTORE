@@ -450,11 +450,13 @@ footer ul li a:hover {
 
   #company_logo {
     position: relative;
-    left: 0;
-    right: 0;
-    top: 0;
-    width: auto;
+    width: 98%;
     height: auto;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
+    border: none;
   }
 
   header {
