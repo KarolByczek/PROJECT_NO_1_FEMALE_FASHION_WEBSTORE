@@ -476,9 +476,10 @@ footer ul li a:hover {
   }
 
   .home_navigation li {
-    justify-content: center;
     align-items: center;
     width: 94%;
+    font-size: 1.5rem;
+    text-transform: uppercase;
   }
 
   .home_navigation li:hover {
@@ -499,7 +500,9 @@ footer ul li a:hover {
   .home_navigation li ul {
     width: 102%;
     border: none;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .home_navigation li.active ul {
@@ -508,11 +511,18 @@ footer ul li a:hover {
     opacity: 1;
     top: 0.2rem;
     background-color: rgb(187, 221, 85);
-    padding-left: 0;
   }
 
   .home_navigation li ul li {
     font-size: 1.2rem;
+    height: 2.5rem;
+    margin-top: 0.8rem;
+  }
+
+  .home_navigation li ul li a {
+    height: 100%;
+    text-align: center;
+    line-height: 2.5rem;
   }
 
   .home_navigation li ul li:hover {
