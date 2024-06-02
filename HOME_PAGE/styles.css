@@ -444,9 +444,6 @@ footer ul li a:hover {
 /* STYLES FOR MOBILES - start */
 
 @media screen and (max-width: 625px) {
-  body {
-    background-image: none;
-  }
 
   #company_logo {
     position: relative;
@@ -689,14 +686,16 @@ footer ul li a:hover {
 
   section #bestseller_container .mainblock {
     flex-direction: column;
+    align-items: center;
   }
 
   section #bestseller_container .mainblock .pictures {
     flex-direction: column;
+    align-items: center;
   }
 
   section #bestseller_container .mainblock .pictures .image {
-    width:100%;
+    width: 100%;
     transition-duration: 0.5s;
   }
 
@@ -734,6 +733,7 @@ footer ul li a:hover {
 
   section #bestseller_container .mainblock .pictures {
     flex-direction: row;
+    justify-content: center;
     padding: 1rem 0;
   }
 
