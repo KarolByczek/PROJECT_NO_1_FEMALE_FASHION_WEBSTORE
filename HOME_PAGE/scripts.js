@@ -134,7 +134,7 @@ bestsellerCollection.forEach((bestseller) => {
   const alink2 = document.createElement("a");
   alink2.setAttribute("href", bestseller.urladdress);
   alink2.setAttribute("class", "alink2");
-  alink2.innerHTML = "GO TO SHOPPING CART";
+  alink2.innerHTML = "ADD TO SHOPPING CART";
 
   const pictures = document.createElement("div");
   pictures.setAttribute("class", "pictures");
