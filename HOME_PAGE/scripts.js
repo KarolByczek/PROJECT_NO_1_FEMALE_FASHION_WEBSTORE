@@ -38,7 +38,7 @@ const openRegisterFunction = () => {
   $backDrop.classList.add("active");
   $registerForm.classList.add("active");
 };
-const timeout = setTimeout(() => openRegisterFunction(), 5000);
+//const timeout = setTimeout(() => openRegisterFunction(), 5000);
 // if (the user has logged in or registered) {clearTimeout(timeout)};
 
 $closeRegisterForm.addEventListener("click", () => {
