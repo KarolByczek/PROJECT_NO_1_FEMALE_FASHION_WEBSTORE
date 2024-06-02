@@ -461,6 +461,7 @@ footer ul li a:hover {
 
   header {
     position: relative;
+    margin-bottom: -10rem;
   }
 
   #navigation_strip {
