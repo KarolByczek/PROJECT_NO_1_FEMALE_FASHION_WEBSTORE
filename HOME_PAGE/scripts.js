@@ -65,14 +65,14 @@ const bestsellerCollection = [
   {
     pname: "Mistress Siluette 002",
     img1: "bella-gina-001a.jpg",
-    img2: "bella-gina-001d.jpg",
+    img2: "bella-gina-001b.jpg",
     dcr: "A placeholder text for description of the product. A placeholder text for description of the product. A placeholder text for description of the product.",
     urladdress: "../DEPARTMENTS/HOSIERY/index.html#mistresssiluette002"
   },
   {
     pname: "Dark Hills Hat 001",
-    img1: "12ffdabefdbc892d3739ea60ff64d202.jpg",
-    img2: "d3a98b49679c032472d13f7a5bc39442.jpg",
+    img1: "b947d525c023b764693909e19b64db87.jpg",
+    img2: "4c4f788cce3db309bd6e6445047c9c45.jpg",
     dcr: "A placeholder text for description of the product. A placeholder text for description of the product. A placeholder text for description of the product.",
     urladdress: "../DEPARTMENTS/HEADWEAR/index.html#macinta004"
   },
