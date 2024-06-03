@@ -38,7 +38,7 @@ const openRegisterFunction = () => {
   $backDrop.classList.add("active");
   $registerForm.classList.add("active");
 };
-//const timeout = setTimeout(() => openRegisterFunction(), 5000);
+const timeout = setTimeout(() => openRegisterFunction(), 5000);
 // if (the user has logged in or registered) {clearTimeout(timeout)};
 
 $closeRegisterForm.addEventListener("click", () => {
@@ -74,7 +74,7 @@ const bestsellerCollection = [
     img1: "b947d525c023b764693909e19b64db87.jpg",
     img2: "4c4f788cce3db309bd6e6445047c9c45.jpg",
     dcr: "A placeholder text for description of the product. A placeholder text for description of the product. A placeholder text for description of the product.",
-    urladdress: "../DEPARTMENTS/HEADWEAR/index.html#macinta004"
+    urladdress: "../DEPARTMENTS/HEADWEAR/index.html#buenavista009"
   },
   {
     pname: "Lavuasier Dress 002",
