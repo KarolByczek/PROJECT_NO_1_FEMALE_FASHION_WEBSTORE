@@ -285,9 +285,6 @@ header {
 
 section {
   position: relative;
-  width: 70%;
-  left: 15%;
-  right: 15%;
 }
 
 section h1 {
@@ -430,16 +427,16 @@ footer ul li a:hover {
   align-items: center;
   text-align: center;
   font-weight: 300;
-  width: 14%;
   height: 95%;
+  padding: 0.4rem;
 }
 
 #left_sidebar {
-  left: 0.5%;
+  left: 0;
 }
 
 #right_sidebar {
-  right: 0.5%;
+  right: 0;
 }
 
 /* GENERAL STYLES - end */
@@ -659,6 +656,7 @@ footer ul li a:hover {
 /* STYLES FOR MOBILES - end */
 
 @media screen and (min-width: 625px) {
+
   #navigation_strip {
     height: fit-content;
   }
@@ -686,7 +684,7 @@ footer ul li a:hover {
     margin-top: 8rem;
     margin-bottom: 2rem;
     width: 80%;
-    left: 1rem;
+    left: 0.5rem;
   }
 
   #left_sidebar {
@@ -694,7 +692,7 @@ footer ul li a:hover {
   }
 
   #right_sidebar {
-    width: 19%;
+    width: 18%;
   }
 
   section #bestseller_container .mainblock {
@@ -762,15 +760,6 @@ footer ul li a:hover {
     padding: 0.5rem;
   }
 
-  #left_sidebar {
-    display: flex;
-    width: 14.5%
-  }
-
-  #right_sidebar {
-    width: 14.5%;
-  }
-
 }
 
 @media screen and (min-width: 1048px) {
@@ -789,12 +778,17 @@ footer ul li a:hover {
   section {
     margin-top: 5rem;
     width: 70%;
-    left: 14.5%;
-    right: 14.5%;
+    left: 15%;
+    right: 15%;
   }
 
   #left_sidebar {
     display: flex;
+    width: 14.5%;
+  }
+
+  #right_sidebar {
+    width: 14.5%;
   }
 
 
