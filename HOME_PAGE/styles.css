@@ -685,6 +685,16 @@ footer ul li a:hover {
   section {
     margin-top: 8rem;
     margin-bottom: 2rem;
+    width: 80%;
+    left: 1rem;
+  }
+
+  #left_sidebar {
+    display: none;
+  }
+
+  #right_sidebar {
+    width: 19%;
   }
 
   section #bestseller_container .mainblock {
@@ -728,12 +738,6 @@ footer ul li a:hover {
     justify-content: center;
   }
 
-  section {
-    width: 75%;
-    left: 12.5%;
-    right: 12.5%;
-  }
-
   section #bestseller_container .mainblock .pictures {
     flex-direction: row;
     justify-content: center;
@@ -758,8 +762,13 @@ footer ul li a:hover {
     padding: 0.5rem;
   }
 
-  .sidebar {
-    width: 9%;
+  #left_sidebar {
+    display: flex;
+    width: 14.5%
+  }
+
+  #right_sidebar {
+    width: 14.5%;
   }
 
 }
@@ -779,6 +788,13 @@ footer ul li a:hover {
 
   section {
     margin-top: 5rem;
+    width: 70%;
+    left: 14.5%;
+    right: 14.5%;
+  }
+
+  #left_sidebar {
+    display: flex;
   }
 
 
