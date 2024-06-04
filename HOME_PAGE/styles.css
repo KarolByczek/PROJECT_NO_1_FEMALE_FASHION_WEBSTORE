@@ -428,7 +428,8 @@ footer ul li a:hover {
   text-align: center;
   font-weight: 300;
   height: 95%;
-  padding: 0.4rem;
+  padding: 0.2rem;
+  text-wrap: wrap;
 }
 
 #left_sidebar {
@@ -684,7 +685,6 @@ footer ul li a:hover {
     margin-top: 8rem;
     margin-bottom: 2rem;
     width: 80%;
-    left: 0.5rem;
   }
 
   #left_sidebar {
@@ -778,8 +778,8 @@ footer ul li a:hover {
   section {
     margin-top: 5rem;
     width: 70%;
-    left: 15%;
-    right: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 
   #left_sidebar {
