@@ -348,47 +348,49 @@ section #bestseller_container .mainblock .description {
   text-align: justify;
 }
 
-section #bestseller_container .mainblock .alinkcontainer {
+section #bestseller_container .mainblock .button_container {
   width: 100%;
   display: flex;
   justify-content: center;
   gap: 1rem;
 }
 
-section #bestseller_container .mainblock .alinkcontainer .alink1 {
-  text-align: center;
-  text-decoration: none;
-  font-size: larger;
-  font-weight: bolder;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: blanchedalmond;
+section #bestseller_container .mainblock .button_container .alinkwrapper1 {
   background-color: rgb(108, 108, 153);
   padding: 1rem;
   border: 0.4rem solid rgb(121, 150, 77);
   border-radius: 5rem;
   transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-section #bestseller_container .mainblock .alinkcontainer .alink2 {
-  text-align: center;
-  text-decoration: none;
-  font-size: larger;
-  font-weight: bolder;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: blanchedalmond;
+section #bestseller_container .mainblock .button_container .alinkwrapper2 {
   background-color: rgb(62, 134, 110);
   padding: 1rem;
   border: 0.4rem solid rgb(121, 150, 77);
   border-radius: 5rem;
   transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-section #bestseller_container .mainblock .alink1:hover {
+section #bestseller_container .mainblock .button_container .alinkwrapper1:hover,
+section #bestseller_container .mainblock .button_container .alinkwrapper2:hover {
   border: 0.4rem solid rgb(133, 192, 45);
+  cursor: pointer;
 }
 
-section #bestseller_container .mainblock .alink2:hover {
-  border: 0.4rem solid rgb(133, 192, 45);
+section #bestseller_container .mainblock .button_container .alinkwrapper1 .alink1, 
+section #bestseller_container .mainblock .button_container .alinkwrapper2 .alink2 {
+  text-decoration: none;
+  font-size: larger;
+  font-weight: bolder;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: blanchedalmond;
+  text-align: center;
 }
 
 footer {

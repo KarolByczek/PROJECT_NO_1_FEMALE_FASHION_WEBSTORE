@@ -124,9 +124,13 @@ bestsellerCollection.forEach((bestseller) => {
   image2.setAttribute("class", "image");
   const description = document.createElement("p");
   description.setAttribute("class", "description");
-  const alinkcontainer = document.createElement("div");
-  alinkcontainer.setAttribute("class", "alinkcontainer");
+  const button_container = document.createElement("div");
+  button_container.setAttribute("class", "button_container");
   description.innerHTML = bestseller.dcr;
+  const alinkwrapper1 = document.createElement("div");
+  alinkwrapper1.setAttribute("class", "alinkwrapper1");
+  const alinkwrapper2 = document.createElement("div");
+  alinkwrapper2.setAttribute("class", "alinkwrapper2");
   const alink1 = document.createElement("a");
   alink1.setAttribute("href", bestseller.urladdress);
   alink1.setAttribute("class", "alink1");
@@ -144,9 +148,11 @@ bestsellerCollection.forEach((bestseller) => {
   pictures.appendChild(image1);
   pictures.appendChild(image2);
   mainblock.appendChild(description);
-  mainblock.appendChild(alinkcontainer);
-  alinkcontainer.appendChild(alink1);
-  alinkcontainer.appendChild(alink2);
+  mainblock.appendChild(button_container);
+  button_container.appendChild(alinkwrapper1);
+  button_container.appendChild(alinkwrapper2);
+  alinkwrapper1.appendChild(alink1);
+  alinkwrapper2.appendChild(alink2);
   
 
   $bestsellers.appendChild(mainblock);
