@@ -685,6 +685,7 @@ footer ul li a:hover {
     margin-top: 8rem;
     margin-bottom: 2rem;
     width: 80%;
+    padding-left: 0.2rem;
   }
 
   #left_sidebar {
@@ -780,6 +781,7 @@ footer ul li a:hover {
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
+    padding-left: 0;
   }
 
   #left_sidebar {
