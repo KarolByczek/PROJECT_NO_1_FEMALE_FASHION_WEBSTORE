@@ -334,7 +334,12 @@ section #product_container .mainblock .pictures .imagebox {
   border-radius: 0.5rem;
 }
 
-section #product_container .mainblock .arrow {
+section #product_container .mainblock .arrowcont {
+  position: relative;
+  width: 50%;
+}
+
+section #product_container .mainblock .arrowcont .arrow {
   position: absolute;
   border: 0.2rem solid black;
   border-radius: 100%;
@@ -344,20 +349,20 @@ section #product_container .mainblock .arrow {
   transition: all 0.3s;
 }
 
-section #product_container .mainblock .arrow_left {
-  left: -40%;
+section #product_container .mainblock .arrowcont .arrow_left {
+  left: 0;
 }
 
-section #product_container .mainblock .arrow_right {
-  right: 40%;
+section #product_container .mainblock .arrowcont .arrow_right {
+  right: 0;
 }
 
-section #product_container .mainblock .arrow:hover {
+section #product_container .mainblock .arrowcont .arrow:hover {
   border: 0.2rem solid rgb(116, 112, 112);
   background-color: aliceblue;
 }
 
-section #product_container .mainblock .arrow:active {
+section #product_container .mainblock .arrowcont .arrow:active {
   border: 0.2rem solid whitesmoke;
   background-color: whitesmoke;
 }
