@@ -357,22 +357,16 @@ section #product_container .mainblock .arrowcont .arrow {
   color: aliceblue;
 }
 
-section #product_container .mainblock .arrowcont .arrow_left {
-  left: 0;
-}
-
-section #product_container .mainblock .arrowcont .arrow_right {
-  right: 0;
-}
-
 section #product_container .mainblock .arrowcont .arrow:hover {
-  border: 0.2rem solid rgb(116, 112, 112);
+  border: 0.2rem solid rgb(30, 172, 136);
   background-color: rgb(28, 230, 196);
+  color: white;
 }
 
 section #product_container .mainblock .arrowcont .arrow:active {
-  border: 0.2rem solid whitesmoke;
+  border: 0.2rem solid rgb(211, 206, 166);
   background-color: whitesmoke;
+  color: rgb(59, 173, 97);
 }
 
 section #product_container .mainblock .description {
