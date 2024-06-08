@@ -335,16 +335,26 @@ section #product_container .mainblock .pictures .imagebox {
 
 section #product_container .mainblock .arrowcont {
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 section #product_container .mainblock .arrowcont .arrow {
-  position: relative;
-  border: 0.2rem solid black;
-  border-radius: 100%;
-  padding: 0.4rem;
-  background-color: antiquewhite;
-  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
+  padding: 0.5rem;
+  border: 0.2rem solid rgb(31, 101, 110);
+  border-radius: 5rem;
+  background-color: rgb(113, 168, 156);
   transition: all 0.3s;
+  font-size: medium;
+  font-weight: 700;
+  color: aliceblue;
 }
 
 section #product_container .mainblock .arrowcont .arrow_left {
@@ -357,7 +367,7 @@ section #product_container .mainblock .arrowcont .arrow_right {
 
 section #product_container .mainblock .arrowcont .arrow:hover {
   border: 0.2rem solid rgb(116, 112, 112);
-  background-color: aliceblue;
+  background-color: rgb(28, 230, 196);
 }
 
 section #product_container .mainblock .arrowcont .arrow:active {
@@ -745,14 +755,6 @@ footer ul li a:hover {
     -moz-transform: scale(1.05);
   }
 
-  section #product_container .mainblock .arrowcont .arrow_left {
-    height: 3rem;
-  }
-
-  section #product_container .mainblock .arrowcont .arrow_right {
-    height: 3rem;
-  }
-
   section #product_container .mainblock .description {
     padding: 1rem;
     margin: 0;
@@ -796,9 +798,6 @@ footer ul li a:hover {
     height: 30vw;
   }
 
-  section #product_container .mainblock .arrowcont .arrow {
-    height: 4rem;
-  }
 
   .sidebar {
     width: 15%;

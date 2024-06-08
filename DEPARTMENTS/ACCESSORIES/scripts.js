@@ -127,11 +127,11 @@ productsCollection.forEach((product) => {
   const arrowcont = document.createElement("div");
   arrowcont.setAttribute("class", "arrowcont");
 
-  const arrowleft = document.createElement("img");
-  arrowleft.src = "../../../Common imagery/icons/arrow_left.png";
+  const arrowleft = document.createElement("button");
+  arrowleft.innerHTML = "PREVIOUS SLIDE";
   arrowleft.setAttribute("class", "arrow arrow_left");
-  const arrowright = document.createElement("img");
-  arrowright.src = "../../../Common imagery/icons/arrow_right.png";
+  const arrowright = document.createElement("button");
+  arrowright.innerHTML = "NEXT SLIDE";
   arrowright.setAttribute("class", "arrow arrow_right");
 
   mainblock.appendChild(productName);
