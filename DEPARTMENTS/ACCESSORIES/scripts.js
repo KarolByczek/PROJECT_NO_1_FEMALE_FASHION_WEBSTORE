@@ -124,6 +124,9 @@ productsCollection.forEach((product) => {
   description.innerHTML = product.dcr;
   description.setAttribute("class", "description");
 
+  const arrowcont = document.createElement("div");
+  arrowcont.setAttribute("class", "arrowcont");
+
   const arrowleft = document.createElement("img");
   arrowleft.src = "../../../Common imagery/icons/arrow_left.png";
   arrowleft.setAttribute("class", "arrow arrow_left");
@@ -133,8 +136,9 @@ productsCollection.forEach((product) => {
 
   mainblock.appendChild(productName);
   mainblock.appendChild(pictures);
-  mainblock.appendChild(arrowleft);
-  mainblock.appendChild(arrowright);
+  mainblock.appendChild(arrowcont);
+  arrowcont.appendChild(arrowleft);
+  arrowcont.appendChild(arrowright);
   mainblock.appendChild(description);
 
   $products.appendChild(mainblock);

@@ -746,13 +746,11 @@ footer ul li a:hover {
   }
 
   section #product_container .mainblock .arrowcont .arrow_left {
-    top: 45%;
-    left: 1.5rem;
+    height: 3rem;
   }
 
   section #product_container .mainblock .arrowcont .arrow_right {
-    top: 45%;
-    right: 1.2rem;
+    height: 3rem;
   }
 
   section #product_container .mainblock .description {
