@@ -1,9 +1,5 @@
 /* GENERAL STYLES - start */
 
-* {
-  box-sizing: border-box;
-}
-
 :root {
   --background-green: rgb(83, 187, 153);
   --light-green: rgb(47, 201, 106);
@@ -15,41 +11,40 @@ body {
   position: relative;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-style: normal;
-  background-image: url("../../../Common imagery/background.jpg");
+  background-image: url("../Common imagery/background.jpg");
   background-attachment: fixed;
   margin: 0;
-  width: 100vw;
 }
 
 header {
-  position: relative;
-  width: 100%;
-}
-
-#navigation_strip {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 3.5rem;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: var(--background-green);
-  z-index: 4;
-  margin: 0;
-  padding: 0.2rem 0;
+  z-index: 7;
+  width: 100%;
 }
 
 #company_logo {
   position: fixed;
   left: 0.2rem;
   top: 0.2rem;
-  border: 0.2rem solid var(--dark-green);
+  border: 3px solid var(--dark-green);
   border-radius: 1rem;
   width: 6rem;
   height: 6rem;
-  z-index: 6;
+  z-index: 8;
+}
+
+#navigation_strip {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0.2rem 0;
+  background-color: var(--background-green);
+  z-index: 4;
 }
 
 .home_navigation {
@@ -60,6 +55,7 @@ header {
   margin: 0;
   gap: 2.5rem;
   flex-wrap: wrap;
+  z-index: 6;
 }
 
 .home_navigation li {
@@ -130,7 +126,7 @@ header {
   font-weight: bolder;
   text-transform: uppercase;
   transition: border 0.3s;
-  margin-left: 1.5rem;
+  margin-left: 1rem;
 }
 
 #login_button:hover {
@@ -142,18 +138,22 @@ header {
 }
 
 #login_strip {
-  position: fixed;
+  position: relative;
   left: 0;
-  top: 12rem;
+  opacity: 0;
+  visibility: hidden;
   z-index: 2;
+  padding: 0.2rem;
   background-color: rgb(29, 183, 132);
   width: 100%;
-  border: 0.05rem solid rgb(19, 43, 32);
-  transition: transform 0.3s;
+  border: 0.1rem solid rgb(19, 43, 32);
+  display: flex;
+  transition: all 0.3s;
 }
 
 #login_strip.active {
-  transform: translateY(100%);
+  opacity: 1;
+  visibility: visible;
 }
 
 #login_strip form {
@@ -196,9 +196,27 @@ header {
   display: flex;
   justify-content: end;
   position: absolute;
-  top: -0.8rem;
-  right: 0.2rem;
+  top: -0.6rem;
+  right: 1.2rem;
   cursor: pointer;
+}
+
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  z-index: 7;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.backdrop.active {
+  visibility: visible;
+  opacity: 0.8;
 }
 
 #register_form {
@@ -268,12 +286,6 @@ header {
 
 section {
   position: relative;
-  margin-top: 3rem;
-  width: 70%;
-  left: 15%;
-  right: 15%;
-  padding: 0.5rem;
-  margin-bottom: 0;
 }
 
 section h1 {
@@ -293,11 +305,11 @@ section #product_container {
   flex-direction: column;
   align-items: center;
   border: 3px solid rgb(207, 76, 76);
-  border-radius: 1rem;
-  padding: 1rem;
   margin: 0;
-  background-color: var(--dark-green);
-  gap: 1rem;
+  background-color: rgb(219, 216, 213);
+  gap: 2rem;
+  border-radius: 2rem;
+  padding: 1rem;
 }
 
 section #product_container .mainblock {
@@ -361,6 +373,7 @@ section #product_container .mainblock .arrowcont .arrow:hover {
   border: 0.2rem solid rgb(30, 172, 136);
   background-color: rgb(28, 230, 196);
   color: white;
+  cursor: pointer;
 }
 
 section #product_container .mainblock .arrowcont .arrow:active {
@@ -374,14 +387,11 @@ section #product_container .mainblock .description {
 }
 
 footer {
-  bottom: -10rem;
-  position: absolute;
-  z-index: 2;
-  width: 100vw;
+  width: 100%;
   background-color: var(--background-green);
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 footer ul {
@@ -409,10 +419,13 @@ footer ul li a:hover {
   top: 5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
-  font-weight: 400;
+  font-weight: 300;
+  height: 95%;
+  padding: 0.2rem;
+  text-wrap: wrap;
 }
 
 #left_sidebar {
@@ -421,25 +434,6 @@ footer ul li a:hover {
 
 #right_sidebar {
   right: 0;
-}
-
-#backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 140vh;
-  width: 100vw;
-  background-color: black;
-  z-index: 7;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.3s;
-  overflow: scroll;
-}
-
-#backdrop.active {
-  visibility: visible;
-  opacity: 0.8;
 }
 
 .showcase {
@@ -470,35 +464,39 @@ footer ul li a:hover {
 /* STYLES FOR MOBILES - start */
 
 @media screen and (max-width: 625px) {
-  body {
-    background-image: none;
+ 
+  #company_logo {
+    position: relative;
+    width: 98%;
+    height: auto;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
+    border: none;
+  }
+
+  header {
+    position: relative;
+    margin-bottom: -10rem;
   }
 
   #navigation_strip {
-    height: auto;
-    position: relative;
-  }
-
-  #company_logo {
-    position: relative;
     width: 100%;
-    height: auto;
-    border: 0.4rem solid green;
-    border-radius: 1.5rem;
   }
 
   .home_navigation {
-    display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
     padding: 0;
-    margin: 0;
-    align-items: stretch;
-    gap: 0.2rem;
+    gap: 0.4rem;
   }
 
   .home_navigation li {
-    justify-content: center;
-    align-items: center;
+    width: 94%;
+    font-size: 1.5rem;
+    text-transform: uppercase;
   }
 
   .home_navigation li:hover {
@@ -514,34 +512,41 @@ footer ul li a:hover {
   .home_navigation li:active {
     border: 0.2rem solid rgb(53, 105, 88);
     background-color: rgb(189, 244, 106);
-  }
-
-  .home_navigation li ul {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    padding-bottom: 3rem;
   }
 
   .home_navigation li.active ul {
     position: relative;
+    width: 90%;
+    margin-left: 6%;
+    margin-right: 4%;
     visibility: visible;
     opacity: 1;
     top: 0.2rem;
     background-color: rgb(187, 221, 85);
-    padding-left: 0;
+    border: none;
   }
 
   .home_navigation li ul li {
     font-size: 1.2rem;
+    height: 2.5rem;
+    margin-top: 0.8rem;
+    width: 100%;
+    border: none;
+  }
+
+  .home_navigation li ul li a {
+    height: 100%;
+    text-align: center;
+    line-height: 2.5rem;
   }
 
   .home_navigation li ul li:hover {
-    border: 0.2rem solid transparent;
+    border: none;
     background-color: transparent;
   }
 
   .home_navigation li ul li:active {
-    border: 0.2rem solid greenyellow;
     background-color: antiquewhite;
   }
 
@@ -559,23 +564,25 @@ footer ul li a:hover {
   }
 
   #login_strip {
-    position: relative;
-    top: -13rem;
-    width: 100%;
-    padding: 0.5rem 0;
-  }
-
-  #login_strip.active {
-    transform: translateY(100%);
+    width: 98%;
+    padding: 4px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #login_strip form {
     flex-direction: column;
+    align-items: center;
     width: 100%;
   }
 
   #login_strip form label {
-    width: 100%;
+    width: 98%;
+    display: flex;
+    justify-content: center;
   }
 
   #login_strip form label input {
@@ -601,16 +608,19 @@ footer ul li a:hover {
   }
 
   section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     padding: 0;
     left: 0;
     right: 0;
-    top: -15.4rem;
-    margin-bottom: 55rem;
+    margin-bottom: 1rem;
   }
 
-  section #product_container .mainblock {
-    width: 100%;
+  section #product_container {
+    width: 98%;
+    padding: 1rem 0;
   }
 
   section #product_container .mainblock .pictures {
@@ -636,6 +646,12 @@ footer ul li a:hover {
     align-items: center;
   }
 
+  footer {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+  }
+
   footer ul {
     padding-left: 0;
     border: none;
@@ -652,7 +668,7 @@ footer ul li a:hover {
 
   #register_form {
     left: 0;
-    width: 100%;
+    width: 98%;
     background-color: rgb(225, 210, 189, 0.6);
   }
 
@@ -664,6 +680,7 @@ footer ul li a:hover {
 /* STYLES FOR MOBILES - end */
 
 @media screen and (min-width: 625px) {
+
   #navigation_strip {
     height: fit-content;
   }
@@ -676,14 +693,22 @@ footer ul li a:hover {
   }
 
   #login_strip {
-    top: 4.1rem;
+    justify-content: end;
+  }
+
+  #login_strip form {
+    gap: 0.4rem;
+  }
+
+  #login_strip form a#register {
+    margin-right: 2rem;
   }
 
   section {
-    width: 65%;
-    left: 17.5%;
-    right: 17.5%;
-    margin-top: 5rem;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    width: 80%;
+    padding-left: 0.2rem;
   }
 
   section #product_container .mainblock {
@@ -706,8 +731,12 @@ footer ul li a:hover {
     -moz-transform: scale(1.03);
   }
 
-  .sidebar {
-    width: 17.5%;
+  #left_sidebar {
+    display: none;
+  }
+
+  #right_sidebar {
+    width: 18%;
   }
 
   #register_form {
@@ -716,15 +745,20 @@ footer ul li a:hover {
     margin-left: 2rem;
     margin-right: 2rem;
   }
+
+  footer {
+    position: absolute;
+    z-index: 2;
+    }
+
 }
 
 @media screen and (min-width: 800px) {
-  section {
-    width: 70%;
-    left: 15%;
-    right: 15%;
-  }
 
+  #login_strip {
+    justify-content: center;
+  }
+  
   section #product_container {
     padding: 0.2rem;
   }
@@ -754,12 +788,10 @@ footer ul li a:hover {
     margin: 0;
   }
 
-  .sidebar {
-    width: 15%;
-  }
 }
 
 @media screen and (min-width: 1048px) {
+
   #navigation_strip {
     height: fit-content;
   }
@@ -772,15 +804,12 @@ footer ul li a:hover {
     font-size: 1.2rem;
   }
 
-  #login_strip {
-    top: 1.3rem;
-  }
-
   section {
-    margin-top: 3rem;
+    margin-top: 5rem;
     width: 70%;
-    left: 15%;
-    right: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-left: 0;
   }
 
   section #product_container .mainblock .pictures {
@@ -793,7 +822,12 @@ footer ul li a:hover {
   }
 
 
-  .sidebar {
-    width: 15%;
+  #left_sidebar {
+    display: flex;
+    width: 14.5%;
+  }
+
+  #right_sidebar {
+    width: 14.5%;
   }
 }

@@ -688,14 +688,6 @@ footer ul li a:hover {
     padding-left: 0.2rem;
   }
 
-  #left_sidebar {
-    display: none;
-  }
-
-  #right_sidebar {
-    width: 18%;
-  }
-
   section #bestseller_container .mainblock {
     flex-direction: column;
     align-items: center;
@@ -715,6 +707,14 @@ footer ul li a:hover {
     transform: scale(1.03);
     -webkit-transform: scale(1.03);
     -moz-transform: scale(1.03);
+  }
+  
+  #left_sidebar {
+    display: none;
+  }
+
+  #right_sidebar {
+    width: 18%;
   }
 
   #register_form {
@@ -764,6 +764,7 @@ footer ul li a:hover {
 }
 
 @media screen and (min-width: 1048px) {
+  
   #navigation_strip {
     height: fit-content;
   }
