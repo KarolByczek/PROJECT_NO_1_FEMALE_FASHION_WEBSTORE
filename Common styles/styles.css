@@ -308,8 +308,8 @@ section #product_container {
   margin: 0;
   background-color: rgb(115, 155, 114);
   gap: 2rem;
-  border-radius: 2rem;
-  padding: 1rem;
+  border-radius: 1rem;
+  padding: 1rem 0;
 }
 
 section #product_container .mainblock {
@@ -721,11 +721,12 @@ footer ul li a:hover {
   }
 
   section #product_container .mainblock {
-    width: 100%;
+    width: 90%;
   }
 
   section #product_container .mainblock .pictures {
     flex-direction: column;
+    margin-bottom: 2rem;
   }
 
   section #product_container .mainblock .pictures .imagebox {
@@ -767,26 +768,26 @@ footer ul li a:hover {
   #login_strip {
     justify-content: center;
   }
-  
-  section #product_container {
-    padding: 0.2rem;
+
+
+  section #product_container .mainblock {
+    width: 95%;
   }
 
   section #product_container .mainblock .pictures {
-    width: 42vw;
     flex-direction: row;
     justify-content: center;
-    padding: 1rem 0;
+    width: 98%;
+    gap: 1rem;
   }
 
   section #product_container .mainblock .pictures .imagebox {
-    width: 22vw;
-    height: 34vw;
-    margin: 0.1rem;
+    width: 46%;
+    height: auto;
     transition-duration: 0.8s;
   }
 
-  section #product_container .mainblock .imagebox:hover {
+  section #product_container .mainblock .pictures .imagebox:hover {
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
@@ -820,16 +821,6 @@ footer ul li a:hover {
     margin-right: 15%;
     padding-left: 0;
   }
-
-  section #product_container .mainblock .pictures {
-    width: 40vw;
-  }
-
-  section #product_container .mainblock .pictures .imagebox {
-    width: 20vw;
-    height: 30vw;
-  }
-
 
   #left_sidebar {
     display: flex;
