@@ -306,7 +306,7 @@ section #product_container {
   align-items: center;
   border: 3px solid rgb(207, 76, 76);
   margin: 0;
-  background-color: rgb(219, 216, 213);
+  background-color: rgb(115, 155, 114);
   gap: 2rem;
   border-radius: 2rem;
   padding: 1rem;
@@ -316,11 +316,11 @@ section #product_container .mainblock {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  border: 0.2rem solid plum;
+  width: 98%;
+  border: 0.2rem solid rgb(77, 116, 97);
   border-radius: 1rem;
   padding: 0.8rem;
-  background-color: var(--mouldy-background);
+  background-color: rgb(187, 202, 187);
 }
 
 section #product_container .mainblock .product_name {
@@ -333,7 +333,7 @@ section #product_container .mainblock .pictures {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 65%;
+  width: 75%;
   height: 70%;
   gap: 2rem;
 }
@@ -618,21 +618,30 @@ footer ul li a:hover {
     margin-bottom: 1rem;
   }
 
+  section h1 {
+    width: 92%;
+  }
+
   section #product_container {
     width: 98%;
     padding: 1rem 0;
   }
 
+  section #product_container .mainblock {
+    flex-direction: column;
+    width: 90%;
+  }
+
   section #product_container .mainblock .pictures {
     flex-direction: column;
+    width: 98%;
   }
 
   section #product_container .mainblock .pictures .imagebox {
-    width: 70vw;
-    height: 120vw;
+    width: 98%;
   }
 
-  section #product_container .mainblock .arrow {
+  section #product_container .mainblock .arrowcont .arrow {
     display: none;
   }
 
@@ -641,7 +650,7 @@ footer ul li a:hover {
   }
 
   footer {
-    bottom: -55rem;
+    bottom: -3rem;
     flex-direction: column;
     align-items: center;
   }
