@@ -230,7 +230,7 @@ header {
   background-color: rgb(225, 210, 189, 0.7);
   visibility: hidden;
   opacity: 0;
-  z-index: 8;
+  z-index: 10;
   transition: all 0.3s;
 }
 
@@ -438,9 +438,9 @@ footer ul li a:hover {
 
 .showcase {
   display: none;
-  position: fixed;
-  left: 10%;
-  top: 10%;
+  position: relative;
+  left: 0;
+  top: -120vh;
   width: 50vw;
   height: 75vw;
   border: 0.3rem solid wheat;
