@@ -1,3 +1,4 @@
+
 const $logButton = document.querySelector("#login_button");
 const $logStrip = document.querySelector("#login_strip");
 const $hideLoginStrip = document.querySelector("#hide_login_strip");
@@ -13,6 +14,7 @@ $hideLoginStrip.addEventListener("click", () => {
 const $menuItems = document.querySelectorAll(".menu_item");
 const $register = document.querySelector("#register");
 const $backDrop = document.querySelector("#backdrop");
+const $showCaseCont = document.querySelector("#showcasecont");
 const $registerForm = document.getElementById("register_form");
 const $submitRegisterform = document.getElementById("submit_register_form");
 const $registerFormLoginButton = document.getElementById(
@@ -177,31 +179,26 @@ productsCollection.forEach((product) => {
     }
   });
 
+  const $showCaseCont = document.createElement("div");
+  $showCaseCont.setAttribute("id", "showcasecont");
+
   const imageBoxes = mainblock.querySelectorAll(".imagebox");
-  const $showCase = document.createElement("img");
-  $showCase.setAttribute("class", "showcase");
-  mainblock.appendChild($showCase);
+  $backDrop.appendChild($showCaseCont);
 
   imageBoxes.forEach((imagebox) => {
     imagebox.addEventListener("click", () => {
       $backDrop.classList.add("active");
-      $showCase.classList.add("active");
+      $showCaseCont.classList.add("active");
+      const $showCase = document.createElement("img");
+      $showCase.setAttribute("class", "showcase");
+      $showCaseCont.appendChild($showCase);
       $showCase.src = imagebox.src;
-      $showCase.alt = imagebox.src.substring(53);
       $backDrop.addEventListener("click", () => {
         $backDrop.classList.remove("active");
-        $showCase.classList.remove("active");
-        $showCase.classList.remove("enhanced");
+        $showCaseCont.classList.remove("active");
       });
     });
   });
 
-  $showCase.addEventListener("click", () => {
-    if ($showCase.classList.contains("enhanced")) {
-      $showCase.classList.remove("enhanced")
-    } else {
-      $showCase.classList.add("enhanced")
-    }
-  });
 
 });

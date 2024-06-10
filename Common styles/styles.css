@@ -201,24 +201,6 @@ header {
   cursor: pointer;
 }
 
-#backdrop {
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background-color: black;
-  z-index: 9;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.3s;
-}
-
-#backdrop.active {
-  visibility: visible;
-  opacity: 0.8;
-}
-
 #register_form {
   position: fixed;
   top: 1rem;
@@ -436,27 +418,48 @@ footer ul li a:hover {
   right: 0;
 }
 
-.showcase {
-  display: none;
-  position: relative;
+#backdrop {
+  position: fixed;
   left: 0;
-  top: -120vh;
-  width: 50vw;
-  height: 75vw;
-  border: 0.3rem solid wheat;
-}
-
-.showcase.active {
-  display: flex;
-  cursor: zoom-in;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
   z-index: 11;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
 }
 
-.showcase.enhanced {
-  width: 70vw;
-  height: 105vw;
-  cursor: zoom-out;
+#backdrop.active {
+  visibility: visible;
+  opacity: 1;
 }
+
+#showcasecont {
+  position: fixed;
+  left: 20vw;
+  top: 2rem;
+  width: 60vw;
+  height: 90vh;
+  border: 5px solid red;
+  z-index: 12;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+#showcasecont.active {
+  visibility: unset;
+  opacity: 1;
+  overflow: scroll;
+}
+
+.showcase {
+  
+}
+
+
 
 /* GENERAL STYLES - end */
 
@@ -684,6 +687,11 @@ footer ul li a:hover {
   #login_strip #hide_login_strip {
     display: none;
   }
+
+  #backdrop {
+    display: none;
+  }
+
 }
 
 /* STYLES FOR MOBILES - end */
