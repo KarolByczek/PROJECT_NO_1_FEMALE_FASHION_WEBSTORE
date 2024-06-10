@@ -638,7 +638,8 @@ footer ul li a:hover {
   }
 
   section #product_container .mainblock .pictures .imagebox {
-    width: 98%;
+    width: 80vw;
+    height: 120vw;
   }
 
   section #product_container .mainblock .arrowcont .arrow {
@@ -725,12 +726,13 @@ footer ul li a:hover {
   }
 
   section #product_container .mainblock .pictures {
+    width: 90%;
     flex-direction: column;
     margin-bottom: 2rem;
   }
 
   section #product_container .mainblock .pictures .imagebox {
-    width: 50vw;
+    width: 60vw;
     height: 90vw;
     transition-duration: 0.5s;
   }
@@ -782,8 +784,8 @@ footer ul li a:hover {
   }
 
   section #product_container .mainblock .pictures .imagebox {
-    width: 46%;
-    height: auto;
+    width: 34vw;
+    height: 51vw;
     transition-duration: 0.8s;
   }
 
@@ -822,6 +824,11 @@ footer ul li a:hover {
     padding-left: 0;
   }
 
+  section #product_container .mainblock .pictures .imagebox {
+    width: 30vw;
+    height: 45vw;
+  }
+ 
   #left_sidebar {
     display: flex;
     width: 14.5%;

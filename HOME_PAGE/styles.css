@@ -615,7 +615,8 @@ footer ul li a:hover {
   }
 
   section #bestseller_container .mainblock .pictures .image {
-    width: 100%;
+    width: 80vw;
+    height: 120vw;
     height: auto;
   }
 
@@ -699,7 +700,8 @@ footer ul li a:hover {
   }
 
   section #bestseller_container .mainblock .pictures .image {
-    width: 100%;
+    width: 60vw;
+    height: 90vw;
     transition-duration: 0.5s;
   }
 
@@ -744,7 +746,8 @@ footer ul li a:hover {
   }
 
   section #bestseller_container .mainblock .pictures .image {
-    width: 49%;
+    width: 34vw;
+    height: 51vw;
     margin: 0.1rem;
     transition-duration: 0.8s;
   }
@@ -783,6 +786,13 @@ footer ul li a:hover {
     margin-left: 15%;
     margin-right: 15%;
     padding-left: 0;
+  }
+
+  section #bestseller_container .mainblock .pictures .image {
+    width: 30vw;
+    height: 45vw;
+    margin: 0.1rem;
+    transition-duration: 0.8s;
   }
 
   #left_sidebar {
