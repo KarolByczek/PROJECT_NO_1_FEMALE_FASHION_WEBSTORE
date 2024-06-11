@@ -440,7 +440,7 @@ footer ul li a:hover {
   position: fixed;
   left: 20vw;
   top: 2rem;
-  width: 60vw;
+  width: 62vw;
   height: 90vh;
   border: 5px solid red;
   z-index: 12;
@@ -456,6 +456,8 @@ footer ul li a:hover {
 }
 
 .showcase {
+  width: 50rem;
+  height: 75rem;
   cursor:grabbing;
 }
 
