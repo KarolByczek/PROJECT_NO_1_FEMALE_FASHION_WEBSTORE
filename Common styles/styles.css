@@ -327,6 +327,10 @@ section #product_container .mainblock .pictures .imagebox {
   border-radius: 0.5rem;
 }
 
+section #product_container .mainblock .pictures .imagebox:hover .prompt {
+  display: flex;
+}
+
 section #product_container .mainblock .arrowcont {
   width: 50%;
   display: flex;
@@ -438,10 +442,10 @@ footer ul li a:hover {
 
 #showcasecont {
   position: fixed;
-  left: 20vw;
-  top: 2rem;
-  width: 62vw;
-  height: 90vh;
+  left: 12vw;
+  right: 12vw;
+  top: 5vh;
+  bottom: 5vh;
   border: 5px solid red;
   z-index: 12;
   visibility: hidden;
@@ -456,8 +460,8 @@ footer ul li a:hover {
 }
 
 .showcase {
-  width: 50rem;
-  height: 75rem;
+  width: 72vw;
+  height: 108vw;
   cursor:grabbing;
 }
 

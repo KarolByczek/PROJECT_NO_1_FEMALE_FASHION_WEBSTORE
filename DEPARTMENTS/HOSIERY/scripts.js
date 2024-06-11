@@ -14,7 +14,16 @@ $hideLoginStrip.addEventListener("click", () => {
 const $menuItems = document.querySelectorAll(".menu_item");
 const $register = document.querySelector("#register");
 const $backDrop = document.querySelector("#backdrop");
+
 const $showCaseCont = document.querySelector("#showcasecont");
+const $showCase = document.createElement("img");
+$showCase.setAttribute("class", "showcase");
+$showCaseCont.appendChild($showCase);
+
+const $prompt = document.createElement("p");
+$prompt.setAttribute("class", "prompt");
+$prompt.innerHTML = "CLICK TO ENHANCE";
+
 const $registerForm = document.getElementById("register_form");
 const $submitRegisterform = document.getElementById("submit_register_form");
 const $registerFormLoginButton = document.getElementById(
@@ -180,23 +189,20 @@ productsCollection.forEach((product) => {
   });
 
  
-  const $showCase = document.createElement("img");
-  $showCase.setAttribute("class", "showcase");
-  $showCaseCont.appendChild($showCase);
-
   const imageBoxes = mainblock.querySelectorAll(".imagebox");
 
   imageBoxes.forEach((imagebox) => {
     imagebox.addEventListener("click", () => {
       $backDrop.classList.add("active");
       $showCaseCont.classList.add("active");
-      
       $showCase.src = imagebox.src;
       $backDrop.addEventListener("click", () => {
         $backDrop.classList.remove("active");
         $showCaseCont.classList.remove("active");
-        $showCase.src = null;
       });
+    });
+    imagebox.addEventListener("mouseover", () => {
+      $.appendChild($prompt);
     });
   });
 
