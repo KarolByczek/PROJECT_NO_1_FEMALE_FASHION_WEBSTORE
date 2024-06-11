@@ -179,23 +179,23 @@ productsCollection.forEach((product) => {
     }
   });
 
-  const $showCaseCont = document.createElement("div");
-  $showCaseCont.setAttribute("id", "showcasecont");
+ 
+  const $showCase = document.createElement("img");
+  $showCase.setAttribute("class", "showcase");
+  $showCaseCont.appendChild($showCase);
 
   const imageBoxes = mainblock.querySelectorAll(".imagebox");
-  $backDrop.appendChild($showCaseCont);
 
   imageBoxes.forEach((imagebox) => {
     imagebox.addEventListener("click", () => {
       $backDrop.classList.add("active");
       $showCaseCont.classList.add("active");
-      const $showCase = document.createElement("img");
-      $showCase.setAttribute("class", "showcase");
-      $showCaseCont.appendChild($showCase);
+      
       $showCase.src = imagebox.src;
       $backDrop.addEventListener("click", () => {
         $backDrop.classList.remove("active");
         $showCaseCont.classList.remove("active");
+        $showCase.src = null;
       });
     });
   });

@@ -433,7 +433,7 @@ footer ul li a:hover {
 
 #backdrop.active {
   visibility: visible;
-  opacity: 1;
+  opacity: 0.9;
 }
 
 #showcasecont {
@@ -450,7 +450,7 @@ footer ul li a:hover {
 }
 
 #showcasecont.active {
-  visibility: unset;
+  visibility: visible;
   opacity: 1;
   overflow: scroll;
 }
