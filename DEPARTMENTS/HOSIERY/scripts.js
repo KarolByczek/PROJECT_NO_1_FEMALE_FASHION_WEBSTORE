@@ -202,7 +202,7 @@ productsCollection.forEach((product) => {
       });
     });
     imagebox.addEventListener("mouseover", () => {
-      $.appendChild($prompt);
+      imagebox.innerHTML = "CLICK!!!";
     });
   });
 
