@@ -121,7 +121,8 @@ productsCollection.forEach((product) => {
   pictures.setAttribute("class", "pictures");
 
   const imagebox1 = document.createElement("div");
-  imagebox1.className = "imagebox";
+  imagebox1.className = "imagebox1";
+  imagebox1.setAttribute('class', "imagebox");
   pictures.appendChild(imagebox1);
   const image1 = document.createElement("img");
   image1.className = 'image';
@@ -134,7 +135,8 @@ productsCollection.forEach((product) => {
   imagebox1.appendChild(prompt1);
   
   const imagebox2 = document.createElement("div");
-  imagebox2.className = "imagebox";
+  imagebox2.className = "imagebox2";
+  imagebox2.setAttribute('class', "imagebox");
   pictures.appendChild(imagebox2);
   const image2 = document.createElement("img");
   image2.className = 'image';
@@ -201,11 +203,11 @@ productsCollection.forEach((product) => {
  
   const imageBoxes = mainblock.querySelectorAll(".imagebox");
 
-  imageBoxes.forEach((imagebox) => {
-    imagebox.addEventListener("click", () => {
+  imageBoxes.forEach((one) => {
+    one.addEventListener("click", () => {
       $backDrop.classList.add("active");
       $showCaseCont.classList.add("active");
-      $showCase.src = imagebox.src;
+      $showCase.src = one.firstChild.src;
       $backDrop.addEventListener("click", () => {
         $backDrop.classList.remove("active");
         $showCaseCont.classList.remove("active");
