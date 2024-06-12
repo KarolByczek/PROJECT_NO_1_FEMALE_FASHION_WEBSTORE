@@ -327,6 +327,11 @@ section #product_container .mainblock .pictures .imagebox {
   border-radius: 0.5rem;
 }
 
+section #product_container .mainblock .pictures .imagebox .image {
+  width: 100%;
+  height: 100%;
+}
+
 section #product_container .mainblock .pictures .imagebox:hover .prompt {
   display: flex;
 }

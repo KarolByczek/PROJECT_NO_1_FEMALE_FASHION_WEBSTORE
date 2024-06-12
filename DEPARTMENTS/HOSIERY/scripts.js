@@ -124,17 +124,21 @@ productsCollection.forEach((product) => {
   const pictures = document.createElement("div");
   pictures.setAttribute("class", "pictures");
 
-  const imagebox1 = document.createElement("img");
-  imagebox1.src = `${product.images[0]}`;
-  imagebox1.alt = "some image of a product";
+  const imagebox1 = document.createElement("div");
   imagebox1.className = "imagebox";
   pictures.appendChild(imagebox1);
+  const image1 = document.createElement("img");
+  image1.className = 'image';
+  image1.src = `${product.images[0]}`;
+  imagebox1.appendChild(image1);
 
-  const imagebox2 = document.createElement("img");
-  imagebox2.src = `${product.images[1]}`;
-  imagebox2.alt = "some image of a product";
+  const imagebox2 = document.createElement("div");
   imagebox2.className = "imagebox";
   pictures.appendChild(imagebox2);
+  const image2 = document.createElement("img");
+  image2.className = 'image';
+  image2.src = `${product.images[1]}`;
+  imagebox2.appendChild(image2);
 
   const description = document.createElement("p");
   description.innerHTML = product.dcr;
