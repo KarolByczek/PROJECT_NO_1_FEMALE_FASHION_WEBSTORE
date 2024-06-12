@@ -325,11 +325,30 @@ section #product_container .mainblock .pictures .imagebox {
   display: block;
   border: 0.2rem solid var(--dark-green);
   border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 section #product_container .mainblock .pictures .imagebox .image {
+  position: relative;
+  left: 0%;
+  top: 0;
   width: 100%;
   height: 100%;
+}
+
+section #product_container .mainblock .pictures .imagebox .prompt {
+  position: relative;
+  top: auto;
+  left: -30%;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(224, 235, 235, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+
 }
 
 section #product_container .mainblock .pictures .imagebox:hover .prompt {

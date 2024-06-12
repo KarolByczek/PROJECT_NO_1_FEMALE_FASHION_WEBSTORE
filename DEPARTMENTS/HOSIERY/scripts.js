@@ -20,10 +20,6 @@ const $showCase = document.createElement("img");
 $showCase.setAttribute("class", "showcase");
 $showCaseCont.appendChild($showCase);
 
-const $prompt = document.createElement("p");
-$prompt.setAttribute("class", "prompt");
-$prompt.innerHTML = "CLICK TO ENHANCE";
-
 const $registerForm = document.getElementById("register_form");
 const $submitRegisterform = document.getElementById("submit_register_form");
 const $registerFormLoginButton = document.getElementById(
@@ -130,15 +126,25 @@ productsCollection.forEach((product) => {
   const image1 = document.createElement("img");
   image1.className = 'image';
   image1.src = `${product.images[0]}`;
+  image1.alt = 'Some image of the product';
   imagebox1.appendChild(image1);
-
+  const prompt1 = document.createElement("p");
+  prompt1.setAttribute("class", "prompt");
+  prompt1.innerHTML = "CLICK TO ENHANCE";
+  imagebox1.appendChild(prompt1);
+  
   const imagebox2 = document.createElement("div");
   imagebox2.className = "imagebox";
   pictures.appendChild(imagebox2);
   const image2 = document.createElement("img");
   image2.className = 'image';
   image2.src = `${product.images[1]}`;
+  image2.alt = 'Some image of the product';
   imagebox2.appendChild(image2);
+  const prompt2 = document.createElement("p");
+  prompt2.setAttribute("class", "prompt");
+  prompt2.innerHTML = "CLICK TO ENHANCE";
+  imagebox2.appendChild(prompt2);
 
   const description = document.createElement("p");
   description.innerHTML = product.dcr;
@@ -164,31 +170,31 @@ productsCollection.forEach((product) => {
   $products.appendChild(mainblock);
 
   arrowright.addEventListener("click", () => {
-    const currentIMG1index = product.images.indexOf(imagebox1.src);
+    const currentIMG1index = product.images.indexOf(image1.src);
     if (currentIMG1index < product.images.length - 2) {
-      imagebox1.src = product.images[currentIMG1index + 1];
+      image1.src = product.images[currentIMG1index + 1];
     }
   });
 
   arrowleft.addEventListener("click", () => {
-    const currentIMG1index = product.images.indexOf(imagebox1.src);
+    const currentIMG1index = product.images.indexOf(image1.src);
     if (currentIMG1index > 0) {
-      imagebox1.src = product.images[currentIMG1index - 1];
+      image1.src = product.images[currentIMG1index - 1];
     }
   });
 
   arrowright.addEventListener("click", () => {
-    const currentIMG2index = product.images.indexOf(imagebox2.src);
+    const currentIMG2index = product.images.indexOf(image2.src);
     console.log(imagebox2.src);
     if (currentIMG2index < product.images.length - 1) {
-      imagebox2.src = product.images[currentIMG2index + 1];
+      image2.src = product.images[currentIMG2index + 1];
     }
   });
 
   arrowleft.addEventListener("click", () => {
-    const currentIMG2index = product.images.indexOf(imagebox2.src);
+    const currentIMG2index = product.images.indexOf(image2.src);
     if (currentIMG2index > 1) {
-      imagebox2.src = product.images[currentIMG2index - 1];
+      image2.src = product.images[currentIMG2index - 1];
     }
   });
 
@@ -205,9 +211,7 @@ productsCollection.forEach((product) => {
         $showCaseCont.classList.remove("active");
       });
     });
-    imagebox.addEventListener("mouseover", () => {
-      imagebox.innerHTML = "CLICK!!!";
-    });
+    
   });
 
 
