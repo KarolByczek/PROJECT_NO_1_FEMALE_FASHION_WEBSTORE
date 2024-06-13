@@ -792,6 +792,7 @@ footer ul li a:hover {
     width: 30vw;
     height: 45vw;
     margin: 0.1rem;
+    border: 0.3rem solid var(--dark-green);
     transition-duration: 0.8s;
   }
 
