@@ -324,7 +324,7 @@ section #product_container .mainblock .pictures .imagebox {
   position: relative;
   margin: 0 auto;
   display: block;
-  border: 0.2rem solid var(--dark-green);
+  border: 0.4rem solid var(--dark-green);
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -334,10 +334,11 @@ section #product_container .mainblock .pictures .imagebox {
 
 section #product_container .mainblock .pictures .imagebox .image {
   position: absolute;
-  left: 0%;
+  left: 0;
   top: 0;
   width: 100%;
   height: 100%;
+  border-radius: 0.1rem;
 }
 
 section #product_container .mainblock .pictures .imagebox .prompt {
