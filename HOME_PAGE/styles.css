@@ -320,7 +320,7 @@ section #bestseller_container .mainblock {
   flex-direction: column;
   align-items: center;
   width: fit-content;
-  border: 3px solid rgb(19, 43, 32, 0.2);
+  border: 3px solid rgba(83, 99, 92, 0.336);
   padding: 0.8rem;
   background-color: rgb(180, 190, 183);
   border-radius: 2rem;
@@ -343,6 +343,7 @@ section #bestseller_container .mainblock .pictures .image {
   margin: 0 auto;
   display: flex;
   border-radius: 2rem;
+  border: 3px solid rgb(116, 112, 112);
 }
 
 section #bestseller_container .mainblock .description {
@@ -796,7 +797,6 @@ footer ul li a:hover {
     width: 30vw;
     height: 45vw;
     margin: 0.1rem;
-    border: 0.3rem solid var(--dark-green);
     transition-duration: 0.8s;
   }
 
