@@ -1,3 +1,4 @@
+
 const $logButton = document.querySelector("#login_button");
 const $logStrip = document.querySelector("#login_strip");
 const $hideLoginStrip = document.querySelector("#hide_login_strip");
@@ -13,6 +14,12 @@ $hideLoginStrip.addEventListener("click", () => {
 const $menuItems = document.querySelectorAll(".menu_item");
 const $register = document.querySelector("#register");
 const $backDrop = document.querySelector("#backdrop");
+
+const $showCaseCont = document.querySelector("#showcasecont");
+const $showCase = document.createElement("img");
+$showCase.setAttribute("class", "showcase");
+$showCaseCont.appendChild($showCase);
+
 const $registerForm = document.getElementById("register_form");
 const $submitRegisterform = document.getElementById("submit_register_form");
 const $registerFormLoginButton = document.getElementById(
@@ -106,24 +113,40 @@ const $products = document.getElementById("product_container");
 productsCollection.forEach((product) => {
   const mainblock = document.createElement("div");
   mainblock.setAttribute("class", "mainblock");
-  mainblock.setAttribute("id", product.id);
+  mainblock.setAttribute("id", product.id)
   const productName = document.createElement("p");
   productName.setAttribute("class", "product_name");
   productName.innerHTML = product.pname;
   const pictures = document.createElement("div");
   pictures.setAttribute("class", "pictures");
 
-  const imagebox1 = document.createElement("img");
-  imagebox1.src = `${product.images[0]}`;
-  imagebox1.alt = "some image of a product";
-  imagebox1.className = "imagebox";
+  const imagebox1 = document.createElement("div");
+  imagebox1.className = "imagebox1";
+  imagebox1.setAttribute('class', "imagebox");
   pictures.appendChild(imagebox1);
-
-  const imagebox2 = document.createElement("img");
-  imagebox2.src = `${product.images[1]}`;
-  imagebox2.alt = "some image of a product";
-  imagebox2.className = "imagebox";
+  const image1 = document.createElement("img");
+  image1.className = 'image';
+  image1.src = `${product.images[0]}`;
+  image1.alt = 'Some image of the product';
+  imagebox1.appendChild(image1);
+  const prompt1 = document.createElement("p");
+  prompt1.setAttribute("class", "prompt");
+  prompt1.innerHTML = "CLICK TO ENHANCE";
+  imagebox1.appendChild(prompt1);
+  
+  const imagebox2 = document.createElement("div");
+  imagebox2.className = "imagebox2";
+  imagebox2.setAttribute('class', "imagebox");
   pictures.appendChild(imagebox2);
+  const image2 = document.createElement("img");
+  image2.className = 'image';
+  image2.src = `${product.images[1]}`;
+  image2.alt = 'Some image of the product';
+  imagebox2.appendChild(image2);
+  const prompt2 = document.createElement("p");
+  prompt2.setAttribute("class", "prompt");
+  prompt2.innerHTML = "CLICK TO ENHANCE";
+  imagebox2.appendChild(prompt2);
 
   const description = document.createElement("p");
   description.innerHTML = product.dcr;
@@ -149,59 +172,49 @@ productsCollection.forEach((product) => {
   $products.appendChild(mainblock);
 
   arrowright.addEventListener("click", () => {
-    const currentIMG1index = product.images.indexOf(imagebox1.src);
+    const currentIMG1index = product.images.indexOf(image1.src);
     if (currentIMG1index < product.images.length - 2) {
-      imagebox1.src = product.images[currentIMG1index + 1];
+      image1.src = product.images[currentIMG1index + 1];
     }
   });
 
   arrowleft.addEventListener("click", () => {
-    const currentIMG1index = product.images.indexOf(imagebox1.src);
+    const currentIMG1index = product.images.indexOf(image1.src);
     if (currentIMG1index > 0) {
-      imagebox1.src = product.images[currentIMG1index - 1];
+      image1.src = product.images[currentIMG1index - 1];
     }
   });
 
   arrowright.addEventListener("click", () => {
-    const currentIMG2index = product.images.indexOf(imagebox2.src);
+    const currentIMG2index = product.images.indexOf(image2.src);
     console.log(imagebox2.src);
     if (currentIMG2index < product.images.length - 1) {
-      imagebox2.src = product.images[currentIMG2index + 1];
+      image2.src = product.images[currentIMG2index + 1];
     }
   });
 
   arrowleft.addEventListener("click", () => {
-    const currentIMG2index = product.images.indexOf(imagebox2.src);
+    const currentIMG2index = product.images.indexOf(image2.src);
     if (currentIMG2index > 1) {
-      imagebox2.src = product.images[currentIMG2index - 1];
+      image2.src = product.images[currentIMG2index - 1];
     }
   });
 
+ 
   const imageBoxes = mainblock.querySelectorAll(".imagebox");
-  const $showCase = document.createElement("img");
-  $showCase.setAttribute("class", "showcase");
-  mainblock.appendChild($showCase);
 
-  imageBoxes.forEach((imagebox) => {
-    imagebox.addEventListener("click", () => {
+  imageBoxes.forEach((one) => {
+    one.addEventListener("click", () => {
       $backDrop.classList.add("active");
-      $showCase.classList.add("active");
-      $showCase.src = imagebox.src;
-      $showCase.alt = imagebox.src.substring(53);
+      $showCaseCont.classList.add("active");
+      $showCase.src = one.firstChild.src;
       $backDrop.addEventListener("click", () => {
         $backDrop.classList.remove("active");
-        $showCase.classList.remove("active");
-        $showCase.classList.remove("enhanced");
+        $showCaseCont.classList.remove("active");
       });
     });
+    
   });
 
-  $showCase.addEventListener("click", () => {
-    if ($showCase.classList.contains("enhanced")) {
-      $showCase.classList.remove("enhanced")
-    } else {
-      $showCase.classList.add("enhanced")
-    }
-  });
 
 });
