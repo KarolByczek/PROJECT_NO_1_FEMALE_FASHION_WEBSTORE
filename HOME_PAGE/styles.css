@@ -207,7 +207,7 @@ header {
   right: 0;
   bottom: 0;
   background-color: black;
-  z-index: 7;
+  z-index: 9;
   visibility: hidden;
   opacity: 0;
   transition: all 0.3s;
@@ -220,9 +220,10 @@ header {
 
 #register_form {
   position: fixed;
-  left: 0;
-  top: 0;
-  width: 90vw;
+  right: 3%;
+  top: 3%;
+  left: 3%;
+  bottom: 3%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -231,7 +232,7 @@ header {
   background-color: rgb(225, 210, 189, 0.8);
   visibility: hidden;
   opacity: 0;
-  z-index: 8;
+  z-index: 10;
   transition: all 0.3s;
 }
 
@@ -651,12 +652,6 @@ footer ul li a:hover {
     font-size: 1.2rem;
   }
 
-  #register_form {
-    left: 0;
-    width: 98%;
-    background-color: rgb(225, 210, 189, 0.6);
-  }
-
   #login_strip #hide_login_strip {
     display: none;
   }
@@ -724,13 +719,6 @@ footer ul li a:hover {
 
   #right_sidebar {
     width: 18%;
-  }
-
-  #register_form {
-    width: 60vw;
-    height: 100%;
-    margin-left: 2rem;
-    margin-right: 2rem;
   }
 
   footer {
