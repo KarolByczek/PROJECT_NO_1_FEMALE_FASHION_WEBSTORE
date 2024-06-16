@@ -224,6 +224,7 @@ header {
   top: 3%;
   left: 3%;
   bottom: 3%;
+  padding: 2%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -655,6 +656,12 @@ footer ul li a:hover {
   #login_strip #hide_login_strip {
     display: none;
   }
+
+  #register_form #close_register_form {
+    font-size: 2.5rem;
+    top: 1rem;
+  }
+
 }
 
 /* STYLES FOR MOBILES - end */
