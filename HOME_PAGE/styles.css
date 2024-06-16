@@ -659,7 +659,7 @@ footer ul li a:hover {
 
   #register_form #close_register_form {
     font-size: 2.5rem;
-    top: 1rem;
+    top: -2rem;
   }
 
 }
@@ -732,6 +732,9 @@ footer ul li a:hover {
   position: absolute;
   z-index: 2;
   }
+
+  #register_form #close_register_form {
+    font-size: 1.8rem;
 
 }
 
