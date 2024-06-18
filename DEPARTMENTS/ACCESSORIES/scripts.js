@@ -99,7 +99,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS//ACCESSORIES/images/woman-looking-inside-briefcase-21732200.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS//ACCESSORIES/images/woman-looking-inside-briefcase-21802387.jpg",
     ],
-    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    dcr: "A placeholder text for further development.  sA placeholder text for further development. A placeholder text for further development.",
   },
 ];
 
