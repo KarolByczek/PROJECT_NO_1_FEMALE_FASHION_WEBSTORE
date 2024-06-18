@@ -481,7 +481,7 @@ footer ul li a:hover {
   right: 12vw;
   top: 5vh;
   bottom: 5vh;
-  border: 5px solid red;
+  border: 5px solid rgb(100, 98, 98);
   z-index: 12;
   visibility: hidden;
   opacity: 0;
