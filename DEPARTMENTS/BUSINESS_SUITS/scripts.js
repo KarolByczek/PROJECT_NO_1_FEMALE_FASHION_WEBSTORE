@@ -70,7 +70,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-835333264-1024x1024.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-835333320-1024x1024.jpg",
     ],
-    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
     id: "buenavista006"
   },
   {
@@ -81,7 +81,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-656599214-1024x1024.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-656599232-1024x1024.jpg",
     ],
-    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
     id: "primero004"
   },
   {
@@ -92,7 +92,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-836262254-1024x1024.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-836287926-1024x1024.jpg",
     ],
-    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
     id: "macinta003"
   },
   {
@@ -103,7 +103,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-867399162-1024x1024.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/BUSINESS_SUITS/images/istockphoto-867399174-1024x1024.jpg",
     ],
-    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
     id: "lavuasier008"
   },
 ];

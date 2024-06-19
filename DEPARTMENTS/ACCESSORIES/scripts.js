@@ -69,7 +69,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/ACCESSORIES/images/business-woman-hide-briefcase-29241574.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/ACCESSORIES/images/woman-briefcase-18790801.jpg",
     ],
-    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
   },
   {
     pname: "Mistress Siluette 002",
@@ -79,7 +79,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/ACCESSORIES/images/happy-woman-beautiful-holding-bag-32238803.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/ACCESSORIES/images/happy-woman-beautiful-holding-bag-32249356.jpg",
     ],
-    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
   },
   {
     pname: "Bella Gina 002",
@@ -89,7 +89,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/ACCESSORIES/images/smiling-girl-bag-8897430.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/ACCESSORIES/images/smiling-girl-hat-7317653.jpg",
     ],
-    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
   },
   {
     pname: "Attica's Charm 001",
@@ -99,7 +99,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS//ACCESSORIES/images/woman-looking-inside-briefcase-21732200.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS//ACCESSORIES/images/woman-looking-inside-briefcase-21802387.jpg",
     ],
-    dcr: "A placeholder text for further development.  sA placeholder text for further development. A placeholder text for further development.",
+    dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
   },
 ];
 
