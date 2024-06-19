@@ -70,7 +70,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/girl-pants-blous-isolated-white-background-body-language-63107751.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/girl-pants-blous-partial-barrier-formed-isolated-white-background-body-language-63049021.jpg",
     ],
-    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
     id: "macinta002"
   },
   {
@@ -81,7 +81,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/fetish-woman-gun-young-leather-suit-holding-33386502.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/sexy-spy-leather-dress-standing-wall-holding-futuristic-gun-33386368.jpg",
     ],
-    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
     id: "lavuasier002"
   },
   {
@@ -92,7 +92,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/sexy-woman-vintage-wall-handcuffs-desire-44985993.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/womam-catsuit-posing-vintage-wall-beautiful-woman-latex-high-heel-platform-boots-walls-42953586.jpg",
     ],
-    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
     id: "darkhills001"
   },
   {
@@ -103,7 +103,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/yoga-pose-89986.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/yoga-stretch-89989.jpg",
     ],
-    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
     id: "primero005"
   },
 ];

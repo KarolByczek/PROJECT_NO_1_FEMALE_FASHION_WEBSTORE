@@ -69,7 +69,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/TORSOWEAR/images/happy-beautiful-woman-smiling-isolated-white-background-59469431.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/TORSOWEAR/images/beauty-woman-holding-camera-pointing-isolated-over-white-background-40359715.jpg",
     ],
-    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
     id: "primero001"
   },
   {
@@ -80,7 +80,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/TORSOWEAR/images/strict-young-woman-blouse-skirt-20981461.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/TORSOWEAR/images/strict-young-woman-blouse-skirt-21391050.jpg",
     ],
-    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
     id: "buenavista003"
   },
   {
@@ -91,7 +91,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/TORSOWEAR/images/woman-kicks-clenched-fist-arm-kicking-her-isolated-white-86209499.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/TORSOWEAR/images/woman-pointing-finger-to-side-young-isolated-white-background-point-towards-85319073.jpg",
     ],
-    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
     id: "macinta006"
   },
   {
@@ -102,7 +102,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/TORSOWEAR/images/young-attractive-woman-pointing-isolated-white-background-29713329.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/TORSOWEAR/images/young-woman-holding-finger-lips-isolated-white-background-29713313.jpg",
     ],
-    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
     id: "lavuasier004"
   },
 ];

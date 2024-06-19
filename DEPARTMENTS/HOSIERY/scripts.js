@@ -70,7 +70,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/images/attica's-charm-001c.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/images/attica's-charm-001d.jpg",
     ],
-    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
     id: "bellagina001"
   },
   {
@@ -81,7 +81,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/images/bella-gina-001c.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/images/bella-gina-001d.jpg",
     ],
-    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
     id: "mistresssiluette002"
   },
   {
@@ -92,7 +92,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/images/bella-gina-002c.webp",
       "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/images/bella-gina-002b.webp",
     ],
-    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
     id: "bellagina002"
   },
   {
@@ -103,7 +103,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/images/mistress-siluette-002c.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/HOSIERY/images/fashion-model-red-17189453.jpg",
     ],
-    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
     id: "atticascharm001"
   },
 ];
