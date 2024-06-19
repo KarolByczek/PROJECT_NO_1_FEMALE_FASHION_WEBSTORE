@@ -69,7 +69,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/HEADWEAR/images/8c57bc03754f6f46357cb0aa3f45fd0c.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/HEADWEAR/images/96505c8acdb4d17b33428e90098729df.jpg",
     ],
-    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
     id: "darkhills003"
   },
   {
@@ -80,7 +80,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/HEADWEAR/images/4873a97b6b26c687e376b5ec9cff90d2.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/HEADWEAR/images/b947d525c023b764693909e19b64db87.jpg",
     ],
-    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
     id: "buenavista009"
   },
   {
@@ -91,7 +91,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/HEADWEAR/images/ef975bcdd83755aa8c4dd5d4672acb29.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/HEADWEAR/images/d3a98b49679c032472d13f7a5bc39442.jpg",
     ],
-    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
     id: "macinta004"
   },
   {
@@ -102,7 +102,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/HEADWEAR/images/dcdecd0e83e7a1e67b5e30058454c7c1.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/HEADWEAR/images/f37952c3d421735fdab08a11857cfd7e.jpg",
     ],
-    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
     id: "primero001"
   },
 ];

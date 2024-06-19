@@ -70,7 +70,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/GOWNS_AND_DRESSES/images/girl-yellow-dress-19187305.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/GOWNS_AND_DRESSES/images/girl-yellow-dress-19425139.jpg",
     ],
-    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
     id: "lavuasier005"
   },
   {
@@ -81,7 +81,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/GOWNS_AND_DRESSES/images/young-woman-red-gown-20420645.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/GOWNS_AND_DRESSES/images/young-woman-red-gown-25847665.jpg",
     ],
-    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
     id: "darkhills 004"
   },
   {
@@ -92,7 +92,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/GOWNS_AND_DRESSES/images/young-emotional-woman-pink-dress-11264435.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/GOWNS_AND_DRESSES/images/young-emotional-woman-pink-dress-11264441.jpg",
     ],
-    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
     id: "buenavista002"
   },
   {
@@ -103,7 +103,7 @@ const productsCollection = [
       "http://127.0.0.1:5500/DEPARTMENTS/GOWNS_AND_DRESSES/images/young-woman-costume-50916327.jpg",
       "http://127.0.0.1:5500/DEPARTMENTS/GOWNS_AND_DRESSES/images/young-woman-costume-50916328.jpg",
     ],
-    dcr: "A placeholder text for further development. A placeholder text for further development. A placeholder text for further development.",
+    dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
     id: "macinta006"
   },
 ];
