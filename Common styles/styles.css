@@ -681,8 +681,12 @@ footer ul li a:hover {
     height: 120vw;
   }
 
-  section #product_container .mainblock .arrowcont .arrow {
+  section #product_container .mainblock .pictures .imagebox:hover .prompt {
     display: none;
+  }
+
+  section #product_container .mainblock .arrowcont {
+    margin-top: 1rem;
   }
 
   section #product_container .mainblock .description {
