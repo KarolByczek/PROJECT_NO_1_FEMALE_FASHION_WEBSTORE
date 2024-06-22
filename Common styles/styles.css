@@ -359,7 +359,6 @@ section #product_container .mainblock .pictures .imagebox .prompt {
   justify-content: center;
   align-items: center;
   transition: all 0.3s;
-
 }
 
 section #product_container .mainblock .pictures .imagebox:hover .prompt {
@@ -497,17 +496,14 @@ footer ul li a:hover {
 .showcase {
   width: 72vw;
   height: 108vw;
-  cursor:grabbing;
+  cursor: grabbing;
 }
-
-
 
 /* GENERAL STYLES - end */
 
 /* STYLES FOR MOBILES - start */
 
 @media screen and (max-width: 625px) {
- 
   #company_logo {
     position: relative;
     width: 98%;
@@ -731,13 +727,11 @@ footer ul li a:hover {
     width: 120vw;
     height: 180vw;
   }
-
 }
 
 /* STYLES FOR MOBILES - end */
 
 @media screen and (min-width: 625px) {
-
   #navigation_strip {
     height: fit-content;
   }
@@ -801,21 +795,23 @@ footer ul li a:hover {
   footer {
     position: absolute;
     z-index: 2;
-    }
+  }
 
-    #register_form #close_register_form {
-      top: -1rem;
-      font-size: 1.8rem;
-    }
+  #register_form #close_register_form {
+    top: -1rem;
+    font-size: 1.8rem;
+  }
 
+  .showcase {
+    width: 120vw;
+    height: 180vw;
+  }
 }
 
 @media screen and (min-width: 800px) {
-
   #login_strip {
     justify-content: center;
   }
-
 
   section #product_container .mainblock {
     width: 95%;
@@ -845,10 +841,13 @@ footer ul li a:hover {
     margin: 0;
   }
 
+  .showcase {
+    width: 72vw;
+    height: 108vw;
+  }
 }
 
 @media screen and (min-width: 1048px) {
-
   #navigation_strip {
     height: fit-content;
   }
@@ -873,7 +872,7 @@ footer ul li a:hover {
     width: 30vw;
     height: 45vw;
   }
- 
+
   #left_sidebar {
     display: flex;
     width: 14.5%;
