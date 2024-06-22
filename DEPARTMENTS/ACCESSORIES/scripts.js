@@ -168,7 +168,10 @@ productsCollection.forEach((product) => {
 
   arrowright.addEventListener("click", () => {
     const currentIMG1index = product.images.indexOf(image1.src);
-    if (currentIMG1index < product.images.length - 2) {
+    if (currentIMG1index < product.images.length - 2 && window.innerWidth > 625) {
+      image1.src = product.images[currentIMG1index + 1];
+    }
+    else if (currentIMG1index < product.images.length - 1 && window.innerWidth < 625) {
       image1.src = product.images[currentIMG1index + 1];
     }
   });
@@ -178,6 +181,7 @@ productsCollection.forEach((product) => {
     if (currentIMG1index > 0) {
       image1.src = product.images[currentIMG1index - 1];
     }
+    
   });
 
   arrowright.addEventListener("click", () => {

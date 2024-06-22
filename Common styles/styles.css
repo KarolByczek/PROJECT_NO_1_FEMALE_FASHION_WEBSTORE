@@ -681,6 +681,10 @@ footer ul li a:hover {
     height: 120vw;
   }
 
+  section #product_container .mainblock .pictures .imagebox.imagebox2 {
+    opacity: 0.5;
+  }
+
   section #product_container .mainblock .pictures .imagebox:hover .prompt {
     display: none;
   }
