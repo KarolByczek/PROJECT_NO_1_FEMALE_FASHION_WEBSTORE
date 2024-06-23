@@ -116,8 +116,7 @@ productsCollection.forEach((product) => {
   pictures.setAttribute("class", "pictures");
 
   const imagebox1 = document.createElement("div");
-  imagebox1.className = "imagebox1";
-  imagebox1.setAttribute('class', "imagebox");
+  imagebox1.setAttribute("class", "imagebox imagebox1");
   pictures.appendChild(imagebox1);
   const image1 = document.createElement("img");
   image1.className = 'image';
@@ -130,8 +129,7 @@ productsCollection.forEach((product) => {
   imagebox1.appendChild(prompt1);
   
   const imagebox2 = document.createElement("div");
-  imagebox2.className = "imagebox2";
-  imagebox2.setAttribute('class', "imagebox");
+  imagebox2.setAttribute("class", "imagebox imagebox2");
   pictures.appendChild(imagebox2);
   const image2 = document.createElement("img");
   image2.className = 'image';
@@ -168,10 +166,10 @@ productsCollection.forEach((product) => {
 
   arrowright.addEventListener("click", () => {
     const currentIMG1index = product.images.indexOf(image1.src);
-    if (currentIMG1index < product.images.length - 2 && window.innerWidth > 625) {
+    if (currentIMG1index < product.images.length - 2 && window.innerWidth > 800) {
       image1.src = product.images[currentIMG1index + 1];
     }
-    else if (currentIMG1index < product.images.length - 1 && window.innerWidth < 625) {
+    else if (currentIMG1index < product.images.length - 1 && window.innerWidth < 800) {
       image1.src = product.images[currentIMG1index + 1];
     }
   });

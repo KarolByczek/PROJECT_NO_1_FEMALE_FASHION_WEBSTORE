@@ -681,8 +681,8 @@ footer ul li a:hover {
     height: 120vw;
   }
 
-  section #product_container .mainblock .pictures .imagebox.imagebox2 {
-    opacity: 0.5;
+  section #product_container .mainblock .pictures .imagebox2 {
+    display: none;
   }
 
   section #product_container .mainblock .pictures .imagebox:hover .prompt {
@@ -690,7 +690,11 @@ footer ul li a:hover {
   }
 
   section #product_container .mainblock .arrowcont {
-    margin-top: 1rem;
+    margin-top: 2rem;
+  }
+
+  section #product_container .mainblock .arrowcont .arrow {
+    padding: 1.5rem;
   }
 
   section #product_container .mainblock .description {
@@ -786,6 +790,10 @@ footer ul li a:hover {
     transition-duration: 0.5s;
   }
 
+  section #product_container .mainblock .pictures .imagebox2 {
+    display: none;
+  }
+
   section #product_container .mainblock .imagebox:hover {
     transform: scale(1.03);
     -webkit-transform: scale(1.03);
@@ -836,6 +844,10 @@ footer ul li a:hover {
     width: 34vw;
     height: 51vw;
     transition-duration: 0.8s;
+  }
+
+  section #product_container .mainblock .pictures .imagebox2 {
+    display: flex;
   }
 
   section #product_container .mainblock .pictures .imagebox:hover {
