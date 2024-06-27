@@ -122,7 +122,7 @@ productsCollection.forEach((product) => {
   pictures.appendChild(imagebox1);
   const image1 = document.createElement("img");
   image1.className = "image";
-  image1.src = `${product.images[0]}`;
+  image1.src = "images/business-man-holding-briefcase-4188046.jpg";
   image1.alt = "Some image of the product";
   imagebox1.appendChild(image1);
   const prompt1 = document.createElement("p");
@@ -210,7 +210,36 @@ productsCollection.forEach((product) => {
       $backDrop.classList.add("active");
       $showCaseCont.classList.add("active");
       $enhancedimage.src = one.firstChild.src;
-      
+
+      $enhancedimage.addEventListener("mousedown", (e) => {
+        $enhancedimage.style.cursor = "grabbing";
+        let shiftX = e.clientX - $enhancedimage.getBoundingClientRect().left;
+        let shiftY = e.clientY - $enhancedimage.getBoundingClientRect().top;
+
+        const moveAt = (pageX, pageY) => {
+          $enhancedimage.style.left = pageX - shiftX + "px";
+          $enhancedimage.style.top = pageY - shiftY + "px";
+        };
+
+        moveAt(e.pageX, e.pageY);
+
+        const onMouseMove = (e) => {
+          moveAt(e.pageX, e.pageY);
+        };
+
+        document.addEventListener("mousemove", onMouseMove);
+
+        $enhancedimage.onmouseup = () => {
+          document.removeEventListener("mousemove", onMouseMove);
+          $enhancedimage.onmouseup = null;
+          $enhancedimage.style.cursor = "grab";
+        };
+      });
+
+      $enhancedimage.ondragstart = () => {
+        return false;
+      };
+
       $backDrop.addEventListener("click", () => {
         $backDrop.classList.remove("active");
         $showCaseCont.classList.remove("active");

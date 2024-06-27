@@ -477,14 +477,14 @@ footer ul li a:hover {
 #showcasecont {
   
   position: fixed;
-  left: 12vw;
-  right: 12vw;
+  left: 10vw;
+  right: 10vw;
   top: 5vh;
-  bottom: 5vh;
+  bottom: 10vh;
   margin: 0;
   padding: 0;
-  height: 100%;
-  width: 100%;
+  height: 90%;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -510,8 +510,8 @@ footer ul li a:hover {
 .enhanced_image {
   position: absolute;
   cursor: grab;
-  width: 130vw;
-  height: 150vh;
+  width: 200%;
+  height: 200%;
 }
 
 .enhanced_image:active {
