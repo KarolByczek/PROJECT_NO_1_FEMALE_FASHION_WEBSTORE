@@ -121,7 +121,7 @@ productsCollection.forEach((product) => {
   imagebox1.setAttribute("class", "imagebox imagebox1");
   pictures.appendChild(imagebox1);
   const image1 = document.createElement("img");
-  image1.setAttribute("class", "image");
+  image1.className = "image";
   image1.src = `${product.images[0]}`;
   image1.alt = "Some image of the product";
   imagebox1.appendChild(image1);
@@ -134,7 +134,7 @@ productsCollection.forEach((product) => {
   imagebox2.setAttribute("class", "imagebox imagebox2");
   pictures.appendChild(imagebox2);
   const image2 = document.createElement("img");
-  image2.setAttribute("class", "image")
+  image2.className = "image";
   image2.src = `${product.images[1]}`;
   image2.alt = "Some image of the product";
   imagebox2.appendChild(image2);
@@ -210,38 +210,7 @@ productsCollection.forEach((product) => {
       $backDrop.classList.add("active");
       $showCaseCont.classList.add("active");
       $enhancedimage.src = one.firstChild.src;
-      document.addEventListener("DOMContentLoaded", () => {
-        const img = document.querySelector(".enhanced_image");
-
-        img.addEventListener("mousedown", (e) => {
-          img.style.cursor = "grabbing";
-          let shiftX = e.clientX - img.getBoundingClientRect().left;
-          let shiftY = e.clientY - img.getBoundingClientRect().top;
-
-          const moveAt = (pageX, pageY) => {
-            img.style.left = pageX - shiftX + "px";
-            img.style.top = pageY - shiftY + "px";
-          };
-
-          moveAt(e.pageX, e.pageY);
-
-          const onMouseMove = (e) => {
-            moveAt(e.pageX, e.pageY);
-          };
-
-          document.addEventListener("mousemove", onMouseMove);
-
-          img.onmouseup = () => {
-            document.removeEventListener("mousemove", onMouseMove);
-            img.onmouseup = null;
-            img.style.cursor = "grab";
-          };
-        });
-
-        img.ondragstart = () => {
-          return false;
-        };
-      });
+      
       $backDrop.addEventListener("click", () => {
         $backDrop.classList.remove("active");
         $showCaseCont.classList.remove("active");
