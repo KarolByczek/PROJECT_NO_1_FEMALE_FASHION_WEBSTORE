@@ -475,11 +475,20 @@ footer ul li a:hover {
 }
 
 #showcasecont {
+  
   position: fixed;
   left: 12vw;
   right: 12vw;
   top: 5vh;
   bottom: 5vh;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
   border: 5px solid rgb(77, 75, 75);
   z-index: 12;
   visibility: hidden;
@@ -490,12 +499,22 @@ footer ul li a:hover {
 #showcasecont.active {
   visibility: visible;
   opacity: 1;
-  overflow: scroll;
 }
 
 .showcase {
-  width: 72vw;
-  height: 108vw;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.enhanced_image {
+  position: absolute;
+  cursor: grab;
+  width: 130vw;
+  height: 150vh;
+}
+
+.enhanced_image:active {
   cursor: grabbing;
 }
 
