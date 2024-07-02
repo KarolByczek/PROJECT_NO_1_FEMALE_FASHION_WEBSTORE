@@ -483,6 +483,7 @@ footer ul li a:hover {
   bottom: 5vh;
   border: 5px solid rgb(77, 75, 75);
   z-index: 12;
+  overflow: scroll;
   visibility: hidden;
   opacity: 0;
   transition: all 0.3s;
@@ -497,6 +498,7 @@ footer ul li a:hover {
   position: relative;
   width: 100%;
   height: 100%;
+  
 }
 
 .enhanced_image {
@@ -504,6 +506,7 @@ footer ul li a:hover {
   cursor: grab;
   width: 200%;
   height: 200%;
+  
 }
 
 .enhanced_image:active {
