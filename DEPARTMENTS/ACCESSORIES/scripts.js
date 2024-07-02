@@ -1,4 +1,3 @@
-
 const $logButton = document.querySelector("#login_button");
 const $logStrip = document.querySelector("#login_strip");
 const $hideLoginStrip = document.querySelector("#hide_login_strip");
@@ -16,9 +15,12 @@ const $register = document.querySelector("#register");
 const $backDrop = document.querySelector("#backdrop");
 
 const $showCaseCont = document.querySelector("#showcasecont");
-const $showCase = document.createElement("img");
+const $showCase = document.createElement("div");
 $showCase.setAttribute("class", "showcase");
+const $enhancedimage = document.createElement("img");
+$enhancedimage.setAttribute("class", "enhanced_image");
 $showCaseCont.appendChild($showCase);
+$showCase.appendChild($enhancedimage);
 
 const $registerForm = document.getElementById("register_form");
 const $submitRegisterform = document.getElementById("submit_register_form");
@@ -108,7 +110,7 @@ const $products = document.getElementById("product_container");
 productsCollection.forEach((product) => {
   const mainblock = document.createElement("div");
   mainblock.setAttribute("class", "mainblock");
-  mainblock.setAttribute("id", product.id)
+  mainblock.setAttribute("id", product.id);
   const productName = document.createElement("p");
   productName.setAttribute("class", "product_name");
   productName.innerHTML = product.pname;
@@ -119,22 +121,22 @@ productsCollection.forEach((product) => {
   imagebox1.setAttribute("class", "imagebox imagebox1");
   pictures.appendChild(imagebox1);
   const image1 = document.createElement("img");
-  image1.className = 'image';
-  image1.src = `${product.images[0]}`;
-  image1.alt = 'Some image of the product';
+  image1.className = "image";
+  image1.src = "images/business-man-holding-briefcase-4188046.jpg";
+  image1.alt = "Some image of the product";
   imagebox1.appendChild(image1);
   const prompt1 = document.createElement("p");
   prompt1.setAttribute("class", "prompt");
   prompt1.innerHTML = "CLICK TO ENHANCE";
   imagebox1.appendChild(prompt1);
-  
+
   const imagebox2 = document.createElement("div");
   imagebox2.setAttribute("class", "imagebox imagebox2");
   pictures.appendChild(imagebox2);
   const image2 = document.createElement("img");
-  image2.className = 'image';
+  image2.className = "image";
   image2.src = `${product.images[1]}`;
-  image2.alt = 'Some image of the product';
+  image2.alt = "Some image of the product";
   imagebox2.appendChild(image2);
   const prompt2 = document.createElement("p");
   prompt2.setAttribute("class", "prompt");
@@ -166,10 +168,15 @@ productsCollection.forEach((product) => {
 
   arrowright.addEventListener("click", () => {
     const currentIMG1index = product.images.indexOf(image1.src);
-    if (currentIMG1index < product.images.length - 2 && window.innerWidth > 800) {
+    if (
+      currentIMG1index < product.images.length - 2 &&
+      window.innerWidth > 800
+    ) {
       image1.src = product.images[currentIMG1index + 1];
-    }
-    else if (currentIMG1index < product.images.length - 1 && window.innerWidth < 800) {
+    } else if (
+      currentIMG1index < product.images.length - 1 &&
+      window.innerWidth < 800
+    ) {
       image1.src = product.images[currentIMG1index + 1];
     }
   });
@@ -179,7 +186,6 @@ productsCollection.forEach((product) => {
     if (currentIMG1index > 0) {
       image1.src = product.images[currentIMG1index - 1];
     }
-    
   });
 
   arrowright.addEventListener("click", () => {
@@ -197,22 +203,47 @@ productsCollection.forEach((product) => {
     }
   });
 
- 
   const imageBoxes = mainblock.querySelectorAll(".imagebox");
 
   imageBoxes.forEach((one) => {
     one.addEventListener("click", () => {
       $backDrop.classList.add("active");
       $showCaseCont.classList.add("active");
-      $showCase.src = one.firstChild.src;
+      $enhancedimage.src = one.firstChild.src;
+
+      $enhancedimage.addEventListener("mousedown", (e) => {
+        $enhancedimage.style.cursor = "grabbing";
+        let shiftX = e.clientX - $enhancedimage.getBoundingClientRect().left;
+        let shiftY = e.clientY - $enhancedimage.getBoundingClientRect().top;
+
+        const moveAt = (pageX, pageY) => {
+          $enhancedimage.style.left = pageX - shiftX + "px";
+          $enhancedimage.style.top = pageY - shiftY + "px";
+        };
+
+        moveAt(e.pageX, e.pageY);
+
+        const onMouseMove = (e) => {
+          moveAt(e.pageX, e.pageY);
+        };
+
+        document.addEventListener("mousemove", onMouseMove);
+
+        $enhancedimage.onmouseup = () => {
+          document.removeEventListener("mousemove", onMouseMove);
+          $enhancedimage.onmouseup = null;
+          $enhancedimage.style.cursor = "grab";
+        };
+      });
+
+      $enhancedimage.ondragstart = () => {
+        return false;
+      };
+
       $backDrop.addEventListener("click", () => {
         $backDrop.classList.remove("active");
         $showCaseCont.classList.remove("active");
       });
     });
-    
   });
-
-
 });
-
