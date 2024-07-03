@@ -475,15 +475,13 @@ footer ul li a:hover {
 }
 
 #showcasecont {
-  
   position: fixed;
-  left: 10vw;
-  right: 10vw;
+  left: 12vw;
+  right: 12vw;
   top: 5vh;
   bottom: 5vh;
-  border: 5px solid rgb(51, 46, 46);
+  border: 5px solid rgb(77, 75, 75);
   z-index: 12;
-  overflow: scroll;
   visibility: hidden;
   opacity: 0;
   transition: all 0.3s;
@@ -492,30 +490,14 @@ footer ul li a:hover {
 #showcasecont.active {
   visibility: visible;
   opacity: 1;
+  overflow: scroll;
 }
 
 .showcase {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  
-<<<<<<< HEAD
-=======
-}
-
-.enhanced_image {
-  position: absolute;
-  cursor: grab;
-  width: 200%;
-  height: 200%;
-  
-}
-
-.enhanced_image:active {
+  width: 72vw;
+  height: 108vw;
   cursor: grabbing;
->>>>>>> 3fdcae3193e82aef7f30078511320679b110630c
 }
-
 
 /* GENERAL STYLES - end */
 
@@ -920,3 +902,4 @@ footer ul li a:hover {
     width: 14.5%;
   }
 }
+
