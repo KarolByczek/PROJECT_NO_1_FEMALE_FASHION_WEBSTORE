@@ -120,7 +120,7 @@ productsCollection.forEach((product) => {
   pictures.appendChild(imagebox1);
   const image1 = document.createElement("img");
   image1.className = 'image';
-  image1.src = `${product.images[0]}`;
+  image1.src = "./images/woman-briefcase-18790801.jpg";
   image1.alt = 'Some image of the product';
   imagebox1.appendChild(image1);
   const prompt1 = document.createElement("p");
@@ -133,7 +133,7 @@ productsCollection.forEach((product) => {
   pictures.appendChild(imagebox2);
   const image2 = document.createElement("img");
   image2.className = 'image';
-  image2.src = `${product.images[1]}`;
+  image2.src = "./images/happy-woman-beautiful-holding-bag-32249356.jpg";
   image2.alt = 'Some image of the product';
   imagebox2.appendChild(image2);
   const prompt2 = document.createElement("p");
