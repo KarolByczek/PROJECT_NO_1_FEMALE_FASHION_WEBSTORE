@@ -120,7 +120,7 @@ productsCollection.forEach((product) => {
   pictures.appendChild(imagebox1);
   const image1 = document.createElement("img");
   image1.className = 'image';
-  image1.src = `${product.images[0]}`;
+  image1.src = product.images[0];
   image1.alt = 'Some image of the product';
   imagebox1.appendChild(image1);
   const prompt1 = document.createElement("p");
@@ -133,7 +133,7 @@ productsCollection.forEach((product) => {
   pictures.appendChild(imagebox2);
   const image2 = document.createElement("img");
   image2.className = 'image';
-  image2.src = `${product.images[1]}`;
+  image2.src = product.images[1];
   image2.alt = 'Some image of the product';
   imagebox2.appendChild(image2);
   const prompt2 = document.createElement("p");
@@ -166,10 +166,7 @@ productsCollection.forEach((product) => {
 
   arrowright.addEventListener("click", () => {
     const currentIMG1index = product.images.indexOf(image1.src);
-    if (currentIMG1index < product.images.length - 2 && window.innerWidth > 800) {
-      image1.src = product.images[currentIMG1index + 1];
-    }
-    else if (currentIMG1index < product.images.length - 1 && window.innerWidth < 800) {
+    if (currentIMG1index < product.images.length - 1) {
       image1.src = product.images[currentIMG1index + 1];
     }
   });
@@ -184,8 +181,7 @@ productsCollection.forEach((product) => {
 
   arrowright.addEventListener("click", () => {
     const currentIMG2index = product.images.indexOf(image2.src);
-    console.log(imagebox2.src);
-    if (currentIMG2index < product.images.length - 1) {
+    if (currentIMG2index < product.images.length) {
       image2.src = product.images[currentIMG2index + 1];
     }
   });
