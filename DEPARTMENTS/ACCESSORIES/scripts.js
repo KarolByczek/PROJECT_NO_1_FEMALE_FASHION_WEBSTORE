@@ -64,10 +64,10 @@ const productsCollection = [
   {
     pname: "Bella Gina 001",
     images: [
-      "http://127.0.0.1:5500/DEPARTMENTS/ACCESSORIES/images/business-man-holding-briefcase-4188046.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/ACCESSORIES/images/business-woman-hand-bag-708649.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/ACCESSORIES/images/business-woman-hide-briefcase-29241574.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/ACCESSORIES/images/woman-briefcase-18790801.jpg",
+      "../ACCESSORIES/images/business-man-holding-briefcase-4188046.jpg",
+      "../ACCESSORIES/images/business-woman-hand-bag-708649.jpg",
+      "../ACCESSORIES/images/business-woman-hide-briefcase-29241574.jpg",
+      "../ACCESSORIES/images/woman-briefcase-18790801.jpg",
     ],
     dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
   },
@@ -120,7 +120,7 @@ productsCollection.forEach((product) => {
   pictures.appendChild(imagebox1);
   const image1 = document.createElement("img");
   image1.className = 'image';
-  image1.src = "./images/woman-briefcase-18790801.jpg";
+  image1.src = `${product.images[0]}`;
   image1.alt = 'Some image of the product';
   imagebox1.appendChild(image1);
   const prompt1 = document.createElement("p");
@@ -133,7 +133,7 @@ productsCollection.forEach((product) => {
   pictures.appendChild(imagebox2);
   const image2 = document.createElement("img");
   image2.className = 'image';
-  image2.src = "./images/happy-woman-beautiful-holding-bag-32249356.jpg";
+  image2.src = `${product.images[1]}`;
   image2.alt = 'Some image of the product';
   imagebox2.appendChild(image2);
   const prompt2 = document.createElement("p");
