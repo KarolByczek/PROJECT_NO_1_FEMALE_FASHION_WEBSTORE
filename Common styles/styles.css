@@ -494,11 +494,31 @@ footer ul li a:hover {
   right: 12vw;
   top: 5vh;
   bottom: 5vh;
-  border: 5px solid rgb(56, 32, 197);
+  border: 5px solid rgb(74, 126, 69);
   z-index: 12;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #888 #f0f0f0; /* For Firefox */
   visibility: hidden;
   opacity: 0;
   transition: all 0.3s;
+}
+
+#showcasecont::-webkit-scrollbar {
+  width: 0.4rem;
+  height: 0.4rem;
+}
+
+#showcasecont::-webkit-scrollbar-track {
+  background: var(--dark-green);
+  border-radius: 3rem;
+}
+
+#showcase::-webkit-scrollbar-button {
+  display: none;
+}
+
+#showcase::-webkit-scrollbar-corner {
+  opacity: 0;
 }
 
 #showcasecont.active {
@@ -876,8 +896,8 @@ footer ul li a:hover {
   }
 
   .showcase {
-    width: 72vw;
-    height: 108vw;
+    width: 74vw;
+    height: 112vw;
   }
 }
 
