@@ -94,10 +94,10 @@ const productsCollection = [
   {
     pname: "Attica's Charm 001",
     images: [
-      "http://127.0.0.1:5501/DEPARTMENTS/ACCESSORIES/images/woman-holding-briefcase-21868191.jpg",
-      "http://127.0.0.1:5501/DEPARTMENTS/ACCESSORIES/images/woman-holding-briefcase-22366856.jpg",
-      "http://127.0.0.1:5501/DEPARTMENTS/ACCESSORIES/images/woman-looking-inside-briefcase-21732200.jpg",
-      "http://127.0.0.1:5501/DEPARTMENTS/ACCESSORIES/images/woman-looking-inside-briefcase-21802387.jpg",
+      "./images/woman-holding-briefcase-21868191.jpg",
+      "./images/woman-holding-briefcase-22366856.jpg",
+      "./images/woman-looking-inside-briefcase-21732200.jpg",
+      "./images/woman-looking-inside-briefcase-21802387.jpg",
     ],
     dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
   },
@@ -164,15 +164,17 @@ productsCollection.forEach((product) => {
 
   $products.appendChild(mainblock);
 
+  console.log("." + `${(image1.src).substring(45)}`);
+
   arrowright.addEventListener("click", () => {
-    const currentIMG1index = product.images.indexOf(image1.src);
+    const currentIMG1index = product.images.indexOf(".".concat(`${(image1.src).substring(45)}`));
     if (currentIMG1index < product.images.length - 2) {
       image1.src = product.images[currentIMG1index + 1];
     }
   });
 
   arrowleft.addEventListener("click", () => {
-    const currentIMG1index = product.images.indexOf(image1.src);
+    const currentIMG1index = product.images.indexOf(".".concat(`${(image1.src).substring(45)}`));
     if (currentIMG1index > 0) {
       image1.src = product.images[currentIMG1index - 1];
     }
@@ -180,14 +182,14 @@ productsCollection.forEach((product) => {
   });
 
   arrowright.addEventListener("click", () => {
-    const currentIMG2index = product.images.indexOf(image2.src);
+    const currentIMG2index = product.images.indexOf(".".concat(`${(image2.src).substring(45)}`));
     if (currentIMG2index < product.images.length - 1) {
       image2.src = product.images[currentIMG2index + 1];
     }
   });
 
   arrowleft.addEventListener("click", () => {
-    const currentIMG2index = product.images.indexOf(image2.src);
+    const currentIMG2index = product.images.indexOf(".".concat(`${(image2.src).substring(45)}`));
     if (currentIMG2index > 1) {
       image2.src = product.images[currentIMG2index - 1];
     }
