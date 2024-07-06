@@ -125,7 +125,7 @@ productsCollection.forEach((product) => {
   imagebox1.appendChild(image1);
   const prompt1 = document.createElement("p");
   prompt1.setAttribute("class", "prompt");
-  prompt1.innerHTML = "CLICK TO ENHANCE";
+  prompt1.innerHTML = "INTERACT WITH THE IMAGE IN ORDER TO ENHANCE IT";
   imagebox1.appendChild(prompt1);
   
   const imagebox2 = document.createElement("div");
@@ -138,7 +138,7 @@ productsCollection.forEach((product) => {
   imagebox2.appendChild(image2);
   const prompt2 = document.createElement("p");
   prompt2.setAttribute("class", "prompt");
-  prompt2.innerHTML = "CLICK TO ENHANCE";
+  prompt2.innerHTML = "INTERACT WITH THE IMAGE IN ORDER TO ENHANCE IT";
   imagebox2.appendChild(prompt2);
 
   const description = document.createElement("p");

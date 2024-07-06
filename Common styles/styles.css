@@ -74,6 +74,7 @@ header {
 .home_navigation li:hover {
   border: 0.2rem solid greenyellow;
   background-color: aquamarine;
+  cursor: pointer;
 }
 
 .home_navigation li ul {
@@ -177,11 +178,13 @@ header {
 #login_strip form input#login {
   background-color: rgb(12, 129, 43);
   color: white;
+  cursor: pointer;
 }
 
 #login_strip form a#register {
   text-decoration: none;
   color: rgb(24, 34, 34);
+  cursor: pointer;
 }
 
 #login_strip form a#register:hover {
@@ -352,18 +355,15 @@ section #product_container .mainblock .pictures .imagebox .prompt {
   left: 0;
   right: 0;
   bottom: 30%;
-  background-color: rgb(224, 235, 235, 0.7);
+  background-color: rgb(224, 235, 235, 0.3);
   color: rgb(34, 170, 125);
   font-weight: 700;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.3s;
 }
 
-section #product_container .mainblock .pictures .imagebox:hover .prompt {
-  display: flex;
-}
 
 section #product_container .mainblock .arrowcont {
   width: 50%;
@@ -719,10 +719,6 @@ footer ul li a:hover {
     display: none;
   }
 
-  section #product_container .mainblock .pictures .imagebox:hover .prompt {
-    display: none;
-  }
-
   section #product_container .mainblock .arrowcont {
     margin-top: 2rem;
   }
@@ -766,7 +762,7 @@ footer ul li a:hover {
   }
 
   #register_form #close_register_form {
-    top: -2rem;
+    top: 0.5rem;
   }
 
   .showcase {
@@ -802,7 +798,7 @@ footer ul li a:hover {
   }
 
   section {
-    margin-top: 8rem;
+    margin-top: 9rem;
     margin-bottom: 2rem;
     width: 80%;
     padding-left: 0.2rem;
@@ -915,7 +911,7 @@ footer ul li a:hover {
   }
 
   section {
-    margin-top: 5rem;
+    margin-top: 6rem;
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
