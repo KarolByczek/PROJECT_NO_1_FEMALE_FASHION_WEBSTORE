@@ -64,40 +64,40 @@ const productsCollection = [
   {
     pname: "Bella Gina 001",
     images: [
-      "../ACCESSORIES/images/business-man-holding-briefcase-4188046.jpg",
-      "../ACCESSORIES/images/business-woman-hand-bag-708649.jpg",
-      "../ACCESSORIES/images/business-woman-hide-briefcase-29241574.jpg",
-      "../ACCESSORIES/images/woman-briefcase-18790801.jpg",
+      "./images/business-man-holding-briefcase-4188046.jpg",
+      "./images/business-woman-hand-bag-708649.jpg",
+      "./images/business-woman-hide-briefcase-29241574.jpg",
+      "./images/woman-briefcase-18790801.jpg"
     ],
     dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
   },
   {
     pname: "Mistress Siluette 002",
     images: [
-      "http://127.0.0.1:5500/DEPARTMENTS/ACCESSORIES/images/happy-woman-bag-beautiful-holding-32249123.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/ACCESSORIES/images/happy-woman-bag-beautiful-holding-32249189.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/ACCESSORIES/images/happy-woman-beautiful-holding-bag-32238803.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/ACCESSORIES/images/happy-woman-beautiful-holding-bag-32249356.jpg",
+      "./images/happy-woman-bag-beautiful-holding-32249123.jpg",
+      "./images/happy-woman-bag-beautiful-holding-32249189.jpg",
+      "./images/happy-woman-beautiful-holding-bag-32238803.jpg",
+      "./images/happy-woman-beautiful-holding-bag-32249356.jpg",
     ],
     dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
   },
   {
     pname: "Bella Gina 002",
     images: [
-      "http://127.0.0.1:5500/DEPARTMENTS/ACCESSORIES/images/smiling-girl-bag-7330358.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/ACCESSORIES/images/smiling-girl-bag-8104175.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/ACCESSORIES/images/smiling-girl-bag-8897430.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/ACCESSORIES/images/smiling-girl-hat-7317653.jpg",
+      "./images/smiling-girl-bag-7330358.jpg",
+      "./images/smiling-girl-bag-8104175.jpg",
+      "./images/smiling-girl-bag-8897430.jpg",
+      "./images/smiling-girl-hat-7317653.jpg",
     ],
     dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
   },
   {
     pname: "Attica's Charm 001",
     images: [
-      "http://127.0.0.1:5500/DEPARTMENTS//ACCESSORIES/images/woman-holding-briefcase-21868191.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS//ACCESSORIES/images/woman-holding-briefcase-22366856.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS//ACCESSORIES/images/woman-looking-inside-briefcase-21732200.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS//ACCESSORIES/images/woman-looking-inside-briefcase-21802387.jpg",
+      "http://127.0.0.1:5501/DEPARTMENTS/ACCESSORIES/images/woman-holding-briefcase-21868191.jpg",
+      "http://127.0.0.1:5501/DEPARTMENTS/ACCESSORIES/images/woman-holding-briefcase-22366856.jpg",
+      "http://127.0.0.1:5501/DEPARTMENTS/ACCESSORIES/images/woman-looking-inside-briefcase-21732200.jpg",
+      "http://127.0.0.1:5501/DEPARTMENTS/ACCESSORIES/images/woman-looking-inside-briefcase-21802387.jpg",
     ],
     dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
   },
@@ -166,7 +166,7 @@ productsCollection.forEach((product) => {
 
   arrowright.addEventListener("click", () => {
     const currentIMG1index = product.images.indexOf(image1.src);
-    if (currentIMG1index < product.images.length - 1) {
+    if (currentIMG1index < product.images.length - 2) {
       image1.src = product.images[currentIMG1index + 1];
     }
   });
@@ -181,7 +181,7 @@ productsCollection.forEach((product) => {
 
   arrowright.addEventListener("click", () => {
     const currentIMG2index = product.images.indexOf(image2.src);
-    if (currentIMG2index < product.images.length) {
+    if (currentIMG2index < product.images.length - 1) {
       image2.src = product.images[currentIMG2index + 1];
     }
   });
