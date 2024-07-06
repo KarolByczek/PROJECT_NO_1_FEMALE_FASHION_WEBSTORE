@@ -168,8 +168,14 @@ productsCollection.forEach((product) => {
 
   arrowright.addEventListener("click", () => {
     const currentIMG1index = product.images.indexOf(".".concat(`${(image1.src).substring(45)}`));
-    if (currentIMG1index < product.images.length - 2) {
+    if (currentIMG1index < product.images.length - 2 && window.innerWidth > 800) {
       image1.src = product.images[currentIMG1index + 1];
+    }
+    else if (currentIMG1index < product.images.length - 1 && window.innerWidth < 800) {
+      image1.src = product.images[currentIMG1index + 1];
+    }
+    else {
+      arrowright.classList.add("disabled");
     }
   });
 
@@ -177,6 +183,10 @@ productsCollection.forEach((product) => {
     const currentIMG1index = product.images.indexOf(".".concat(`${(image1.src).substring(45)}`));
     if (currentIMG1index > 0) {
       image1.src = product.images[currentIMG1index - 1];
+      arrowright.classList.remove("disabled");
+    }
+    else {
+      arrowleft.classList.add("disabled");
     }
     
   });
@@ -185,6 +195,7 @@ productsCollection.forEach((product) => {
     const currentIMG2index = product.images.indexOf(".".concat(`${(image2.src).substring(45)}`));
     if (currentIMG2index < product.images.length - 1) {
       image2.src = product.images[currentIMG2index + 1];
+      arrowleft.classList.remove("disabled");
     }
   });
 

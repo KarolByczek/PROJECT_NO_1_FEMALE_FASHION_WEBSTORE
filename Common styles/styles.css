@@ -402,6 +402,20 @@ section #product_container .mainblock .arrowcont .arrow:active {
   color: rgb(59, 173, 97);
 }
 
+section #product_container .mainblock .arrowcont .arrow_right.disabled {
+  background-color: gray;
+  border-color: gray;
+  color: white;
+  cursor: auto;
+}
+
+section #product_container .mainblock .arrowcont .arrow_left.disabled {
+  background-color: gray;
+  border-color: gray;
+  color: white;
+  cursor: auto;
+}
+
 section #product_container .mainblock .description {
   text-align: center;
 }
