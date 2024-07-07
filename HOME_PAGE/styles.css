@@ -449,6 +449,24 @@ footer ul li a:hover {
   right: 0;
 }
 
+#add_space {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 40vh;
+  background-color: azure;
+  z-index: 20;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+#add_space.active {
+  opacity: 0.8;
+  visibility: visible;
+}
+
 /* GENERAL STYLES - end */
 
 /* STYLES FOR MOBILES - start */

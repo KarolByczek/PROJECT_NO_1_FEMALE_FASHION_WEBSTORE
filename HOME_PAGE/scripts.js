@@ -1,6 +1,7 @@
 const $logButton = document.querySelector("#login_button");
 const $logStrip = document.querySelector("#login_strip");
 const $hideLoginStrip = document.querySelector("#hide_login_strip");
+const $addSpace = document.querySelector("#add_space");
 
 $logButton.addEventListener("click", () => {
   $logStrip.classList.toggle("active");
@@ -38,8 +39,13 @@ const openRegisterFunction = () => {
   $backDrop.classList.add("active");
   $registerForm.classList.add("active");
 };
-const timeout = setTimeout(() => openRegisterFunction(), 5000);
+const timeout01 = setTimeout(() => openRegisterFunction(), 5000);
 // if (the user has logged in or registered) {clearTimeout(timeout)};
+
+const openAddSpace = () => {
+  $addSpace.classList.add("active");
+};
+const timeout02 = setTimeout(() => openAddSpace(), 8000);
 
 $closeRegisterForm.addEventListener("click", () => {
   $backDrop.classList.remove("active");
