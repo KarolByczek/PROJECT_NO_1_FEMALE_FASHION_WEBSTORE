@@ -452,19 +452,17 @@ footer ul li a:hover {
 #add_space {
   position: fixed;
   left: 0;
-  bottom: 0;
+  bottom: -40vh;
   width: 100vw;
   height: 40vh;
   background-color: azure;
   z-index: 20;
-  opacity: 0;
-  visibility: hidden;
+  opacity: 0.8;
   transition: all 0.3s;
 }
 
 #add_space.active {
-  opacity: 0.8;
-  visibility: visible;
+  transform: translateY(-100%);
 }
 
 /* GENERAL STYLES - end */
