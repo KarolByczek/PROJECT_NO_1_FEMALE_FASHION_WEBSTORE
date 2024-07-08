@@ -2,6 +2,8 @@
 const $logButton = document.querySelector("#login_button");
 const $logStrip = document.querySelector("#login_strip");
 const $hideLoginStrip = document.querySelector("#hide_login_strip");
+const $addSpace = document.querySelector("#add_space");
+const $closeAdd = document.querySelector("#add_closer");
 
 $logButton.addEventListener("click", () => {
   $logStrip.classList.toggle("active");
@@ -45,6 +47,15 @@ $closeRegisterForm.addEventListener("click", () => {
   $backDrop.classList.remove("active");
   $registerForm.classList.remove("active");
 });
+
+const openAddSpace = () => {
+  $addSpace.classList.add("active");
+};
+const timeout02 = setTimeout(() => openAddSpace(), 8000);
+
+$closeAdd.addEventListener("click", () => {
+  $addSpace.classList.remove("active");
+})
 
 //for definition < 625px (navigation menu)
 

@@ -535,6 +535,48 @@ footer ul li a:hover {
   cursor: grabbing;
 }
 
+#add_space {
+  position: fixed;
+  left: 1vw;
+  right: 1vw;
+  bottom: -80vh;
+  z-index: 20;
+  transition: all 0.4s;
+}
+
+#add_space.active {
+  transform: translateY(-100%);
+}
+
+#add_closer {
+  position: relative;
+  background-color: rgb(189, 233, 233);
+  width: 20vw;
+  height: 10vh;
+  left: 0;
+  margin-bottom: -0.2rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: large;
+  font-weight: 600;
+}
+
+#add_content {
+  height: 70vh;
+  background-color: rgb(189, 233, 233);
+  margin: 0;
+  border-top-right-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
 /* GENERAL STYLES - end */
 
 /* STYLES FOR MOBILES - start */
@@ -854,6 +896,11 @@ footer ul li a:hover {
     width: 120vw;
     height: 180vw;
   }
+
+  #add_space {
+    display: none;
+  }
+  
 }
 
 @media screen and (min-width: 800px) {
