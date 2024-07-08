@@ -3,9 +3,16 @@ const $logStrip = document.querySelector("#login_strip");
 const $hideLoginStrip = document.querySelector("#hide_login_strip");
 const $addSpace = document.querySelector("#add_space");
 const $closeAdd = document.querySelector("#add_closer");
+const $section = document.querySelector("section");
 
 $logButton.addEventListener("click", () => {
   $logStrip.classList.toggle("active");
+  if(window.innerWidth < 625 && $section.style.marginTop !== "10rem") {
+    $section.style.marginTop = "10rem";
+  }
+  else if (window.innerWidth < 625 && $section.style.marginTop === "10rem") {
+    $section.style.marginTop = "-1rem"
+  }
 });
 
 $hideLoginStrip.addEventListener("click", () => {
