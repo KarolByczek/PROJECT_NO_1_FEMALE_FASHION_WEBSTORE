@@ -70,7 +70,6 @@ $menuItems.forEach((menuitem) => {
 });
 
 // Temporary - static - solution for obtaining the contents of the productsCollection container.
-
 const productsCollection = [
   {
     pname: "Buena Vista 006",

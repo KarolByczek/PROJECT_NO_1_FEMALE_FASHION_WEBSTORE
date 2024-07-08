@@ -1,4 +1,3 @@
-
 const $logButton = document.querySelector("#login_button");
 const $logStrip = document.querySelector("#login_strip");
 const $hideLoginStrip = document.querySelector("#hide_login_strip");
@@ -81,6 +80,7 @@ const productsCollection = [
       "./images/woman-briefcase-18790801.jpg"
     ],
     dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
+    id: "bellagina001"
   },
   {
     pname: "Mistress Siluette 002",
@@ -91,6 +91,7 @@ const productsCollection = [
       "./images/happy-woman-beautiful-holding-bag-32249356.jpg",
     ],
     dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
+    id: "mistresssiluette002"
   },
   {
     pname: "Bella Gina 002",
@@ -101,6 +102,7 @@ const productsCollection = [
       "./images/smiling-girl-hat-7317653.jpg",
     ],
     dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
+    id: "bellagina002"
   },
   {
     pname: "Attica's Charm 001",
@@ -111,6 +113,7 @@ const productsCollection = [
       "./images/woman-looking-inside-briefcase-21802387.jpg",
     ],
     dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
+    id: "atticascharm001"
   },
 ];
 
