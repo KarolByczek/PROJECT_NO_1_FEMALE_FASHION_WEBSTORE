@@ -177,8 +177,7 @@ productsCollection.forEach((product) => {
   mainblock.appendChild(description);
 
   $products.appendChild(mainblock);
-
-  console.log("." + `${(image1.src).substring(45)}`);
+  
 
   arrowright.addEventListener("click", () => {
     const currentIMG1index = product.images.indexOf(".".concat(`${(image1.src).substring(45)}`));

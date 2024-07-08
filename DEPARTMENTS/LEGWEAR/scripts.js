@@ -1,7 +1,8 @@
-
 const $logButton = document.querySelector("#login_button");
 const $logStrip = document.querySelector("#login_strip");
 const $hideLoginStrip = document.querySelector("#hide_login_strip");
+const $addSpace = document.querySelector("#add_space");
+const $closeAdd = document.querySelector("#add_closer");
 
 $logButton.addEventListener("click", () => {
   $logStrip.classList.toggle("active");
@@ -46,6 +47,15 @@ $closeRegisterForm.addEventListener("click", () => {
   $registerForm.classList.remove("active");
 });
 
+const openAddSpace = () => {
+  $addSpace.classList.add("active");
+};
+const timeout02 = setTimeout(() => openAddSpace(), 8000);
+
+$closeAdd.addEventListener("click", () => {
+  $addSpace.classList.remove("active");
+})
+
 //for definition < 625px (navigation menu)
 
 $menuItems.forEach((menuitem) => {
@@ -65,10 +75,10 @@ const productsCollection = [
   {
     pname: "Macinta 002",
     images: [
-      "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/girl-pants-blous-isolated-white-background-body-language-63053941.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/girl-pants-blous-isolated-white-background-body-language-63053989.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/girl-pants-blous-isolated-white-background-body-language-63107751.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/girl-pants-blous-partial-barrier-formed-isolated-white-background-body-language-63049021.jpg",
+      "./images/girl-pants-blous-isolated-white-background-body-language-63053941.jpg",
+      "./images/girl-pants-blous-isolated-white-background-body-language-63053989.jpg",
+      "./images/girl-pants-blous-isolated-white-background-body-language-63107751.jpg",
+      "./images/girl-pants-blous-partial-barrier-formed-isolated-white-background-body-language-63049021.jpg",
     ],
     dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
     id: "macinta002"
@@ -76,10 +86,10 @@ const productsCollection = [
   {
     pname: "Lavuasier 002",
     images: [
-      "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/woman-leather-dress-knife-sexy-catsuit-holding-combat-old-fabric-ruins-33386156.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/prld3.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/fetish-woman-gun-young-leather-suit-holding-33386502.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/sexy-spy-leather-dress-standing-wall-holding-futuristic-gun-33386368.jpg",
+      "./images/woman-leather-dress-knife-sexy-catsuit-holding-combat-old-fabric-ruins-33386156.jpg",
+      "./images/prld3.jpg",
+      "./images/fetish-woman-gun-young-leather-suit-holding-33386502.jpg",
+      "./images/sexy-spy-leather-dress-standing-wall-holding-futuristic-gun-33386368.jpg",
     ],
     dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
     id: "lavuasier002"
@@ -87,10 +97,10 @@ const productsCollection = [
   {
     pname: "Dark Hills 001",
     images: [
-      "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/sexy-woman-catsuit-holding-handcuffs-37733588.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/sexy-woman-latex-catsuit-bite-whip-vintage-wall-44351942.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/sexy-woman-vintage-wall-handcuffs-desire-44985993.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/womam-catsuit-posing-vintage-wall-beautiful-woman-latex-high-heel-platform-boots-walls-42953586.jpg",
+      "./images/sexy-woman-catsuit-holding-handcuffs-37733588.jpg",
+      "./images/sexy-woman-latex-catsuit-bite-whip-vintage-wall-44351942.jpg",
+      "./images/sexy-woman-vintage-wall-handcuffs-desire-44985993.jpg",
+      "./images/womam-catsuit-posing-vintage-wall-beautiful-woman-latex-high-heel-platform-boots-walls-42953586.jpg",
     ],
     dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
     id: "darkhills001"
@@ -98,10 +108,10 @@ const productsCollection = [
   {
     pname: "Primero 005",
     images: [
-      "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/yoga-pose-89768.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/yoga-pose-89773.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/yoga-pose-89986.jpg",
-      "http://127.0.0.1:5500/DEPARTMENTS/LEGWEAR/images/yoga-stretch-89989.jpg",
+      "./images/yoga-pose-89768.jpg",
+      "./images/yoga-pose-89773.jpg",
+      "./images/yoga-pose-89986.jpg",
+      "./images/yoga-stretch-89989.jpg",
     ],
     dcr: "A placeholder text of the product description for further development - A placeholder text of the product description for further development - A placeholder text of the product description for further development.",
     id: "primero005"
@@ -125,12 +135,12 @@ productsCollection.forEach((product) => {
   pictures.appendChild(imagebox1);
   const image1 = document.createElement("img");
   image1.className = 'image';
-  image1.src = `${product.images[0]}`;
+  image1.src = product.images[0];
   image1.alt = 'Some image of the product';
   imagebox1.appendChild(image1);
   const prompt1 = document.createElement("p");
   prompt1.setAttribute("class", "prompt");
-  prompt1.innerHTML = "CLICK TO ENHANCE";
+  prompt1.innerHTML = "INTERACT WITH THE IMAGE IN ORDER TO ENHANCE IT";
   imagebox1.appendChild(prompt1);
   
   const imagebox2 = document.createElement("div");
@@ -138,12 +148,12 @@ productsCollection.forEach((product) => {
   pictures.appendChild(imagebox2);
   const image2 = document.createElement("img");
   image2.className = 'image';
-  image2.src = `${product.images[1]}`;
+  image2.src = product.images[1];
   image2.alt = 'Some image of the product';
   imagebox2.appendChild(image2);
   const prompt2 = document.createElement("p");
   prompt2.setAttribute("class", "prompt");
-  prompt2.innerHTML = "CLICK TO ENHANCE";
+  prompt2.innerHTML = "INTERACT WITH THE IMAGE IN ORDER TO ENHANCE IT";
   imagebox2.appendChild(prompt2);
 
   const description = document.createElement("p");
@@ -169,33 +179,42 @@ productsCollection.forEach((product) => {
 
   $products.appendChild(mainblock);
 
+  
   arrowright.addEventListener("click", () => {
-    const currentIMG1index = product.images.indexOf(image1.src);
+    const currentIMG1index = product.images.indexOf(".".concat(`${(image1.src).substring(41)}`));
     if (currentIMG1index < product.images.length - 2 && window.innerWidth > 800) {
       image1.src = product.images[currentIMG1index + 1];
     }
     else if (currentIMG1index < product.images.length - 1 && window.innerWidth < 800) {
       image1.src = product.images[currentIMG1index + 1];
     }
+    else {
+      arrowright.classList.add("disabled");
+    }
   });
 
   arrowleft.addEventListener("click", () => {
-    const currentIMG1index = product.images.indexOf(image1.src);
+    const currentIMG1index = product.images.indexOf(".".concat(`${(image1.src).substring(41)}`));
     if (currentIMG1index > 0) {
       image1.src = product.images[currentIMG1index - 1];
+      arrowright.classList.remove("disabled");
     }
+    else {
+      arrowleft.classList.add("disabled");
+    }
+    
   });
 
   arrowright.addEventListener("click", () => {
-    const currentIMG2index = product.images.indexOf(image2.src);
-    console.log(imagebox2.src);
+    const currentIMG2index = product.images.indexOf(".".concat(`${(image2.src).substring(41)}`));
     if (currentIMG2index < product.images.length - 1) {
       image2.src = product.images[currentIMG2index + 1];
+      arrowleft.classList.remove("disabled");
     }
   });
 
   arrowleft.addEventListener("click", () => {
-    const currentIMG2index = product.images.indexOf(image2.src);
+    const currentIMG2index = product.images.indexOf(".".concat(`${(image2.src).substring(41)}`));
     if (currentIMG2index > 1) {
       image2.src = product.images[currentIMG2index - 1];
     }

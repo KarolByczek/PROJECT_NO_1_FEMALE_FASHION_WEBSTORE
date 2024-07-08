@@ -351,11 +351,11 @@ section #product_container .mainblock .pictures .imagebox .image {
 
 section #product_container .mainblock .pictures .imagebox .prompt {
   position: absolute;
-  top: 30%;
+  top: 85%;
   left: 0;
   right: 0;
-  bottom: 30%;
-  background-color: rgb(224, 235, 235, 0.3);
+  bottom: 0%;
+  background-color: rgb(224, 235, 235, 0.8);
   color: rgb(34, 170, 125);
   font-weight: 700;
   display: flex;
