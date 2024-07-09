@@ -652,10 +652,7 @@ footer ul li a:hover {
     left: 0;
     right: 0;
     margin-bottom: 1rem;
-  }
-
-  section h1 {
-    margin-top: 2rem;
+    margin-top: -1rem;
   }
 
   section #bestseller_container {
