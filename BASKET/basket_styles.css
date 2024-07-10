@@ -3,18 +3,24 @@ body {
     padding: 0;
 }
 
-#item_spec {
+#items_spec {
+    width: 100vw;
+    background-color: orangered;
+}
 
+#items_spec form {
+    display: flex;
+    flex-direction: column;
 }
 
 #payment_spec {
-
+    background-color: greenyellow;
 }
 
 #delivery_spec {
-
+    background-color: gray;
 }
 
 #purchase_summary {
-    
+    background-color: antiquewhite;
 }
