@@ -6,6 +6,8 @@ body {
 #items_spec {
     width: 100vw;
     background-color: orangered;
+    display: flex;
+    justify-content: end;
 }
 
 #items_spec form {
@@ -15,6 +17,13 @@ body {
 
 #payment_spec {
     background-color: greenyellow;
+    display: flex;
+    justify-content: end;
+}
+
+#payment_spec form {
+    display: flex;
+    flex-direction: column;
 }
 
 #delivery_spec {

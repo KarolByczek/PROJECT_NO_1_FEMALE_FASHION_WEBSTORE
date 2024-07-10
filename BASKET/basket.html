@@ -8,14 +8,21 @@
   </head>
   <body>
     <div id="items_spec">
-      <form action="submit">
+      <form action="">
         <h2>PRODUCT SPECIFICS</h2>
-        <label for="item-name">NAME:<input type="text" readonly></label>
-        <label for="item-brand">BRAND:<input type="text" readonly></label>
+        <label for="item-name">NAME:<input type="text" name="item-name" readonly></label>
+        <label for="item-brand">BRAND:<input type="text" name="item-brand" readonly></label>
+        <label for="amount">AMOUNT OF ITEMS:<input type="number" name="amount"></label>
+      </form>
+    </div>
+    <div id="payment_spec">
+      <form action="">
+        <h2>PAYMENT SPECIFICS</h2>
+        <label for="item-name">METHOD OF PAYMENT:<input type="radio" value="credit card"></label>
+        <label for="item-brand">BRAND:<input type="text"></label>
         <label for="amount">AMOUNT OF ITEMS:<input type="number"></label>
       </form>
     </div>
-    <div id="payment_spec"></div>
     <div id="delivery_spec"></div>
     <div id="purchase_summary"></div>
     <div id=""></div>
