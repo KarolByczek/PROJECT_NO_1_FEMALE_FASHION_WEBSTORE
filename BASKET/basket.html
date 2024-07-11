@@ -9,15 +9,15 @@
   <body>
     <div id="items_spec">
       <div id="items_showcase">
-        <p>SWITCH CHOSEN ITEMS WITH THE HALOS BELOW THE PICTURE FRAME</p>
-        <img
+        <p>SWITCH CHOSEN ITEMS BY PICKING THE HALOS BELOW THE PICTURE FRAME</p>
+        <img id="item_picture"
           src="./images/istockphoto-836261960-1024x1024.jpg"
           alt="An image of one of the chosen products"
         />
         <div id="item_switcher">
-          <input type="radio">
-          <input type="radio">
-          <input type="radio">
+          <input type="radio" name="single-option" id="item-option1" value="product-one">
+          <input type="radio" name="single-option" id="item-option2" value="product-two">
+          <input type="radio" name="single-option" id="item-option3" value="product-three">
         </div>
       </div>
       <form action="">
@@ -27,6 +27,9 @@
         /></label>
         <label for="item-brand"
           >BRAND:<input type="text" name="item-brand" readonly
+        /></label>
+        <label for="item-brand"
+          >UNIT PRICE:<input type="number" name="unit-price" readonly
         /></label>
         <label for="amount"
           >AMOUNT OF ITEMS:<input type="number" name="amount"
@@ -48,22 +51,22 @@
       <ul>
         <li>
           <label for="option1"
-            >Option1<input type="radio" name="option1"
+            >Option1<input type="radio" name="single-payment-option" value="payment-option1"
           /></label>
         </li>
         <li>
           <label for="option2"
-            >Option2<input type="radio" name="option2"
+            >Option2<input type="radio" name="single-payment-option" value="payment-option2"
           /></label>
         </li>
         <li>
           <label for="option3"
-            >Option3<input type="radio" name="option3"
+            >Option3<input type="radio" name="single-payment-option" value="payment-option3"
           /></label>
         </li>
         <li>
           <label for="option4"
-            >Option4<input type="radio" name="option4"
+            >Option4<input type="radio" name="single-payment-option" value="payment-option4"
           /></label>
         </li>
       </ul>
