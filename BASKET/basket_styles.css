@@ -1,13 +1,31 @@
+/* GENERAL STYLES - start */
+
 body {
+    position: relative;
     margin: 0;
     padding: 0;
 }
 
 #items_spec {
+    position: relative;
     width: 100vw;
     background-color: orangered;
     display: flex;
     justify-content: end;
+}
+
+#items_spec #items_showcase {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    height: 90vh;
+    width: 60vh;
+    border: 0.3rem solid darkgreen;
+}
+
+#items_spec #items_showcase img {
+    width: 100%;
+    height: 100%;
 }
 
 #items_spec form {
@@ -33,3 +51,5 @@ body {
 #purchase_summary {
     background-color: antiquewhite;
 }
+
+/* GENERAL STYLES - end */
