@@ -21,11 +21,26 @@ body {
     height: 90vh;
     width: 60vh;
     border: 0.3rem solid darkgreen;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+#items_spec #items_showcase p {
+    text-align: center;
 }
 
 #items_spec #items_showcase img {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
+}
+
+#items_spec #items_showcase #item_switcher input {
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 #items_spec form {
