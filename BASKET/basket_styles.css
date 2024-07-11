@@ -46,10 +46,16 @@ body {
 
 #delivery_spec {
     background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
 }
 
 #purchase_summary {
     background-color: antiquewhite;
+    border: 0.2rem solid blanchedalmond;
+    background-color: rgb(113, 150, 150);
 }
 
 /* GENERAL STYLES - end */
