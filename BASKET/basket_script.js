@@ -29,8 +29,7 @@ const chosenItemsCollection = [
 
 
 
-$calcTotal.addEventListener("click", () => {
-    console.log($itemPrice1.value*$amount1.value + $itemPrice2.value*$amount2.value + $itemPrice3.value*$amount3.value);
+$amount1.addEventListener("keydown", () => {
     $tp.innerHTML = `${$itemPrice1.value*$amount1.value + $itemPrice2.value*$amount2.value + $itemPrice3.value*$amount3.value}`;
 })
 
