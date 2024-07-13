@@ -1,11 +1,13 @@
 
 
-const $item1 = document.querySelector("#item-option1" );
-const $item2 = document.querySelector("#item-option2" );
-const $item3 = document.querySelector("#item-option3" );
-const $itemPicture = document.querySelector("#item_picture");
-const $unitPrice = document.querySelector("#unit_price");
-const $amount = document.querySelector("#amount");
+const $itemPrice1 = document.querySelector("#unit_price1" );
+const $itemPrice2 = document.querySelector("#unit_price2" );
+const $itemPrice3 = document.querySelector("#unit_price3" );
+const $amount1 = document.querySelector("#amount1");
+const $amount2 = document.querySelector("#amount2");
+const $amount3 = document.querySelector("#amount3");
+const $calcTotal = document.querySelector("#calc_total");
+const $tp = document.querySelector("#t_p");
 
 const chosenItemsCollection = [
     {
@@ -25,20 +27,10 @@ const chosenItemsCollection = [
     }
 ]
 
-$item1.addEventListener("click", () => {
-        $itemPicture.src = chosenItemsCollection[0].image_source;
-        $unitPrice.value = chosenItemsCollection[0].price;
-        $amount.value = 1;
-    })
 
-$item2.addEventListener("click", () => {
-        $itemPicture.src = chosenItemsCollection[1].image_source;
-        $unitPrice.value = chosenItemsCollection[1].price;
-        $amount.value = 1;
-    })
 
-$item3.addEventListener("click", () => {
-        $itemPicture.src = chosenItemsCollection[2].image_source;
-        $unitPrice.value = chosenItemsCollection[2].price;
-        $amount.value = 1;
-    })
+$calcTotal.addEventListener("click", () => {
+    console.log($itemPrice1.value*$amount1.value + $itemPrice2.value*$amount2.value + $itemPrice3.value*$amount3.value);
+    $tp.innerHTML = `${$itemPrice1.value*$amount1.value + $itemPrice2.value*$amount2.value + $itemPrice3.value*$amount3.value}`;
+})
+
