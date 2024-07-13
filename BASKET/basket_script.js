@@ -1,4 +1,83 @@
 
+const $logButton = document.querySelector("#login_button");
+const $logStrip = document.querySelector("#login_strip");
+const $hideLoginStrip = document.querySelector("#hide_login_strip");
+const $addSpace = document.querySelector("#add_space");
+const $closeAdd = document.querySelector("#add_closer");
+const $section = document.querySelector("section");
+
+$logButton.addEventListener("click", () => {
+  $logStrip.classList.toggle("active");
+  if(window.innerWidth < 625 && $section.style.marginTop !== "10rem") {
+    $section.style.marginTop = "10rem";
+  }
+  else if (window.innerWidth < 625 && $section.style.marginTop === "10rem") {
+    $section.style.marginTop = "-1rem"
+  }
+});
+
+$hideLoginStrip.addEventListener("click", () =>{
+  $logStrip.classList.toggle("active");
+});
+
+const $menuItems = document.querySelectorAll(".menu_item");
+const $register = document.querySelector("#register");
+const $backDrop = document.querySelector(".backdrop");
+const $registerForm = document.getElementById("register_form");
+const $submitRegisterform = document.getElementById("submit_register_form");
+const $registerFormLoginButton = document.getElementById(
+  "register_form_login_button"
+);
+const $closeRegisterForm = document.getElementById("close_register_form");
+
+$register.addEventListener("click", (event) => {
+  event.preventDefault();
+  $backDrop.classList.add("active");
+  $registerForm.classList.add("active");
+});
+
+$registerFormLoginButton.addEventListener("click", (event) => {
+  event.preventDefault();
+  $backDrop.classList.remove("active");
+  $registerForm.classList.remove("active");
+  $logStrip.classList.add("active");
+  window.scrollTo(top);
+});
+
+const openRegisterFunction = () => {
+  $backDrop.classList.add("active");
+  $registerForm.classList.add("active");
+};
+const timeout01 = setTimeout(() => openRegisterFunction(), 5000);
+// if (the user has logged in or registered) {clearTimeout(timeout)};
+
+const openAddSpace = () => {
+  $addSpace.classList.add("active");
+};
+const timeout02 = setTimeout(() => openAddSpace(), 8000);
+
+$closeAdd.addEventListener("click", () => {
+  $addSpace.classList.remove("active");
+})
+
+$closeRegisterForm.addEventListener("click", () => {
+  $backDrop.classList.remove("active");
+  $registerForm.classList.remove("active");
+  });
+
+//for definition < 625px (navigation menu) 
+
+$menuItems.forEach((menuitem) => {
+  menuitem.addEventListener("click", () => {
+    menuitem.classList.toggle("active");
+    $menuItems.forEach((other_menuitem) => {
+      if (other_menuitem !== menuitem) {
+      other_menuitem.classList.remove("active")
+      };
+    });
+  });
+});
+
 
 const $itemPrice1 = document.querySelector("#unit_price1" );
 const $itemPrice2 = document.querySelector("#unit_price2" );
@@ -9,27 +88,19 @@ const $amount3 = document.querySelector("#amount3");
 const $calcTotal = document.querySelector("#calc_total");
 const $tp = document.querySelector("#t_p");
 
-const chosenItemsCollection = [
-    {
-        pname:"product name one",
-        price: 24,
-        image_source: "./images/istockphoto-836261960-1024x1024.jpg"
-    },
-    {
-        pname:"product name two",
-        price: 45,
-        image_source:"./images/mistress-siluette-002c.jpg"
-    },
-    {
-        pname:"product name three",
-        price: 120,
-        image_source: "./images/woman-briefcase-18790801.jpg"
-    }
-]
 
 
+$tp.innerHTML = `${$itemPrice1.value*$amount1.value + $itemPrice2.value*$amount2.value + $itemPrice3.value*$amount3.value}`;
 
-$amount1.addEventListener("keydown", () => {
+$amount1.addEventListener("input", () => {
+    $tp.innerHTML = `${$itemPrice1.value*$amount1.value + $itemPrice2.value*$amount2.value + $itemPrice3.value*$amount3.value}`;
+});
+
+$amount2.addEventListener("input", () => {
+    $tp.innerHTML = `${$itemPrice1.value*$amount1.value + $itemPrice2.value*$amount2.value + $itemPrice3.value*$amount3.value}`;
+});
+
+$amount3.addEventListener("input", () => {
     $tp.innerHTML = `${$itemPrice1.value*$amount1.value + $itemPrice2.value*$amount2.value + $itemPrice3.value*$amount3.value}`;
 })
 
