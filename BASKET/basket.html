@@ -8,33 +8,69 @@
   </head>
   <body>
     <div id="items_spec">
-      <div id="items_showcase">
-        <p>SWITCH ORDERED PRODUCTS BY PICKING THE HALOS BELOW THE PICTURE FRAME</p>
-        <img id="item_picture"
-          src="./images/istockphoto-836261960-1024x1024.jpg"
-          alt="An image of one of the chosen products"
+      <div class="item" id="item_one">
+        <img id="item_picture1"
+        src="./images/istockphoto-836261960-1024x1024.jpg"
+        alt="An image of one of the chosen products"
         />
-        <div id="item_switcher">
-          <input type="radio" name="single-option" id="item-option1" value="product-one">
-          <input type="radio" name="single-option" id="item-option2" value="product-two">
-          <input type="radio" name="single-option" id="item-option3" value="product-three">
-        </div>
+        <form action="">
+          <h2>PRODUCT SPECIFICS</h2>
+          <label for="item-name"
+            >NAME:<input type="text" id="item_name" name="item-name" readonly
+          /></label>
+          <label for="item-brand"
+            >BRAND:<input type="text" id="item_brand" name="item-brand" readonly
+          /></label>
+          <label for="item-brand"
+            >UNIT PRICE:<input type="number" id="unit_price" name="unit-price" readonly
+          /></label>
+          <label for="amount"
+            >AMOUNT OF ITEMS:<input type="number" id="amount" name="amount"
+          /></label>
+        </form>
       </div>
-      <form action="">
-        <h2>PRODUCT SPECIFICS</h2>
-        <label for="item-name"
-          >NAME:<input type="text" id="item_name" name="item-name" readonly
-        /></label>
-        <label for="item-brand"
-          >BRAND:<input type="text" id="item_brand" name="item-brand" readonly
-        /></label>
-        <label for="item-brand"
-          >UNIT PRICE:<input type="number" id="unit_price" name="unit-price" readonly
-        /></label>
-        <label for="amount"
-          >AMOUNT OF ITEMS:<input type="number" id="amount" name="amount"
-        /></label>
-      </form>
+      <div class="item" id="item_two">
+        <img id="item_picture2"
+        src="./images/mistress-siluette-002c.jpg"
+        alt="An image of one of the chosen products"
+        />
+        <form action="">
+          <h2>PRODUCT SPECIFICS</h2>
+          <label for="item-name"
+            >NAME:<input type="text" id="item_name" name="item-name" readonly
+          /></label>
+          <label for="item-brand"
+            >BRAND:<input type="text" id="item_brand" name="item-brand" readonly
+          /></label>
+          <label for="item-brand"
+            >UNIT PRICE:<input type="number" id="unit_price" name="unit-price" readonly
+          /></label>
+          <label for="amount"
+            >AMOUNT OF ITEMS:<input type="number" id="amount" name="amount"
+          /></label>
+        </form>
+      </div>
+      <div class="item" id="item_three">
+        <img id="item_picture3"
+        src="./images/woman-briefcase-18790801.jpg"
+        alt="An image of one of the chosen products"
+        />
+        <form action="">
+          <h2>PRODUCT SPECIFICS</h2>
+          <label for="item-name"
+            >NAME:<input type="text" id="item_name" name="item-name" readonly
+          /></label>
+          <label for="item-brand"
+            >BRAND:<input type="text" id="item_brand" name="item-brand" readonly
+          /></label>
+          <label for="item-brand"
+            >UNIT PRICE:<input type="number" id="unit_price" name="unit-price" readonly
+          /></label>
+          <label for="amount"
+            >AMOUNT OF ITEMS:<input type="number" id="amount" name="amount"
+          /></label>
+        </form>
+      </div>
     </div>
     <div id="payment_spec">
       <form action="">

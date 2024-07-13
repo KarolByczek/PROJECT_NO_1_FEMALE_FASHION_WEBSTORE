@@ -4,48 +4,34 @@ body {
     position: relative;
     margin: 0;
     padding: 0;
+    background-image: url("../Common imagery/background.jpg");
+    background-attachment: fixed;
 }
 
 #items_spec {
-    position: relative;
     width: 100vw;
-    background-color: orangered;
-    display: flex;
-    justify-content: end;
-}
-
-#items_spec #items_showcase {
-    position: absolute;
-    top: 2rem;
-    left: 2rem;
-    height: 90vh;
-    width: 60vh;
-    border: 0.3rem solid darkgreen;
-    background-color: aqua;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#items_spec .item {
+    display: flex;
+    flex-direction: row;
+    border: 0.3rem solid darkgreen;
+    background-color: rgb(241, 136, 38);
     gap: 0.5em;
 }
 
-#items_spec #items_showcase p {
-    text-align: center;
+#items_spec .item img {
+    height: 90vh;
+    width: 60vh;
 }
 
-#items_spec #items_showcase img {
-    width: 80%;
-    height: 80%;
-}
-
-#items_spec #items_showcase #item_switcher input {
-    width: 1.5rem;
-    height: 1.5rem;
-}
-
-#items_spec form {
-    display: flex;
-    flex-direction: column;
+#items_spec .item form {
+   display: flex;
+   flex-direction: column;
 }
 
 #payment_spec {
