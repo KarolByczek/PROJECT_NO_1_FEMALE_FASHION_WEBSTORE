@@ -1,18 +1,11 @@
 
-body {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    background-image: url("../Common imagery/background.jpg");
-    background-attachment: fixed;
-}
+
 
 #items_spec {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    gap: 1rem;
 }
 
 #items_spec .item {
@@ -24,19 +17,29 @@ body {
 }
 
 #items_spec .item img {
-    height: 90vh;
-    width: 60vh;
+    height: 70vh;
+    width: 35vh;
 }
 
 #items_spec .item form {
    display: flex;
    flex-direction: column;
+   justify-content: center;
+   align-items: end;
+   gap: 1rem;
+}
+
+#items_spec .item form label {
+    display: flex;
+    flex-direction: column;
 }
 
 #payment_spec {
     background-color: greenyellow;
     display: flex;
-    justify-content: end;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
 }
 
 #payment_spec form {
@@ -50,6 +53,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
 #delivery_spec ul li {
