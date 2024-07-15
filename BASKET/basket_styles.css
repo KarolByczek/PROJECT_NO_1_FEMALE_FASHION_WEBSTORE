@@ -146,4 +146,10 @@
         align-items: center;
     }
 
+    #items_spec .item img {
+        width: 25vw;
+        height: 37.5vw;
+    }
+
+
 }
