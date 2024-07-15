@@ -109,10 +109,41 @@
     }
 
     #items_spec .item img {
-        height: 54vh;
-        width: 36vh;
+        width: 70vw;
+        height: 105vw;
+    }
+
+    #item_spec .item form {
+        width: 80vw;
+    }
+
+    #item_spec .item form label {
+        width: 95%;
+    }
+
+    #item_spec .item form label input {
+        width: 100%;
     }
     
 }
 
 /* FOR MOBILES - end*/
+
+@media screen and (min-width: 625px) {
+
+    #items_spec .item img {
+        width: 40vw;
+        height: 60vw;
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    #items_spec .item {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
