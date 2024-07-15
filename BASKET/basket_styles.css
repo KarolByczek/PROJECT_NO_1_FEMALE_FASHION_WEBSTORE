@@ -1,11 +1,11 @@
 
 
-
 #items_spec {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    
 }
 
 #items_spec .item {
@@ -17,16 +17,22 @@
 }
 
 #items_spec .item img {
-    height: 70vh;
-    width: 35vh;
+    height: 75vh;
+    width: 50vh;
+    padding: 0.5rem;
 }
 
 #items_spec .item form {
    display: flex;
    flex-direction: column;
    justify-content: center;
-   align-items: end;
+   align-items: center;
    gap: 1rem;
+   margin-bottom: 1rem;
+}
+
+#items_spec .item form label input {
+    border: 2px solid blue;
 }
 
 #items_spec .item form label {
@@ -37,6 +43,7 @@
 #payment_spec {
     background-color: greenyellow;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem;
@@ -45,6 +52,8 @@
 #payment_spec form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #delivery_spec {
@@ -87,3 +96,23 @@
     width: 16vw;
     border: 0.1rem solid black;
 }
+
+/* FOR MOBILES - start */
+
+@media screen and (max-width: 625px) {
+
+
+    #items_spec .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #items_spec .item img {
+        height: 54vh;
+        width: 36vh;
+    }
+    
+}
+
+/* FOR MOBILES - end*/
