@@ -310,11 +310,21 @@
         <div id="payment_spec">
           <form action="">
             <h2>PAYMENT SPECIFICS</h2>
+            <h3>PAYMENT OPTIONS:</h3>
             <label for="item-name"
-              >METHOD OF PAYMENT:<input type="radio" value="credit card"
+              >Payment option 1:<input type="radio" value="credit card"
             /></label>
-            <label for="item-brand">CURRENCY:<input type="text" /></label>
-            <label for="amount">DISCOUT?:<input type="number" /></label>
+            <label for="item-name"
+              >Payment option 2:<input type="radio" value="credit card"
+            /></label>
+            <label for="item-name"
+              >Payment option 3:<input type="radio" value="credit card"
+            /></label>
+            <label for="item-name"
+              >Payment option 4:<input type="radio" value="credit card"
+            /></label>
+            <h3>PROVIDE THE CODE FROM THE DISCOUNT COUPON (IF YOU HAVE RECEIVED IT):</h3>
+            <input type="number" />
           </form>
         </div>
         <div id="delivery_spec">
@@ -359,10 +369,11 @@
           </ul>
         </div>
         <div id="purchase_summary">
+          <h2>SUMMARY</h2>
           <table>
             <thead>
               <tr>
-                <td>NAME</td>
+                <td>PRODUCT NAME</td>
                 <td>BRAND</td>
                 <td>UNIT PRICE</td>
                 <td>AMOUNT</td>
