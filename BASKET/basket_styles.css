@@ -35,10 +35,16 @@
 #items_spec .item form label {
     display: flex;
     flex-direction: column;
+    width: auto;
 }
 
 #items_spec .item form label input {
     border: 2px solid blue;
+    border-radius: 1.5rem;
+    width: fit-content;
+    padding: 0.2rem;
+    text-align: center;
+    font-weight: bold;
 }
 
 
