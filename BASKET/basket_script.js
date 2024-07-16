@@ -88,19 +88,21 @@ const $amount3 = document.querySelector("#amount3");
 const $calcTotal = document.querySelector("#calc_total");
 const $tp = document.querySelector("#t_p");
 
+console.log($itemPrice1.value.slice(0,3));
 
 
-$tp.innerHTML = `${$itemPrice1.value*$amount1.value + $itemPrice2.value*$amount2.value + $itemPrice3.value*$amount3.value}`;
+
+$tp.innerHTML = `${$itemPrice1.value.slice(0,3)*$amount1.value + $itemPrice2.value.slice(0,2)*$amount2.value + $itemPrice3.value.slice(0,3)*$amount3.value}`;
 
 $amount1.addEventListener("input", () => {
-    $tp.innerHTML = `${$itemPrice1.value*$amount1.value + $itemPrice2.value*$amount2.value + $itemPrice3.value*$amount3.value}`;
+    $tp.innerHTML = `${$itemPrice1.value.slice(0,3)*$amount1.value + $itemPrice2.value.slice(0,2)*$amount2.value + $itemPrice3.value.slice(0,3)*$amount3.value}`;
 });
 
 $amount2.addEventListener("input", () => {
-    $tp.innerHTML = `${$itemPrice1.value*$amount1.value + $itemPrice2.value*$amount2.value + $itemPrice3.value*$amount3.value}`;
+    $tp.innerHTML = `${$itemPrice1.value.slice(0,3)*$amount1.value + $itemPrice2.value.slice(0,2)*$amount2.value + $itemPrice3.value.slice(0,3)*$amount3.value}`;
 });
 
 $amount3.addEventListener("input", () => {
-    $tp.innerHTML = `${$itemPrice1.value*$amount1.value + $itemPrice2.value*$amount2.value + $itemPrice3.value*$amount3.value}`;
+    $tp.innerHTML = `${$itemPrice1.value.slice(0,3)*$amount1.value + $itemPrice2.value.slice(0,2)*$amount2.value + $itemPrice3.value.slice(0,3)*$amount3.value}`;
 })
 
