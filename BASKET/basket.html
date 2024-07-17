@@ -196,7 +196,8 @@
             />
             <form action="">
               <label for="item-name"
-                >NAME: <input
+                >NAME:
+                <input
                   type="text"
                   id="item_name"
                   name="item-name"
@@ -204,7 +205,8 @@
                   readonly
               /></label>
               <label for="item-brand"
-                >BRAND: <input
+                >BRAND:
+                <input
                   type="text"
                   id="item_brand"
                   name="item-brand"
@@ -212,7 +214,8 @@
                   readonly
               /></label>
               <label for="item-brand"
-                >UNIT PRICE: <input
+                >UNIT PRICE:
+                <input
                   type="text"
                   id="unit_price1"
                   name="unit-price1"
@@ -220,11 +223,8 @@
                   readonly
               /></label>
               <label for="amount"
-                >AMOUNT: <input
-                  type="number"
-                  id="amount1"
-                  name="amount1"
-                  value="1"
+                >AMOUNT:
+                <input type="number" id="amount1" name="amount1" value="1"
               /></label>
             </form>
           </div>
@@ -236,7 +236,8 @@
             />
             <form action="">
               <label for="item-name"
-                >NAME: <input
+                >NAME:
+                <input
                   type="text"
                   id="item_name"
                   name="item-name"
@@ -244,7 +245,8 @@
                   readonly
               /></label>
               <label for="item-brand"
-                >BRAND: <input
+                >BRAND:
+                <input
                   type="text"
                   id="item_brand"
                   name="item-brand"
@@ -252,7 +254,8 @@
                   readonly
               /></label>
               <label for="item-brand"
-                >UNIT PRICE: <input
+                >UNIT PRICE:
+                <input
                   type="text"
                   id="unit_price2"
                   name="unit-price2"
@@ -260,11 +263,8 @@
                   readonly
               /></label>
               <label for="amount"
-                >AMOUNT: <input
-                  type="number"
-                  id="amount2"
-                  name="amount2"
-                  value="2"
+                >AMOUNT:
+                <input type="number" id="amount2" name="amount2" value="2"
               /></label>
             </form>
           </div>
@@ -276,7 +276,8 @@
             />
             <form action="">
               <label for="item-name"
-                >NAME: <input
+                >NAME:
+                <input
                   type="text"
                   id="item_name"
                   name="item-name"
@@ -284,7 +285,8 @@
                   readonly
               /></label>
               <label for="item-brand"
-                >BRAND: <input
+                >BRAND:
+                <input
                   type="text"
                   id="item_brand"
                   name="item-brand"
@@ -292,7 +294,8 @@
                   readonly
               /></label>
               <label for="item-brand"
-                >UNIT PRICE: <input
+                >UNIT PRICE:
+                <input
                   type="text"
                   id="unit_price3"
                   name="unit-price3"
@@ -300,79 +303,85 @@
                   readonly
               /></label>
               <label for="amount"
-                >AMOUNT: <input
-                  type="number"
-                  id="amount3"
-                  name="amount3"
-                  value="1"
+                >AMOUNT:
+                <input type="number" id="amount3" name="amount3" value="1"
               /></label>
             </form>
           </div>
-          
         </div>
-          <div id="total_price">
-            <p>TOTAL PRICE: <span id="t_p"></span>$</p>
-          </div>
+        <div id="total_price">
+          <p>TOTAL PRICE: <span id="t_p"></span>$</p>
+        </div>
         <div id="payment_spec">
+          <h2>PAYMENT SPECIFICS</h2>
           <form action="">
-            <h2>PAYMENT SPECIFICS</h2>
-            <h3>PAYMENT OPTIONS:</h3>
-            <label for="item-name"
-              >Payment option 1:<input type="radio" value="credit card"
+            <label for="payment-option1"
+              >Payment option no 1<input
+                type="radio"
+                id="payment-option1"
+                name="payment-option"
+                value="credit card"
             /></label>
-            <label for="item-name"
-              >Payment option 2:<input type="radio" value="credit card"
+            <label for="payment-option2"
+              >Payment option no 2<input
+                type="radio"
+                id="payment-option2"
+                name="payment-option"
+                value="credit card"
             /></label>
-            <label for="item-name"
-              >Payment option 3:<input type="radio" value="credit card"
+            <label for="payment-option3"
+              >Payment option no 3<input
+                type="radio"
+                id="payment-option3"
+                name="payment-option"
+                value="credit card"
             /></label>
-            <label for="item-name"
-              >Payment option 4:<input type="radio" value="credit card"
+            <label for="payment-option4"
+              >Payment option no 4<input
+                type="radio"
+                id="payment-option4"
+                name="payment-option"
+                value="credit card"
             /></label>
-            <h3>PROVIDE THE CODE FROM THE DISCOUNT COUPON (IF YOU HAVE RECEIVED IT):</h3>
+            <h3>
+              PROVIDE THE CODE FROM THE DISCOUNT COUPON (IF YOU HAVE RECEIVED
+              IT):
+            </h3>
             <input type="number" />
           </form>
         </div>
         <div id="delivery_spec">
           <h2>DELIVERY SPECIFICS</h2>
-          <ul>
-            <li>
-              <label for="payment-option1"
-                >Option1<input
-                  type="radio"
-                  name="single-option"
-                  id="payment-option1"
-                  value="payment-option1"
-              /></label>
-            </li>
-            <li>
-              <label for="payment-option2"
-                >Option2<input
-                  type="radio"
-                  name="single-option"
-                  id="payment-option2"
-                  value="payment-option2"
-              /></label>
-            </li>
-            <li>
-              <label for="payment-option3"
-                >Option3<input
-                  type="radio"
-                  name="single-option"
-                  id="payment-option3"
-                  value="payment-option3"
-              /></label>
-            </li>
-            <li>
-              <label for="payment-option4"
-                >Option4<input
-                  type="radio"
-                  name="single-option"
-                  id="payment-option4"
-                  value="payment-option4"
-              /></label>
-            </li>
-          </ul>
+          <form action="">
+            <label for="delivery-option1"
+              >Delivery option no 1<input
+                type="radio"
+                name="delivery-option"
+                id="delivery-option1"
+                value="delivery-option1"
+            /></label>
+            <label for="delivery-option2"
+              >Delivery option no 2<input
+                type="radio"
+                name="delivery-option"
+                id="delivery-option2"
+                value="delivery-option2"
+            /></label>
+            <label for="delivery-option3"
+              >Delivery option no 3<input
+                type="radio"
+                name="delivery-option"
+                id="delivery-option3"
+                value="delivery-option3"
+            /></label>
+            <label for="delivery-option4"
+              >Delivery option no 4<input
+                type="radio"
+                name="delivery-option"
+                id="delivery-option4"
+                value="delivery-option4"
+            /></label>
+          </form>
         </div>
         <div id="purchase_summary">
           <h2>SUMMARY</h2>
