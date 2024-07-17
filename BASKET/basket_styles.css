@@ -1,19 +1,21 @@
 
 
 #items_spec {
-    width: 100%;
     display: flex;
     flex-direction: column;
+    border: 0.3rem solid rgb(10, 126, 10);
+    background-color: aquamarine;
+    border-radius: 1.5rem;
+    padding: 1rem;
     gap: 1rem;
-    
+    margin-bottom: 2rem;
 }
 
 #items_spec .item {
     display: flex;
     flex-direction: row;
-    border: 0.3rem solid darkgreen;
-    border-radius: 2rem;
-    background-color: rgb(93, 194, 138);
+    border-radius: 1.5rem;
+    background-color: rgb(238, 162, 62);
     gap: 0.5em;
 }
 
@@ -49,19 +51,9 @@
     font-size: larger;
 }
 
-#total_price {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    background-color: rgb(176, 199, 199);
-    border-radius: 2rem;
-    margin: 1rem 0;
-}
-
 #payment_spec {
     background-color: greenyellow;
+    border: 0.3rem solid rgb(10, 126, 10);
     border-radius: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -105,6 +97,7 @@
 
 #delivery_spec {
     background-color: gray;
+    border: 0.3rem solid rgb(10, 126, 10);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -136,7 +129,7 @@
 
 #purchase_summary {
     background-color: antiquewhite;
-    border: 0.2rem solid blanchedalmond;
+    border: 0.3rem solid rgb(10, 126, 10);
     background-color: rgb(113, 150, 150);
     display: flex;
     flex-direction: column;
@@ -152,6 +145,7 @@
 
 #purchase_summary table thead tr td {
     border: 0.4rem solid black;
+    text-align: center;
 }
 
 #purchase_summary table tbody tr {
@@ -162,6 +156,31 @@
     height: 2rem;
     width: 16vw;
     border: 0.1rem solid black;
+}
+
+#purchase_summary #total_price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    margin: 1rem 0;
+    
+}
+
+#purchase_summary #total_price p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#purchase_summary #total_price p #marked {
+    font-size: 1.8rem;
+    text-decoration: underline;
+    text-underline-offset: 0.4rem;
+    color: brown;
 }
 
 /* FOR MOBILES - start */
