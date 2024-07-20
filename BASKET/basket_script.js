@@ -90,6 +90,16 @@ const $tp = document.querySelector("#t_p");
 const $sumAmount1 = document.querySelector("#sum_amount1");
 const $sumAmount2 = document.querySelector("#sum_amount2");
 const $sumAmount3 = document.querySelector("#sum_amount3");
+const $paymentOption1 = document.querySelector("#payment-option1");
+const $paymentOption2 = document.querySelector("#payment-option2");
+const $paymentOption3 = document.querySelector("#payment-option3");
+const $paymentOption4 = document.querySelector("#payment-option4");
+const $paymentSum = document.querySelector("#payment_sum");
+const $deliveryOption1 = document.querySelector("#delivery-option1");
+const $deliveryOption2 = document.querySelector("#delivery-option2");
+const $deliveryOption3 = document.querySelector("#delivery-option3");
+const $deliveryOption4 = document.querySelector("#delivery-option4");
+const $deliverySum = document.querySelector("#delivery_sum");
 
 $sumAmount1.innerHTML = $amount1.value;
 $sumAmount2.innerHTML = $amount2.value;
@@ -110,5 +120,37 @@ $amount2.addEventListener("input", () => {
 $amount3.addEventListener("input", () => {
     $tp.innerHTML = `${$itemPrice1.value.slice(0,3)*$amount1.value + $itemPrice2.value.slice(0,2)*$amount2.value + $itemPrice3.value.slice(0,3)*$amount3.value}`;
     $sumAmount3.innerHTML = $amount3.value;
-})
+});
 
+$paymentOption1.addEventListener("click", () => {
+  $paymentSum.innerHTML = " Payment Option no1"
+});
+
+$paymentOption2.addEventListener("click", () => {
+  $paymentSum.innerHTML = " Payment Option no2"
+});
+
+$paymentOption3.addEventListener("click", () => {
+  $paymentSum.innerHTML = " Payment Option no3"
+});
+
+$paymentOption4.addEventListener("click", () => {
+  $paymentSum.innerHTML = " Payment Option no4"
+});
+
+
+$deliveryOption1.addEventListener("click", () => {
+  $deliverySum.innerHTML = " Delivery Option no1"
+});
+
+$deliveryOption2.addEventListener("click", () => {
+  $deliverySum.innerHTML = " Delivery Option no2"
+});
+
+$deliveryOption3.addEventListener("click", () => {
+  $deliverySum.innerHTML = " Delivery Option no3"
+});
+
+$deliveryOption4.addEventListener("click", () => {
+  $deliverySum.innerHTML = " Delivery Option no4"
+});
