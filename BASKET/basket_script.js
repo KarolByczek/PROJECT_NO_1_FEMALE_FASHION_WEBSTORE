@@ -87,8 +87,11 @@ const $amount2 = document.querySelector("#amount2");
 const $amount3 = document.querySelector("#amount3");
 const $calcTotal = document.querySelector("#calc_total");
 const $tp = document.querySelector("#t_p");
+const $sumAmount1 = document.querySelector("id", "sum_amount1");
+const $sumAmount2 = document.querySelector("id", "sum_amount2");
+const $sumAmount3 = document.querySelector("id", "sum_amount3");
 
-console.log($itemPrice1.value.slice(0,3));
+$sumAmount1.innerHTML = $amount1.value;
 
 
 
