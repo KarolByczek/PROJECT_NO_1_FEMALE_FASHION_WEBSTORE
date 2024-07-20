@@ -143,14 +143,11 @@
     width: 65rem;
 }
 
-#purchase_summary table thead tr td {
+#purchase_summary table td {
     border: 0.4rem solid black;
     text-align: center;
 }
 
-#purchase_summary table tbody tr {
-    width: 65rem;
-}
 
 #purchase_summary table tr td {
     height: 2rem;
