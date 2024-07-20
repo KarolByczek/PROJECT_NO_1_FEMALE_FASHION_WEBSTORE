@@ -87,25 +87,28 @@ const $amount2 = document.querySelector("#amount2");
 const $amount3 = document.querySelector("#amount3");
 const $calcTotal = document.querySelector("#calc_total");
 const $tp = document.querySelector("#t_p");
-const $sumAmount1 = document.querySelector("id", "sum_amount1");
-const $sumAmount2 = document.querySelector("id", "sum_amount2");
-const $sumAmount3 = document.querySelector("id", "sum_amount3");
+const $sumAmount1 = document.querySelector("#sum_amount1");
+const $sumAmount2 = document.querySelector("#sum_amount2");
+const $sumAmount3 = document.querySelector("#sum_amount3");
 
 $sumAmount1.innerHTML = $amount1.value;
-
-
+$sumAmount2.innerHTML = $amount2.value;
+$sumAmount3.innerHTML = $amount3.value;
 
 $tp.innerHTML = `${$itemPrice1.value.slice(0,3)*$amount1.value + $itemPrice2.value.slice(0,2)*$amount2.value + $itemPrice3.value.slice(0,3)*$amount3.value}`;
 
 $amount1.addEventListener("input", () => {
     $tp.innerHTML = `${$itemPrice1.value.slice(0,3)*$amount1.value + $itemPrice2.value.slice(0,2)*$amount2.value + $itemPrice3.value.slice(0,3)*$amount3.value}`;
+    $sumAmount1.innerHTML = $amount1.value;
 });
 
 $amount2.addEventListener("input", () => {
     $tp.innerHTML = `${$itemPrice1.value.slice(0,3)*$amount1.value + $itemPrice2.value.slice(0,2)*$amount2.value + $itemPrice3.value.slice(0,3)*$amount3.value}`;
+    $sumAmount2.innerHTML = $amount2.value;
 });
 
 $amount3.addEventListener("input", () => {
     $tp.innerHTML = `${$itemPrice1.value.slice(0,3)*$amount1.value + $itemPrice2.value.slice(0,2)*$amount2.value + $itemPrice3.value.slice(0,3)*$amount3.value}`;
+    $sumAmount3.innerHTML = $amount3.value;
 })
 
