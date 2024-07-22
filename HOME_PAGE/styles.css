@@ -117,6 +117,32 @@ header {
   height: 100%;
 }
 
+.home_navigation #basket {
+  padding: 0rem;
+  margin: 0;
+  border-radius: 1rem;
+}
+
+.home_navigation #basket a img {
+  margin: 0;
+  height: 1.8rem;
+  width: 1.5rem;
+  border-radius: 1rem;
+}
+
+.home_navigation #account_icon {
+  padding: 0.1rem;
+  margin: 0;
+  border-radius: 1rem;
+}
+
+.home_navigation #account_icon a img {
+  margin: 0;
+  height: 1.8rem;
+  width: 1.5rem;
+  border-radius: 1rem;
+}
+
 #login_button {
   background-color: rgb(71, 145, 122);
   border-radius: 6rem;
