@@ -117,26 +117,41 @@ header {
   height: 100%;
 }
 
-.home_navigation #basket {
-  padding: 0rem;
-  margin: 0;
-  border-radius: 1rem;
+#navigation_strip #icon_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
 }
 
-.home_navigation #basket a img {
+#navigation_strip #icon_container #basket {
+  padding: 0;
+  margin: 0;
+  border: 0.2rem solid yellowgreen;
+  border-radius: 0.2rem;
+}
+
+#navigation_strip #icon_container #basket a {
+  margin: 0;
+  padding: 0;
+}
+
+#navigation_strip #icon_container #basket a img {
   margin: 0;
   height: 1.8rem;
   width: 1.5rem;
-  border-radius: 1rem;
+  border-radius: 0.2rem;
 }
 
-.home_navigation #account_icon {
+#navigation_strip #icon_container #account_icon {
   padding: 0.1rem;
-  margin: 0;
+  margin: 0.2rem;
   border-radius: 1rem;
+  border: 0.1rem solid yellowgreen;
 }
 
-.home_navigation #account_icon a img {
+#navigation_strip #icon_container #account_icon a img {
   margin: 0;
   height: 1.8rem;
   width: 1.5rem;
@@ -144,6 +159,9 @@ header {
 }
 
 #login_button {
+  height: fit-content;
+  width: fit-content;
+  text-wrap: nowrap;
   background-color: rgb(71, 145, 122);
   border-radius: 6rem;
   border: 0.2rem solid rgb(29, 183, 132);
@@ -545,6 +563,8 @@ footer ul li a:hover {
 
   #navigation_strip {
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   .home_navigation {
