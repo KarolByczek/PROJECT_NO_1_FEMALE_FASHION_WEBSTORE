@@ -117,41 +117,33 @@ header {
   height: 100%;
 }
 
-#navigation_strip #icon_container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-left: 1rem;
-}
-
-#navigation_strip #icon_container #basket {
+#navigation_strip .home_navigation #basket {
   padding: 0;
   margin: 0;
   border: 0.2rem solid yellowgreen;
   border-radius: 0.2rem;
 }
 
-#navigation_strip #icon_container #basket a {
+#navigation_strip .home_navigation #basket a {
   margin: 0;
   padding: 0;
 }
 
-#navigation_strip #icon_container #basket a img {
+#navigation_strip .home_navigation #basket a img {
   margin: 0;
   height: 1.8rem;
   width: 1.5rem;
   border-radius: 0.2rem;
 }
 
-#navigation_strip #icon_container #account_icon {
+#navigation_strip .home_navigation #account_icon {
   padding: 0.1rem;
   margin: 0.2rem;
   border-radius: 1rem;
   border: 0.1rem solid yellowgreen;
 }
 
-#navigation_strip #icon_container #account_icon a img {
+#navigation_strip .home_navigation #account_icon a img {
   margin: 0;
   height: 1.8rem;
   width: 1.5rem;
