@@ -118,36 +118,23 @@ header {
 }
 
 #navigation_strip .home_navigation #basket {
-  padding: 0;
-  margin: 0;
-  border: 0.2rem solid yellowgreen;
-  border-radius: 0.2rem;
+  padding: 0.2rem;
 }
 
-#navigation_strip .home_navigation #basket a {
-  margin: 0;
-  padding: 0;
-}
 
 #navigation_strip .home_navigation #basket a img {
-  margin: 0;
-  height: 1.8rem;
+  height: 1.6rem;
   width: 1.5rem;
-  border-radius: 0.2rem;
+  background: none;
 }
 
 #navigation_strip .home_navigation #account_icon {
-  padding: 0.1rem;
-  margin: 0.2rem;
-  border-radius: 1rem;
-  border: 0.1rem solid yellowgreen;
+  padding: 0.2rem;
 }
 
 #navigation_strip .home_navigation #account_icon a img {
-  margin: 0;
-  height: 1.8rem;
+  height: 1.6rem;
   width: 1.5rem;
-  border-radius: 1rem;
 }
 
 #login_button {
