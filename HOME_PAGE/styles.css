@@ -120,6 +120,12 @@ header {
 
 #navigation_strip .home_navigation #basket {
   padding: 0.2rem;
+  background-color: rgb(71, 145, 122);
+  margin-left: 1.5rem;
+}
+
+#navigation_strip .home_navigation #basket:hover {
+  border: 0.2rem solid rgb(20, 228, 159);
 }
 
 
@@ -131,6 +137,11 @@ header {
 
 #navigation_strip .home_navigation #account_icon {
   padding: 0.2rem;
+  background-color: rgb(71, 145, 122);
+}
+
+#navigation_strip .home_navigation #account_icon:hover {
+  border: 0.2rem solid rgb(20, 228, 159);
 }
 
 #navigation_strip .home_navigation #account_icon a img {
@@ -144,7 +155,6 @@ header {
   text-wrap: nowrap;
   background-color: rgb(71, 145, 122);
   border-radius: 6rem;
-  border: 0.2rem solid rgb(29, 183, 132);
   padding: 0.4rem;
   color: aliceblue;
   font-weight: bolder;
