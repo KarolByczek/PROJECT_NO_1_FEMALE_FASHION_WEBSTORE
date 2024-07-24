@@ -44,6 +44,7 @@ header {
   padding: 0.2rem 0;
   background-color: var(--background-green);
   z-index: 4;
+  border-bottom: 0.2rem solid var(--light-green);
 }
 
 .home_navigation {
@@ -815,6 +816,30 @@ footer ul li a:hover {
 
 }
 
+@media screen and (min-width: 626px) and (max-width: 686px) {
+
+  section {
+    margin-top: 11rem;
+  }
+
+}
+
+@media screen and (min-width: 1048px) and (max-width: 1116px) {
+
+  section {
+    margin-top: 8rem;
+  }
+
+}
+
+  @media screen and (min-width: 1117px) {
+
+    section {
+      margin-top: 3rem;
+    }
+
+}
+
 @media screen and (min-width: 800px) {
 
   #login_strip {
@@ -863,7 +888,6 @@ footer ul li a:hover {
   }
 
   section {
-    margin-top: 5rem;
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
