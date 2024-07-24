@@ -44,7 +44,7 @@ header {
   padding: 0.2rem 0;
   background-color: var(--background-green);
   z-index: 4;
-  border-bottom: 0.2rem solid var(--light-green);
+  border-bottom: 0.1rem solid rgb(19, 43, 32);
 }
 
 .home_navigation {
@@ -128,6 +128,9 @@ header {
   border: 0.2rem solid rgb(20, 228, 159);
 }
 
+#navigation_strip .home_navigation #basket:active {
+  border: 0.2rem solid aquamarine;
+}
 
 #navigation_strip .home_navigation #basket a img {
   height: 1.6rem;
@@ -142,6 +145,10 @@ header {
 
 #navigation_strip .home_navigation #account_icon:hover {
   border: 0.2rem solid rgb(20, 228, 159);
+}
+
+#navigation_strip .home_navigation #account_icon:active {
+  border: 0.2rem solid aquamarine;
 }
 
 #navigation_strip .home_navigation #account_icon a img {
@@ -181,7 +188,7 @@ header {
   padding: 0.2rem;
   background-color: rgb(29, 183, 132);
   width: 100%;
-  border: 0.1rem solid rgb(19, 43, 32);
+  border-bottom: 0.1rem solid rgb(19, 43, 32);
   display: flex;
   transition: all 0.3s;
 }
