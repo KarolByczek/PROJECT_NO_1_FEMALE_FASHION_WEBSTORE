@@ -45,6 +45,7 @@ header {
   padding: 0.2rem 0;
   background-color: var(--background-green);
   z-index: 4;
+  border-bottom: 0.1rem solid rgb(19, 43, 32);
 }
 
 .home_navigation {
@@ -118,20 +119,63 @@ header {
   height: 100%;
 }
 
+#navigation_strip .home_navigation #basket {
+  padding: 0.2rem;
+  background-color: rgb(71, 145, 122);
+  margin-left: 1.5rem;
+}
+
+#navigation_strip .home_navigation #basket:hover {
+  border: 0.2rem solid rgb(20, 228, 159);
+  background-color: rgb(199, 231, 231);
+}
+
+#navigation_strip .home_navigation #basket:active {
+  border: 0.2rem solid aquamarine;
+}
+
+#navigation_strip .home_navigation #basket a img {
+  height: 1.6rem;
+  width: 1.5rem;
+  background: none;
+}
+
+#navigation_strip .home_navigation #account_icon {
+  padding: 0.2rem;
+  background-color: rgb(71, 145, 122);
+}
+
+#navigation_strip .home_navigation #account_icon:hover {
+  border: 0.2rem solid rgb(20, 228, 159);
+  background-color: rgb(199, 231, 231);
+}
+
+#navigation_strip .home_navigation #account_icon:active {
+  border: 0.2rem solid aquamarine;
+}
+
+#navigation_strip .home_navigation #account_icon a img {
+  height: 1.6rem;
+  width: 1.5rem;
+}
+
 #login_button {
+  height: fit-content;
+  width: fit-content;
+  text-wrap: nowrap;
   background-color: rgb(71, 145, 122);
   border-radius: 6rem;
-  border: 0.2rem solid rgb(29, 183, 132);
   padding: 0.4rem;
-  color: aliceblue;
+  color: var(--dark-green);
   font-weight: bolder;
   text-transform: uppercase;
-  transition: border 0.3s;
+  transition: border 0.5s;
   margin-left: 1rem;
 }
 
 #login_button:hover {
   border: 0.2rem solid rgb(20, 228, 159);
+  background-color: rgb(199, 231, 231);
 }
 
 #login_button:active {
@@ -147,7 +191,7 @@ header {
   padding: 0.2rem;
   background-color: rgb(29, 183, 132);
   width: 100%;
-  border: 0.1rem solid rgb(19, 43, 32);
+  border-bottom: 0.1rem solid rgb(19, 43, 32);
   display: flex;
   transition: all 0.3s;
 }
@@ -365,7 +409,6 @@ section #product_container .mainblock .pictures .imagebox .prompt {
   text-align: center;
   transition: all 0.3s;
 }
-
 
 section #product_container .mainblock .arrowcont {
   width: 50%;
@@ -901,7 +944,24 @@ footer ul li a:hover {
   #add_space {
     display: none;
   }
-  
+}
+
+@media screen and (min-width: 626px) and (max-width: 710px) {
+  section {
+    margin-top: 11rem;
+  }
+}
+
+@media screen and (min-width: 1048px) and (max-width: 1116px) {
+  section {
+    margin-top: 8rem;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  section {
+    margin-top: 3rem;
+  }
 }
 
 @media screen and (min-width: 800px) {
@@ -982,4 +1042,3 @@ footer ul li a:hover {
     width: 14.5%;
   }
 }
-
