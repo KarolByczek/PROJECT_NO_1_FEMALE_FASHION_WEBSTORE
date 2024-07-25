@@ -126,6 +126,7 @@ header {
 
 #navigation_strip .home_navigation #basket:hover {
   border: 0.2rem solid rgb(20, 228, 159);
+  background-color: rgb(199, 231, 231);
 }
 
 #navigation_strip .home_navigation #basket:active {
@@ -145,6 +146,7 @@ header {
 
 #navigation_strip .home_navigation #account_icon:hover {
   border: 0.2rem solid rgb(20, 228, 159);
+  background-color: rgb(199, 231, 231);
 }
 
 #navigation_strip .home_navigation #account_icon:active {
@@ -163,16 +165,17 @@ header {
   background-color: rgb(71, 145, 122);
   border-radius: 6rem;
   padding: 0.4rem;
-  color: aliceblue;
+  color: var(--dark-green);
   font-weight: bolder;
   text-transform: uppercase;
-  transition: border 0.3s;
+  transition: border 0.5s;
   margin-left: 1rem;
   
 }
 
 #login_button:hover {
   border: 0.2rem solid rgb(20, 228, 159);
+  background-color: rgb(199, 231, 231);
 }
 
 #login_button:active {
@@ -833,7 +836,7 @@ footer ul li a:hover {
 
 }
 
-@media screen and (min-width: 626px) and (max-width: 686px) {
+@media screen and (min-width: 626px) and (max-width: 710px) {
 
   section {
     margin-top: 11rem;
@@ -849,7 +852,7 @@ footer ul li a:hover {
 
 }
 
-  @media screen and (min-width: 1117px) {
+  @media screen and (min-width: 1140px) {
 
     section {
       margin-top: 3rem;
