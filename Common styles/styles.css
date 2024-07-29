@@ -710,6 +710,26 @@ footer ul li a:hover {
     background-color: antiquewhite;
   }
 
+  #register_form #close_register_form {
+    font-size: 3rem;
+    margin-top: 0;
+  }
+
+  #navigation_strip .home_navigation #basket {
+    padding: 0.2rem;
+    background-color: rgb(71, 145, 122);
+    margin-left: 0;
+    padding: 0.4rem 0;
+    width: 97%;
+  }
+
+  #navigation_strip .home_navigation #account_icon {
+    padding: 0.2rem;
+    background-color: rgb(71, 145, 122);
+    padding: 0.4rem 0;
+    width: 97%;
+  }
+
   #login_button {
     margin-left: 0;
   }

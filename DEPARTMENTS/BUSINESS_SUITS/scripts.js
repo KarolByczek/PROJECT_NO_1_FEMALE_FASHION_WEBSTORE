@@ -54,6 +54,12 @@ $closeRegisterForm.addEventListener("click", () => {
   $registerForm.classList.remove("active");
 });
 
+const openRegisterFunction = () => {
+  $backDrop.classList.add("active");
+  $registerForm.classList.add("active");
+};
+const timeout01 = setTimeout(() => openRegisterFunction(), 5000);
+
 const openAddSpace = () => {
   $addSpace.classList.add("active");
 };
