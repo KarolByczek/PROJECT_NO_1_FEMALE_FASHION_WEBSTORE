@@ -1,5 +1,4 @@
 
-
 #items_spec {
     display: flex;
     flex-direction: column;
@@ -234,13 +233,17 @@
 
 @media screen and (min-width: 625px) {
 
+    section {
+        margin-top: 11rem;
+    }
+
     #items_spec .item img {
         width: 40vw;
         height: 60vw;
     }
 
     #items_spec .item form label {
-        width: 70%;
+        width: 80%;
     }
 
     #items_spec .item form label input {
@@ -303,3 +306,10 @@
 
 
 }
+
+@media screen and (min-width: 1040px) {
+    section {
+    margin-top: 8.5rem;
+}
+}
+
