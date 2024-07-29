@@ -869,8 +869,21 @@ footer ul li a:hover {
     display: none;
   }
 
-  #register_form #close_register_form {
-    top: 0.5rem;
+  #register_form {
+    gap: 0.5rem;
+    padding-top: 3rem;
+  }
+
+  #register_form label input {
+    padding: 0.8rem;
+  }
+
+  #submit_register_form  {
+    padding: 1rem;
+  }
+
+  #register_form_login_button {
+    padding: 1rem;
   }
 
   .showcase {
