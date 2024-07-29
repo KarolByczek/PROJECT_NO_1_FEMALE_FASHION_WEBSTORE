@@ -948,19 +948,19 @@ footer ul li a:hover {
 
 @media screen and (min-width: 626px) and (max-width: 710px) {
   section {
-    margin-top: 11rem;
+    margin-top: 12rem;
   }
 }
 
 @media screen and (min-width: 1048px) and (max-width: 1116px) {
   section {
-    margin-top: 8rem;
+    margin-top: 9rem;
   }
 }
 
 @media screen and (min-width: 1140px) {
   section {
-    margin-top: 3rem;
+    margin-top: 6rem;
   }
 }
 
@@ -1021,7 +1021,6 @@ footer ul li a:hover {
   }
 
   section {
-    margin-top: 6rem;
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
