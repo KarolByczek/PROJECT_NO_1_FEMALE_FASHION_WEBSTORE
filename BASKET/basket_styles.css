@@ -307,9 +307,15 @@
 
 }
 
-@media screen and (min-width: 1040px) {
+@media screen and (min-width: 626px) {
     section {
     margin-top: 8.5rem;
 }
 }
 
+
+@media screen and (min-width: 1038px) {
+    section {
+    margin-top: 6rem;
+}
+}
