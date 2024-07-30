@@ -147,7 +147,7 @@ header {
 #navigation_strip .home_navigation #basket:hover #prompt_no1 {
   display: block;
   position: absolute;
-  left: -4rem;
+  left: -4.3rem;
   top: 2rem;
   padding: 0.2rem;
   border: 1px solid black;
