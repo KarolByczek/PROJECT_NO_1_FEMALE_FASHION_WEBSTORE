@@ -139,6 +139,22 @@ header {
   background: none;
 }
 
+#navigation_strip .home_navigation #basket #prompt_no1 {
+  display: none;
+  transition: display 0.3s;
+}
+
+#navigation_strip .home_navigation #basket:hover #prompt_no1 {
+  display: block;
+  position: absolute;
+  left: -4rem;
+  top: 2rem;
+  padding: 0.2rem;
+  border: 1px solid black;
+  background-color: bisque;
+  font-size: 0.6rem;
+}
+
 #navigation_strip .home_navigation #account_icon {
   padding: 0.2rem;
   background-color: rgb(71, 145, 122);
@@ -762,6 +778,23 @@ footer ul li a:hover {
 
   #login_strip #hide_login_strip {
     display: none;
+  }
+
+  #register_form {
+    gap: 0.5rem;
+    padding-top: 3rem;
+  }
+
+  #register_form label input {
+    padding: 0.8rem;
+  }
+
+  #submit_register_form  {
+    padding: 1rem;
+  }
+
+  #register_form_login_button {
+    padding: 1rem;
   }
 
   #register_form #close_register_form {
