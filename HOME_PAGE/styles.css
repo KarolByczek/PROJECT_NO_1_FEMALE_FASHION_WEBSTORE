@@ -671,6 +671,16 @@ footer ul li a:hover {
     width: 97%;
   }
 
+  #navigation_strip .home_navigation #basket:hover {
+    background-color: rgb(71, 145, 122);
+    border-color: var(--dark-green);
+  }
+
+  #navigation_strip .home_navigation #account_icon:hover {
+    background-color: rgb(71, 145, 122);
+    border-color: var(--dark-green);
+  }
+
   #navigation_strip .home_navigation #account_icon {
     padding: 0.2rem;
     background-color: rgb(71, 145, 122);
@@ -678,12 +688,21 @@ footer ul li a:hover {
     width: 97%;
   }
 
+  #navigation_strip .home_navigation #basket:hover #prompt_no1 {
+    display: none
+  }
+
+  #navigation_strip .home_navigation #account_icon:hover #prompt_no2 {
+    display: none
+  }
+
   #login_button {
     margin-left: 0;
   }
 
   #login_button:hover {
-    border: 0.2rem solid rgb(29, 183, 132);
+    border-color: var(--dark-green);
+    background-color: rgb(71, 145, 122);
   }
 
   #login_button:active {
