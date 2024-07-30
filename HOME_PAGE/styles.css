@@ -155,6 +155,22 @@ header {
   font-size: 0.6rem;
 }
 
+#navigation_strip .home_navigation #account_icon #prompt_no2 {
+  display: none;
+  transition: display 0.3s;
+}
+
+#navigation_strip .home_navigation #account_icon:hover #prompt_no2 {
+  display: block;
+  position: absolute;
+  left: -6rem;
+  top: 2rem;
+  padding: 0.2rem;
+  border: 1px solid black;
+  background-color: bisque;
+  font-size: 0.6rem;
+}
+
 #navigation_strip .home_navigation #account_icon {
   padding: 0.2rem;
   background-color: rgb(71, 145, 122);
@@ -342,7 +358,7 @@ header {
 
 #register_form #close_register_form {
   position: absolute;
-  top: 0.5rem;
+  top: -1rem;
   right: 1rem;
 }
 
