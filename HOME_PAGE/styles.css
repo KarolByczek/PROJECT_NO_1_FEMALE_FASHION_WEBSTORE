@@ -131,6 +131,7 @@ header {
 
 #navigation_strip .home_navigation #basket:active {
   border: 0.2rem solid aquamarine;
+  background-color: var(--background-green);
 }
 
 #navigation_strip .home_navigation #basket a img {
@@ -676,17 +677,28 @@ footer ul li a:hover {
     border-color: var(--dark-green);
   }
 
-  #navigation_strip .home_navigation #account_icon:hover {
-    background-color: rgb(71, 145, 122);
-    border-color: var(--dark-green);
+  #navigation_strip .home_navigation #basket:active {
+    border: 0.2rem solid rgb(55, 183, 29);
+    background-color: rgb(11, 134, 93);
   }
-
+  
   #navigation_strip .home_navigation #account_icon {
     padding: 0.2rem;
     background-color: rgb(71, 145, 122);
     padding: 0.4rem 0;
     width: 97%;
   }
+
+  #navigation_strip .home_navigation #account_icon:hover {
+    background-color: rgb(71, 145, 122);
+    border-color: var(--dark-green);
+  }
+
+  #navigation_strip .home_navigation #account_icon:active {
+    border: 0.2rem solid rgb(55, 183, 29);
+    background-color: rgb(11, 134, 93);
+  }
+
 
   #navigation_strip .home_navigation #basket:hover #prompt_no1 {
     display: none
