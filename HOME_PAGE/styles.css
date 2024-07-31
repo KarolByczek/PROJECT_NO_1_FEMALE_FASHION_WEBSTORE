@@ -672,6 +672,12 @@ footer ul li a:hover {
     width: 97%;
   }
 
+  #navigation_strip .home_navigation #basket a {
+    text-decoration: none;
+    color: aliceblue;
+  }
+
+
   #navigation_strip .home_navigation #basket:hover {
     background-color: rgb(71, 145, 122);
     border-color: var(--dark-green);
@@ -687,6 +693,11 @@ footer ul li a:hover {
     background-color: rgb(71, 145, 122);
     padding: 0.4rem 0;
     width: 97%;
+  }
+
+  #navigation_strip .home_navigation #account_icon a {
+    text-decoration: none;
+    color: aliceblue;
   }
 
   #navigation_strip .home_navigation #account_icon:hover {
@@ -864,6 +875,14 @@ footer ul li a:hover {
     gap: 0.2rem;
     bottom: 2rem;
     justify-content: center;
+  }
+
+  #navigation_strip .home_navigation #basket a #mobile_prompt_no1 {
+    display: none;
+  }
+
+  #navigation_strip .home_navigation #account_icon a #mobile_prompt_no2 {
+    display: none;
   }
 
   #login_strip {
