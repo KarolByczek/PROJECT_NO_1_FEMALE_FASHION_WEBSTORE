@@ -585,7 +585,7 @@ footer ul li a:hover {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0.5rem;
-    border: none;
+    border: 1px solid var(--dark-green);
   }
 
   header {
