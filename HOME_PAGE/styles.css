@@ -582,10 +582,10 @@ footer ul li a:hover {
     width: 98%;
     height: auto;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    flex-direction: row;
+    justify-self: center;
     margin-bottom: 0.5rem;
-    border: 1px solid var(--dark-green);
+    border-width: 2px;
   }
 
   header {
@@ -721,6 +721,7 @@ footer ul li a:hover {
 
   #login_button {
     margin-left: 0;
+    width: 94%;
   }
 
   #login_button:hover {
@@ -741,6 +742,8 @@ footer ul li a:hover {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    border-left: 0.1rem solid rgb(19, 43, 32);
+    border-right: 0.1rem solid rgb(19, 43, 32);
   }
 
   #login_strip form {
