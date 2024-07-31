@@ -677,7 +677,6 @@ footer ul li a:hover {
     color: aliceblue;
   }
 
-
   #navigation_strip .home_navigation #basket:hover {
     background-color: rgb(71, 145, 122);
     border-color: var(--dark-green);

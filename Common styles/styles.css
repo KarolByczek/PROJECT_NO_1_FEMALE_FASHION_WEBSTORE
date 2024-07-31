@@ -132,12 +132,45 @@ header {
 
 #navigation_strip .home_navigation #basket:active {
   border: 0.2rem solid aquamarine;
+  background-color: var(--background-green);
 }
 
 #navigation_strip .home_navigation #basket a img {
   height: 1.6rem;
   width: 1.5rem;
   background: none;
+}
+
+#navigation_strip .home_navigation #basket #prompt_no1 {
+  display: none;
+  transition: display 0.3s;
+}
+
+#navigation_strip .home_navigation #basket:hover #prompt_no1 {
+  display: block;
+  position: absolute;
+  left: -4.3rem;
+  top: 2rem;
+  padding: 0.2rem;
+  border: 1px solid black;
+  background-color: bisque;
+  font-size: 0.6rem;
+}
+
+#navigation_strip .home_navigation #account_icon #prompt_no2 {
+  display: none;
+  transition: display 0.3s;
+}
+
+#navigation_strip .home_navigation #account_icon:hover #prompt_no2 {
+  display: block;
+  position: absolute;
+  left: -6rem;
+  top: 2rem;
+  padding: 0.2rem;
+  border: 1px solid black;
+  background-color: bisque;
+  font-size: 0.6rem;
 }
 
 #navigation_strip .home_navigation #account_icon {
@@ -625,15 +658,16 @@ footer ul li a:hover {
 /* STYLES FOR MOBILES - start */
 
 @media screen and (max-width: 625px) {
+
   #company_logo {
     position: relative;
     width: 98%;
     height: auto;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    flex-direction: row;
+    justify-self: center;
     margin-bottom: 0.5rem;
-    border: none;
+    border-width: 2px;
   }
 
   header {
@@ -642,7 +676,9 @@ footer ul li a:hover {
   }
 
   #navigation_strip {
-    width: 100%;
+     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   .home_navigation {
@@ -723,6 +759,21 @@ footer ul li a:hover {
     width: 97%;
   }
 
+  #navigation_strip .home_navigation #basket a {
+    text-decoration: none;
+    color: aliceblue;
+  }
+
+  #navigation_strip .home_navigation #basket:hover {
+    background-color: rgb(71, 145, 122);
+    border-color: var(--dark-green);
+  }
+
+  #navigation_strip .home_navigation #basket:active {
+    border: 0.2rem solid rgb(55, 183, 29);
+    background-color: rgb(11, 134, 93);
+  }
+  
   #navigation_strip .home_navigation #account_icon {
     padding: 0.2rem;
     background-color: rgb(71, 145, 122);
@@ -730,12 +781,38 @@ footer ul li a:hover {
     width: 97%;
   }
 
+  #navigation_strip .home_navigation #account_icon a {
+    text-decoration: none;
+    color: aliceblue;
+  }
+
+  #navigation_strip .home_navigation #account_icon:hover {
+    background-color: rgb(71, 145, 122);
+    border-color: var(--dark-green);
+  }
+
+  #navigation_strip .home_navigation #account_icon:active {
+    border: 0.2rem solid rgb(55, 183, 29);
+    background-color: rgb(11, 134, 93);
+  }
+
+
+  #navigation_strip .home_navigation #basket:hover #prompt_no1 {
+    display: none
+  }
+
+  #navigation_strip .home_navigation #account_icon:hover #prompt_no2 {
+    display: none
+  }
+
   #login_button {
     margin-left: 0;
+    width: 94%;
   }
 
   #login_button:hover {
-    border: 0.2rem solid rgb(29, 183, 132);
+    border-color: var(--dark-green);
+    background-color: rgb(71, 145, 122);
   }
 
   #login_button:active {
@@ -751,6 +828,8 @@ footer ul li a:hover {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    border-left: 0.1rem solid rgb(19, 43, 32);
+    border-right: 0.1rem solid rgb(19, 43, 32);
   }
 
   #login_strip form {
@@ -895,6 +974,7 @@ footer ul li a:hover {
 /* STYLES FOR MOBILES - end */
 
 @media screen and (min-width: 625px) {
+
   #navigation_strip {
     height: fit-content;
   }
@@ -904,6 +984,14 @@ footer ul li a:hover {
     gap: 0.2rem;
     bottom: 2rem;
     justify-content: center;
+  }
+
+  #navigation_strip .home_navigation #basket a #mobile_prompt_no1 {
+    display: none;
+  }
+
+  #navigation_strip .home_navigation #account_icon a #mobile_prompt_no2 {
+    display: none;
   }
 
   #login_strip {
