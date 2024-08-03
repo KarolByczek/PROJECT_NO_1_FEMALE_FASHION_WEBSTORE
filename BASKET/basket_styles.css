@@ -1,4 +1,8 @@
 
+#login_button {
+    display: none;
+}
+
 #items_spec {
     display: flex;
     flex-direction: column;
