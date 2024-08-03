@@ -189,15 +189,24 @@
 #proceed_button {
     padding: 1rem;
     margin: 2rem 0;
-    border: 0.3rem solid orangered;
+    border: 0.5rem solid orangered;
     border-radius: 0.5rem;
     background-color: rgb(231, 141, 22);
-    transition: all 0.3s;
+    transition: all 0.5s;
+    font-family: monospace;
+    font-size: 1.5rem;
+    font-weight:bold;
+    color: rgb(216, 40, 40);
 }
 
 #proceed_button:hover {
     cursor: pointer;
-    border: 0.3rem solid rgb(230, 108, 63);
+    border: 0.5rem solid rgb(255, 114, 62);
+}
+
+#proceed_button:active {
+    border: 0.5rem solid rgb(245, 236, 233);
+    background-color: rgb(236, 220, 198);
 }
 
 #purchase_summary #total_price p {

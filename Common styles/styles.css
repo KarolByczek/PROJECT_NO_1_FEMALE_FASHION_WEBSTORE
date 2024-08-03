@@ -498,6 +498,13 @@ section #product_container .mainblock .description {
   text-align: center;
 }
 
+section #product_container .mainblock .add_to_bag {
+  padding: 0.7rem;
+  color: rgb(27, 112, 84);
+  background-color: rgb(21, 46, 37);
+  border: 0.2rem solid aqua;
+}
+
 footer {
   width: 100%;
   background-color: var(--background-green);
