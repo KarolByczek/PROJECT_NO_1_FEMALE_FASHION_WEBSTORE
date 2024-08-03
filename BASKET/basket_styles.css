@@ -79,6 +79,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    height: 2.5rem
 }
 
 #payment_spec form label input {
@@ -123,6 +124,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    height: 2.5rem
 }
 
 #delivery_spec form label input {
@@ -168,8 +170,25 @@
    
 }
 
+#payment_sum {
+    font-size: larger;
+}
+
+#payment {
+    margin-left: 1rem;
+}
+
+#delivery_sum {
+    font-size: larger;
+}
+
+#delivery {
+    margin-left: 1rem;
+}
+
 #proceed_button {
     padding: 1rem;
+    margin: 2rem 0;
     border: 0.3rem solid orangered;
     border-radius: 0.5rem;
     background-color: rgb(231, 141, 22);

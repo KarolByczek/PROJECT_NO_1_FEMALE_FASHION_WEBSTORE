@@ -88,12 +88,12 @@ const $paymentOption1 = document.querySelector("#payment-option1");
 const $paymentOption2 = document.querySelector("#payment-option2");
 const $paymentOption3 = document.querySelector("#payment-option3");
 const $paymentOption4 = document.querySelector("#payment-option4");
-const $paymentSum = document.querySelector("#payment_sum");
+const $paymentSum = document.querySelector("#payment");
 const $deliveryOption1 = document.querySelector("#delivery-option1");
 const $deliveryOption2 = document.querySelector("#delivery-option2");
 const $deliveryOption3 = document.querySelector("#delivery-option3");
 const $deliveryOption4 = document.querySelector("#delivery-option4");
-const $deliverySum = document.querySelector("#delivery_sum");
+const $deliverySum = document.querySelector("#delivery");
 
 $sumAmount1.innerHTML = $amount1.value;
 $sumAmount2.innerHTML = $amount2.value;
