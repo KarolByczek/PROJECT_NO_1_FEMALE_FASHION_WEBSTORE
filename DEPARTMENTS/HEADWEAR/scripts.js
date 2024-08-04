@@ -177,10 +177,10 @@ productsCollection.forEach((product) => {
   arrowcont.setAttribute("class", "arrowcont");
 
   const arrowleft = document.createElement("button");
-  arrowleft.innerHTML = "PREVIOUS SLIDE";
+  arrowleft.innerHTML = "<";
   arrowleft.setAttribute("class", "arrow arrow_left");
   const arrowright = document.createElement("button");
-  arrowright.innerHTML = "NEXT SLIDE";
+  arrowright.innerHTML = ">";
   arrowright.setAttribute("class", "arrow arrow_right");
 
   const addToBag = document.createElement("button");
