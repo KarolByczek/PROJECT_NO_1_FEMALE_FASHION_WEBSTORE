@@ -182,12 +182,17 @@ productsCollection.forEach((product) => {
   arrowright.innerHTML = "NEXT SLIDE";
   arrowright.setAttribute("class", "arrow arrow_right");
 
+  const addToBag = document.createElement("button");
+  addToBag.innerHTML = "ADD TO SHOPPING BAG";
+  addToBag.setAttribute("class", "add_to_bag")
+
   mainblock.appendChild(productName);
   mainblock.appendChild(pictures);
   mainblock.appendChild(arrowcont);
   arrowcont.appendChild(arrowleft);
   arrowcont.appendChild(arrowright);
   mainblock.appendChild(description);
+  mainblock.appendChild(addToBag);
 
   $products.appendChild(mainblock);
 

@@ -177,11 +177,15 @@ productsCollection.forEach((product) => {
   arrowcont.setAttribute("class", "arrowcont");
 
   const arrowleft = document.createElement("button");
-  arrowleft.innerHTML = "PREVIOUS SLIDE";
+  arrowleft.innerHTML = "NEXT SLIDE";
   arrowleft.setAttribute("class", "arrow arrow_left");
   const arrowright = document.createElement("button");
   arrowright.innerHTML = "NEXT SLIDE";
   arrowright.setAttribute("class", "arrow arrow_right");
+
+  const addToBag = document.createElement("button");
+  addToBag.innerHTML = "ADD TO SHOPPING BAG";
+  addToBag.setAttribute("class", "add_to_bag")
 
   mainblock.appendChild(productName);
   mainblock.appendChild(pictures);
@@ -189,6 +193,7 @@ productsCollection.forEach((product) => {
   arrowcont.appendChild(arrowleft);
   arrowcont.appendChild(arrowright);
   mainblock.appendChild(description);
+  mainblock.appendChild(addToBag);
 
   $products.appendChild(mainblock);
 

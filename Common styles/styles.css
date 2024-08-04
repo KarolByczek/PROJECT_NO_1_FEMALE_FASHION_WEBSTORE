@@ -502,7 +502,9 @@ section #product_container .mainblock .add_to_bag {
   padding: 0.7rem;
   color: rgb(27, 112, 84);
   background-color: rgb(21, 46, 37);
+  border-radius: 5rem;
   border: 0.2rem solid aqua;
+  cursor: pointer;
 }
 
 footer {
