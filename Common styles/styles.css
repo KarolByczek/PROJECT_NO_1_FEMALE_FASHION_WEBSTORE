@@ -448,7 +448,7 @@ section #product_container .mainblock .arrowcont {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 3rem;
 }
 
 section #product_container .mainblock .arrowcont .arrow {
@@ -1081,6 +1081,15 @@ footer ul li a:hover {
     margin-top: 12rem;
   }
 }
+
+@media screen and (max-width: 800px) {
+
+  section #product_container .mainblock .arrowcont .arrow {
+  padding: 1.5rem;
+}
+
+}
+
 
 @media screen and (min-width: 1048px) and (max-width: 1116px) {
   section {
