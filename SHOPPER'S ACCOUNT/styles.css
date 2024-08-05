@@ -6,6 +6,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url("../Common imagery/background.jpg");
+}
+
+body h1 {
+    background-color: brown;
+    padding: 2rem;
+    border-radius: 3rem;
 }
 
 #account_container {
@@ -27,5 +34,18 @@ body {
 #data_form label {
     display: flex;
     flex-direction: column;
+}
+
+#data_form label input {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 625px) {
+    
+    #account_container {
+        flex-direction: column;
+    }
+
 }
 
