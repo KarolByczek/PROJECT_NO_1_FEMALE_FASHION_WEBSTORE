@@ -133,11 +133,11 @@ bestsellerCollection.forEach((bestseller) => {
   productName.setAttribute("class", "product_name");
   productName.innerHTML = bestseller.pname;
   const image1 = document.createElement("img");
-  image1.src = `images/${bestseller.img1}`;
+  image1.src = `../HOME_PAGE/images/${bestseller.img1}`;
   image1.alt = `${bestseller.img1}`;
   image1.setAttribute("class", "image");
   const image2 = document.createElement("img");
-  image2.src = `images/${bestseller.img2}`;
+  image2.src = `../HOME_PAGE/images/${bestseller.img2}`;
   image2.alt = `${bestseller.img2}`;
   image2.setAttribute("class", "image");
   const description = document.createElement("p");
