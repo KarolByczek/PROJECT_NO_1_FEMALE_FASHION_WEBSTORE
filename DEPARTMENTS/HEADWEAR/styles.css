@@ -11,7 +11,7 @@ body {
   position: relative;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-style: normal;
-  background-image: url("../Common imagery/background.jpg");
+  background-image: url("./common imagery/background.jpg");
   background-attachment: fixed;
   margin: 0;
 }
