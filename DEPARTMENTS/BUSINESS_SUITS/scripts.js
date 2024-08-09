@@ -210,6 +210,9 @@ productsCollection.forEach((product) => {
     }
   });
 
+  console.log(image1.src);
+  console.log(image2.src);
+
   arrowleft.addEventListener("click", () => {
     const currentIMG1index = product.images.indexOf(".".concat(`${(image1.src).substring(95)}`));
     if (currentIMG1index > 0) {
