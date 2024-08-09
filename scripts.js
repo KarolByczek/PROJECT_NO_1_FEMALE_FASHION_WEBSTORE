@@ -85,42 +85,42 @@ const bestsellerCollection = [
     img1: "bella-gina-001a.jpg",
     img2: "bella-gina-001b.jpg",
     dcr: "A placeholder text for description of the product. A placeholder text for description of the product. A placeholder text for description of the product.",
-    urladdress: "../DEPARTMENTS/HOSIERY/index.html#mistresssiluette002"
+    urladdress: "./DEPARTMENTS/HOSIERY/index.html#mistresssiluette002"
   },
   {
     pname: "Dark Hills Hat 001",
     img1: "b947d525c023b764693909e19b64db87.jpg",
     img2: "4c4f788cce3db309bd6e6445047c9c45.jpg",
     dcr: "A placeholder text for description of the product. A placeholder text for description of the product. A placeholder text for description of the product.",
-    urladdress: "../DEPARTMENTS/HEADWEAR/index.html#buenavista009"
+    urladdress: "./DEPARTMENTS/HEADWEAR/index.html#buenavista009"
   },
   {
     pname: "Lavuasier Dress 002",
     img1: "girl-pants-blous-isolated-white-background-body-language-63107751.jpg",
     img2: "girl-pants-blous-partial-barrier-formed-isolated-white-background-body-language-63049021.jpg",
     dcr: "A placeholder text for description of the product. A placeholder text for description of the product. A placeholder text for description of the product.",
-    urladdress: "../DEPARTMENTS/LEGWEAR/index.html#macinta002"
+    urladdress: "./DEPARTMENTS/LEGWEAR/index.html#macinta002"
   },
   {
     pname: "Primero Dress 001",
     img1: "istockphoto-836262254-1024x1024.jpg",
     img2: "istockphoto-836287926-1024x1024.jpg",
     dcr: "A placeholder text for description of the product. A placeholder text for description of the product. A placeholder text for description of the product.",
-    urladdress: "../DEPARTMENTS/BUSINESS_SUITS/index.html#macinta003"
+    urladdress: "./DEPARTMENTS/BUSINESS_SUITS/index.html#macinta003"
   },
   {
     pname: "Macinta Suit 001",
     img1: "strict-young-woman-blouse-skirt-20981461.jpg",
     img2: "strict-young-woman-blouse-skirt-21391050.jpg",
     dcr: "A placeholder text for description of the product. A placeholder text for description of the product. A placeholder text for description of the product.",
-    urladdress: "../DEPARTMENTS/TORSOWEAR/index.html#buenavista003"
+    urladdress: "./DEPARTMENTS/TORSOWEAR/index.html#buenavista003"
   },
   {
     pname: "Macinta Dress 002",
     img1: "young-emotional-woman-pink-dress-11264435.jpg",
     img2: "young-emotional-woman-pink-dress-11264441.jpg",
     dcr: "A placeholder text for description of the product. A placeholder text for description of the product. A placeholder text for description of the product.",
-    urladdress: "../DEPARTMENTS/GOWNS_AND_DRESSES/index.html#buenavista002"
+    urladdress: "./DEPARTMENTS/GOWNS_AND_DRESSES/index.html#buenavista002"
   }
 ];
 
