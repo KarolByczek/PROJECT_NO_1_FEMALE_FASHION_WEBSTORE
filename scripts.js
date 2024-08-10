@@ -40,7 +40,18 @@ $registerFormLoginButton.addEventListener("click", (event) => {
   $backDrop.classList.remove("active");
   $registerForm.classList.remove("active");
   $logStrip.classList.add("active");
-  window.scrollTo(top);
+  if (innerWidth < 625) {
+    window.scrollTo(0, 900);   
+  }
+  else {
+    window.scrollTo(top);
+  }
+  if(window.innerWidth < 625 && $section.style.marginTop !== "10rem") {
+    $section.style.marginTop = "10rem";
+  }
+  else if (window.innerWidth < 625 && $section.style.marginTop === "10rem") {
+    $section.style.marginTop = "-1rem"
+  }
 });
 
 const openRegisterFunction = () => {
