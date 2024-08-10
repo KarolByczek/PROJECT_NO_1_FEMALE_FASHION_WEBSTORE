@@ -872,7 +872,7 @@ footer ul li a:hover {
 
 /* STYLES FOR MOBILES - end */
 
-@media screen and (min-width: 625px) {
+@media screen and (min-width: 626px) {
 
   #navigation_strip {
     height: fit-content;

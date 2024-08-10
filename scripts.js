@@ -42,16 +42,12 @@ $registerFormLoginButton.addEventListener("click", (event) => {
   $logStrip.classList.add("active");
   if (window.innerWidth <= 625) {
     window.scrollTo(0, 1050);   
+    $section.style.marginTop = "10rem";
   }
   else {
     window.scrollTo(top);
   }
-  if (window.innerWidth <= 625) {
-    $section.style.marginTop = "10rem";
-  }
-  else {
-    $section.style.marginTop = "4rem";
-  }
+  
 });
 
 const openRegisterFunction = () => {
@@ -165,7 +161,7 @@ bestsellerCollection.forEach((bestseller) => {
   alink1.setAttribute("class", "alink1");
   alink1.innerHTML = "SEE UP CLOSE";
   const alink2 = document.createElement("a");
-  alink2.setAttribute("href", bestseller.urladdress);
+  alink2.setAttribute("href", "./BASKET/basket.html");
   alink2.setAttribute("class", "alink2");
   alink2.innerHTML = "ADD TO YOUR SHOPPING";
 

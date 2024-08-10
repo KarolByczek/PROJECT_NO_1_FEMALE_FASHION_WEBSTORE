@@ -46,13 +46,13 @@ $registerFormLoginButton.addEventListener("click", (event) => {
   $backDrop.classList.remove("active");
   $registerForm.classList.remove("active");
   $logStrip.classList.add("active");
-  if (innerWidth < 625) {
-    window.scrollTo(0, 1050);   
+  if (window.innerWidth <= 625) {
+    window.scrollTo(0, 1050); 
+    $section.style.marginTop = "10rem";  
   }
   else {
     window.scrollTo(top);
   }
-  $section.style.marginTop = "10rem";
   
 });
 
