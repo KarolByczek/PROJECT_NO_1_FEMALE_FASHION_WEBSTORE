@@ -340,6 +340,11 @@ header {
   font-weight: bolder;
 }
 
+#register_form_login_button:hover {
+  border-color: aquamarine;
+  cursor: pointer;
+}
+
 #register_form #close_register_form {
   position: absolute;
   top: 0.5rem;

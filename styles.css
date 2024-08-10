@@ -346,6 +346,7 @@ header {
 
 #submit_register_form:hover {
   border: 0.3rem solid aquamarine;
+  cursor: pointer;
 }
 
 #register_form_login_button {
@@ -355,6 +356,11 @@ header {
   padding: 0.6rem;
   color: aliceblue;
   font-weight: bolder;
+}
+
+#register_form_login_button:hover {
+  border-color: aquamarine;
+  cursor: pointer;
 }
 
 #register_form #close_register_form {
