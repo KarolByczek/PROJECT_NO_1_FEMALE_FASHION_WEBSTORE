@@ -329,6 +329,7 @@ header {
 
 #submit_register_form:hover {
   border: 0.3rem solid aquamarine;
+  cursor: pointer;
 }
 
 #register_form_login_button {

@@ -40,17 +40,17 @@ $registerFormLoginButton.addEventListener("click", (event) => {
   $backDrop.classList.remove("active");
   $registerForm.classList.remove("active");
   $logStrip.classList.add("active");
-  if (innerWidth < 625) {
-    window.scrollTo(0, 900);   
+  if (window.innerWidth <= 625) {
+    window.scrollTo(0, 1050);   
   }
   else {
     window.scrollTo(top);
   }
-  if(window.innerWidth < 625 && $section.style.marginTop !== "10rem") {
+  if (window.innerWidth <= 625) {
     $section.style.marginTop = "10rem";
   }
-  else if (window.innerWidth < 625 && $section.style.marginTop === "10rem") {
-    $section.style.marginTop = "-1rem"
+  else {
+    $section.style.marginTop = "4rem";
   }
 });
 
