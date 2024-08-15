@@ -131,7 +131,6 @@ header {
 
 #navigation_strip .home_navigation #basket:active {
   border: 0.2rem solid aquamarine;
-  background-color: var(--background-green);
 }
 
 #navigation_strip .home_navigation #basket a img {

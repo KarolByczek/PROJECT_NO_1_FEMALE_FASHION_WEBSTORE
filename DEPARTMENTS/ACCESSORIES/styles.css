@@ -599,8 +599,8 @@ footer ul li a:hover {
 
 #showcasecont {
   position: fixed;
-  left: 12vw;
-  right: 12vw;
+  left: 8vw;
+  right: 8vw;
   top: 5vh;
   bottom: 5vh;
   border: 5px solid rgb(74, 126, 69);
@@ -1011,9 +1011,16 @@ footer ul li a:hover {
     padding: 1rem;
   }
 
+  #showcasecont {
+    left: 2vw;
+    right: 2vw;
+    top: 3vh;
+    bottom: 10vh;
+  }
+
   .showcase {
-    width: 120vw;
-    height: 180vw;
+    width: 140vw;
+    height: 210vw;
   }
 }
 
@@ -1178,8 +1185,8 @@ footer ul li a:hover {
   }
 
   .showcase {
-    width: 74vw;
-    height: 112vw;
+    width: 82vw;
+    height: 124vw;
   }
 }
 
