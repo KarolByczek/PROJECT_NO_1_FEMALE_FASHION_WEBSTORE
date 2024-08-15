@@ -964,6 +964,18 @@ footer ul li a:hover {
     font-size: 1.2rem;
   }
 
+  section #product_container .mainblock .add_to_bag:hover {
+    color: white;
+    background-color: rgb(21, 46, 37);
+    border: 0.2rem solid rgb(48, 116, 116);
+  }
+  
+  section #product_container .mainblock .add_to_bag:active {
+    color: rgb(38, 146, 80);
+    background-color: wheat;
+    border: 0.2rem solid rgb(112, 156, 156);
+  }
+
   footer {
     bottom: -3rem;
     flex-direction: column;
