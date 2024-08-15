@@ -186,6 +186,14 @@
     margin-left: 1rem;
 }
 
+#delivery_address {
+    font-size: larger;
+}
+
+#delivery_address #the_address {
+    margin-left: 1rem;
+}
+
 #proceed_button {
     padding: 1rem;
     margin: 2rem 0;
