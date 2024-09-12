@@ -55,7 +55,7 @@
 }
 
 #payment_spec {
-    background-color: rgb(106, 156, 31);
+    background-color: rgb(156, 137, 31);
     background-image: url(./images/illustration-of-give-coins-icon-on-transparent-background-free-png.webp);
     background-repeat: repeat;
     background-size: 4rem;
@@ -70,7 +70,7 @@
 }
 
 #payment_spec h2 {
-    background-color: rgb(31, 236, 117);
+    background-color: rgb(201, 219, 31);
     border: 0.2rem solid greenyellow;
     padding: 0.6rem;
     border-radius: 1rem;
@@ -90,10 +90,10 @@
     justify-content: center;
     align-items: center;
     height: 2.5rem;
-    background-color: rgb(31, 236, 117);
+    background-color: rgb(201, 219, 31);
     padding: 0.4rem;
     border-radius: 1rem;
-    border: 0.1rem solid greenyellow;
+    border: 0.2rem solid greenyellow;
 }
 
 #payment_spec form label input {
@@ -104,10 +104,10 @@
 #payment_spec form h3 {
     text-align: center;
     margin-bottom: -1rem;
-    background-color: rgb(122, 241, 172);
+    background-color: rgb(201, 219, 31);
     padding: 0.4rem;
     border-radius: 1rem;
-    border: 0.1rem solid greenyellow;
+    border: 0.2rem solid greenyellow;
 }
 
 #payment_spec form input[type='number'] {
@@ -156,7 +156,7 @@
     background-color: rgb(122, 241, 172);
     padding: 0.4rem;
     border-radius: 1rem;
-    border: 0.1rem solid greenyellow;
+    border: 0.2rem solid greenyellow;
 }
 
 #delivery_spec form label input {
