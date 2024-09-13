@@ -55,10 +55,11 @@
 }
 
 #payment_spec {
-    background-color: aquamarine;
-    background-image: url(./images/illustration-of-give-coins-icon-on-transparent-background-free-png.webp);
-    background-repeat: repeat;
-    background-size: 2rem;
+    background-color: rgb(175, 185, 182);
+    background-image: url(./images/clipart2165783.png);
+    background-repeat: no-repeat;
+    background-size: 25rem;
+    background-position: center;
     border: 0.3rem solid rgb(10, 126, 10);
     border-radius: 1.5rem;
     display: flex;
@@ -70,8 +71,6 @@
 }
 
 #payment_spec h2 {
-    background-color: rgb(96, 148, 163);
-    border: 0.2rem solid rgb(36, 106, 116);
     padding: 0.6rem;
     border-radius: 1rem;
 }
@@ -90,10 +89,8 @@
     justify-content: center;
     align-items: center;
     height: 2.5rem;
-    background-color: rgb(96, 148, 163);
     padding: 0.4rem;
     border-radius: 1rem;
-    border: 0.2rem solid rgb(36, 106, 116);
 }
 
 #payment_spec form label input {
@@ -104,10 +101,8 @@
 #payment_spec form h3 {
     text-align: center;
     margin-bottom: -1rem;
-    background-color: rgb(96, 148, 163);
     padding: 0.4rem;
     border-radius: 1rem;
-    border: 0.2rem solid rgb(36, 106, 116);
 }
 
 #payment_spec form input[type='number'] {
@@ -118,10 +113,11 @@
 }
 
 #delivery_spec {
-    background-color: aquamarine;
-    background-image: url(./images/delivery_icon01.png);
-    background-repeat: repeat;
-    background-size: 2rem;
+    background-color: rgb(175, 185, 182);
+    background-image: url(./images/delivery_icon02.png);
+    background-repeat: no-repeat;
+    background-size: 25rem;
+    background-position: center;
     border: 0.3rem solid rgb(10, 126, 10);
     display: flex;
     flex-direction: column;
@@ -133,8 +129,6 @@
 }
 
 #delivery_spec h2 {
-    background-color: rgb(96, 148, 163);
-    border: 0.2rem solid rgb(36, 106, 116);
     padding: 0.6rem;
     border-radius: 1rem;
 }
@@ -153,10 +147,8 @@
     justify-content: center;
     align-items: center;
     height: 2.5rem;
-    background-color: rgb(96, 148, 163);
     padding: 0.4rem;
     border-radius: 1rem;
-    border: 0.2rem solid rgb(36, 106, 116);
 }
 
 #delivery_spec form label input {
