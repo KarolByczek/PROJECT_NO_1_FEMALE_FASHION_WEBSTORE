@@ -68,7 +68,7 @@ header {
   border: 0.2rem solid var(--dark-green);
   border-radius: 1rem;
   position: relative;
-  background-color: var(--light-green);
+  background-color: var(--dark-green);
   transition: all 0.5s;
 }
 
