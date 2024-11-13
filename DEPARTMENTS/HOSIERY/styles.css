@@ -168,7 +168,7 @@ header {
   transition: display 0.3s;
 }
 
-#navigation_strip .secondary_nav #basket:hover #prompt_no1 {
+#navigation_strip .secondary_nav #basket #prompt_no1 {
   display: block;
   position: absolute;
   left: -4.3rem;
@@ -818,6 +818,12 @@ footer ul li a:hover {
     margin-top: 0;
   }
 
+  #navigation_strip .secondary_nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
   #navigation_strip .secondary_nav #basket {
     padding: 0.2rem;
     background-color: rgb(71, 145, 122);
@@ -863,16 +869,41 @@ footer ul li a:hover {
     background-color: rgb(11, 134, 93);
   }
 
+  #navigation_strip .secondary_nav #basket a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #navigation_strip .secondary_nav #account_icon a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
 
   #navigation_strip .secondary_nav #basket:hover #prompt_no1 {
     display: none
+  }
+
+  #navigation_strip .secondary_nav #basket a #mobile_prompt_no1 {
+    display: block;
+    font-size: 1.4rem;
+  }
+
+  #navigation_strip .secondary_nav #account_icon a #mobile_prompt_no2 {
+    display: block;
+    font-size: 1.4rem;
   }
 
   #navigation_strip .secondary_nav #account_icon:hover #prompt_no2 {
     display: none
   }
 
-  #login_button {
+  #navigation_strip .secondary_nav #login_button {
     margin-left: 0;
     width: 94%;
   }
