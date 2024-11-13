@@ -5,6 +5,8 @@
   --light-green: rgb(47, 201, 106);
   --dark-green: rgb(7, 71, 50);
   --mouldy-background: rgb(219, 189, 210);
+  --active-blue: rgb(85, 85, 174);
+  --light-blue: rgb(203, 203, 227);
 }
 
 body {
@@ -70,6 +72,11 @@ header {
   position: relative;
   background-color: var(--light-green);
   transition: all 0.5s;
+}
+
+.home_navigation li.current_menu_item {
+  background-color: var(--active-blue);
+  border-color: var(--light-blue)
 }
 
 .home_navigation li:hover {
