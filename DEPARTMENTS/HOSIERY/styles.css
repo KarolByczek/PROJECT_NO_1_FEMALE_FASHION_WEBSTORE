@@ -76,12 +76,14 @@ header {
 
 .home_navigation li.current_menu_item {
   background-color: var(--active-blue);
-  border-color: var(--light-blue)
+  border-color: var(--light-blue);
+  color: navajowhite;
 }
 
 .home_navigation li:hover {
   border: 0.2rem solid greenyellow;
   background-color: aquamarine;
+  color: rgb(31, 41, 31);
   cursor: pointer;
 }
 
@@ -126,34 +128,47 @@ header {
   height: 100%;
 }
 
-#navigation_strip .home_navigation #basket {
-  padding: 0.2rem;
-  background-color: rgb(71, 145, 122);
-  margin-left: 1.5rem;
+#navigation_strip .secondary_nav {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
 }
 
-#navigation_strip .home_navigation #basket:hover {
+#navigation_strip .secondary_nav #basket {
+  height: 1.8rem;
+  padding: 0.2rem;
+  border: 0.2rem solid rgb(14, 68, 50);
+  background-color: rgb(71, 145, 122);
+  margin-left: 1.5rem;
+  transition: all 0.3s;
+}
+
+#navigation_strip .secondary_nav #basket:hover {
   border: 0.2rem solid rgb(20, 228, 159);
   background-color: rgb(199, 231, 231);
 }
 
-#navigation_strip .home_navigation #basket:active {
+#navigation_strip .secondary_nav #basket:active {
   border: 0.2rem solid aquamarine;
   background-color: var(--background-green);
 }
 
-#navigation_strip .home_navigation #basket a img {
+#navigation_strip .secondary_nav #basket a img {
   height: 1.6rem;
   width: 1.5rem;
   background: none;
 }
 
-#navigation_strip .home_navigation #basket #prompt_no1 {
+#navigation_strip .secondary_nav #basket a #mobile_prompt_no1 {
+  display: none;
+}
+
+#navigation_strip .secondary_nav #basket #prompt_no1 {
   display: none;
   transition: display 0.3s;
 }
 
-#navigation_strip .home_navigation #basket:hover #prompt_no1 {
+#navigation_strip .secondary_nav #basket:hover #prompt_no1 {
   display: block;
   position: absolute;
   left: -4.3rem;
@@ -164,12 +179,12 @@ header {
   font-size: 0.6rem;
 }
 
-#navigation_strip .home_navigation #account_icon #prompt_no2 {
+#navigation_strip .secondary_nav #account_icon #prompt_no2 {
   display: none;
-  transition: display 0.3s;
+  transition: all 0.3s;
 }
 
-#navigation_strip .home_navigation #account_icon:hover #prompt_no2 {
+#navigation_strip .secondary_nav #account_icon:hover #prompt_no2 {
   display: block;
   position: absolute;
   left: -6rem;
@@ -180,40 +195,52 @@ header {
   font-size: 0.6rem;
 }
 
-#navigation_strip .home_navigation #account_icon {
+#navigation_strip .secondary_nav #account_icon {
+  height: 1.8rem;
   padding: 0.2rem;
   background-color: rgb(71, 145, 122);
+  border: 0.2rem solid rgb(14, 68, 50);
+  transition: all 0.3s;
 }
 
-#navigation_strip .home_navigation #account_icon:hover {
+#navigation_strip .secondary_nav #account_icon:hover {
   border: 0.2rem solid rgb(20, 228, 159);
   background-color: rgb(199, 231, 231);
 }
 
-#navigation_strip .home_navigation #account_icon:active {
+#navigation_strip .secondary_nav #account_icon:active {
   border: 0.2rem solid aquamarine;
 }
 
-#navigation_strip .home_navigation #account_icon a img {
+#navigation_strip .secondary_nav #account_icon a img {
   height: 1.6rem;
   width: 1.5rem;
 }
 
-#login_button {
-  height: fit-content;
+#navigation_strip .secondary_nav #account_icon a #mobile_prompt_no2 {
+  display: none;
+}
+
+#navigation_strip .secondary_nav #login_button {
+  height: 1.8rem;
   width: fit-content;
   text-wrap: nowrap;
   background-color: rgb(71, 145, 122);
   border-radius: 6rem;
-  padding: 0.4rem;
-  color: var(--dark-green);
+  border: 0.2rem solid rgb(14, 68, 50);
+  padding: 0.2rem;
+  color: blackss;
   font-weight: bolder;
   text-transform: uppercase;
-  transition: border 0.5s;
+  transition: border 0.3s;
   margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
-#login_button:hover {
+#navigation_strip .secondary_nav #login_button:hover {
   border: 0.2rem solid rgb(20, 228, 159);
   background-color: rgb(199, 231, 231);
 }
@@ -612,8 +639,10 @@ footer ul li a:hover {
   bottom: 5vh;
   border: 5px solid rgb(74, 126, 69);
   z-index: 12;
-  scrollbar-width: thin; /* For Firefox */
-  scrollbar-color: #888 #f0f0f0; /* For Firefox */
+  scrollbar-width: thin;
+  /* For Firefox */
+  scrollbar-color: #888 #f0f0f0;
+  /* For Firefox */
   visibility: hidden;
   opacity: 0;
   transition: all 0.3s;
@@ -714,7 +743,7 @@ footer ul li a:hover {
   }
 
   #navigation_strip {
-     width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -789,7 +818,7 @@ footer ul li a:hover {
     margin-top: 0;
   }
 
-  #navigation_strip .home_navigation #basket {
+  #navigation_strip .secondary_nav #basket {
     padding: 0.2rem;
     background-color: rgb(71, 145, 122);
     margin-left: 0;
@@ -797,49 +826,49 @@ footer ul li a:hover {
     width: 97%;
   }
 
-  #navigation_strip .home_navigation #basket a {
+  #navigation_strip .secondary_nav #basket a {
     text-decoration: none;
     color: aliceblue;
   }
 
-  #navigation_strip .home_navigation #basket:hover {
+  #navigation_strip .secondary_nav #basket:hover {
     background-color: rgb(71, 145, 122);
     border-color: var(--dark-green);
   }
 
-  #navigation_strip .home_navigation #basket:active {
+  #navigation_strip .secondary_nav #basket:active {
     border: 0.2rem solid rgb(55, 183, 29);
     background-color: rgb(11, 134, 93);
   }
-  
-  #navigation_strip .home_navigation #account_icon {
+
+  #navigation_strip .secondary_nav #account_icon {
     padding: 0.2rem;
     background-color: rgb(71, 145, 122);
     padding: 0.4rem 0;
     width: 97%;
   }
 
-  #navigation_strip .home_navigation #account_icon a {
+  #navigation_strip .secondary_nav #account_icon a {
     text-decoration: none;
     color: aliceblue;
   }
 
-  #navigation_strip .home_navigation #account_icon:hover {
+  #navigation_strip .secondary_nav #account_icon:hover {
     background-color: rgb(71, 145, 122);
     border-color: var(--dark-green);
   }
 
-  #navigation_strip .home_navigation #account_icon:active {
+  #navigation_strip .secondary_nav #account_icon:active {
     border: 0.2rem solid rgb(55, 183, 29);
     background-color: rgb(11, 134, 93);
   }
 
 
-  #navigation_strip .home_navigation #basket:hover #prompt_no1 {
+  #navigation_strip .secondary_nav #basket:hover #prompt_no1 {
     display: none
   }
 
-  #navigation_strip .home_navigation #account_icon:hover #prompt_no2 {
+  #navigation_strip .secondary_nav #account_icon:hover #prompt_no2 {
     display: none
   }
 
@@ -976,7 +1005,7 @@ footer ul li a:hover {
     background-color: rgb(21, 46, 37);
     border: 0.2rem solid rgb(48, 116, 116);
   }
-  
+
   section #product_container .mainblock .add_to_bag:active {
     color: rgb(38, 146, 80);
     background-color: wheat;
@@ -1022,7 +1051,7 @@ footer ul li a:hover {
     padding: 0.8rem;
   }
 
-  #submit_register_form  {
+  #submit_register_form {
     padding: 1rem;
   }
 
@@ -1056,14 +1085,6 @@ footer ul li a:hover {
     gap: 0.2rem;
     bottom: 2rem;
     justify-content: center;
-  }
-
-  #navigation_strip .home_navigation #basket a #mobile_prompt_no1 {
-    display: none;
-  }
-
-  #navigation_strip .home_navigation #account_icon a #mobile_prompt_no2 {
-    display: none;
   }
 
   #login_strip {
@@ -1148,8 +1169,8 @@ footer ul li a:hover {
 @media screen and (max-width: 800px) {
 
   section #product_container .mainblock .arrowcont .arrow {
-  padding: 1.5rem;
-}
+    padding: 1.5rem;
+  }
 
 }
 
